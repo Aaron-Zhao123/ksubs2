@@ -1,0 +1,247 @@
+stage7
+opath operation: 7: restructure2
+-----------------------------
+HPR VM2 Abstract Machine Report (AMR).  Name=csharp/primes_offchip
+Parentname=composegenerated10
+
+Report on Contacts (flat name space) declarations
+  clk:INPUT::Unsigned{init=0, resetnet=true}
+  design_serial_number[-2147483648..2147483647]:OUTPUT::Signed{init=0, io_output=true, username=design_serial_number}
+  pio_addr[-2147483648..2147483647]:INPUT::Signed{init=0, io_input=true, username=pio_addr}
+  pio_wdata[-2147483648..2147483647]:INPUT::Signed{init=0, io_input=true, username=pio_wdata}
+  pio_rdata[-2147483648..2147483647]:OUTPUT::Signed{init=0, io_output=true, username=pio_rdata}
+  pio_hwen:INPUT::Unsigned{init=0, io_input=true, username=pio_hwen}
+  volume[31:0]:INPUT::Unsigned{init=0, io_input=true, io_output=true, username=volume, HwWidth=32}
+  count[31:0]:OUTPUT::Unsigned{init=0, io_output=true, username=count, HwWidth=32}
+  elimit[31:0]:OUTPUT::Signed{init=0, io_output=true, username=elimit, HwWidth=32}
+  evariant[31:0]:OUTPUT::Signed{init=0, io_output=true, username=evariant, HwWidth=32}
+  edesign[31:0]:OUTPUT::Signed{init=0, io_output=true, username=edesign, HwWidth=32}
+  finished:OUTPUT::Unsigned{init=0, io_output=true, username=finished}
+End report on Contacts (flat name space) declarations (12 items)
+
+Report on Local (nb persistent) scalar declarations
+  primesya/T404/Main/T404/Main/V_2_GP[-2147483648..2147483647]:LOCAL::Signed{init=0, shared_gp=true}
+  primesya/T404/Main/T404/Main/V_4_GP[-2147483648..2147483647]:LOCAL::Signed{init=0, shared_gp=true}
+  @_SINT/CC/SCALbx12_ARA0_RDD0[31:0]:LOCAL::Signed{init=0}
+  @_SINT/CC/SCALbx12_ARA0_AD0[3:0]:LOCAL::Unsigned{init=0}
+  @_SINT/CC/SCALbx12_ARA0_WEN0:LOCAL::Unsigned{init=0, control_net_marked=true}
+  @_SINT/CC/SCALbx12_ARA0_REN0:LOCAL::Unsigned{init=0, control_net_marked=true}
+  @_SINT/CC/SCALbx12_ARA0_WRD0[31:0]:LOCAL::Signed{init=0}
+  @_BOOL/CC/SCALbx10_ARA0_RDD0:LOCAL::Unsigned{init=0}
+  @_BOOL/CC/SCALbx10_ARA0_AD0[3:0]:LOCAL::Unsigned{init=0}
+  @_BOOL/CC/SCALbx10_ARA0_WEN0:LOCAL::Unsigned{init=0, control_net_marked=true}
+  @_BOOL/CC/SCALbx10_ARA0_REN0:LOCAL::Unsigned{init=0, control_net_marked=true}
+  @_BOOL/CC/SCALbx10_ARA0_WRD0:LOCAL::Unsigned{init=0}
+  SINTCCSCALbx12ARA0RRh10hold[31:0]:LOCAL::Signed{init=0}
+  SINTCCSCALbx12ARA0RRh10shot0:LOCAL::Unsigned{init=0}
+  xpc12nz[2:0]:EG505:LOCAL::Unsigned{init=0}
+  BOOLCCSCALbx10ARA0RRh10hold:LOCAL::Unsigned{init=0}
+  BOOLCCSCALbx10ARA0RRh10shot0:LOCAL::Unsigned{init=0}
+  xpc10nz[4:0]:EG504:LOCAL::Unsigned{init=0}
+End report on Local (nb persistent) scalar declarations (18 items)
+
+Report on Local (nb persistent) vector/array declarations: none exist.
+
+
+Memory region descriptions (memdecs) no=0
+csharp/primes_offchip analysis csharp/primes_offchip
+VM2 analyse hierarchical summary: (g,l,e,a)
+csharp/primes_offchip glea=/12/18/2/0
+- @_SINT/CC/SCALbx12_ARA0 glea=/11/1/3/0
+- @_BOOL/CC/SCALbx10_ARA0 glea=/11/1/3/0
+csharp/primes_offchip analysis csharp/primes_offchip
+VM2 analyse details:
+Machine attribute:preferred-name=primesya
+csharp/primes_offchip: Machine  2 rules
+      Sensitivity = posedge(clk): SP_rtl(<71 RTL arcs>)
+      Sensitivity = posedge(clk): SP_rtl(<16 RTL arcs>)
+csharp/primes_offchip:          12 terminals
+csharp/primes_offchip:          2 children
+csharp/primes_offchip:          18 internal variables (nodes)
+   machine gdecl   clk:INPUT::Unsigned{init=0, resetnet=true}
+   machine gdecl   design_serial_number[-2147483648..2147483647]:OUTPUT::Signed{init=0, io_output=true, username=design_serial_number}
+   machine gdecl   pio_addr[-2147483648..2147483647]:INPUT::Signed{init=0, io_input=true, username=pio_addr}
+   machine gdecl   pio_wdata[-2147483648..2147483647]:INPUT::Signed{init=0, io_input=true, username=pio_wdata}
+   machine gdecl   pio_rdata[-2147483648..2147483647]:OUTPUT::Signed{init=0, io_output=true, username=pio_rdata}
+   machine gdecl   pio_hwen:INPUT::Unsigned{init=0, io_input=true, username=pio_hwen}
+   machine gdecl   volume[31:0]:INPUT::Unsigned{init=0, io_input=true, io_output=true, username=volume, HwWidth=32}
+   machine gdecl   count[31:0]:OUTPUT::Unsigned{init=0, io_output=true, username=count, HwWidth=32}
+   machine gdecl   elimit[31:0]:OUTPUT::Signed{init=0, io_output=true, username=elimit, HwWidth=32}
+   machine gdecl   evariant[31:0]:OUTPUT::Signed{init=0, io_output=true, username=evariant, HwWidth=32}
+   machine gdecl   edesign[31:0]:OUTPUT::Signed{init=0, io_output=true, username=edesign, HwWidth=32}
+   machine gdecl   finished:OUTPUT::Unsigned{init=0, io_output=true, username=finished}
+   machine local   primesya/T404/Main/T404/Main/V_2_GP[-2147483648..2147483647]:LOCAL::Signed{init=0, shared_gp=true}
+   machine local   primesya/T404/Main/T404/Main/V_4_GP[-2147483648..2147483647]:LOCAL::Signed{init=0, shared_gp=true}
+   machine local   @_SINT/CC/SCALbx12_ARA0_RDD0[31:0]:LOCAL::Signed{init=0}
+   machine local   @_SINT/CC/SCALbx12_ARA0_AD0[3:0]:LOCAL::Unsigned{init=0}
+   machine local   @_SINT/CC/SCALbx12_ARA0_WEN0:LOCAL::Unsigned{init=0, control_net_marked=true}
+   machine local   @_SINT/CC/SCALbx12_ARA0_REN0:LOCAL::Unsigned{init=0, control_net_marked=true}
+   machine local   @_SINT/CC/SCALbx12_ARA0_WRD0[31:0]:LOCAL::Signed{init=0}
+   machine local   @_BOOL/CC/SCALbx10_ARA0_RDD0:LOCAL::Unsigned{init=0}
+   machine local   @_BOOL/CC/SCALbx10_ARA0_AD0[3:0]:LOCAL::Unsigned{init=0}
+   machine local   @_BOOL/CC/SCALbx10_ARA0_WEN0:LOCAL::Unsigned{init=0, control_net_marked=true}
+   machine local   @_BOOL/CC/SCALbx10_ARA0_REN0:LOCAL::Unsigned{init=0, control_net_marked=true}
+   machine local   @_BOOL/CC/SCALbx10_ARA0_WRD0:LOCAL::Unsigned{init=0}
+   machine local   SINTCCSCALbx12ARA0RRh10hold[31:0]:LOCAL::Signed{init=0}
+   machine local   SINTCCSCALbx12ARA0RRh10shot0:LOCAL::Unsigned{init=0}
+   machine local   xpc12nz[2:0]:EG505:LOCAL::Unsigned{init=0}
+   machine local   BOOLCCSCALbx10ARA0RRh10hold:LOCAL::Unsigned{init=0}
+   machine local   BOOLCCSCALbx10ARA0RRh10shot0:LOCAL::Unsigned{init=0}
+   machine local   xpc10nz[4:0]:EG504:LOCAL::Unsigned{init=0}
+sensitivity=posedge(clk)
+SP_rtl 71 RTL xfers
+      (xpc10nz==X21:"21:xpc10nz"):() --> {():primesya/T404/Main/T404/Main/V_2_GP <= 1+primesya/T404/Main/T404/Main/V_2_GP}
+      (xpc10nz==X21:"21:xpc10nz"):() --> {():Xn(@_BOOL/CC/SCALbx10_ARA0_AD0,-1) <= primesya/T404/Main/T404/Main/V_2_GP}
+      (xpc10nz==X21:"21:xpc10nz"):() --> {():Xn(@_BOOL/CC/SCALbx10_ARA0_WRD0,-1) <= U1'1}
+      (xpc10nz==X19:"19:xpc10nz"):() --> {():primesya/T404/Main/T404/Main/V_4_GP <= primesya/T404/Main/T404/Main/V_2_GP+primesya/T404/Main/T404/Main/V_4_GP}
+      (xpc10nz==X19:"19:xpc10nz"):() --> {():Xn(@_BOOL/CC/SCALbx10_ARA0_AD0,-1) <= primesya/T404/Main/T404/Main/V_4_GP}
+      (xpc10nz==X19:"19:xpc10nz"):() --> {():Xn(@_BOOL/CC/SCALbx10_ARA0_WRD0,-1) <= U1'0}
+      (xpc10nz==X18:"18:xpc10nz"):(primesya/T404/Main/T404/Main/V_4_GP>=1000) --> {():primesya/T404/Main/T404/Main/V_2_GP <= 1+primesya/T404/Main/T404/Main/V_2_GP}
+      (xpc10nz==X17:"17:xpc10nz"):(primesya/T404/Main/T404/Main/V_2_GP+primesya/T404/Main/T404/Main/V_2_GP>=1000) --> {():primesya/T404/Main/T404/Main/V_4_GP <= primesya/T404/Main/T404/Main/V_2_GP+primesya/T404/Main/T404/Main/V_2_GP}
+      (xpc10nz==X17:"17:xpc10nz"):(primesya/T404/Main/T404/Main/V_2_GP+primesya/T404/Main/T404/Main/V_2_GP<1000) --> {():primesya/T404/Main/T404/Main/V_4_GP <= primesya/T404/Main/T404/Main/V_2_GP+primesya/T404/Main/T404/Main/V_2_GP}
+      (xpc10nz==X16:"16:xpc10nz"):() --> {():primesya/T404/Main/T404/Main/V_4_GP <= 1+primesya/T404/Main/T404/Main/V_4_GP}
+      (xpc10nz==X15:"15:xpc10nz"):({[xpc10nz==X15:"15:xpc10nz", |-|@_BOOL/CC/SCALbx10_ARA0_RDD0]; [xpc10nz!=X15:"15:xpc10nz", |-|BOOLCCSCALbx10ARA0RRh10hold]}) --> {():count <= Cu(1+count)}
+      (xpc10nz==X14:"14:xpc10nz"):() --> {():Xn(@_BOOL/CC/SCALbx10_ARA0_AD0,-1) <= primesya/T404/Main/T404/Main/V_4_GP}
+      (xpc10nz==X10:"10:xpc10nz"):() --> {():finished <= U1'1}
+      (xpc10nz==X6:"6:xpc10nz"):() --> {():primesya/T404/Main/T404/Main/V_4_GP <= 0}
+      (xpc10nz==X4:"4:xpc10nz"):(primesya/T404/Main/T404/Main/V_2_GP>=1000) --> {():primesya/T404/Main/T404/Main/V_2_GP <= 2}
+      (xpc10nz==X3:"3:xpc10nz"):() --> {():primesya/T404/Main/T404/Main/V_2_GP <= 0}
+      (xpc10nz==X3:"3:xpc10nz"):() --> {():count <= U32'0}
+      (xpc10nz==X1:"1:xpc10nz"):() --> {():Xn(@_BOOL/CC/SCALbx10_ARA0_AD0,-1) <= 0}
+      (xpc10nz==X1:"1:xpc10nz"):() --> {():Xn(@_BOOL/CC/SCALbx10_ARA0_WRD0,-1) <= 0<volume}
+      (xpc10nz==X0:"0:xpc10nz"):() --> {():count <= U32'0}
+      (xpc10nz==X0:"0:xpc10nz"):() --> {():evariant <= 0}
+      (xpc10nz==X0:"0:xpc10nz"):() --> {():edesign <= 4032}
+      (xpc10nz==X0:"0:xpc10nz"):() --> {():finished <= U1'0}
+      (xpc10nz==X0:"0:xpc10nz"):() --> {():design_serial_number <= S32'2232578}
+      (xpc10nz==X0:"0:xpc10nz"):() --> {():pio_rdata <= 0}
+      (xpc10nz==X0:"0:xpc10nz"):() --> {():elimit <= 1000}
+      ():(|-|BOOLCCSCALbx10ARA0RRh10shot0) --> {():BOOLCCSCALbx10ARA0RRh10hold <= @_BOOL/CC/SCALbx10_ARA0_RDD0}
+      ():() --> {():Xn(@_BOOL/CC/SCALbx10_ARA0_REN0,-1) <= COND(xpc10nz==X14:"14:xpc10nz", 1, 0)}
+      ():() --> {():Xn(@_BOOL/CC/SCALbx10_ARA0_WEN0,-1) <= COND({[xpc10nz==X19:"19:xpc10nz"]; [xpc10nz==X1:"1:xpc10nz"]; [xpc10nz==X21:"21:xpc10nz"]}, 1, 0)}
+      ():() --> {():BOOLCCSCALbx10ARA0RRh10shot0 <= xpc10nz==X14:"14:xpc10nz"}
+      (xpc10nz==X21:"21:xpc10nz"):() --> {():hpr_writeln{primesya10174:12}("Setting initial array flag to hold : addr=%u readback=%d", primesya/T404/Main/T404/Main/V_2_GP, U1'1)}
+      (xpc10nz==X18:"18:xpc10nz"):(primesya/T404/Main/T404/Main/V_4_GP<1000) --> {():hpr_writeln{primesya10162:11}("Cross off %u %u   (count1=%u)", primesya/T404/Main/T404/Main/V_2_GP, primesya/T404/Main/T404/Main/V_4_GP, 2)}
+      (xpc10nz==X17:"17:xpc10nz"):(primesya/T404/Main/T404/Main/V_2_GP+primesya/T404/Main/T404/Main/V_2_GP>=1000) --> {():hpr_writeln{primesya1095:10}($$AUTOFORMAT: This will be automatically replaced with a printf formatted string., "Skip out on square")}
+      (xpc10nz==X16:"16:xpc10nz"):() --> {():hpr_writeln{primesya10145:9}("Tally counting %u %d", primesya/T404/Main/T404/Main/V_4_GP, count)}
+      (xpc10nz==X9:"9:xpc10nz"):() --> {():hpr_KppMark{primesya10120:8}("FINISH")}
+      (xpc10nz==X7:"7:xpc10nz"):(primesya/T404/Main/T404/Main/V_4_GP>=1000) --> {():hpr_writeln{primesya10112:6}("There are %d primes below the natural number %u.", count, 1000)}
+      (xpc10nz==X7:"7:xpc10nz"):(primesya/T404/Main/T404/Main/V_4_GP>=1000) --> {():hpr_writeln{primesya10114:7}("Optimisation variant=%u (count1 is %u).", 0, 2)}
+      (xpc10nz==X6:"6:xpc10nz"):() --> {():hpr_KppMark{primesya10100:4}("wp3", "COUNTING")}
+      (xpc10nz==X6:"6:xpc10nz"):() --> {():hpr_writeln{primesya10102:5}($$AUTOFORMAT: This will be automatically replaced with a printf formatted string., "Now counting")}
+      (xpc10nz==X4:"4:xpc10nz"):(primesya/T404/Main/T404/Main/V_2_GP>=1000) --> {():hpr_KppMark{primesya1078:3}("wp2", "CROSSOFF")}
+      (xpc10nz==X0:"0:xpc10nz"):() --> {():hpr_KppMark{primesya1059:1}("START", "INITIALISE")}
+      (xpc10nz==X0:"0:xpc10nz"):() --> {():hpr_writeln{primesya1061:2}($$AUTOFORMAT: This will be automatically replaced with a printf formatted string., "Primes Up To ", 1000)}
+      (xpc10nz==X0:"0:xpc10nz"):() --> { GOTO X1:"1:xpc10nz"}
+      (xpc10nz==X1:"1:xpc10nz"):() --> { GOTO X2:"2:xpc10nz"}
+      (xpc10nz==X2:"2:xpc10nz"):() --> { GOTO X3:"3:xpc10nz"}
+      (xpc10nz==X3:"3:xpc10nz"):() --> { GOTO X4:"4:xpc10nz"}
+      (xpc10nz==X4:"4:xpc10nz"):(primesya/T404/Main/T404/Main/V_2_GP>=1000) --> { GOTO X5:"5:xpc10nz"}
+      (xpc10nz==X4:"4:xpc10nz"):(primesya/T404/Main/T404/Main/V_2_GP<1000) --> { GOTO X21:"21:xpc10nz"}
+      (xpc10nz==X5:"5:xpc10nz"):(primesya/T404/Main/T404/Main/V_2_GP>=1000) --> { GOTO X6:"6:xpc10nz"}
+      (xpc10nz==X5:"5:xpc10nz"):(primesya/T404/Main/T404/Main/V_2_GP<1000) --> { GOTO X17:"17:xpc10nz"}
+      (xpc10nz==X6:"6:xpc10nz"):() --> { GOTO X7:"7:xpc10nz"}
+      (xpc10nz==X7:"7:xpc10nz"):(primesya/T404/Main/T404/Main/V_4_GP>=1000) --> { GOTO X8:"8:xpc10nz"}
+      (xpc10nz==X7:"7:xpc10nz"):(primesya/T404/Main/T404/Main/V_4_GP<1000) --> { GOTO X14:"14:xpc10nz"}
+      (xpc10nz==X8:"8:xpc10nz"):() --> { GOTO X9:"9:xpc10nz"}
+      (xpc10nz==X9:"9:xpc10nz"):() --> { GOTO X10:"10:xpc10nz"}
+      (xpc10nz==X10:"10:xpc10nz"):() --> { GOTO X11:"11:xpc10nz"}
+      (xpc10nz==X11:"11:xpc10nz"):() --> { GOTO X12:"12:xpc10nz"}
+      (xpc10nz==X12:"12:xpc10nz"):() --> { GOTO X13:"13:xpc10nz"}
+      (xpc10nz==X13:"13:xpc10nz"):() --> { GOTO X12:"12:xpc10nz"}
+      (xpc10nz==X14:"14:xpc10nz"):() --> { GOTO X15:"15:xpc10nz"}
+      (xpc10nz==X15:"15:xpc10nz"):({[xpc10nz==X15:"15:xpc10nz", |-|@_BOOL/CC/SCALbx10_ARA0_RDD0]; [xpc10nz!=X15:"15:xpc10nz", |-|BOOLCCSCALbx10ARA0RRh10hold]}) --> { GOTO X16:"16:xpc10nz"}
+      (xpc10nz==X15:"15:xpc10nz"):({[xpc10nz==X15:"15:xpc10nz", !(|-|@_BOOL/CC/SCALbx10_ARA0_RDD0)]; [xpc10nz!=X15:"15:xpc10nz", !(|-|BOOLCCSCALbx10ARA0RRh10hold)]}) --> { GOTO X16:"16:xpc10nz"}
+      (xpc10nz==X16:"16:xpc10nz"):() --> { GOTO X7:"7:xpc10nz"}
+      (xpc10nz==X17:"17:xpc10nz"):(primesya/T404/Main/T404/Main/V_2_GP+primesya/T404/Main/T404/Main/V_2_GP>=1000) --> { GOTO X6:"6:xpc10nz"}
+      (xpc10nz==X17:"17:xpc10nz"):(primesya/T404/Main/T404/Main/V_2_GP+primesya/T404/Main/T404/Main/V_2_GP<1000) --> { GOTO X18:"18:xpc10nz"}
+      (xpc10nz==X18:"18:xpc10nz"):(primesya/T404/Main/T404/Main/V_4_GP>=1000) --> { GOTO X5:"5:xpc10nz"}
+      (xpc10nz==X18:"18:xpc10nz"):(primesya/T404/Main/T404/Main/V_4_GP<1000) --> { GOTO X19:"19:xpc10nz"}
+      (xpc10nz==X19:"19:xpc10nz"):() --> { GOTO X20:"20:xpc10nz"}
+      (xpc10nz==X20:"20:xpc10nz"):() --> { GOTO X18:"18:xpc10nz"}
+      (xpc10nz==X21:"21:xpc10nz"):() --> { GOTO X22:"22:xpc10nz"}
+      (xpc10nz==X22:"22:xpc10nz"):() --> { GOTO X4:"4:xpc10nz"}
+sensitivity=posedge(clk)
+SP_rtl 16 RTL xfers
+      (xpc12nz==X1:"1:xpc12nz"):(|-|pio_hwen) --> {():Xn(@_SINT/CC/SCALbx12_ARA0_AD0,-1) <= pio_addr}
+      (xpc12nz==X1:"1:xpc12nz"):(|-|pio_hwen) --> {():Xn(@_SINT/CC/SCALbx12_ARA0_WRD0,-1) <= C(pio_wdata)}
+      (xpc12nz==X3:"3:xpc12nz"):(!(pio_hwen)) --> {():pio_rdata <= C(COND(xpc12nz==X3:"3:xpc12nz", @_SINT/CC/SCALbx12_ARA0_RDD0, SINTCCSCALbx12ARA0RRh10hold))}
+      (xpc12nz==X1:"1:xpc12nz"):(!(pio_hwen)) --> {():Xn(@_SINT/CC/SCALbx12_ARA0_AD0,-1) <= pio_addr}
+      ():(|-|BOOLCCSCALbx10ARA0RRh10shot0) --> {():BOOLCCSCALbx10ARA0RRh10hold <= @_BOOL/CC/SCALbx10_ARA0_RDD0}
+      ():(|-|SINTCCSCALbx12ARA0RRh10shot0) --> {():SINTCCSCALbx12ARA0RRh10hold <= @_SINT/CC/SCALbx12_ARA0_RDD0}
+      ():() --> {():Xn(@_SINT/CC/SCALbx12_ARA0_REN0,-1) <= {[!(|-|pio_hwen), xpc12nz==X1:"1:xpc12nz"]}}
+      ():() --> {():Xn(@_SINT/CC/SCALbx12_ARA0_WEN0,-1) <= COND({[|-|pio_hwen, xpc12nz==X1:"1:xpc12nz"]}, pio_hwen, 0)}
+      ():() --> {():SINTCCSCALbx12ARA0RRh10shot0 <= {[!(|-|pio_hwen), xpc12nz==X1:"1:xpc12nz"]}}
+      (xpc12nz==X0:"0:xpc12nz"):() --> { GOTO X1:"1:xpc12nz"}
+      (xpc12nz==X1:"1:xpc12nz"):(|-|pio_hwen) --> { GOTO X2:"2:xpc12nz"}
+      (xpc12nz==X2:"2:xpc12nz"):() --> { GOTO X4:"4:xpc12nz"}
+      (xpc12nz==X1:"1:xpc12nz"):(!(pio_hwen)) --> { GOTO X3:"3:xpc12nz"}
+      (xpc12nz==X3:"3:xpc12nz"):() --> { GOTO X4:"4:xpc12nz"}
+      (xpc12nz==X4:"4:xpc12nz"):() --> { GOTO X5:"5:xpc12nz"}
+      (xpc12nz==X5:"5:xpc12nz"):() --> { GOTO X1:"1:xpc12nz"}
+Memory region descriptions (memdecs) no=0
+csharp/primes_offchip analysis @_SINT/CC/SCALbx12_ARA0.RAM.@_SINT/CC/SCALbx12_ARA0
+VM2 analyse details:
+Machine attribute:preserveinstance=externally-provided
+Machine attribute:parameters={DATA_WIDTH=32, ADDR_WIDTH=4, WORDS=10, LANE_WIDTH=32}
+Machine attribute:iname=@_SINT/CC/SCALbx12_ARA0
+Machine attribute:kind=CV_SP_SSRAM_FL1
+Machine attribute:ports=1
+@_SINT/CC/SCALbx12_ARA0.RAM.@_SINT/CC/SCALbx12_ARA0: Machine  3 rules
+      Sensitivity = posedge(clk): SP_rtl(<1 RTL arcs>)
+      Sensitivity = posedge(clk): SP_rtl(<1 RTL arcs>)
+      No sensitivity: // Resource=SRAM iname=i_@_SINT/CC/SCALbx12_ARA0 10x32 clk=posedge(clk) synchronous/pipeline=1 no_ports=1 <NONE> used by threads xpc12 //
+@_SINT/CC/SCALbx12_ARA0.RAM.@_SINT/CC/SCALbx12_ARA0:          11 terminals
+@_SINT/CC/SCALbx12_ARA0.RAM.@_SINT/CC/SCALbx12_ARA0:          0 children
+@_SINT/CC/SCALbx12_ARA0.RAM.@_SINT/CC/SCALbx12_ARA0:          1 internal variables (nodes)
+   machine gdecl   32
+   machine gdecl   4
+   machine gdecl   10
+   machine gdecl   32
+   machine gdecl   clk:INPUT::Unsigned{init=0, resetnet=true}
+   machine gdecl   reset:INPUT::Unsigned{init=0, resetnet=true}
+   machine gdecl   @_SINT/CC/SCALbx12_ARA0_RDD0[31:0]:LOCAL::Signed{init=0}
+   machine gdecl   @_SINT/CC/SCALbx12_ARA0_AD0[3:0]:LOCAL::Unsigned{init=0}
+   machine gdecl   @_SINT/CC/SCALbx12_ARA0_WEN0:LOCAL::Unsigned{init=0, control_net_marked=true}
+   machine gdecl   @_SINT/CC/SCALbx12_ARA0_REN0:LOCAL::Unsigned{init=0, control_net_marked=true}
+   machine gdecl   @_SINT/CC/SCALbx12_ARA0_WRD0[31:0]:LOCAL::Signed{init=0}
+   machine local   @_SINT/CC/SCALbx12_ARA0[31:0]:LOCAL::Signed[10]
+sensitivity=posedge(clk)
+      ():(|-|@_SINT/CC/SCALbx12_ARA0_WEN0) --> {():@_SINT/CC/SCALbx12_ARA0[@_SINT/CC/SCALbx12_ARA0_AD0] <= @_SINT/CC/SCALbx12_ARA0_WRD0}
+sensitivity=posedge(clk)
+      ():() --> {():@_SINT/CC/SCALbx12_ARA0_RDD0 <= @_SINT/CC/SCALbx12_ARA0[@_SINT/CC/SCALbx12_ARA0_AD0]}
+sensitivity=None
+Resource=SRAM iname=i_@_SINT/CC/SCALbx12_ARA0 10x32 clk=posedge(clk) synchronous/pipeline=1 no_ports=1 <NONE> used by threads xpc12Memory region descriptions (memdecs) no=0
+csharp/primes_offchip analysis @_BOOL/CC/SCALbx10_ARA0.RAM.@_BOOL/CC/SCALbx10_ARA0
+VM2 analyse details:
+Machine attribute:preserveinstance=externally-provided
+Machine attribute:parameters={DATA_WIDTH=1, ADDR_WIDTH=4, WORDS=10, LANE_WIDTH=1}
+Machine attribute:iname=@_BOOL/CC/SCALbx10_ARA0
+Machine attribute:kind=CV_SP_SSRAM_FL1
+Machine attribute:ports=1
+@_BOOL/CC/SCALbx10_ARA0.RAM.@_BOOL/CC/SCALbx10_ARA0: Machine  3 rules
+      Sensitivity = posedge(clk): SP_rtl(<1 RTL arcs>)
+      Sensitivity = posedge(clk): SP_rtl(<1 RTL arcs>)
+      No sensitivity: // Resource=SRAM iname=i_@_BOOL/CC/SCALbx10_ARA0 10x1 clk=posedge(clk) synchronous/pipeline=1 no_ports=1 <NONE> used by threads xpc10 //
+@_BOOL/CC/SCALbx10_ARA0.RAM.@_BOOL/CC/SCALbx10_ARA0:          11 terminals
+@_BOOL/CC/SCALbx10_ARA0.RAM.@_BOOL/CC/SCALbx10_ARA0:          0 children
+@_BOOL/CC/SCALbx10_ARA0.RAM.@_BOOL/CC/SCALbx10_ARA0:          1 internal variables (nodes)
+   machine gdecl   1
+   machine gdecl   4
+   machine gdecl   10
+   machine gdecl   1
+   machine gdecl   clk:INPUT::Unsigned{init=0, resetnet=true}
+   machine gdecl   reset:INPUT::Unsigned{init=0, resetnet=true}
+   machine gdecl   @_BOOL/CC/SCALbx10_ARA0_RDD0:LOCAL::Unsigned{init=0}
+   machine gdecl   @_BOOL/CC/SCALbx10_ARA0_AD0[3:0]:LOCAL::Unsigned{init=0}
+   machine gdecl   @_BOOL/CC/SCALbx10_ARA0_WEN0:LOCAL::Unsigned{init=0, control_net_marked=true}
+   machine gdecl   @_BOOL/CC/SCALbx10_ARA0_REN0:LOCAL::Unsigned{init=0, control_net_marked=true}
+   machine gdecl   @_BOOL/CC/SCALbx10_ARA0_WRD0:LOCAL::Unsigned{init=0}
+   machine local   @_BOOL/CC/SCALbx10_ARA0:LOCAL::Unsigned[10]
+sensitivity=posedge(clk)
+      ():(|-|@_BOOL/CC/SCALbx10_ARA0_WEN0) --> {():@_BOOL/CC/SCALbx10_ARA0[@_BOOL/CC/SCALbx10_ARA0_AD0] <= @_BOOL/CC/SCALbx10_ARA0_WRD0}
+sensitivity=posedge(clk)
+      ():() --> {():@_BOOL/CC/SCALbx10_ARA0_RDD0 <= @_BOOL/CC/SCALbx10_ARA0[@_BOOL/CC/SCALbx10_ARA0_AD0]}
+sensitivity=None
+Resource=SRAM iname=i_@_BOOL/CC/SCALbx10_ARA0 10x1 clk=posedge(clk) synchronous/pipeline=1 no_ports=1 <NONE> used by threads xpc10csharp/primes_offchip report end.
+

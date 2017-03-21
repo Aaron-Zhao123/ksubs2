@@ -1,0 +1,385 @@
+stage0
+opath operation: 0: kiwife
+-----------------------------
+HPR VM2 Abstract Machine Report (AMR).  Name=csharp/primes_offchip
+Parentname=KSubs2_Director
+
+Report on Contacts (flat name space) declarations: none exist.
+Report on Local (nb persistent) scalar declarations
+  ktop20[31:0]:LOCAL::Unsigned{init=0, constant=true}
+  primesya/T404/Main/T404/Main/V_0:LOCAL::Unsigned{init=0}
+  primesya/T404/Main/T404/Main/V_2_GP[-2147483648..2147483647]:LOCAL::Signed{init=0, shared_gp=true}
+  primesya/T404/Main/T404/Main/V_4_GP[-2147483648..2147483647]:LOCAL::Signed{init=0, shared_gp=true}
+  ktop18[31:0]:LOCAL::Unsigned{init=0, constant=true}
+  CS/0.4/refxxarray12:LOCAL::Unsigned{init=0}
+  ktop16[31:0]:LOCAL::Unsigned{init=0, constant=true}
+  CS/0.6/refxxarray10[31:0]:LOCAL::Signed{init=0}
+  ktop14[31:0]:LOCAL::Unsigned{init=0, constant=true}
+  System/BitConverter/IsLittleEndian:LOCAL::Unsigned{init=0}
+  ktop12[31:0]:LOCAL::Unsigned{init=0, constant=true}
+  KiwiSystem/Kiwi/tnow[63:0]:LOCAL::Unsigned{init=0}
+  KiwiSystem/Kiwi/old_pausemode_value[31:0]:LOCAL::Unsigned{init=0}
+  ktop10[31:0]:LOCAL::Unsigned{init=0, constant=true}
+End report on Local (nb persistent) scalar declarations (14 items)
+
+Report on Local (nb persistent) vector/array declarations: none exist.
+
+
+Memory region descriptions (memdecs) no=38
+ties6: MD-ties{d6, d5, [d1], [d7]}
+
+ties3: MD-ties{d4, [d2]}
+
+KSubs2_Director/pio_size: MD0: d30 dtidl=SINT base=-1000 name=KSubs2_Director/pio_size aka KSubs2_Director/pio_size  {<NONE>}
+
+KSubs2_Director/pio_hwen: MD0: d29 dtidl=BOOL base=-1000 name=KSubs2_Director/pio_hwen aka KSubs2_Director/pio_hwen  {io_input=true, username=pio_hwen}
+
+KSubs2_Director/pio_wdata: MD0: d5 dtidl=SINT base=-1000 name=KSubs2_Director/pio_wdata aka KSubs2_Director/pio_wdata  {io_input=true, username=pio_wdata}
+
+KSubs2_Director/pio_addr: MD0: d7 dtidl=SINT base=-1000 name=KSubs2_Director/pio_addr aka KSubs2_Director/pio_addr  {io_input=true, username=pio_addr}
+
+ktop20: MD0: d28 dtidl=KSubs2_Director base=-1000 name=ktop20 aka ktop20  {constant=true}
+
+primesya/T404/Main/T404/Main/V_4: MD0: d27 dtidl=SINT base=-1000 name=V5006 aka V5006  {<NONE>}
+
+primesya/T404/Main/T404/Main/V_3: MD0: d26 dtidl=SINT base=-1000 name=V5005 aka V5005  {<NONE>}
+
+primesya/T404/Main/T404/Main/V_2: MD0: d25 dtidl=SINT base=-1000 name=V5004 aka V5004  {<NONE>}
+
+primesya/T404/Main/T404/Main/V_1: MD0: d24 dtidl=SINT base=-1000 name=V5003 aka V5003  {<NONE>}
+
+primesya/T404/Main/T404/Main/V_0: MD0: d23 dtidl=BOOL base=-1000 name=V5002 aka V5002  {<NONE>}
+
+primesya/T404/Main/T404/Main/V_0: MD0: d23 dtidl=BOOL base=-1000 name=primesya/T404/Main/T404/Main/V_0 aka primesya/T404/Main/T404/Main/V_0  {<NONE>}
+
+primesya/evariant_master: MD0: d22 dtidl=SINT base=-1000 name=primesya/evariant_master aka primesya/evariant_master  {<NONE>}
+
+primesya/vol: MD0: d4 dtidl=UINT base=-1000 name=primesya/vol aka primesya/vol  {io_input=true, io_output=true, username=volume, HwWidth=32}
+
+ktop18: MD0: d21 dtidl=primesya base=-1000 name=ktop18 aka ktop18  {constant=true}
+
+CS/0.4/aitem12: MD0: d2 dtidl=@/BOOL base=400040 name=@_BOOL aka @_BOOL length=1000 bytes {<NONE>}
+
+CS/0.4/refxxarray12: MD0: d2 dtidl=$star1$/@/BOOL base=-1000 name=CS/0.4/refxxarray12 aka CS/0.4/refxxarray12  {<NONE>}
+
+primesya/finished: MD0: d20 dtidl=BOOL base=-1000 name=primesya/finished aka primesya/finished  {io_output=true, username=finished}
+
+primesya/edesign: MD0: d19 dtidl=SINT base=-1000 name=primesya/edesign aka primesya/edesign  {io_output=true, username=edesign, HwWidth=32}
+
+primesya/evariant_output: MD0: d18 dtidl=SINT base=-1000 name=primesya/evariant_output aka primesya/evariant_output  {io_output=true, username=evariant, HwWidth=32}
+
+primesya/elimit: MD0: d3 dtidl=SINT base=-1000 name=primesya/elimit aka primesya/elimit  {io_output=true, username=elimit, HwWidth=32}
+
+primesya/count1: MD0: d17 dtidl=SINT base=-1000 name=primesya/count1 aka primesya/count1  {<NONE>}
+
+primesya/count: MD0: d16 dtidl=UINT base=-1000 name=primesya/count aka primesya/count  {io_output=true, username=count, HwWidth=32}
+
+primesya/PA: MD0: d2 dtidl=$star1$/@/BOOL base=-1000 name=primesya/PA aka primesya/PA  {<NONE>}
+
+primesya/limit: MD0: d3 dtidl=SINT base=-1000 name=primesya/limit aka primesya/limit  {<NONE>}
+
+ktop16: MD0: d15 dtidl=primesya base=-1000 name=ktop16 aka ktop16  {constant=true}
+
+CS/0.6/aitem10: MD0: d1 dtidl=@/SINT base=400000 name=@_SINT aka @_SINT length=40 bytes {<NONE>}
+
+CS/0.6/refxxarray10: MD0: d1 dtidl=$star1$/@/SINT base=-1000 name=CS/0.6/refxxarray10 aka CS/0.6/refxxarray10  {<NONE>}
+
+KSubs2_Director/pio_space: MD0: d1 dtidl=$star1$/@/SINT base=-1000 name=KSubs2_Director/pio_space aka KSubs2_Director/pio_space  {<NONE>}
+
+KSubs2_Director/pio_rdata: MD0: d6 dtidl=SINT base=-1000 name=KSubs2_Director/pio_rdata aka KSubs2_Director/pio_rdata  {io_output=true, username=pio_rdata}
+
+KSubs2_Director/design_serial_number: MD0: d14 dtidl=SINT base=-1000 name=KSubs2_Director/design_serial_number aka KSubs2_Director/design_serial_number  {io_output=true, username=design_serial_number}
+
+ktop14: MD0: d13 dtidl=KSubs2_Director base=-1000 name=ktop14 aka ktop14  {constant=true}
+
+System/BitConverter/IsLittleEndian: MD0: d12 dtidl=BOOL base=-1000 name=System/BitConverter/IsLittleEndian aka System/BitConverter/IsLittleEndian  {<NONE>}
+
+ktop12: MD0: d11 dtidl=System/BitConverter base=-1000 name=ktop12 aka ktop12  {constant=true}
+
+KiwiSystem/Kiwi/tnow: MD0: d10 dtidl=64/US base=-1000 name=KiwiSystem/Kiwi/tnow aka KiwiSystem/Kiwi/tnow  {<NONE>}
+
+KiwiSystem/Kiwi/old_pausemode_value: MD0: d9 dtidl=KiwiSystem/Kiwi/PauseControl base=-1000 name=KiwiSystem/Kiwi/old_pausemode_value aka KiwiSystem/Kiwi/old_pausemode_value  {<NONE>}
+
+ktop10: MD0: d8 dtidl=KiwiSystem/Kiwi base=-1000 name=ktop10 aka ktop10  {constant=true}
+
+csharp/primes_offchip analysis csharp/primes_offchip
+VM2 analyse hierarchical summary: (g,l,e,a)
+csharp/primes_offchip glea=/0/14/0/0
+- initial_empty_machine glea=/0/0/0/0
+- cctor18 glea=/0/0/0/0
+- cctor20 glea=/0/0/0/0
+- cctor22 glea=/0/0/0/0
+- cctor24 glea=/0/0/0/0
+- primesya10 glea=/0/10/1/0
+- KSubs2Director10 glea=/0/7/1/0
+csharp/primes_offchip analysis csharp/primes_offchip
+VM2 analyse details:
+Machine attribute:preferred-name=primesya
+csharp/primes_offchip: Machine  0 rules
+csharp/primes_offchip:          0 terminals
+csharp/primes_offchip:          7 children
+csharp/primes_offchip:          14 internal variables (nodes)
+   machine local   ktop20[31:0]:LOCAL::Unsigned{init=0, constant=true}
+   machine local   primesya/T404/Main/T404/Main/V_0:LOCAL::Unsigned{init=0}
+   machine local   primesya/T404/Main/T404/Main/V_2_GP[-2147483648..2147483647]:LOCAL::Signed{init=0, shared_gp=true}
+   machine local   primesya/T404/Main/T404/Main/V_4_GP[-2147483648..2147483647]:LOCAL::Signed{init=0, shared_gp=true}
+   machine local   ktop18[31:0]:LOCAL::Unsigned{init=0, constant=true}
+   machine local   CS/0.4/refxxarray12:LOCAL::Unsigned{init=0}
+   machine local   ktop16[31:0]:LOCAL::Unsigned{init=0, constant=true}
+   machine local   CS/0.6/refxxarray10[31:0]:LOCAL::Signed{init=0}
+   machine local   ktop14[31:0]:LOCAL::Unsigned{init=0, constant=true}
+   machine local   System/BitConverter/IsLittleEndian:LOCAL::Unsigned{init=0}
+   machine local   ktop12[31:0]:LOCAL::Unsigned{init=0, constant=true}
+   machine local   KiwiSystem/Kiwi/tnow[63:0]:LOCAL::Unsigned{init=0}
+   machine local   KiwiSystem/Kiwi/old_pausemode_value[31:0]:LOCAL::Unsigned{init=0}
+   machine local   ktop10[31:0]:LOCAL::Unsigned{init=0, constant=true}
+Memory region descriptions (memdecs) no=0
+csharp/primes_offchip analysis initial_empty_machine.initial_empty_machine
+VM2 analyse details:
+initial_empty_machine.initial_empty_machine: Machine  0 rules
+initial_empty_machine.initial_empty_machine:          0 terminals
+initial_empty_machine.initial_empty_machine:          0 children
+initial_empty_machine.initial_empty_machine:          0 internal variables (nodes)
+Memory region descriptions (memdecs) no=0
+csharp/primes_offchip analysis cctor18.cctor18
+VM2 analyse details:
+cctor18.cctor18: Machine  0 rules
+cctor18.cctor18:          0 terminals
+cctor18.cctor18:          0 children
+cctor18.cctor18:          0 internal variables (nodes)
+Memory region descriptions (memdecs) no=0
+csharp/primes_offchip analysis cctor20.cctor20
+VM2 analyse details:
+cctor20.cctor20: Machine  0 rules
+cctor20.cctor20:          0 terminals
+cctor20.cctor20:          0 children
+cctor20.cctor20:          0 internal variables (nodes)
+Memory region descriptions (memdecs) no=0
+csharp/primes_offchip analysis cctor22.cctor22
+VM2 analyse details:
+cctor22.cctor22: Machine  0 rules
+cctor22.cctor22:          0 terminals
+cctor22.cctor22:          0 children
+cctor22.cctor22:          0 internal variables (nodes)
+Memory region descriptions (memdecs) no=0
+csharp/primes_offchip analysis cctor24.cctor24
+VM2 analyse details:
+cctor24.cctor24: Machine  0 rules
+cctor24.cctor24:          0 terminals
+cctor24.cctor24:          0 children
+cctor24.cctor24:          0 internal variables (nodes)
+Memory region descriptions (memdecs) no=0
+csharp/primes_offchip analysis primesya10.primesya10
+VM2 analyse details:
+primesya10.primesya10: Machine  1 rules
+      Sensitivity = posedge(clk): SP_seq(<5 items>)
+primesya10.primesya10:          0 terminals
+primesya10.primesya10:          0 children
+primesya10.primesya10:          10 internal variables (nodes)
+   machine local   primesya/limit[-2147483648..2147483647]:LOCAL::Signed{init=0}
+   machine local   primesya/PA:LOCAL::Unsigned{init=0}
+   machine local   volume[31:0]:INPUT::Unsigned{init=0, io_input=true, io_output=true, username=volume, HwWidth=32}
+   machine local   count[31:0]:OUTPUT::Unsigned{init=0, io_output=true, username=count, HwWidth=32}
+   machine local   primesya/count1[-2147483648..2147483647]:LOCAL::Signed{init=0}
+   machine local   elimit[31:0]:OUTPUT::Signed{init=0, io_output=true, username=elimit, HwWidth=32}
+   machine local   primesya/evariant_master[-2147483648..2147483647]:LOCAL::Signed{init=0}
+   machine local   evariant[31:0]:OUTPUT::Signed{init=0, io_output=true, username=evariant, HwWidth=32}
+   machine local   edesign[31:0]:OUTPUT::Signed{init=0, io_output=true, username=edesign, HwWidth=32}
+   machine local   finished:OUTPUT::Unsigned{init=0, io_output=true, username=finished}
+sensitivity=posedge(clk)
+Listing: id=.cctor uid=cctor16
+0:      linepoint: PCT403:0: -1
+1:      // End of static elaboration for tid T403. After all generate loops are unwound we arrive here: 0
+2:T403_0:
+3:      linepoint: PCT403:0: -1
+4:      primesya/limit := 1000;
+5:      CS/0.4/refxxarray12 := {SC:d2,S64'400040};
+6:      primesya/PA := {SC:d2,S64'400040};
+7:      count := U32'0;
+8:      primesya/count1 := 0;
+9:      elimit := 0;
+10:      evariant := 0;
+11:      edesign := 4032;
+12:      finished := U1'0;
+13:      Xgoto(DESTWASCOMMENT16);
+14:      Xgoto(DESTWASCOMMENT16);
+15:DESTWASCOMMENT16:
+----------------------- end of .cctor uid=cctor16
+Listing: id=.cctor uid=cctor14
+0:      linepoint: PCT402:0: -1
+1:      // End of static elaboration for tid T402. After all generate loops are unwound we arrive here: 0
+2:T402_0:
+3:      linepoint: PCT402:0: -1
+4:      design_serial_number := S32'2232578;
+5:      pio_rdata := 0;
+6:      CS/0.6/refxxarray10 := {SC:d1,S64'400000};
+7:      KSubs2_Director/pio_space := {SC:d1,S64'400000};
+8:      Xgoto(DESTWASCOMMENT14);
+9:      Xgoto(DESTWASCOMMENT14);
+10:DESTWASCOMMENT14:
+----------------------- end of .cctor uid=cctor14
+Listing: id=.cctor uid=cctor12
+0:      linepoint: PCT401:0: -1
+1:      // End of static elaboration for tid T401. After all generate loops are unwound we arrive here: 0
+2:T401_0:
+3:      linepoint: PCT401:0: -1
+4:      System/BitConverter/IsLittleEndian := U1'1;
+5:      Xgoto(DESTWASCOMMENT12);
+6:      Xgoto(DESTWASCOMMENT12);
+7:DESTWASCOMMENT12:
+----------------------- end of .cctor uid=cctor12
+Listing: id=.cctor uid=cctor10
+0:      linepoint: PCT400:0: -1
+1:      // End of static elaboration for tid T400. After all generate loops are unwound we arrive here: 0
+2:T400_0:
+3:      linepoint: PCT400:0: -1
+4:      KiwiSystem/Kiwi/old_pausemode_value := U32'2;
+5:      KiwiSystem/Kiwi/tnow := U64'0;
+6:      Xgoto(DESTWASCOMMENT10);
+7:      Xgoto(DESTWASCOMMENT10);
+8:DESTWASCOMMENT10:
+----------------------- end of .cctor uid=cctor10
+Listing: id=Main uid=Main10
+0:      linepoint: PCT404:0: -1
+1:      // End of static elaboration for tid T404. After all generate loops are unwound we arrive here: 0
+2:T404_0:
+3:      linepoint: PCT404:0: -1
+4:      primesya/T404/Main/T404/Main/V_0 := U1'1;
+5:      elimit := 1000;
+6:      Xeasc *APPLY:hpr_KppMark("START", "INITIALISE");
+7:      Xeasc *APPLY:hpr_writeln($$AUTOFORMAT: This will be automatically replaced with a printf formatted string., *APPLY:hpr_concat("Primes Up To ", 1000));
+8:      Xeasc *APPLY:hpr_pause(8);
+9:      @_BOOL[{SC:d2,S64'400040}+{$offset,0}] := 0<volume;
+10:      Xeasc *APPLY:hpr_pause(8);
+11:      primesya/count1 := 2;
+12:      count := U32'0;
+13:      primesya/T404/Main/T404/Main/V_2_GP := 0;
+14:      Xgoto(T404_17, 15);
+15:T404_17:
+16:      linepoint: PCT404:17: -1
+17:      beq( primesya/T404/Main/T404/Main/V_2_GP>=1000,T404_12, 95)
+18:      Xgoto(T404_18, 19);
+19:T404_18:
+20:      linepoint: PCT404:18: -1
+21:      Xeasc *APPLY:hpr_KppMark("wp2", "CROSSOFF");
+22:      primesya/T404/Main/T404/Main/V_2_GP := 2;
+23:      Xgoto(T404_38, 24);
+24:T404_38:
+25:      linepoint: PCT404:38: -1
+26:      beq( primesya/T404/Main/T404/Main/V_2_GP>=1000,T404_22, 28)
+27:      Xgoto(T404_40, 38);
+28:T404_22:
+29:      linepoint: PCT404:22: -1
+30:      Xeasc *APPLY:hpr_pause(8);
+31:      primesya/T404/Main/T404/Main/V_4_GP := primesya/T404/Main/T404/Main/V_2_GP+primesya/T404/Main/T404/Main/V_2_GP;
+32:      beq( primesya/T404/Main/T404/Main/V_4_GP>=1000,T404_28, 77)
+33:      Xgoto(T404_25, 34);
+34:T404_25:
+35:      linepoint: PCT404:25: -1
+36:      Xeasc *APPLY:hpr_writeln($$AUTOFORMAT: This will be automatically replaced with a printf formatted string., "Skip out on square");
+37:      Xgoto(T404_40, 38);
+38:T404_40:
+39:      linepoint: PCT404:40: -1
+40:      Xeasc *APPLY:hpr_KppMark("wp3", "COUNTING");
+41:      Xeasc *APPLY:hpr_writeln($$AUTOFORMAT: This will be automatically replaced with a printf formatted string., "Now counting");
+42:      primesya/T404/Main/T404/Main/V_4_GP := 0;
+43:      Xgoto(T404_52, 44);
+44:T404_52:
+45:      linepoint: PCT404:52: -1
+46:      beq( primesya/T404/Main/T404/Main/V_4_GP>=1000,T404_45, 63)
+47:      Xgoto(T404_53, 48);
+48:T404_53:
+49:      linepoint: PCT404:53: -1
+50:      Xeasc *APPLY:hpr_writeln("There are %d primes below the natural number %u.", count, 1000);
+51:      Xeasc *APPLY:hpr_writeln("Optimisation variant=%u (count1 is %u).", 0, 2);
+52:      Xeasc *APPLY:hpr_pause(8);
+53:      Xeasc *APPLY:hpr_pause(8);
+54:      Xeasc *APPLY:hpr_KppMark("FINISH");
+55:      Xeasc *APPLY:hpr_pause(8);
+56:      finished := U1'1;
+57:      Xeasc *APPLY:hpr_pause(8);
+58:      Xgoto(T404_63, 59);
+59:T404_63:
+60:      linepoint: PCT404:63: -1
+61:      Xeasc *APPLY:hpr_pause(8);
+62:      Xgoto(T404_63, 59);
+63:T404_45:
+64:      linepoint: PCT404:45: -1
+65:      Xeasc *APPLY:hpr_pause(8);
+66:      beq( |-|@_BOOL[{SC:d2,S64'400040}+{$offset,primesya/T404/Main/T404/Main/V_4_GP}],T404_49, 72)
+67:      Xgoto(T404_47, 68);
+68:T404_47:
+69:      linepoint: PCT404:47: -1
+70:      count := Cu(1+count);
+71:      Xgoto(T404_49, 72);
+72:T404_49:
+73:      linepoint: PCT404:49: -1
+74:      Xeasc *APPLY:hpr_writeln("Tally counting %u %d", primesya/T404/Main/T404/Main/V_4_GP, count);
+75:      primesya/T404/Main/T404/Main/V_4_GP := 1+primesya/T404/Main/T404/Main/V_4_GP;
+76:      Xgoto(T404_52, 44);
+77:T404_28:
+78:      linepoint: PCT404:28: -1
+79:      Xgoto(T404_35, 80);
+80:T404_35:
+81:      linepoint: PCT404:35: -1
+82:      beq( primesya/T404/Main/T404/Main/V_4_GP>=1000,T404_30, 88)
+83:      Xgoto(T404_36, 84);
+84:T404_36:
+85:      linepoint: PCT404:36: -1
+86:      primesya/T404/Main/T404/Main/V_2_GP := 1+primesya/T404/Main/T404/Main/V_2_GP;
+87:      Xgoto(T404_38, 24);
+88:T404_30:
+89:      linepoint: PCT404:30: -1
+90:      Xeasc *APPLY:hpr_writeln("Cross off %u %u   (count1=%u)", primesya/T404/Main/T404/Main/V_2_GP, primesya/T404/Main/T404/Main/V_4_GP, 2);
+91:      Xeasc *APPLY:hpr_pause(8);
+92:      @_BOOL[{SC:d2,S64'400040}+{$offset,primesya/T404/Main/T404/Main/V_4_GP}] := U1'0;
+93:      primesya/T404/Main/T404/Main/V_4_GP := primesya/T404/Main/T404/Main/V_2_GP+primesya/T404/Main/T404/Main/V_4_GP;
+94:      Xgoto(T404_35, 80);
+95:T404_12:
+96:      linepoint: PCT404:12: -1
+97:      Xeasc *APPLY:hpr_pause(8);
+98:      @_BOOL[{SC:d2,S64'400040}+{$offset,primesya/T404/Main/T404/Main/V_2_GP}] := U1'1;
+99:      Xeasc *APPLY:hpr_writeln("Setting initial array flag to hold : addr=%u readback=%d", primesya/T404/Main/T404/Main/V_2_GP, @_BOOL[{SC:d2,S64'400040}+{$offset,primesya/T404/Main/T404/Main/V_2_GP}]);
+100:      primesya/T404/Main/T404/Main/V_2_GP := 1+primesya/T404/Main/T404/Main/V_2_GP;
+101:      Xgoto(T404_17, 15);
+102:      // End of DIC comment 1
+----------------------- end of Main uid=Main10
+Memory region descriptions (memdecs) no=0
+csharp/primes_offchip analysis KSubs2Director10.KSubs2Director10
+VM2 analyse details:
+KSubs2Director10.KSubs2Director10: Machine  1 rules
+      Sensitivity = posedge(clk): SP_dic id=host_pio_process uid=hostpioprocess10 lendic=19
+KSubs2Director10.KSubs2Director10:          0 terminals
+KSubs2Director10.KSubs2Director10:          0 children
+KSubs2Director10.KSubs2Director10:          7 internal variables (nodes)
+   machine local   design_serial_number[-2147483648..2147483647]:OUTPUT::Signed{init=0, io_output=true, username=design_serial_number}
+   machine local   pio_addr[-2147483648..2147483647]:INPUT::Signed{init=0, io_input=true, username=pio_addr}
+   machine local   pio_wdata[-2147483648..2147483647]:INPUT::Signed{init=0, io_input=true, username=pio_wdata}
+   machine local   pio_rdata[-2147483648..2147483647]:OUTPUT::Signed{init=0, io_output=true, username=pio_rdata}
+   machine local   pio_hwen:INPUT::Unsigned{init=0, io_input=true, username=pio_hwen}
+   machine local   KSubs2_Director/pio_size[-2147483648..2147483647]:LOCAL::Signed{init=0}
+   machine local   KSubs2_Director/pio_space[31:0]:LOCAL::Signed{init=0}
+sensitivity=posedge(clk)
+Listing: id=host_pio_process uid=hostpioprocess10
+0:      linepoint: PCT405:0: -1
+1:      // End of static elaboration for tid T405. After all generate loops are unwound we arrive here: 1
+2:T405_1:
+3:      linepoint: PCT405:1: -1
+4:      beq( |-|pio_hwen,T405_5, 10)
+5:      Xgoto(T405_2, 6);
+6:T405_2:
+7:      linepoint: PCT405:2: -1
+8:      @_SINT[{SC:d1,S64'400000}+{$offset,S64'4*pio_addr}] := C(pio_wdata);
+9:      Xgoto(T405_7, 14);
+10:T405_5:
+11:      linepoint: PCT405:5: -1
+12:      pio_rdata := C(@_SINT[{SC:d1,S64'400000}+{$offset,S64'4*pio_addr}]);
+13:      Xgoto(T405_7, 14);
+14:T405_7:
+15:      linepoint: PCT405:7: -1
+16:      Xeasc *APPLY:hpr_pause(8);
+17:      Xgoto(T405_1, 2);
+18:      // End of DIC comment 1
+----------------------- end of host_pio_process uid=hostpioprocess10
+csharp/primes_offchip report end.
+

@@ -1,0 +1,6 @@
+Start of log: tag=elaborate+cctor18
+WF:opath_bevelab: Start processing for id=cctor18
+Bevelab: cctor18:0 rtl execs (outside of any dpath)
+WF:opath_bevelab: Exec gen complete for id=cctor18
+WF:opath_bevelab: New VM created for id=cctor18
+End of this log file. Log continues in file where tag=elaborate+cctor20: End of log

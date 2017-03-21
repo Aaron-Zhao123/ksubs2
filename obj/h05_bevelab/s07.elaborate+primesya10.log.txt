@@ -1,0 +1,118 @@
+Start of log: tag=elaborate+primesya10
+WF:opath_bevelab: Start processing for id=primesya10
+WF:bev_compile_exec: primesya10
+WF:bev_compile_exec_2: start
+WF:VM compile lst : Start primesya10
+WF:Assemble VM: vm10_primesya10: start
+WF:reassemble_dic: start
+WF:reassemble_dic: Reassembled 16 dic locations
+redirect optimise 0/16
+WF:Assemble VM: vm10_primesya10: finished 16 instructions. gc=
+WF:VM compile lst: Finished SP_l vm10.primesya10 compiled to VM by primesya10. 16 commands
+
+Writing post assembly report vm10.primesya10.vm
+Opening log file  obj/h05_bevelab/vm10.primesya10.vm
+WF:VM compile lst : Start primesya10
+WF:Assemble VM: vm12_primesya10: start
+WF:reassemble_dic: start
+WF:reassemble_dic: Reassembled 11 dic locations
+redirect optimise 0/11
+WF:Assemble VM: vm12_primesya10: finished 11 instructions. gc=
+WF:VM compile lst: Finished SP_l vm12.primesya10 compiled to VM by primesya10. 11 commands
+
+Writing post assembly report vm12.primesya10.vm
+Opening log file  obj/h05_bevelab/vm12.primesya10.vm
+WF:VM compile lst : Start primesya10
+WF:Assemble VM: vm14_primesya10: start
+WF:reassemble_dic: start
+WF:reassemble_dic: Reassembled 8 dic locations
+redirect optimise 0/8
+WF:Assemble VM: vm14_primesya10: finished 8 instructions. gc=
+WF:VM compile lst: Finished SP_l vm14.primesya10 compiled to VM by primesya10. 8 commands
+
+Writing post assembly report vm14.primesya10.vm
+Opening log file  obj/h05_bevelab/vm14.primesya10.vm
+WF:VM compile lst : Start primesya10
+WF:Assemble VM: vm16_primesya10: start
+WF:reassemble_dic: start
+WF:reassemble_dic: Reassembled 9 dic locations
+redirect optimise 0/9
+WF:Assemble VM: vm16_primesya10: finished 9 instructions. gc=
+WF:VM compile lst: Finished SP_l vm16.primesya10 compiled to VM by primesya10. 9 commands
+
+Writing post assembly report vm16.primesya10.vm
+Opening log file  obj/h05_bevelab/vm16.primesya10.vm
+WF:VM compile lst : Start primesya10
+WF:Assemble VM: vm18_primesya10: start
+WF:reassemble_dic: start
+WF:reassemble_dic: Reassembled 103 dic locations
+redirect optimise 0/103
+WF:Assemble VM: vm18_primesya10: finished 103 instructions. gc=
+WF:VM compile lst: Finished SP_l vm18.primesya10 compiled to VM by primesya10. 103 commands
+
+Writing post assembly report vm18.primesya10.vm
+Opening log file  obj/h05_bevelab/vm18.primesya10.vm
+WF:bev_compile_exec_2: start
+WF:VM compile lst : Start primesya10
+WF:Assemble VM: vm20_primesya10: start
+WF:reassemble_dic: start
+WF:reassemble_dic: Reassembled 157 dic locations
+redirect optimise 0/157
+WF:Assemble VM: vm20_primesya10: finished 157 instructions. gc=
+WF:VM compile lst: Finished SP_l vm20.primesya10 compiled to VM by primesya10. 157 commands
+
+Writing post assembly report vm20.primesya10.vm
+Opening log file  obj/h05_bevelab/vm20.primesya10.vm
+WF:bev_compile_exec_2_end: start
+WF:uniquify non ref transparent: start
+WF:uniquify non ref transparent: end
+WF:bev_compile_exec_2_end: uniquify done
+h2blk: SP_dic: starting pause mode for this thread is 'SPM_bblock'
+WF:Assemble VM: primesya10: start
+WF:reassemble_dic: start
+WF:reassemble_dic: Reassembled 180 dic locations
+redirect optimise 0/180
+WF:Assemble VM: primesya10: finished 180 instructions. gc=
+WF:bev_compile_exec_2_end: reported recoded machine
+WF:bevelab H/W elaboration: primesya10:vm20: clkinfo=clk=posedge(clk), diclen=b4
+Pause arg mode=SPM_bblock so using PS_soft
+Pause arg mode=SPM_bblock so using PS_soft
+Pause arg mode=SPM_bblock so using PS_soft
+Pause arg mode=SPM_bblock so using PS_soft
+Pause arg mode=SPM_bblock so using PS_soft
+Pause arg mode=SPM_bblock so using PS_soft
+Pause arg mode=SPM_bblock so using PS_soft
+Pause arg mode=SPM_bblock so using PS_soft
+Pause arg mode=SPM_bblock so using PS_soft
+Pause arg mode=SPM_bblock so using PS_soft
+Pause arg mode=SPM_bblock so using PS_soft
+Join points are :128, 106, 143, 98, 82, 152, 72
+Pause arg mode=SPM_bblock so using PS_soft
+basic-block join point: adding new pausepoint at 128 form=PS_soft
+Pause arg mode=SPM_bblock so using PS_soft
+basic-block join point: adding new pausepoint at 106 form=PS_soft
+Pause arg mode=SPM_bblock so using PS_soft
+basic-block join point: adding new pausepoint at 143 form=PS_soft
+Pause arg mode=SPM_bblock so using PS_soft
+basic-block join point: adding new pausepoint at 98 form=PS_soft
+Pause arg mode=SPM_bblock so using PS_soft
+basic-block join point: adding new pausepoint at 82 form=PS_soft
+Pause arg mode=SPM_bblock so using PS_soft
+basic-block join point: adding new pausepoint at 152 form=PS_soft
+Pause arg mode=SPM_bblock so using PS_soft
+basic-block join point: adding new pausepoint at 72 form=PS_soft
+Pause arg mode=SPM_bblock so using PS_soft
+Thread elab finished: quads=25
+bev elaborate name='primesya10' with mpc10 as pc
+Resumes are falseX0:"0:mpc10", falseX63:"63:mpc10", falseX66:"66:mpc10", falseX72:"72:mpc10", falseX82:"82:mpc10", falseX98:"98:mpc10", falseX106:"106:mpc10", falseX116:"116:mpc10", falseX118:"118:mpc10", falseX122:"122:mpc10", falseX125:"125:mpc10", falseX128:"128:mpc10", falseX130:"130:mpc10", falseX135:"135:mpc10", falseX143:"143:mpc10", falseX88:"88:mpc10", falseX152:"152:mpc10", falseX164:"164:mpc10", falseX171:"171:mpc10"
+There are 19 resumes for scheduling
+Thread elab 'primesya10' finished: arcs=25
+WF:bev_compile_exec: DONE bev elaborate name='primesya10' 
+======================================================
+
+
+
+Bevelab: primesya10:0 rtl execs (outside of any dpath)
+WF:opath_bevelab: Exec gen complete for id=primesya10
+WF:opath_bevelab: New VM created for id=primesya10
+End of this log file. Log continues in file where tag=elaborate+KSubs2Director10: End of log

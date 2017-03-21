@@ -1,0 +1,38 @@
+Post assembly report
+msg=primesya10
+sensitivity=posedge(clk)
+Listing: id=vm10
+0:      linepoint: PCT403:0: -1
+1:      // End of static elaboration for tid T403. After all generate loops are unwound we arrive here: 0
+2:T403_0:
+3:      linepoint: PCT403:0: -1
+4:      primesya/limit := 1000;
+5:      CS/0.4/refxxarray12 := {SC:d2,0};
+6:      primesya/PA := {SC:d2,0};
+7:      count := U32'0;
+8:      primesya/count1 := 0;
+9:      elimit := 0;
+10:      evariant := 0;
+11:      edesign := 4032;
+12:      finished := U1'0;
+13:      Xgoto(DESTWASCOMMENT16, 15);
+14:      // ///Xgoto(DESTWASCOMMENT16);
+
+15:DESTWASCOMMENT16:
+----------------------- end of vm10
+Concise listing:
+Listing: id=vm10
+2:T403_0:
+4:      primesya/limit := 1000;
+5:      CS/0.4/refxxarray12 := {SC:d2,0};
+6:      primesya/PA := {SC:d2,0};
+7:      count := U32'0;
+8:      primesya/count1 := 0;
+9:      elimit := 0;
+10:      evariant := 0;
+11:      edesign := 4032;
+12:      finished := U1'0;
+13:      Xgoto(DESTWASCOMMENT16, 15);
+15:DESTWASCOMMENT16:
+----------------------- end of vm10
+EOF

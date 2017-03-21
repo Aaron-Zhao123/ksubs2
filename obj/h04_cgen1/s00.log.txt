@@ -1,0 +1,43 @@
+Start of log: tag=cgen1
+Orangepath: Executing step 2: 'cgen1' of the following recipe:
+Timestamp: (start).   T/S  10/02/2017 17:08:03
+  -~~ DO kiwife:kiwife
+  -~~ DO repack:repack
+  -~~ DO cgen1:cgen1
+  -~~ DO report:report
+  -~~ DO bevelab:bevelab
+  -~~ DO compose:compose
+  -~~ DO conerefine1:conerefine
+  -~~ DO restructure2:restructure2
+  -~~ DO conerefine2:conerefine
+  -~~ DO verilog-gen:verilog-gen
+  -~~ DO cgen2:cgen2
+  -~~ DO diosim:diosim DISABLED (will be skipped)
+Args=  /home/djg11/d320/hprls/kiwipro/kiwic/distro/lib/kiwic.exe csharp/primes_offchip.exe -res2-loadstore-port-count=0 -vnl=primes_offchip.v -vnl-rootmodname=primes_offchip csharp/KSubs2_Director.dll -vnl-resets=synchronous -kiwic-finish=disable -vnl-roundtrip=disable -kiwic-register-colours=1 -bevelab-default-pause-mode=bblock -fp-fl-sp-mul=4
+
+Validated(1) 6 args
+Report on Orangepath/recipe stage parameter settings: name=cgen1
+    cgen1=disable
+    cgen1-fn=
+    cgen1-topclass=DUT
+    cgen1-xtor=
+    -ifshare=on
+    -add-aux-reports=enable
+End report on Orangepath/recipe stage parameter settings: name=cgen1 (6 items)
+
+    arg binding: cgen1= disable
+    arg binding: cgen1-fn= 
+    arg binding: cgen1-topclass= DUT
+    arg binding: cgen1-xtor= 
+    arg binding: -ifshare= on
+    arg binding: -add-aux-reports= enable
+Starting opath_do cgen1 cmd=cgen1
+WF:cvt_to_sysc: Convert to C++/SystemC. opath operation: 2: cgen1
+SystemC/C++ stage is disabled
+Timestamp: (.end.).   T/S  10/02/2017 17:08:03 finished cgen1
+=== Post step VM machine is same as pre-step. ===
+Profile report: queries=3, 3, 0
+myastats= ru=35/al=153
+Finished path cmd
+Starting path cmd
+End of this log file. Log continues in file where tag=bevelab: End of log

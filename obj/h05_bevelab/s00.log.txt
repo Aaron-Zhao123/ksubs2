@@ -1,0 +1,45 @@
+Start of log: tag=bevelab
+Orangepath: Executing step 4: 'bevelab' of the following recipe:
+Timestamp: (start).   T/S  10/02/2017 17:08:03
+  -~~ DO kiwife:kiwife
+  -~~ DO repack:repack
+  -~~ DO cgen1:cgen1
+  -~~ DO report:report
+  -~~ DO bevelab:bevelab
+  -~~ DO compose:compose
+  -~~ DO conerefine1:conerefine
+  -~~ DO restructure2:restructure2
+  -~~ DO conerefine2:conerefine
+  -~~ DO verilog-gen:verilog-gen
+  -~~ DO cgen2:cgen2
+  -~~ DO diosim:diosim DISABLED (will be skipped)
+Args=  /home/djg11/d320/hprls/kiwipro/kiwic/distro/lib/kiwic.exe csharp/primes_offchip.exe -res2-loadstore-port-count=0 -vnl=primes_offchip.v -vnl-rootmodname=primes_offchip csharp/KSubs2_Director.dll -vnl-resets=synchronous -kiwic-finish=disable -vnl-roundtrip=disable -kiwic-register-colours=1 -bevelab-default-pause-mode=bblock -fp-fl-sp-mul=4
+
+Validated(1) 10 args
+Report on Orangepath/recipe stage parameter settings: name=bevelab
+    bevelab=enable
+    bevelab-loglevel=10
+    bevelab-redirect=disable
+    bevelab-autobarrier-namealias=enable
+    bevelab-repack-pc=enable
+    bevelab-detailed-trace=disable
+    bevelab-onehot-pc=enable
+    bevelab-default-pause-mode=bblock
+    bevelab-soft-pause-threshold=1000
+    bevelab-ubudget=10000
+End report on Orangepath/recipe stage parameter settings: name=bevelab (10 items)
+
+    arg binding: bevelab= enable
+    arg binding: bevelab-loglevel= 10
+    arg binding: bevelab-redirect= disable
+    arg binding: bevelab-autobarrier-namealias= enable
+    arg binding: bevelab-repack-pc= enable
+    arg binding: bevelab-detailed-trace= disable
+    arg binding: bevelab-onehot-pc= enable
+    arg binding: bevelab-default-pause-mode= bblock
+    arg binding: bevelab-soft-pause-threshold= 1000
+    arg binding: bevelab-ubudget= 10000
+Starting opath_do bevelab cmd=bevelab
+Using default value of false for skip-propagate
+WF:bevelab: Starting 1749
+End of this log file. Log continues in file where tag=elaborate+KSubs2_Director: End of log

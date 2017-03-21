@@ -1,0 +1,28 @@
+Post assembly report
+msg=primesya10
+sensitivity=posedge(clk)
+Listing: id=vm12
+0:      linepoint: PCT402:0: -1
+1:      // End of static elaboration for tid T402. After all generate loops are unwound we arrive here: 0
+2:T402_0:
+3:      linepoint: PCT402:0: -1
+4:      design_serial_number := S32'2232578;
+5:      pio_rdata := 0;
+6:      CS/0.6/refxxarray10 := {SC:d1,0};
+7:      KSubs2_Director/pio_space := {SC:d1,0};
+8:      Xgoto(DESTWASCOMMENT14, 10);
+9:      // ///Xgoto(DESTWASCOMMENT14);
+
+10:DESTWASCOMMENT14:
+----------------------- end of vm12
+Concise listing:
+Listing: id=vm12
+2:T402_0:
+4:      design_serial_number := S32'2232578;
+5:      pio_rdata := 0;
+6:      CS/0.6/refxxarray10 := {SC:d1,0};
+7:      KSubs2_Director/pio_space := {SC:d1,0};
+8:      Xgoto(DESTWASCOMMENT14, 10);
+10:DESTWASCOMMENT14:
+----------------------- end of vm12
+EOF

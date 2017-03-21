@@ -1,0 +1,134 @@
+Start of log: tag=conerefine1
+Orangepath: Executing step 6: 'conerefine' of the following recipe:
+Timestamp: (start).   T/S  10/02/2017 17:08:05
+  -~~ DO kiwife:kiwife
+  -~~ DO repack:repack
+  -~~ DO cgen1:cgen1
+  -~~ DO report:report
+  -~~ DO bevelab:bevelab
+  -~~ DO compose:compose
+  -~~ DO conerefine1:conerefine
+  -~~ DO restructure2:restructure2
+  -~~ DO conerefine2:conerefine
+  -~~ DO verilog-gen:verilog-gen
+  -~~ DO cgen2:cgen2
+  -~~ DO diosim:diosim DISABLED (will be skipped)
+Args=  /home/djg11/d320/hprls/kiwipro/kiwic/distro/lib/kiwic.exe csharp/primes_offchip.exe -res2-loadstore-port-count=0 -vnl=primes_offchip.v -vnl-rootmodname=primes_offchip csharp/KSubs2_Director.dll -vnl-resets=synchronous -kiwic-finish=disable -vnl-roundtrip=disable -kiwic-register-colours=1 -bevelab-default-pause-mode=bblock -fp-fl-sp-mul=4
+
+Validated(1) 3 args
+Report on Orangepath/recipe stage parameter settings: name=conerefine1
+  *NIL?
+    conerefine-loglevel=20
+    conerefine=enable
+End report on Orangepath/recipe stage parameter settings: name=conerefine1 (3 items)
+
+    arg binding: <nil>
+    arg binding: conerefine-loglevel= 20
+    arg binding: conerefine= enable
+Starting opath_do conerefine1 cmd=conerefine
+WF:conerefine1: Start first pass.   T/S 10/02/2017 17:08:05
+WF:cone_refine_one_vm:  id=composegenerated10
+WF:Cone refine: cone refine xrtl  id=composegenerated10 SP_rtl 0 xfers
+WF:Cone refine: cone refine xrtl  id=composegenerated10 SP_rtl 70 xfers
+WF:Cone refine: cone refine xrtl  id=composegenerated10 SP_rtl 0 xfers
+WF:Cone refine: cone refine xrtl  id=composegenerated10 SP_rtl 7 xfers
+WF:conerefine1: First pass done.   T/S 10/02/2017 17:08:05
+WF:conerefine1: concourse trip count=77
+Cone refine manual retain for no nets
+WF:Cone refine: driven done, dnet count=23
+Report on Target nets at tips of cones
+  ALL(finished)
+  ALL(edesign)
+  ALL(evariant)
+  ALL(elimit)
+  ALL(count)
+  ALL(pio_rdata)
+  ALL(design_serial_number)
+End report on Target nets at tips of cones (7 items)
+
+WF:Cone refine: cone form starting
+WF:Cone refine: iterate 1 : 7:0:77
+WF:Cone refine: iterate 2 : 16:62:15
+WF:Cone refine: iterate 1 : 16:62:15
+WF:Cone refine: iterate 2 : 18:66:11
+WF:Cone refine: iterate 1 : 18:66:11
+WF:Cone refine: iterate 2 : 18:66:11
+WF:Cone refine constant propagate: starting
+Report on Constant propagate: new constants in pass 0: none exist.
+WF:Cone refine constant propagate: now finished
+WF:Cone refine: cr1: cone form done: target_final count=18 const_pairs=0
+Report on Trimmed Nets/Variables
+  ALL(primesya/T404/Main/T404/Main/V_0)
+  ALL(primesya/count1)
+  ALL(primesya/PA)
+  ALL(CS/0.4/refxxarray12)
+  ALL(primesya/limit)
+  ALL(KSubs2_Director/pio_space)
+  ALL(CS/0.6/refxxarray10)
+  ALL(System/BitConverter/IsLittleEndian)
+  ALL(KiwiSystem/Kiwi/tnow)
+  ALL(KiwiSystem/Kiwi/old_pausemode_value)
+End report on Trimmed Nets/Variables (10 items)
+
+Report on Retained Nets/Variables
+  xpc12
+  xpc10
+  @_BOOL/CC/SCALbx10_ARA0
+  @_SINT/CC/SCALbx12_ARA0
+  pio_wdata
+  pio_addr
+  pio_hwen
+  primesya/T404/Main/T404/Main/V_4_GP
+  primesya/T404/Main/T404/Main/V_2_GP
+  volume
+  finished
+  edesign
+  evariant
+  elimit
+  count
+  pio_rdata
+  design_serial_number
+  $$AUTOFORMAT: This will be automatically replaced with a printf formatted string.
+End report on Retained Nets/Variables (18 items)
+
+Report on Constant Pairs: none exist.
+WF:conerefine1: finished transclose.   T/S  10/02/2017 17:08:05
+Report on Retained Variables Recoded
+  design_serial_number
+  pio_rdata
+  count
+  elimit
+  evariant
+  edesign
+  finished
+  volume
+  primesya/T404/Main/T404/Main/V_2_GP
+  primesya/T404/Main/T404/Main/V_4_GP
+  pio_hwen
+  pio_addr
+  pio_wdata
+  @_SINT/CC/SCALbx12_ARA0
+  @_BOOL/CC/SCALbx10_ARA0
+  xpc10
+  xpc12
+End report on Retained Variables Recoded (17 items)
+
+WF:conerefine1: Start second pass.   T/S  10/02/2017 17:08:05
+WF:cone_refine_two_vm:  id=composegenerated10
+   SP_rtl assignment count/length: old=0, new=0
+   SP_rtl assignment count/length: old=70, new=70
+   SP_rtl assignment count/length: old=0, new=0
+   SP_rtl assignment count/length: old=7, new=7
+WF:conerefine1: Finish second pass.   T/S  10/02/2017 17:08:06
+WF:conerefine1: completed pass 2, (no pass 3 requested).   T/S  10/02/2017 17:08:06
+WF:conerefine1: completed all
+Timestamp: (.end.).   T/S  10/02/2017 17:08:06 finished conerefine1
+Writing report 'report' shorter-mode=false
+Opening log file  obj/h07_conerefine1/report-full
+WF:Writing vmreport of composegenerated10: start
+WF:Writing vmreport of composegenerated10: complete
+Profile report: queries=6, 6, 1
+myastats= ru=75/al=255
+Finished path cmd
+Starting path cmd
+End of this log file. Log continues in file where tag=restructure2: End of log

@@ -1,0 +1,1895 @@
+Start of log: tag=restructure2
+Orangepath: Executing step 7: 'restructure2' of the following recipe:
+Timestamp: (start).   T/S  10/02/2017 17:08:06
+  -~~ DO kiwife:kiwife
+  -~~ DO repack:repack
+  -~~ DO cgen1:cgen1
+  -~~ DO report:report
+  -~~ DO bevelab:bevelab
+  -~~ DO compose:compose
+  -~~ DO conerefine1:conerefine
+  -~~ DO restructure2:restructure2
+  -~~ DO conerefine2:conerefine
+  -~~ DO verilog-gen:verilog-gen
+  -~~ DO cgen2:cgen2
+  -~~ DO diosim:diosim DISABLED (will be skipped)
+Args=  /home/djg11/d320/hprls/kiwipro/kiwic/distro/lib/kiwic.exe csharp/primes_offchip.exe -res2-loadstore-port-count=0 -vnl=primes_offchip.v -vnl-rootmodname=primes_offchip csharp/KSubs2_Director.dll -vnl-resets=synchronous -kiwic-finish=disable -vnl-roundtrip=disable -kiwic-register-colours=1 -bevelab-default-pause-mode=bblock -fp-fl-sp-mul=4
+
+Validated(1) 33 args
+Report on Orangepath/recipe stage parameter settings: name=restructure2
+    dotplot-detailed=disable
+    dotplot-plot=disable
+    dotplot-reprint=disable
+    restructure2=enable
+    restructure=enable
+    res2-pipelining=off
+    preserve-sequencer=true
+    always-include-loadstore-ports=enable
+    res2-regfile-threshold=8
+    res2-combrom-threshold=64
+    res2-combram-threshold=32
+    res2-combrom-threshold=64
+    res2-offchip-threshold=1000000
+    fp-fl-sp-mul=4
+    fp-fl-sp-add=4
+    fp-fl-sp-div=5
+    fp-fl-dp-mul=3
+    fp-fl-dp-add=4
+    fp-fl-dp-div=5
+    int-flr-mul=-3000
+    max-no-int-divs=2
+    max-no-fp-divs=2
+    max-no-int-muls=3
+    max-no-fp-muls=6
+    max-no-fp-addsubs=6
+    int_fl_limit_mul=20
+    resstructure-mode=0
+    res2-loglevel=20
+    res2-loadstore-port-count=0
+    res2-loadstore-port-lanes=32
+    res2-loadstore-lane-width=8
+    res2-loadstore-lane-addr-size=22
+    protocol=HFAST1
+End report on Orangepath/recipe stage parameter settings: name=restructure2 (33 items)
+
+    arg binding: dotplot-detailed= disable
+    arg binding: dotplot-plot= disable
+    arg binding: dotplot-reprint= disable
+    arg binding: restructure2= enable
+    arg binding: restructure= enable
+    arg binding: res2-pipelining= off
+    arg binding: preserve-sequencer= true
+    arg binding: always-include-loadstore-ports= enable
+    arg binding: res2-regfile-threshold= 8
+    arg binding: res2-combrom-threshold= 64
+    arg binding: res2-combram-threshold= 32
+    arg binding: res2-combrom-threshold= 64
+    arg binding: res2-offchip-threshold= 1000000
+    arg binding: fp-fl-sp-mul= 4
+    arg binding: fp-fl-sp-add= 4
+    arg binding: fp-fl-sp-div= 5
+    arg binding: fp-fl-dp-mul= 3
+    arg binding: fp-fl-dp-add= 4
+    arg binding: fp-fl-dp-div= 5
+    arg binding: int-flr-mul= -3000
+    arg binding: max-no-int-divs= 2
+    arg binding: max-no-fp-divs= 2
+    arg binding: max-no-int-muls= 3
+    arg binding: max-no-fp-muls= 6
+    arg binding: max-no-fp-addsubs= 6
+    arg binding: int_fl_limit_mul= 20
+    arg binding: resstructure-mode= 0
+    arg binding: res2-loglevel= 20
+    arg binding: res2-loadstore-port-count= 0
+    arg binding: res2-loadstore-port-lanes= 32
+    arg binding: res2-loadstore-lane-width= 8
+    arg binding: res2-loadstore-lane-addr-size= 22
+    arg binding: protocol= HFAST1
+Starting opath_do restructure2 cmd=restructure2
+Start of aux report restructure2
+Offchip Load/Store (and other) Ports = Nothing to Report
+End of aux report restructure2
+Offchip Load/Store (and other) Ports = Nothing to Report
+
+Start of aux report restructure2
+Restructure Technology Settings
+*---------------------------+---------+---------------------------------------------------------------------------------*
+| Key                       | Value   | Description                                                                     |
+*---------------------------+---------+---------------------------------------------------------------------------------*
+| int-flr-mul               | -3000   |                                                                                 |
+| fp-fl-dp-div              | 5       |                                                                                 |
+| fp-fl-dp-add              | 4       |                                                                                 |
+| fp-fl-dp-mul              | 3       |                                                                                 |
+| fp-fl-sp-div              | 5       |                                                                                 |
+| fp-fl-sp-add              | 4       |                                                                                 |
+| fp-fl-sp-mul              | 4       |                                                                                 |
+| max-no-fp-addsubs         | 6       | Maximum number of adders and subtractors (or combos) to instantiate per thread. |
+| max-no-fp-muls            | 6       | Maximum number of f/p multipliers or dividers to instantiate per thread.        |
+| max-no-int-muls           | 3       | Maximum number of int multipliers to instantiate per thread.                    |
+| max-no-fp-divs            | 2       | Maximum number of f/p dividers to instantiate per thread.                       |
+| max-no-int-divs           | 2       | Maximum number of int dividers to instantiate per thread.                       |
+| res2-offchip-threshold    | 1000000 |                                                                                 |
+| res2-combrom-threshold    | 64      |                                                                                 |
+| res2-combram-threshold    | 32      |                                                                                 |
+| res2-regfile-threshold    | 8       |                                                                                 |
+| res2-loadstore-port-count | 0       |                                                                                 |
+*---------------------------+---------+---------------------------------------------------------------------------------*
+End of aux report restructure2
+Restructure Technology Settings
+*---------------------------+---------+---------------------------------------------------------------------------------*
+| Key                       | Value   | Description                                                                     |
+*---------------------------+---------+---------------------------------------------------------------------------------*
+| int-flr-mul               | -3000   |                                                                                 |
+| fp-fl-dp-div              | 5       |                                                                                 |
+| fp-fl-dp-add              | 4       |                                                                                 |
+| fp-fl-dp-mul              | 3       |                                                                                 |
+| fp-fl-sp-div              | 5       |                                                                                 |
+| fp-fl-sp-add              | 4       |                                                                                 |
+| fp-fl-sp-mul              | 4       |                                                                                 |
+| max-no-fp-addsubs         | 6       | Maximum number of adders and subtractors (or combos) to instantiate per thread. |
+| max-no-fp-muls            | 6       | Maximum number of f/p multipliers or dividers to instantiate per thread.        |
+| max-no-int-muls           | 3       | Maximum number of int multipliers to instantiate per thread.                    |
+| max-no-fp-divs            | 2       | Maximum number of f/p dividers to instantiate per thread.                       |
+| max-no-int-divs           | 2       | Maximum number of int dividers to instantiate per thread.                       |
+| res2-offchip-threshold    | 1000000 |                                                                                 |
+| res2-combrom-threshold    | 64      |                                                                                 |
+| res2-combram-threshold    | 32      |                                                                                 |
+| res2-regfile-threshold    | 8       |                                                                                 |
+| res2-loadstore-port-count | 0       |                                                                                 |
+*---------------------------+---------+---------------------------------------------------------------------------------*
+
+Collating work from VM name=csharp/primes_offchip
+WF:Restructure2: processor: collated 3
+Report on Restructure2 - threads in use
+  posedge(clk) tid=xpc10 arcs=59
+  posedge(clk) tid=xpc12 arcs=7
+End report on Restructure2 - threads in use (2 items)
+
+WF:project_arcs_to_fsm: Start thread = xpc10, with 59 arc pool.
+WF:pack_arcs_to_fsm: selected  59 arcs for this machine/thread.
+xpc10: states explored: 131072, 65536, 32768, 16384, 8192, 4096, 2048, 1024, 512, 256, 128, 64, 32, 16, 8, 4, 2, 1, 0
+Report on Unreachable states in input machine: none exist.
+WF:project_arcs_to_fsm: Finish thread = xpc10, with 19 resumes and 25 total arcs.
+WF:minor_times: res2: Thread=xpc10 state=X0:"0:xpc10": Start at Timestamp: 10/02/2017 17:08:06
+added global resource for scalar elimit
+added global resource for scalar pio_rdata
+added global resource for scalar design_serial_number
+added global resource for scalar finished
+added global resource for scalar edesign
+added global resource for scalar evariant
+added global resource for scalar count
+WF:minor_times: res2: Thread=xpc10 state=X0:"0:xpc10": Done
+WF:minor_times: res2: Thread=xpc10 state=X1:"1:xpc10": Start at Timestamp: 10/02/2017 17:08:06
+multiport=false portno=0
+Reprocess decision for array for @_BOOL/CC/SCALbx10_ARA0 of len 10 (ROM=false) is tech=T_Onchip_SRAM (1,false) 
+WF:minor_times: res2: Thread=xpc10 state=X1:"1:xpc10": Done
+WF:minor_times: res2: Thread=xpc10 state=X2:"2:xpc10": Start at Timestamp: 10/02/2017 17:08:06
+added global resource for scalar primesya/T404/Main/T404/Main/V_2_GP
+WF:minor_times: res2: Thread=xpc10 state=X2:"2:xpc10": Done
+WF:minor_times: res2: Thread=xpc10 state=X4:"4:xpc10": Start at Timestamp: 10/02/2017 17:08:06
+WF:minor_times: res2: Thread=xpc10 state=X4:"4:xpc10": Done
+WF:minor_times: res2: Thread=xpc10 state=X8:"8:xpc10": Start at Timestamp: 10/02/2017 17:08:06
+WF:minor_times: res2: Thread=xpc10 state=X8:"8:xpc10": Done
+WF:minor_times: res2: Thread=xpc10 state=X16:"16:xpc10": Start at Timestamp: 10/02/2017 17:08:06
+added global resource for scalar primesya/T404/Main/T404/Main/V_4_GP
+WF:minor_times: res2: Thread=xpc10 state=X16:"16:xpc10": Done
+WF:minor_times: res2: Thread=xpc10 state=X32:"32:xpc10": Start at Timestamp: 10/02/2017 17:08:06
+WF:minor_times: res2: Thread=xpc10 state=X32:"32:xpc10": Done
+WF:minor_times: res2: Thread=xpc10 state=X64:"64:xpc10": Start at Timestamp: 10/02/2017 17:08:06
+WF:minor_times: res2: Thread=xpc10 state=X64:"64:xpc10": Done
+WF:minor_times: res2: Thread=xpc10 state=X128:"128:xpc10": Start at Timestamp: 10/02/2017 17:08:06
+WF:minor_times: res2: Thread=xpc10 state=X128:"128:xpc10": Done
+WF:minor_times: res2: Thread=xpc10 state=X256:"256:xpc10": Start at Timestamp: 10/02/2017 17:08:06
+WF:minor_times: res2: Thread=xpc10 state=X256:"256:xpc10": Done
+WF:minor_times: res2: Thread=xpc10 state=X512:"512:xpc10": Start at Timestamp: 10/02/2017 17:08:06
+WF:minor_times: res2: Thread=xpc10 state=X512:"512:xpc10": Done
+WF:minor_times: res2: Thread=xpc10 state=X1024:"1024:xpc10": Start at Timestamp: 10/02/2017 17:08:06
+WF:minor_times: res2: Thread=xpc10 state=X1024:"1024:xpc10": Done
+WF:minor_times: res2: Thread=xpc10 state=X2048:"2048:xpc10": Start at Timestamp: 10/02/2017 17:08:06
+WF:minor_times: res2: Thread=xpc10 state=X2048:"2048:xpc10": Done
+WF:minor_times: res2: Thread=xpc10 state=X4096:"4096:xpc10": Start at Timestamp: 10/02/2017 17:08:06
+WF:minor_times: res2: Thread=xpc10 state=X4096:"4096:xpc10": Done
+WF:minor_times: res2: Thread=xpc10 state=X8192:"8192:xpc10": Start at Timestamp: 10/02/2017 17:08:06
+WF:minor_times: res2: Thread=xpc10 state=X8192:"8192:xpc10": Done
+WF:minor_times: res2: Thread=xpc10 state=X16384:"16384:xpc10": Start at Timestamp: 10/02/2017 17:08:06
+WF:minor_times: res2: Thread=xpc10 state=X16384:"16384:xpc10": Done
+WF:minor_times: res2: Thread=xpc10 state=X32768:"32768:xpc10": Start at Timestamp: 10/02/2017 17:08:06
+WF:minor_times: res2: Thread=xpc10 state=X32768:"32768:xpc10": Done
+WF:minor_times: res2: Thread=xpc10 state=X65536:"65536:xpc10": Start at Timestamp: 10/02/2017 17:08:06
+WF:minor_times: res2: Thread=xpc10 state=X65536:"65536:xpc10": Done
+WF:minor_times: res2: Thread=xpc10 state=X131072:"131072:xpc10": Start at Timestamp: 10/02/2017 17:08:06
+WF:minor_times: res2: Thread=xpc10 state=X131072:"131072:xpc10": Done
+WF:compute_fsm_inverted_xition_mapping: xpc10: Start
+WF:compute_fsm_inverted_xition_mapping: xpc10: Done
+WF:res2_make_index: res2: Thread=xpc10 state=X0:"0:xpc10": Start. can_go_back=false
+new_pc_code_point 0 for root
+WF:res2_make_index: res2: Thread=xpc10 state=X0:"0:xpc10": res2: Thread=xpc10 state=X0:"0:xpc10": mkindex for edge no 900: (root.read.write) hwm=0.0.0  
+WF:res2_make_index: res2: Thread=xpc10 state=X1:"1:xpc10": Start. can_go_back=false
+new_pc_code_point 1 for root
+WF:res2_make_index: res2: Thread=xpc10 state=X1:"1:xpc10": res2: Thread=xpc10 state=X1:"1:xpc10": mkindex for edge no 901: (root.read.write) hwm=0.0.1  
+new_pc_code_point 2 for WN 1
+WF:res2_make_index: res2: Thread=xpc10 state=X2:"2:xpc10": Start. can_go_back=false
+new_pc_code_point 3 for root
+WF:res2_make_index: res2: Thread=xpc10 state=X2:"2:xpc10": res2: Thread=xpc10 state=X2:"2:xpc10": mkindex for edge no 902: (root.read.write) hwm=0.0.0  
+WF:res2_make_index: res2: Thread=xpc10 state=X4:"4:xpc10": Start. can_go_back=false
+new_pc_code_point 4 for root
+WF:res2_make_index: res2: Thread=xpc10 state=X4:"4:xpc10": res2: Thread=xpc10 state=X4:"4:xpc10": mkindex for edge no 903: (root.read.write) hwm=0.0.0  
+WF:res2_make_index: res2: Thread=xpc10 state=X4:"4:xpc10": res2: Thread=xpc10 state=X4:"4:xpc10": mkindex for edge no 904: (root.read.write) hwm=0.0.0  
+WF:res2_make_index: res2: Thread=xpc10 state=X8:"8:xpc10": Start. can_go_back=false
+new_pc_code_point 5 for root
+WF:res2_make_index: res2: Thread=xpc10 state=X8:"8:xpc10": res2: Thread=xpc10 state=X8:"8:xpc10": mkindex for edge no 905: (root.read.write) hwm=0.0.0  
+WF:res2_make_index: res2: Thread=xpc10 state=X8:"8:xpc10": res2: Thread=xpc10 state=X8:"8:xpc10": mkindex for edge no 906: (root.read.write) hwm=0.0.0  
+WF:res2_make_index: res2: Thread=xpc10 state=X16:"16:xpc10": Start. can_go_back=false
+new_pc_code_point 6 for root
+WF:res2_make_index: res2: Thread=xpc10 state=X16:"16:xpc10": res2: Thread=xpc10 state=X16:"16:xpc10": mkindex for edge no 907: (root.read.write) hwm=0.0.0  
+WF:res2_make_index: res2: Thread=xpc10 state=X32:"32:xpc10": Start. can_go_back=false
+new_pc_code_point 7 for root
+WF:res2_make_index: res2: Thread=xpc10 state=X32:"32:xpc10": res2: Thread=xpc10 state=X32:"32:xpc10": mkindex for edge no 908: (root.read.write) hwm=0.0.0  
+WF:res2_make_index: res2: Thread=xpc10 state=X32:"32:xpc10": res2: Thread=xpc10 state=X32:"32:xpc10": mkindex for edge no 909: (root.read.write) hwm=0.0.0  
+WF:res2_make_index: res2: Thread=xpc10 state=X64:"64:xpc10": Start. can_go_back=false
+new_pc_code_point 8 for root
+WF:res2_make_index: res2: Thread=xpc10 state=X64:"64:xpc10": res2: Thread=xpc10 state=X64:"64:xpc10": mkindex for edge no 910: (root.read.write) hwm=0.0.0  
+WF:res2_make_index: res2: Thread=xpc10 state=X128:"128:xpc10": Start. can_go_back=false
+new_pc_code_point 9 for root
+WF:res2_make_index: res2: Thread=xpc10 state=X128:"128:xpc10": res2: Thread=xpc10 state=X128:"128:xpc10": mkindex for edge no 911: (root.read.write) hwm=0.0.0  
+WF:res2_make_index: res2: Thread=xpc10 state=X256:"256:xpc10": Start. can_go_back=false
+new_pc_code_point 10 for root
+WF:res2_make_index: res2: Thread=xpc10 state=X256:"256:xpc10": res2: Thread=xpc10 state=X256:"256:xpc10": mkindex for edge no 912: (root.read.write) hwm=0.0.0  
+WF:res2_make_index: res2: Thread=xpc10 state=X512:"512:xpc10": Start. can_go_back=false
+new_pc_code_point 11 for root
+WF:res2_make_index: res2: Thread=xpc10 state=X512:"512:xpc10": res2: Thread=xpc10 state=X512:"512:xpc10": mkindex for edge no 913: (root.read.write) hwm=0.0.0  
+WF:res2_make_index: res2: Thread=xpc10 state=X1024:"1024:xpc10": Start. can_go_back=false
+new_pc_code_point 12 for root
+WF:res2_make_index: res2: Thread=xpc10 state=X1024:"1024:xpc10": res2: Thread=xpc10 state=X1024:"1024:xpc10": mkindex for edge no 914: (root.read.write) hwm=0.0.0  
+WF:res2_make_index: res2: Thread=xpc10 state=X2048:"2048:xpc10": Start. can_go_back=false
+new_pc_code_point 13 for root
+WF:res2_make_index: res2: Thread=xpc10 state=X2048:"2048:xpc10": res2: Thread=xpc10 state=X2048:"2048:xpc10": mkindex for edge no 915: (root.read.write) hwm=0.0.0  
+WF:res2_make_index: res2: Thread=xpc10 state=X4096:"4096:xpc10": Start. can_go_back=false
+new_pc_code_point 14 for root
+new_pc_code_point 15 for root
+WF:res2_make_index: res2: Thread=xpc10 state=X4096:"4096:xpc10": res2: Thread=xpc10 state=X4096:"4096:xpc10": mkindex for edge no 916: (root.read.write) hwm=1.1.0  
+WF:res2_make_index: res2: Thread=xpc10 state=X4096:"4096:xpc10": res2: Thread=xpc10 state=X4096:"4096:xpc10": mkindex for edge no 917: (root.read.write) hwm=1.1.0  
+WF:res2_make_index: res2: Thread=xpc10 state=X8192:"8192:xpc10": Start. can_go_back=false
+new_pc_code_point 16 for root
+WF:res2_make_index: res2: Thread=xpc10 state=X8192:"8192:xpc10": res2: Thread=xpc10 state=X8192:"8192:xpc10": mkindex for edge no 918: (root.read.write) hwm=0.0.0  
+WF:res2_make_index: res2: Thread=xpc10 state=X16384:"16384:xpc10": Start. can_go_back=false
+new_pc_code_point 17 for root
+WF:res2_make_index: res2: Thread=xpc10 state=X16384:"16384:xpc10": res2: Thread=xpc10 state=X16384:"16384:xpc10": mkindex for edge no 919: (root.read.write) hwm=0.0.0  
+WF:res2_make_index: res2: Thread=xpc10 state=X16384:"16384:xpc10": res2: Thread=xpc10 state=X16384:"16384:xpc10": mkindex for edge no 920: (root.read.write) hwm=0.0.0  
+WF:res2_make_index: res2: Thread=xpc10 state=X32768:"32768:xpc10": Start. can_go_back=false
+new_pc_code_point 18 for root
+WF:res2_make_index: res2: Thread=xpc10 state=X32768:"32768:xpc10": res2: Thread=xpc10 state=X32768:"32768:xpc10": mkindex for edge no 921: (root.read.write) hwm=0.0.0  
+WF:res2_make_index: res2: Thread=xpc10 state=X32768:"32768:xpc10": res2: Thread=xpc10 state=X32768:"32768:xpc10": mkindex for edge no 922: (root.read.write) hwm=0.0.0  
+WF:res2_make_index: res2: Thread=xpc10 state=X65536:"65536:xpc10": Start. can_go_back=false
+new_pc_code_point 19 for root
+WF:res2_make_index: res2: Thread=xpc10 state=X65536:"65536:xpc10": res2: Thread=xpc10 state=X65536:"65536:xpc10": mkindex for edge no 923: (root.read.write) hwm=0.0.1  
+new_pc_code_point 20 for WN 1
+WF:res2_make_index: res2: Thread=xpc10 state=X131072:"131072:xpc10": Start. can_go_back=false
+new_pc_code_point 21 for root
+WF:res2_make_index: res2: Thread=xpc10 state=X131072:"131072:xpc10": res2: Thread=xpc10 state=X131072:"131072:xpc10": mkindex for edge no 924: (root.read.write) hwm=0.0.1  
+new_pc_code_point 22 for WN 1
+Start of aux report restructure2
+PC codings points for xpc10 
+*--------------------------+-----+-------------+------+------+-------+-----+-------------+------*
+| gb-flag/Pause            | eno | hwm         | root | exec | start | end | antecedants | next |
+*--------------------------+-----+-------------+------+------+-------+-----+-------------+------*
+|   X0:"0:xpc10"           | 900 | hwm=0.0.0   | 0    | 0    | -     | -   | ---         | 1    |
+|   X1:"1:xpc10"           | 901 | hwm=0.0.1   | 1    | 1    | 2     | 2   | ---         | 3    |
+|   X2:"2:xpc10"           | 902 | hwm=0.0.0   | 3    | 3    | -     | -   | ---         | 4    |
+|   X4:"4:xpc10"           | 904 | hwm=0.0.0   | 4    | 4    | -     | -   | ---         | 21   |
+|   X4:"4:xpc10"           | 903 | hwm=0.0.0   | 4    | 4    | -     | -   | ---         | 5    |
+|   X8:"8:xpc10"           | 906 | hwm=0.0.0   | 5    | 5    | -     | -   | ---         | 17   |
+|   X8:"8:xpc10"           | 905 | hwm=0.0.0   | 5    | 5    | -     | -   | ---         | 6    |
+|   X16:"16:xpc10"         | 907 | hwm=0.0.0   | 6    | 6    | -     | -   | ---         | 7    |
+|   X32:"32:xpc10"         | 909 | hwm=0.0.0   | 7    | 7    | -     | -   | ---         | 14   |
+|   X32:"32:xpc10"         | 908 | hwm=0.0.0   | 7    | 7    | -     | -   | ---         | 8    |
+|   X64:"64:xpc10"         | 910 | hwm=0.0.0   | 8    | 8    | -     | -   | ---         | 9    |
+|   X128:"128:xpc10"       | 911 | hwm=0.0.0   | 9    | 9    | -     | -   | ---         | 10   |
+|   X256:"256:xpc10"       | 912 | hwm=0.0.0   | 10   | 10   | -     | -   | ---         | 11   |
+|   X512:"512:xpc10"       | 913 | hwm=0.0.0   | 11   | 11   | -     | -   | ---         | 12   |
+|   X1024:"1024:xpc10"     | 914 | hwm=0.0.0   | 12   | 12   | -     | -   | ---         | 13   |
+|   X2048:"2048:xpc10"     | 915 | hwm=0.0.0   | 13   | 13   | -     | -   | ---         | 12   |
+|   X4096:"4096:xpc10"     | 917 | hwm=1.1.0   | 14   | 15   | -     | -   | ---         | 16   |
+|   X4096:"4096:xpc10"     | 916 | hwm=1.1.0   | 14   | 15   | -     | -   | ---         | 16   |
+|   X8192:"8192:xpc10"     | 918 | hwm=0.0.0   | 16   | 16   | -     | -   | ---         | 7    |
+|   X16384:"16384:xpc10"   | 920 | hwm=0.0.0   | 17   | 17   | -     | -   | ---         | 18   |
+|   X16384:"16384:xpc10"   | 919 | hwm=0.0.0   | 17   | 17   | -     | -   | ---         | 6    |
+|   X32768:"32768:xpc10"   | 922 | hwm=0.0.0   | 18   | 18   | -     | -   | ---         | 19   |
+|   X32768:"32768:xpc10"   | 921 | hwm=0.0.0   | 18   | 18   | -     | -   | ---         | 5    |
+|   X65536:"65536:xpc10"   | 923 | hwm=0.0.1   | 19   | 19   | 20    | 20  | ---         | 18   |
+|   X131072:"131072:xpc10" | 924 | hwm=0.0.1   | 21   | 21   | 22    | 22  | ---         | 4    |
+*--------------------------+-----+-------------+------+------+-------+-----+-------------+------*
+End of aux report restructure2
+PC codings points for xpc10 
+*--------------------------+-----+-------------+------+------+-------+-----+-------------+------*
+| gb-flag/Pause            | eno | hwm         | root | exec | start | end | antecedants | next |
+*--------------------------+-----+-------------+------+------+-------+-----+-------------+------*
+|   X0:"0:xpc10"           | 900 | hwm=0.0.0   | 0    | 0    | -     | -   | ---         | 1    |
+|   X1:"1:xpc10"           | 901 | hwm=0.0.1   | 1    | 1    | 2     | 2   | ---         | 3    |
+|   X2:"2:xpc10"           | 902 | hwm=0.0.0   | 3    | 3    | -     | -   | ---         | 4    |
+|   X4:"4:xpc10"           | 904 | hwm=0.0.0   | 4    | 4    | -     | -   | ---         | 21   |
+|   X4:"4:xpc10"           | 903 | hwm=0.0.0   | 4    | 4    | -     | -   | ---         | 5    |
+|   X8:"8:xpc10"           | 906 | hwm=0.0.0   | 5    | 5    | -     | -   | ---         | 17   |
+|   X8:"8:xpc10"           | 905 | hwm=0.0.0   | 5    | 5    | -     | -   | ---         | 6    |
+|   X16:"16:xpc10"         | 907 | hwm=0.0.0   | 6    | 6    | -     | -   | ---         | 7    |
+|   X32:"32:xpc10"         | 909 | hwm=0.0.0   | 7    | 7    | -     | -   | ---         | 14   |
+|   X32:"32:xpc10"         | 908 | hwm=0.0.0   | 7    | 7    | -     | -   | ---         | 8    |
+|   X64:"64:xpc10"         | 910 | hwm=0.0.0   | 8    | 8    | -     | -   | ---         | 9    |
+|   X128:"128:xpc10"       | 911 | hwm=0.0.0   | 9    | 9    | -     | -   | ---         | 10   |
+|   X256:"256:xpc10"       | 912 | hwm=0.0.0   | 10   | 10   | -     | -   | ---         | 11   |
+|   X512:"512:xpc10"       | 913 | hwm=0.0.0   | 11   | 11   | -     | -   | ---         | 12   |
+|   X1024:"1024:xpc10"     | 914 | hwm=0.0.0   | 12   | 12   | -     | -   | ---         | 13   |
+|   X2048:"2048:xpc10"     | 915 | hwm=0.0.0   | 13   | 13   | -     | -   | ---         | 12   |
+|   X4096:"4096:xpc10"     | 917 | hwm=1.1.0   | 14   | 15   | -     | -   | ---         | 16   |
+|   X4096:"4096:xpc10"     | 916 | hwm=1.1.0   | 14   | 15   | -     | -   | ---         | 16   |
+|   X8192:"8192:xpc10"     | 918 | hwm=0.0.0   | 16   | 16   | -     | -   | ---         | 7    |
+|   X16384:"16384:xpc10"   | 920 | hwm=0.0.0   | 17   | 17   | -     | -   | ---         | 18   |
+|   X16384:"16384:xpc10"   | 919 | hwm=0.0.0   | 17   | 17   | -     | -   | ---         | 6    |
+|   X32768:"32768:xpc10"   | 922 | hwm=0.0.0   | 18   | 18   | -     | -   | ---         | 19   |
+|   X32768:"32768:xpc10"   | 921 | hwm=0.0.0   | 18   | 18   | -     | -   | ---         | 5    |
+|   X65536:"65536:xpc10"   | 923 | hwm=0.0.1   | 19   | 19   | 20    | 20  | ---         | 18   |
+|   X131072:"131072:xpc10" | 924 | hwm=0.0.1   | 21   | 21   | 22    | 22  | ---         | 4    |
+*--------------------------+-----+-------------+------+------+-------+-----+-------------+------*
+
+Reindexed thread xpc10 using 23 new PC code points
+WF:res2_apply_index: res2: Thread=xpc10 state=X0:"0:xpc10": Start. do_go_back=false
+tabdata = 0, -, R0 CTRL, 
+WF:res2_apply_index: res2: Thread=xpc10 state=X0:"0:xpc10": res2: Thread=xpc10 state=X0:"0:xpc10": process_shed for edge no 900:  hwm=0.0.0  (root.read.write)
+tabdata = 0, 900, R0 DATA, 
+tabdata = 0+E, 900, W0 DATA, elimit te=te:0 scalarw(1000) pio_rdata te=te:0 scalarw(0) design_serial_number te=te:0 scalarw(S32'2232578) finished te=te:0 scalarw(U1'0) edesign te=te:0 scalarw(4032) evariant te=te:0 scalarw(0) count te=te:0 scalarw(U32'0)  PLI:Primes Up To   W/P:START
+Start of aux report restructure2
+<NONE>Simple greedy schedule for res2: Thread=xpc10 state=X0:"0:xpc10"
+res2: Thread=xpc10 state=X0:"0:xpc10"
+*-----+-----+---------+-------------------------------------------------------------------------------------------------------------------*
+| pc  | eno | Phaser  | Work                                                                                                              |
+*-----+-----+---------+-------------------------------------------------------------------------------------------------------------------*
+| 0   | -   | R0 CTRL |                                                                                                                   |
+| 0   | 900 | R0 DATA |                                                                                                                   |
+| 0+E | 900 | W0 DATA | elimit te=te:0 scalarw(1000) pio_rdata te=te:0 scalarw(0) design_serial_number te=te:0 scalarw(S32'2232578) fini\ |
+|     |     |         | shed te=te:0 scalarw(U1'0) edesign te=te:0 scalarw(4032) evariant te=te:0 scalarw(0) count te=te:0 scalarw(U32'0\ |
+|     |     |         | )  PLI:Primes Up To   W/P:START                                                                                   |
+*-----+-----+---------+-------------------------------------------------------------------------------------------------------------------*
+End of aux report restructure2
+<NONE>Simple greedy schedule for res2: Thread=xpc10 state=X0:"0:xpc10"
+res2: Thread=xpc10 state=X0:"0:xpc10"
+*-----+-----+---------+-------------------------------------------------------------------------------------------------------------------*
+| pc  | eno | Phaser  | Work                                                                                                              |
+*-----+-----+---------+-------------------------------------------------------------------------------------------------------------------*
+| 0   | -   | R0 CTRL |                                                                                                                   |
+| 0   | 900 | R0 DATA |                                                                                                                   |
+| 0+E | 900 | W0 DATA | elimit te=te:0 scalarw(1000) pio_rdata te=te:0 scalarw(0) design_serial_number te=te:0 scalarw(S32'2232578) fini\ |
+|     |     |         | shed te=te:0 scalarw(U1'0) edesign te=te:0 scalarw(4032) evariant te=te:0 scalarw(0) count te=te:0 scalarw(U32'0\ |
+|     |     |         | )  PLI:Primes Up To   W/P:START                                                                                   |
+*-----+-----+---------+-------------------------------------------------------------------------------------------------------------------*
+
+WF:res2_apply_index: res2: Thread=xpc10 state=X1:"1:xpc10": Start. do_go_back=false
+tabdata = 1, -, R0 CTRL, 
+WF:res2_apply_index: res2: Thread=xpc10 state=X1:"1:xpc10": res2: Thread=xpc10 state=X1:"1:xpc10": process_shed for edge no 901:  hwm=0.0.1  (root.read.write)
+tabdata = 1, 901, R0 DATA, 
+tabdata = 1+E, 901, W0 DATA, @_BOOL/CC/SCALbx10_ARA0 te=te:1 write(0, 0<volume)
+tabdata = 2, 901, W1 DATA, 
+Start of aux report restructure2
+<NONE>Simple greedy schedule for res2: Thread=xpc10 state=X1:"1:xpc10"
+res2: Thread=xpc10 state=X1:"1:xpc10"
+*-----+-----+---------+----------------------------------------------------*
+| pc  | eno | Phaser  | Work                                               |
+*-----+-----+---------+----------------------------------------------------*
+| 1   | -   | R0 CTRL |                                                    |
+| 1   | 901 | R0 DATA |                                                    |
+| 1+E | 901 | W0 DATA | @_BOOL/CC/SCALbx10_ARA0 te=te:1 write(0, 0<volume) |
+| 2   | 901 | W1 DATA |                                                    |
+*-----+-----+---------+----------------------------------------------------*
+End of aux report restructure2
+<NONE>Simple greedy schedule for res2: Thread=xpc10 state=X1:"1:xpc10"
+res2: Thread=xpc10 state=X1:"1:xpc10"
+*-----+-----+---------+----------------------------------------------------*
+| pc  | eno | Phaser  | Work                                               |
+*-----+-----+---------+----------------------------------------------------*
+| 1   | -   | R0 CTRL |                                                    |
+| 1   | 901 | R0 DATA |                                                    |
+| 1+E | 901 | W0 DATA | @_BOOL/CC/SCALbx10_ARA0 te=te:1 write(0, 0<volume) |
+| 2   | 901 | W1 DATA |                                                    |
+*-----+-----+---------+----------------------------------------------------*
+
+WF:res2_apply_index: res2: Thread=xpc10 state=X2:"2:xpc10": Start. do_go_back=false
+tabdata = 3, -, R0 CTRL, 
+WF:res2_apply_index: res2: Thread=xpc10 state=X2:"2:xpc10": res2: Thread=xpc10 state=X2:"2:xpc10": process_shed for edge no 902:  hwm=0.0.0  (root.read.write)
+tabdata = 3, 902, R0 DATA, 
+tabdata = 3+E, 902, W0 DATA, count te=te:3 scalarw(U32'0) primesya/T404/Main/T404/Main/V_2_GP te=te:3 scalarw(0)
+Start of aux report restructure2
+<NONE>Simple greedy schedule for res2: Thread=xpc10 state=X2:"2:xpc10"
+res2: Thread=xpc10 state=X2:"2:xpc10"
+*-----+-----+---------+-------------------------------------------------------------------------------------*
+| pc  | eno | Phaser  | Work                                                                                |
+*-----+-----+---------+-------------------------------------------------------------------------------------*
+| 3   | -   | R0 CTRL |                                                                                     |
+| 3   | 902 | R0 DATA |                                                                                     |
+| 3+E | 902 | W0 DATA | count te=te:3 scalarw(U32'0) primesya/T404/Main/T404/Main/V_2_GP te=te:3 scalarw(0) |
+*-----+-----+---------+-------------------------------------------------------------------------------------*
+End of aux report restructure2
+<NONE>Simple greedy schedule for res2: Thread=xpc10 state=X2:"2:xpc10"
+res2: Thread=xpc10 state=X2:"2:xpc10"
+*-----+-----+---------+-------------------------------------------------------------------------------------*
+| pc  | eno | Phaser  | Work                                                                                |
+*-----+-----+---------+-------------------------------------------------------------------------------------*
+| 3   | -   | R0 CTRL |                                                                                     |
+| 3   | 902 | R0 DATA |                                                                                     |
+| 3+E | 902 | W0 DATA | count te=te:3 scalarw(U32'0) primesya/T404/Main/T404/Main/V_2_GP te=te:3 scalarw(0) |
+*-----+-----+---------+-------------------------------------------------------------------------------------*
+
+WF:res2_apply_index: res2: Thread=xpc10 state=X4:"4:xpc10": Start. do_go_back=false
+tabdata = 4, -, R0 CTRL, 
+WF:res2_apply_index: res2: Thread=xpc10 state=X4:"4:xpc10": res2: Thread=xpc10 state=X4:"4:xpc10": process_shed for edge no 903:  hwm=0.0.0  (root.read.write)
+tabdata = 4, 903, R0 DATA, 
+tabdata = 4+E, 903, W0 DATA, primesya/T404/Main/T404/Main/V_2_GP te=te:4 scalarw(2)  W/P:wp2
+WF:res2_apply_index: res2: Thread=xpc10 state=X4:"4:xpc10": res2: Thread=xpc10 state=X4:"4:xpc10": process_shed for edge no 904:  hwm=0.0.0  (root.read.write)
+tabdata = 4, 904, R0 DATA, 
+tabdata = 4+E, 904, W0 DATA, 
+Start of aux report restructure2
+<NONE>Simple greedy schedule for res2: Thread=xpc10 state=X4:"4:xpc10"
+res2: Thread=xpc10 state=X4:"4:xpc10"
+*-----+-----+---------+-----------------------------------------------------------------*
+| pc  | eno | Phaser  | Work                                                            |
+*-----+-----+---------+-----------------------------------------------------------------*
+| 4   | -   | R0 CTRL |                                                                 |
+| 4   | 903 | R0 DATA |                                                                 |
+| 4+E | 903 | W0 DATA | primesya/T404/Main/T404/Main/V_2_GP te=te:4 scalarw(2)  W/P:wp2 |
+| 4   | 904 | R0 DATA |                                                                 |
+| 4+E | 904 | W0 DATA |                                                                 |
+*-----+-----+---------+-----------------------------------------------------------------*
+End of aux report restructure2
+<NONE>Simple greedy schedule for res2: Thread=xpc10 state=X4:"4:xpc10"
+res2: Thread=xpc10 state=X4:"4:xpc10"
+*-----+-----+---------+-----------------------------------------------------------------*
+| pc  | eno | Phaser  | Work                                                            |
+*-----+-----+---------+-----------------------------------------------------------------*
+| 4   | -   | R0 CTRL |                                                                 |
+| 4   | 903 | R0 DATA |                                                                 |
+| 4+E | 903 | W0 DATA | primesya/T404/Main/T404/Main/V_2_GP te=te:4 scalarw(2)  W/P:wp2 |
+| 4   | 904 | R0 DATA |                                                                 |
+| 4+E | 904 | W0 DATA |                                                                 |
+*-----+-----+---------+-----------------------------------------------------------------*
+
+WF:res2_apply_index: res2: Thread=xpc10 state=X8:"8:xpc10": Start. do_go_back=false
+tabdata = 5, -, R0 CTRL, 
+WF:res2_apply_index: res2: Thread=xpc10 state=X8:"8:xpc10": res2: Thread=xpc10 state=X8:"8:xpc10": process_shed for edge no 905:  hwm=0.0.0  (root.read.write)
+tabdata = 5, 905, R0 DATA, 
+tabdata = 5+E, 905, W0 DATA, 
+WF:res2_apply_index: res2: Thread=xpc10 state=X8:"8:xpc10": res2: Thread=xpc10 state=X8:"8:xpc10": process_shed for edge no 906:  hwm=0.0.0  (root.read.write)
+tabdata = 5, 906, R0 DATA, 
+tabdata = 5+E, 906, W0 DATA, 
+Start of aux report restructure2
+<NONE>Simple greedy schedule for res2: Thread=xpc10 state=X8:"8:xpc10"
+res2: Thread=xpc10 state=X8:"8:xpc10"
+*-----+-----+---------+------*
+| pc  | eno | Phaser  | Work |
+*-----+-----+---------+------*
+| 5   | -   | R0 CTRL |      |
+| 5   | 905 | R0 DATA |      |
+| 5+E | 905 | W0 DATA |      |
+| 5   | 906 | R0 DATA |      |
+| 5+E | 906 | W0 DATA |      |
+*-----+-----+---------+------*
+End of aux report restructure2
+<NONE>Simple greedy schedule for res2: Thread=xpc10 state=X8:"8:xpc10"
+res2: Thread=xpc10 state=X8:"8:xpc10"
+*-----+-----+---------+------*
+| pc  | eno | Phaser  | Work |
+*-----+-----+---------+------*
+| 5   | -   | R0 CTRL |      |
+| 5   | 905 | R0 DATA |      |
+| 5+E | 905 | W0 DATA |      |
+| 5   | 906 | R0 DATA |      |
+| 5+E | 906 | W0 DATA |      |
+*-----+-----+---------+------*
+
+WF:res2_apply_index: res2: Thread=xpc10 state=X16:"16:xpc10": Start. do_go_back=false
+tabdata = 6, -, R0 CTRL, 
+WF:res2_apply_index: res2: Thread=xpc10 state=X16:"16:xpc10": res2: Thread=xpc10 state=X16:"16:xpc10": process_shed for edge no 907:  hwm=0.0.0  (root.read.write)
+tabdata = 6, 907, R0 DATA, 
+tabdata = 6+E, 907, W0 DATA, primesya/T404/Main/T404/Main/V_4_GP te=te:6 scalarw(0)  PLI:Now counting  W/P:wp3
+Start of aux report restructure2
+<NONE>Simple greedy schedule for res2: Thread=xpc10 state=X16:"16:xpc10"
+res2: Thread=xpc10 state=X16:"16:xpc10"
+*-----+-----+---------+-----------------------------------------------------------------------------------*
+| pc  | eno | Phaser  | Work                                                                              |
+*-----+-----+---------+-----------------------------------------------------------------------------------*
+| 6   | -   | R0 CTRL |                                                                                   |
+| 6   | 907 | R0 DATA |                                                                                   |
+| 6+E | 907 | W0 DATA | primesya/T404/Main/T404/Main/V_4_GP te=te:6 scalarw(0)  PLI:Now counting  W/P:wp3 |
+*-----+-----+---------+-----------------------------------------------------------------------------------*
+End of aux report restructure2
+<NONE>Simple greedy schedule for res2: Thread=xpc10 state=X16:"16:xpc10"
+res2: Thread=xpc10 state=X16:"16:xpc10"
+*-----+-----+---------+-----------------------------------------------------------------------------------*
+| pc  | eno | Phaser  | Work                                                                              |
+*-----+-----+---------+-----------------------------------------------------------------------------------*
+| 6   | -   | R0 CTRL |                                                                                   |
+| 6   | 907 | R0 DATA |                                                                                   |
+| 6+E | 907 | W0 DATA | primesya/T404/Main/T404/Main/V_4_GP te=te:6 scalarw(0)  PLI:Now counting  W/P:wp3 |
+*-----+-----+---------+-----------------------------------------------------------------------------------*
+
+WF:res2_apply_index: res2: Thread=xpc10 state=X32:"32:xpc10": Start. do_go_back=false
+tabdata = 7, -, R0 CTRL, 
+WF:res2_apply_index: res2: Thread=xpc10 state=X32:"32:xpc10": res2: Thread=xpc10 state=X32:"32:xpc10": process_shed for edge no 908:  hwm=0.0.0  (root.read.write)
+tabdata = 7, 908, R0 DATA, 
+tabdata = 7+E, 908, W0 DATA,  PLI:Optimisation variant...  PLI:There are %d primes ...
+WF:res2_apply_index: res2: Thread=xpc10 state=X32:"32:xpc10": res2: Thread=xpc10 state=X32:"32:xpc10": process_shed for edge no 909:  hwm=0.0.0  (root.read.write)
+tabdata = 7, 909, R0 DATA, 
+tabdata = 7+E, 909, W0 DATA, 
+Start of aux report restructure2
+<NONE>Simple greedy schedule for res2: Thread=xpc10 state=X32:"32:xpc10"
+res2: Thread=xpc10 state=X32:"32:xpc10"
+*-----+-----+---------+-----------------------------------------------------------*
+| pc  | eno | Phaser  | Work                                                      |
+*-----+-----+---------+-----------------------------------------------------------*
+| 7   | -   | R0 CTRL |                                                           |
+| 7   | 908 | R0 DATA |                                                           |
+| 7+E | 908 | W0 DATA |  PLI:Optimisation variant...  PLI:There are %d primes ... |
+| 7   | 909 | R0 DATA |                                                           |
+| 7+E | 909 | W0 DATA |                                                           |
+*-----+-----+---------+-----------------------------------------------------------*
+End of aux report restructure2
+<NONE>Simple greedy schedule for res2: Thread=xpc10 state=X32:"32:xpc10"
+res2: Thread=xpc10 state=X32:"32:xpc10"
+*-----+-----+---------+-----------------------------------------------------------*
+| pc  | eno | Phaser  | Work                                                      |
+*-----+-----+---------+-----------------------------------------------------------*
+| 7   | -   | R0 CTRL |                                                           |
+| 7   | 908 | R0 DATA |                                                           |
+| 7+E | 908 | W0 DATA |  PLI:Optimisation variant...  PLI:There are %d primes ... |
+| 7   | 909 | R0 DATA |                                                           |
+| 7+E | 909 | W0 DATA |                                                           |
+*-----+-----+---------+-----------------------------------------------------------*
+
+WF:res2_apply_index: res2: Thread=xpc10 state=X64:"64:xpc10": Start. do_go_back=false
+tabdata = 8, -, R0 CTRL, 
+WF:res2_apply_index: res2: Thread=xpc10 state=X64:"64:xpc10": res2: Thread=xpc10 state=X64:"64:xpc10": process_shed for edge no 910:  hwm=0.0.0  (root.read.write)
+tabdata = 8, 910, R0 DATA, 
+tabdata = 8+E, 910, W0 DATA, 
+Start of aux report restructure2
+<NONE>Simple greedy schedule for res2: Thread=xpc10 state=X64:"64:xpc10"
+res2: Thread=xpc10 state=X64:"64:xpc10"
+*-----+-----+---------+------*
+| pc  | eno | Phaser  | Work |
+*-----+-----+---------+------*
+| 8   | -   | R0 CTRL |      |
+| 8   | 910 | R0 DATA |      |
+| 8+E | 910 | W0 DATA |      |
+*-----+-----+---------+------*
+End of aux report restructure2
+<NONE>Simple greedy schedule for res2: Thread=xpc10 state=X64:"64:xpc10"
+res2: Thread=xpc10 state=X64:"64:xpc10"
+*-----+-----+---------+------*
+| pc  | eno | Phaser  | Work |
+*-----+-----+---------+------*
+| 8   | -   | R0 CTRL |      |
+| 8   | 910 | R0 DATA |      |
+| 8+E | 910 | W0 DATA |      |
+*-----+-----+---------+------*
+
+WF:res2_apply_index: res2: Thread=xpc10 state=X128:"128:xpc10": Start. do_go_back=false
+tabdata = 9, -, R0 CTRL, 
+WF:res2_apply_index: res2: Thread=xpc10 state=X128:"128:xpc10": res2: Thread=xpc10 state=X128:"128:xpc10": process_shed for edge no 911:  hwm=0.0.0  (root.read.write)
+tabdata = 9, 911, R0 DATA, 
+tabdata = 9+E, 911, W0 DATA,  W/P:FINISH
+Start of aux report restructure2
+<NONE>Simple greedy schedule for res2: Thread=xpc10 state=X128:"128:xpc10"
+res2: Thread=xpc10 state=X128:"128:xpc10"
+*-----+-----+---------+-------------*
+| pc  | eno | Phaser  | Work        |
+*-----+-----+---------+-------------*
+| 9   | -   | R0 CTRL |             |
+| 9   | 911 | R0 DATA |             |
+| 9+E | 911 | W0 DATA |  W/P:FINISH |
+*-----+-----+---------+-------------*
+End of aux report restructure2
+<NONE>Simple greedy schedule for res2: Thread=xpc10 state=X128:"128:xpc10"
+res2: Thread=xpc10 state=X128:"128:xpc10"
+*-----+-----+---------+-------------*
+| pc  | eno | Phaser  | Work        |
+*-----+-----+---------+-------------*
+| 9   | -   | R0 CTRL |             |
+| 9   | 911 | R0 DATA |             |
+| 9+E | 911 | W0 DATA |  W/P:FINISH |
+*-----+-----+---------+-------------*
+
+WF:res2_apply_index: res2: Thread=xpc10 state=X256:"256:xpc10": Start. do_go_back=false
+tabdata = 10, -, R0 CTRL, 
+WF:res2_apply_index: res2: Thread=xpc10 state=X256:"256:xpc10": res2: Thread=xpc10 state=X256:"256:xpc10": process_shed for edge no 912:  hwm=0.0.0  (root.read.write)
+tabdata = 10, 912, R0 DATA, 
+tabdata = 10+E, 912, W0 DATA, finished te=te:10 scalarw(U1'1)
+Start of aux report restructure2
+<NONE>Simple greedy schedule for res2: Thread=xpc10 state=X256:"256:xpc10"
+res2: Thread=xpc10 state=X256:"256:xpc10"
+*------+-----+---------+---------------------------------*
+| pc   | eno | Phaser  | Work                            |
+*------+-----+---------+---------------------------------*
+| 10   | -   | R0 CTRL |                                 |
+| 10   | 912 | R0 DATA |                                 |
+| 10+E | 912 | W0 DATA | finished te=te:10 scalarw(U1'1) |
+*------+-----+---------+---------------------------------*
+End of aux report restructure2
+<NONE>Simple greedy schedule for res2: Thread=xpc10 state=X256:"256:xpc10"
+res2: Thread=xpc10 state=X256:"256:xpc10"
+*------+-----+---------+---------------------------------*
+| pc   | eno | Phaser  | Work                            |
+*------+-----+---------+---------------------------------*
+| 10   | -   | R0 CTRL |                                 |
+| 10   | 912 | R0 DATA |                                 |
+| 10+E | 912 | W0 DATA | finished te=te:10 scalarw(U1'1) |
+*------+-----+---------+---------------------------------*
+
+WF:res2_apply_index: res2: Thread=xpc10 state=X512:"512:xpc10": Start. do_go_back=false
+tabdata = 11, -, R0 CTRL, 
+WF:res2_apply_index: res2: Thread=xpc10 state=X512:"512:xpc10": res2: Thread=xpc10 state=X512:"512:xpc10": process_shed for edge no 913:  hwm=0.0.0  (root.read.write)
+tabdata = 11, 913, R0 DATA, 
+tabdata = 11+E, 913, W0 DATA, 
+Start of aux report restructure2
+<NONE>Simple greedy schedule for res2: Thread=xpc10 state=X512:"512:xpc10"
+res2: Thread=xpc10 state=X512:"512:xpc10"
+*------+-----+---------+------*
+| pc   | eno | Phaser  | Work |
+*------+-----+---------+------*
+| 11   | -   | R0 CTRL |      |
+| 11   | 913 | R0 DATA |      |
+| 11+E | 913 | W0 DATA |      |
+*------+-----+---------+------*
+End of aux report restructure2
+<NONE>Simple greedy schedule for res2: Thread=xpc10 state=X512:"512:xpc10"
+res2: Thread=xpc10 state=X512:"512:xpc10"
+*------+-----+---------+------*
+| pc   | eno | Phaser  | Work |
+*------+-----+---------+------*
+| 11   | -   | R0 CTRL |      |
+| 11   | 913 | R0 DATA |      |
+| 11+E | 913 | W0 DATA |      |
+*------+-----+---------+------*
+
+WF:res2_apply_index: res2: Thread=xpc10 state=X1024:"1024:xpc10": Start. do_go_back=false
+tabdata = 12, -, R0 CTRL, 
+WF:res2_apply_index: res2: Thread=xpc10 state=X1024:"1024:xpc10": res2: Thread=xpc10 state=X1024:"1024:xpc10": process_shed for edge no 914:  hwm=0.0.0  (root.read.write)
+tabdata = 12, 914, R0 DATA, 
+tabdata = 12+E, 914, W0 DATA, 
+Start of aux report restructure2
+<NONE>Simple greedy schedule for res2: Thread=xpc10 state=X1024:"1024:xpc10"
+res2: Thread=xpc10 state=X1024:"1024:xpc10"
+*------+-----+---------+------*
+| pc   | eno | Phaser  | Work |
+*------+-----+---------+------*
+| 12   | -   | R0 CTRL |      |
+| 12   | 914 | R0 DATA |      |
+| 12+E | 914 | W0 DATA |      |
+*------+-----+---------+------*
+End of aux report restructure2
+<NONE>Simple greedy schedule for res2: Thread=xpc10 state=X1024:"1024:xpc10"
+res2: Thread=xpc10 state=X1024:"1024:xpc10"
+*------+-----+---------+------*
+| pc   | eno | Phaser  | Work |
+*------+-----+---------+------*
+| 12   | -   | R0 CTRL |      |
+| 12   | 914 | R0 DATA |      |
+| 12+E | 914 | W0 DATA |      |
+*------+-----+---------+------*
+
+WF:res2_apply_index: res2: Thread=xpc10 state=X2048:"2048:xpc10": Start. do_go_back=false
+tabdata = 13, -, R0 CTRL, 
+WF:res2_apply_index: res2: Thread=xpc10 state=X2048:"2048:xpc10": res2: Thread=xpc10 state=X2048:"2048:xpc10": process_shed for edge no 915:  hwm=0.0.0  (root.read.write)
+tabdata = 13, 915, R0 DATA, 
+tabdata = 13+E, 915, W0 DATA, 
+Start of aux report restructure2
+<NONE>Simple greedy schedule for res2: Thread=xpc10 state=X2048:"2048:xpc10"
+res2: Thread=xpc10 state=X2048:"2048:xpc10"
+*------+-----+---------+------*
+| pc   | eno | Phaser  | Work |
+*------+-----+---------+------*
+| 13   | -   | R0 CTRL |      |
+| 13   | 915 | R0 DATA |      |
+| 13+E | 915 | W0 DATA |      |
+*------+-----+---------+------*
+End of aux report restructure2
+<NONE>Simple greedy schedule for res2: Thread=xpc10 state=X2048:"2048:xpc10"
+res2: Thread=xpc10 state=X2048:"2048:xpc10"
+*------+-----+---------+------*
+| pc   | eno | Phaser  | Work |
+*------+-----+---------+------*
+| 13   | -   | R0 CTRL |      |
+| 13   | 915 | R0 DATA |      |
+| 13+E | 915 | W0 DATA |      |
+*------+-----+---------+------*
+
+WF:res2_apply_index: res2: Thread=xpc10 state=X4096:"4096:xpc10": Start. do_go_back=false
+tabdata = 14, -, R0 CTRL, @_BOOL/CC/SCALbx10_ARA0 te=te:14 read(E1)
+tabdata = 15, -, R1 CTRL, 
+WF:res2_apply_index: res2: Thread=xpc10 state=X4096:"4096:xpc10": res2: Thread=xpc10 state=X4096:"4096:xpc10": process_shed for edge no 916:  hwm=1.1.0  (root.read.write)
+tabdata = 14, 916, R0 DATA, 
+tabdata = 15, 916, R1 DATA, 
+tabdata = 15+E, 916, W0 DATA, count te=te:15 scalarw(Cu(1+count))
+WF:res2_apply_index: res2: Thread=xpc10 state=X4096:"4096:xpc10": res2: Thread=xpc10 state=X4096:"4096:xpc10": process_shed for edge no 917:  hwm=1.1.0  (root.read.write)
+tabdata = 14, 917, R0 DATA, 
+tabdata = 15, 917, R1 DATA, 
+tabdata = 15+E, 917, W0 DATA, 
+Start of aux report restructure2
+<NONE>Simple greedy schedule for res2: Thread=xpc10 state=X4096:"4096:xpc10"
+res2: Thread=xpc10 state=X4096:"4096:xpc10"
+*------+-----+---------+-------------------------------------------*
+| pc   | eno | Phaser  | Work                                      |
+*------+-----+---------+-------------------------------------------*
+| 14   | -   | R0 CTRL | @_BOOL/CC/SCALbx10_ARA0 te=te:14 read(E1) |
+| 15   | -   | R1 CTRL |                                           |
+| 14   | 916 | R0 DATA |                                           |
+| 15   | 916 | R1 DATA |                                           |
+| 15+E | 916 | W0 DATA | count te=te:15 scalarw(Cu(1+count))       |
+| 14   | 917 | R0 DATA |                                           |
+| 15   | 917 | R1 DATA |                                           |
+| 15+E | 917 | W0 DATA |                                           |
+*------+-----+---------+-------------------------------------------*
+End of aux report restructure2
+<NONE>Simple greedy schedule for res2: Thread=xpc10 state=X4096:"4096:xpc10"
+res2: Thread=xpc10 state=X4096:"4096:xpc10"
+*------+-----+---------+-------------------------------------------*
+| pc   | eno | Phaser  | Work                                      |
+*------+-----+---------+-------------------------------------------*
+| 14   | -   | R0 CTRL | @_BOOL/CC/SCALbx10_ARA0 te=te:14 read(E1) |
+| 15   | -   | R1 CTRL |                                           |
+| 14   | 916 | R0 DATA |                                           |
+| 15   | 916 | R1 DATA |                                           |
+| 15+E | 916 | W0 DATA | count te=te:15 scalarw(Cu(1+count))       |
+| 14   | 917 | R0 DATA |                                           |
+| 15   | 917 | R1 DATA |                                           |
+| 15+E | 917 | W0 DATA |                                           |
+*------+-----+---------+-------------------------------------------*
+
+WF:res2_apply_index: res2: Thread=xpc10 state=X8192:"8192:xpc10": Start. do_go_back=false
+tabdata = 16, -, R0 CTRL, 
+WF:res2_apply_index: res2: Thread=xpc10 state=X8192:"8192:xpc10": res2: Thread=xpc10 state=X8192:"8192:xpc10": process_shed for edge no 918:  hwm=0.0.0  (root.read.write)
+tabdata = 16, 918, R0 DATA, 
+tabdata = 16+E, 918, W0 DATA, primesya/T404/Main/T404/Main/V_4_GP te=te:16 scalarw(E2)  PLI:Tally counting %u %d
+Start of aux report restructure2
+<NONE>Simple greedy schedule for res2: Thread=xpc10 state=X8192:"8192:xpc10"
+res2: Thread=xpc10 state=X8192:"8192:xpc10"
+*------+-----+---------+------------------------------------------------------------------------------------*
+| pc   | eno | Phaser  | Work                                                                               |
+*------+-----+---------+------------------------------------------------------------------------------------*
+| 16   | -   | R0 CTRL |                                                                                    |
+| 16   | 918 | R0 DATA |                                                                                    |
+| 16+E | 918 | W0 DATA | primesya/T404/Main/T404/Main/V_4_GP te=te:16 scalarw(E2)  PLI:Tally counting %u %d |
+*------+-----+---------+------------------------------------------------------------------------------------*
+End of aux report restructure2
+<NONE>Simple greedy schedule for res2: Thread=xpc10 state=X8192:"8192:xpc10"
+res2: Thread=xpc10 state=X8192:"8192:xpc10"
+*------+-----+---------+------------------------------------------------------------------------------------*
+| pc   | eno | Phaser  | Work                                                                               |
+*------+-----+---------+------------------------------------------------------------------------------------*
+| 16   | -   | R0 CTRL |                                                                                    |
+| 16   | 918 | R0 DATA |                                                                                    |
+| 16+E | 918 | W0 DATA | primesya/T404/Main/T404/Main/V_4_GP te=te:16 scalarw(E2)  PLI:Tally counting %u %d |
+*------+-----+---------+------------------------------------------------------------------------------------*
+
+WF:res2_apply_index: res2: Thread=xpc10 state=X16384:"16384:xpc10": Start. do_go_back=false
+tabdata = 17, -, R0 CTRL, 
+WF:res2_apply_index: res2: Thread=xpc10 state=X16384:"16384:xpc10": res2: Thread=xpc10 state=X16384:"16384:xpc10": process_shed for edge no 919:  hwm=0.0.0  (root.read.write)
+tabdata = 17, 919, R0 DATA, 
+tabdata = 17+E, 919, W0 DATA, primesya/T404/Main/T404/Main/V_4_GP te=te:17 scalarw(E3)  PLI:Skip out on square
+WF:res2_apply_index: res2: Thread=xpc10 state=X16384:"16384:xpc10": res2: Thread=xpc10 state=X16384:"16384:xpc10": process_shed for edge no 920:  hwm=0.0.0  (root.read.write)
+tabdata = 17, 920, R0 DATA, 
+tabdata = 17+E, 920, W0 DATA, primesya/T404/Main/T404/Main/V_4_GP te=te:17 scalarw(E3)
+Start of aux report restructure2
+<NONE>Simple greedy schedule for res2: Thread=xpc10 state=X16384:"16384:xpc10"
+res2: Thread=xpc10 state=X16384:"16384:xpc10"
+*------+-----+---------+----------------------------------------------------------------------------------*
+| pc   | eno | Phaser  | Work                                                                             |
+*------+-----+---------+----------------------------------------------------------------------------------*
+| 17   | -   | R0 CTRL |                                                                                  |
+| 17   | 919 | R0 DATA |                                                                                  |
+| 17+E | 919 | W0 DATA | primesya/T404/Main/T404/Main/V_4_GP te=te:17 scalarw(E3)  PLI:Skip out on square |
+| 17   | 920 | R0 DATA |                                                                                  |
+| 17+E | 920 | W0 DATA | primesya/T404/Main/T404/Main/V_4_GP te=te:17 scalarw(E3)                         |
+*------+-----+---------+----------------------------------------------------------------------------------*
+End of aux report restructure2
+<NONE>Simple greedy schedule for res2: Thread=xpc10 state=X16384:"16384:xpc10"
+res2: Thread=xpc10 state=X16384:"16384:xpc10"
+*------+-----+---------+----------------------------------------------------------------------------------*
+| pc   | eno | Phaser  | Work                                                                             |
+*------+-----+---------+----------------------------------------------------------------------------------*
+| 17   | -   | R0 CTRL |                                                                                  |
+| 17   | 919 | R0 DATA |                                                                                  |
+| 17+E | 919 | W0 DATA | primesya/T404/Main/T404/Main/V_4_GP te=te:17 scalarw(E3)  PLI:Skip out on square |
+| 17   | 920 | R0 DATA |                                                                                  |
+| 17+E | 920 | W0 DATA | primesya/T404/Main/T404/Main/V_4_GP te=te:17 scalarw(E3)                         |
+*------+-----+---------+----------------------------------------------------------------------------------*
+
+WF:res2_apply_index: res2: Thread=xpc10 state=X32768:"32768:xpc10": Start. do_go_back=false
+tabdata = 18, -, R0 CTRL, 
+WF:res2_apply_index: res2: Thread=xpc10 state=X32768:"32768:xpc10": res2: Thread=xpc10 state=X32768:"32768:xpc10": process_shed for edge no 921:  hwm=0.0.0  (root.read.write)
+tabdata = 18, 921, R0 DATA, 
+tabdata = 18+E, 921, W0 DATA, primesya/T404/Main/T404/Main/V_2_GP te=te:18 scalarw(E4)
+WF:res2_apply_index: res2: Thread=xpc10 state=X32768:"32768:xpc10": res2: Thread=xpc10 state=X32768:"32768:xpc10": process_shed for edge no 922:  hwm=0.0.0  (root.read.write)
+tabdata = 18, 922, R0 DATA, 
+tabdata = 18+E, 922, W0 DATA,  PLI:Cross off %u %u   (c...
+Start of aux report restructure2
+<NONE>Simple greedy schedule for res2: Thread=xpc10 state=X32768:"32768:xpc10"
+res2: Thread=xpc10 state=X32768:"32768:xpc10"
+*------+-----+---------+----------------------------------------------------------*
+| pc   | eno | Phaser  | Work                                                     |
+*------+-----+---------+----------------------------------------------------------*
+| 18   | -   | R0 CTRL |                                                          |
+| 18   | 921 | R0 DATA |                                                          |
+| 18+E | 921 | W0 DATA | primesya/T404/Main/T404/Main/V_2_GP te=te:18 scalarw(E4) |
+| 18   | 922 | R0 DATA |                                                          |
+| 18+E | 922 | W0 DATA |  PLI:Cross off %u %u   (c...                             |
+*------+-----+---------+----------------------------------------------------------*
+End of aux report restructure2
+<NONE>Simple greedy schedule for res2: Thread=xpc10 state=X32768:"32768:xpc10"
+res2: Thread=xpc10 state=X32768:"32768:xpc10"
+*------+-----+---------+----------------------------------------------------------*
+| pc   | eno | Phaser  | Work                                                     |
+*------+-----+---------+----------------------------------------------------------*
+| 18   | -   | R0 CTRL |                                                          |
+| 18   | 921 | R0 DATA |                                                          |
+| 18+E | 921 | W0 DATA | primesya/T404/Main/T404/Main/V_2_GP te=te:18 scalarw(E4) |
+| 18   | 922 | R0 DATA |                                                          |
+| 18+E | 922 | W0 DATA |  PLI:Cross off %u %u   (c...                             |
+*------+-----+---------+----------------------------------------------------------*
+
+WF:res2_apply_index: res2: Thread=xpc10 state=X65536:"65536:xpc10": Start. do_go_back=false
+tabdata = 19, -, R0 CTRL, 
+WF:res2_apply_index: res2: Thread=xpc10 state=X65536:"65536:xpc10": res2: Thread=xpc10 state=X65536:"65536:xpc10": process_shed for edge no 923:  hwm=0.0.1  (root.read.write)
+tabdata = 19, 923, R0 DATA, 
+tabdata = 19+E, 923, W0 DATA, @_BOOL/CC/SCALbx10_ARA0 te=te:19 write(E1, U1'0) primesya/T404/Main/T404/Main/V_4_GP te=te:19 scalarw(E5)
+tabdata = 20, 923, W1 DATA, 
+Start of aux report restructure2
+<NONE>Simple greedy schedule for res2: Thread=xpc10 state=X65536:"65536:xpc10"
+res2: Thread=xpc10 state=X65536:"65536:xpc10"
+*------+-----+---------+-----------------------------------------------------------------------------------------------------------*
+| pc   | eno | Phaser  | Work                                                                                                      |
+*------+-----+---------+-----------------------------------------------------------------------------------------------------------*
+| 19   | -   | R0 CTRL |                                                                                                           |
+| 19   | 923 | R0 DATA |                                                                                                           |
+| 19+E | 923 | W0 DATA | @_BOOL/CC/SCALbx10_ARA0 te=te:19 write(E1, U1'0) primesya/T404/Main/T404/Main/V_4_GP te=te:19 scalarw(E5) |
+| 20   | 923 | W1 DATA |                                                                                                           |
+*------+-----+---------+-----------------------------------------------------------------------------------------------------------*
+End of aux report restructure2
+<NONE>Simple greedy schedule for res2: Thread=xpc10 state=X65536:"65536:xpc10"
+res2: Thread=xpc10 state=X65536:"65536:xpc10"
+*------+-----+---------+-----------------------------------------------------------------------------------------------------------*
+| pc   | eno | Phaser  | Work                                                                                                      |
+*------+-----+---------+-----------------------------------------------------------------------------------------------------------*
+| 19   | -   | R0 CTRL |                                                                                                           |
+| 19   | 923 | R0 DATA |                                                                                                           |
+| 19+E | 923 | W0 DATA | @_BOOL/CC/SCALbx10_ARA0 te=te:19 write(E1, U1'0) primesya/T404/Main/T404/Main/V_4_GP te=te:19 scalarw(E5) |
+| 20   | 923 | W1 DATA |                                                                                                           |
+*------+-----+---------+-----------------------------------------------------------------------------------------------------------*
+
+WF:res2_apply_index: res2: Thread=xpc10 state=X131072:"131072:xpc10": Start. do_go_back=false
+tabdata = 21, -, R0 CTRL, 
+WF:res2_apply_index: res2: Thread=xpc10 state=X131072:"131072:xpc10": res2: Thread=xpc10 state=X131072:"131072:xpc10": process_shed for edge no 924:  hwm=0.0.1  (root.read.write)
+tabdata = 21, 924, R0 DATA, 
+tabdata = 21+E, 924, W0 DATA, @_BOOL/CC/SCALbx10_ARA0 te=te:21 write(E6, U1'1) primesya/T404/Main/T404/Main/V_2_GP te=te:21 scalarw(E4)  PLI:Setting initial arra...
+tabdata = 22, 924, W1 DATA, 
+Start of aux report restructure2
+<NONE>Simple greedy schedule for res2: Thread=xpc10 state=X131072:"131072:xpc10"
+res2: Thread=xpc10 state=X131072:"131072:xpc10"
+*------+-----+---------+----------------------------------------------------------------------------------------------------------------------------------------*
+| pc   | eno | Phaser  | Work                                                                                                                                   |
+*------+-----+---------+----------------------------------------------------------------------------------------------------------------------------------------*
+| 21   | -   | R0 CTRL |                                                                                                                                        |
+| 21   | 924 | R0 DATA |                                                                                                                                        |
+| 21+E | 924 | W0 DATA | @_BOOL/CC/SCALbx10_ARA0 te=te:21 write(E6, U1'1) primesya/T404/Main/T404/Main/V_2_GP te=te:21 scalarw(E4)  PLI:Setting initial arra... |
+| 22   | 924 | W1 DATA |                                                                                                                                        |
+*------+-----+---------+----------------------------------------------------------------------------------------------------------------------------------------*
+End of aux report restructure2
+<NONE>Simple greedy schedule for res2: Thread=xpc10 state=X131072:"131072:xpc10"
+res2: Thread=xpc10 state=X131072:"131072:xpc10"
+*------+-----+---------+----------------------------------------------------------------------------------------------------------------------------------------*
+| pc   | eno | Phaser  | Work                                                                                                                                   |
+*------+-----+---------+----------------------------------------------------------------------------------------------------------------------------------------*
+| 21   | -   | R0 CTRL |                                                                                                                                        |
+| 21   | 924 | R0 DATA |                                                                                                                                        |
+| 21+E | 924 | W0 DATA | @_BOOL/CC/SCALbx10_ARA0 te=te:21 write(E6, U1'1) primesya/T404/Main/T404/Main/V_2_GP te=te:21 scalarw(E4)  PLI:Setting initial arra... |
+| 22   | 924 | W1 DATA |                                                                                                                                        |
+*------+-----+---------+----------------------------------------------------------------------------------------------------------------------------------------*
+
+Reindexed thread xpc10 with 23 minor control states
+WF:project_arcs_to_fsm: Start thread = xpc12, with 7 arc pool.
+WF:pack_arcs_to_fsm: selected  7 arcs for this machine/thread.
+xpc12: states explored: 4, 2, 1, 0
+Report on Unreachable states in input machine: none exist.
+WF:project_arcs_to_fsm: Finish thread = xpc12, with 4 resumes and 5 total arcs.
+WF:minor_times: res2: Thread=xpc12 state=X0:"0:xpc12": Start at Timestamp: 10/02/2017 17:08:06
+WF:minor_times: res2: Thread=xpc12 state=X0:"0:xpc12": Done
+WF:minor_times: res2: Thread=xpc12 state=X1:"1:xpc12": Start at Timestamp: 10/02/2017 17:08:06
+multiport=false portno=0
+Reprocess decision for array for @_SINT/CC/SCALbx12_ARA0 of len 10 (ROM=false) is tech=T_Onchip_SRAM (1,false) 
+WF:minor_times: res2: Thread=xpc12 state=X1:"1:xpc12": Done
+WF:minor_times: res2: Thread=xpc12 state=X2:"2:xpc12": Start at Timestamp: 10/02/2017 17:08:06
+WF:minor_times: res2: Thread=xpc12 state=X2:"2:xpc12": Done
+WF:minor_times: res2: Thread=xpc12 state=X4:"4:xpc12": Start at Timestamp: 10/02/2017 17:08:06
+WF:minor_times: res2: Thread=xpc12 state=X4:"4:xpc12": Done
+WF:compute_fsm_inverted_xition_mapping: xpc12: Start
+WF:compute_fsm_inverted_xition_mapping: xpc12: Done
+WF:res2_make_index: res2: Thread=xpc12 state=X0:"0:xpc12": Start. can_go_back=false
+new_pc_code_point 0 for root
+WF:res2_make_index: res2: Thread=xpc12 state=X0:"0:xpc12": res2: Thread=xpc12 state=X0:"0:xpc12": mkindex for edge no 925: (root.read.write) hwm=0.0.0  
+WF:res2_make_index: res2: Thread=xpc12 state=X1:"1:xpc12": Start. can_go_back=false
+new_pc_code_point 1 for root
+WF:res2_make_index: res2: Thread=xpc12 state=X1:"1:xpc12": res2: Thread=xpc12 state=X1:"1:xpc12": mkindex for edge no 926: (root.read.write) hwm=0.0.1  
+new_pc_code_point 2 for WN 1
+WF:res2_make_index: res2: Thread=xpc12 state=X1:"1:xpc12": res2: Thread=xpc12 state=X1:"1:xpc12": mkindex for edge no 927: (root.read.write) hwm=0.1.0  
+new_pc_code_point 3 for RWN 1
+WF:res2_make_index: res2: Thread=xpc12 state=X2:"2:xpc12": Start. can_go_back=false
+new_pc_code_point 4 for root
+WF:res2_make_index: res2: Thread=xpc12 state=X2:"2:xpc12": res2: Thread=xpc12 state=X2:"2:xpc12": mkindex for edge no 928: (root.read.write) hwm=0.0.0  
+WF:res2_make_index: res2: Thread=xpc12 state=X4:"4:xpc12": Start. can_go_back=false
+new_pc_code_point 5 for root
+WF:res2_make_index: res2: Thread=xpc12 state=X4:"4:xpc12": res2: Thread=xpc12 state=X4:"4:xpc12": mkindex for edge no 929: (root.read.write) hwm=0.0.0  
+Start of aux report restructure2
+PC codings points for xpc12 
+*----------------+-----+-------------+------+------+-------+-----+-------------+------*
+| gb-flag/Pause  | eno | hwm         | root | exec | start | end | antecedants | next |
+*----------------+-----+-------------+------+------+-------+-----+-------------+------*
+|   X0:"0:xpc12" | 925 | hwm=0.0.0   | 0    | 0    | -     | -   | ---         | 1    |
+|   X1:"1:xpc12" | 927 | hwm=0.1.0   | 1    | 3    | 3     | 3   | ---         | 4    |
+|   X1:"1:xpc12" | 926 | hwm=0.0.1   | 1    | 1    | 2     | 2   | ---         | 4    |
+|   X2:"2:xpc12" | 928 | hwm=0.0.0   | 4    | 4    | -     | -   | ---         | 5    |
+|   X4:"4:xpc12" | 929 | hwm=0.0.0   | 5    | 5    | -     | -   | ---         | 1    |
+*----------------+-----+-------------+------+------+-------+-----+-------------+------*
+End of aux report restructure2
+PC codings points for xpc12 
+*----------------+-----+-------------+------+------+-------+-----+-------------+------*
+| gb-flag/Pause  | eno | hwm         | root | exec | start | end | antecedants | next |
+*----------------+-----+-------------+------+------+-------+-----+-------------+------*
+|   X0:"0:xpc12" | 925 | hwm=0.0.0   | 0    | 0    | -     | -   | ---         | 1    |
+|   X1:"1:xpc12" | 927 | hwm=0.1.0   | 1    | 3    | 3     | 3   | ---         | 4    |
+|   X1:"1:xpc12" | 926 | hwm=0.0.1   | 1    | 1    | 2     | 2   | ---         | 4    |
+|   X2:"2:xpc12" | 928 | hwm=0.0.0   | 4    | 4    | -     | -   | ---         | 5    |
+|   X4:"4:xpc12" | 929 | hwm=0.0.0   | 5    | 5    | -     | -   | ---         | 1    |
+*----------------+-----+-------------+------+------+-------+-----+-------------+------*
+
+Reindexed thread xpc12 using 6 new PC code points
+WF:res2_apply_index: res2: Thread=xpc12 state=X0:"0:xpc12": Start. do_go_back=false
+tabdata = 0, -, R0 CTRL, 
+WF:res2_apply_index: res2: Thread=xpc12 state=X0:"0:xpc12": res2: Thread=xpc12 state=X0:"0:xpc12": process_shed for edge no 925:  hwm=0.0.0  (root.read.write)
+tabdata = 0, 925, R0 DATA, 
+tabdata = 0+E, 925, W0 DATA, 
+Start of aux report restructure2
+<NONE>Simple greedy schedule for res2: Thread=xpc12 state=X0:"0:xpc12"
+res2: Thread=xpc12 state=X0:"0:xpc12"
+*-----+-----+---------+------*
+| pc  | eno | Phaser  | Work |
+*-----+-----+---------+------*
+| 0   | -   | R0 CTRL |      |
+| 0   | 925 | R0 DATA |      |
+| 0+E | 925 | W0 DATA |      |
+*-----+-----+---------+------*
+End of aux report restructure2
+<NONE>Simple greedy schedule for res2: Thread=xpc12 state=X0:"0:xpc12"
+res2: Thread=xpc12 state=X0:"0:xpc12"
+*-----+-----+---------+------*
+| pc  | eno | Phaser  | Work |
+*-----+-----+---------+------*
+| 0   | -   | R0 CTRL |      |
+| 0   | 925 | R0 DATA |      |
+| 0+E | 925 | W0 DATA |      |
+*-----+-----+---------+------*
+
+WF:res2_apply_index: res2: Thread=xpc12 state=X1:"1:xpc12": Start. do_go_back=false
+tabdata = 1, -, R0 CTRL, 
+WF:res2_apply_index: res2: Thread=xpc12 state=X1:"1:xpc12": res2: Thread=xpc12 state=X1:"1:xpc12": process_shed for edge no 926:  hwm=0.0.1  (root.read.write)
+tabdata = 1, 926, R0 DATA, 
+tabdata = 1+E, 926, W0 DATA, @_SINT/CC/SCALbx12_ARA0 te=te:1 write(pio_addr, C(pio_wdata))
+tabdata = 2, 926, W1 DATA, 
+WF:res2_apply_index: res2: Thread=xpc12 state=X1:"1:xpc12": res2: Thread=xpc12 state=X1:"1:xpc12": process_shed for edge no 927:  hwm=0.1.0  (root.read.write)
+tabdata = 1, 927, R0 DATA, @_SINT/CC/SCALbx12_ARA0 te=te:1 read(pio_addr)
+tabdata = 3, 927, R1 DATA, 
+tabdata = 3+E, 927, W0 DATA, pio_rdata te=te:3 scalarw(E7)
+Start of aux report restructure2
+<NONE>Simple greedy schedule for res2: Thread=xpc12 state=X1:"1:xpc12"
+res2: Thread=xpc12 state=X1:"1:xpc12"
+*-----+-----+---------+---------------------------------------------------------------*
+| pc  | eno | Phaser  | Work                                                          |
+*-----+-----+---------+---------------------------------------------------------------*
+| 1   | -   | R0 CTRL |                                                               |
+| 1   | 926 | R0 DATA |                                                               |
+| 1+E | 926 | W0 DATA | @_SINT/CC/SCALbx12_ARA0 te=te:1 write(pio_addr, C(pio_wdata)) |
+| 2   | 926 | W1 DATA |                                                               |
+| 1   | 927 | R0 DATA | @_SINT/CC/SCALbx12_ARA0 te=te:1 read(pio_addr)                |
+| 3   | 927 | R1 DATA |                                                               |
+| 3+E | 927 | W0 DATA | pio_rdata te=te:3 scalarw(E7)                                 |
+*-----+-----+---------+---------------------------------------------------------------*
+End of aux report restructure2
+<NONE>Simple greedy schedule for res2: Thread=xpc12 state=X1:"1:xpc12"
+res2: Thread=xpc12 state=X1:"1:xpc12"
+*-----+-----+---------+---------------------------------------------------------------*
+| pc  | eno | Phaser  | Work                                                          |
+*-----+-----+---------+---------------------------------------------------------------*
+| 1   | -   | R0 CTRL |                                                               |
+| 1   | 926 | R0 DATA |                                                               |
+| 1+E | 926 | W0 DATA | @_SINT/CC/SCALbx12_ARA0 te=te:1 write(pio_addr, C(pio_wdata)) |
+| 2   | 926 | W1 DATA |                                                               |
+| 1   | 927 | R0 DATA | @_SINT/CC/SCALbx12_ARA0 te=te:1 read(pio_addr)                |
+| 3   | 927 | R1 DATA |                                                               |
+| 3+E | 927 | W0 DATA | pio_rdata te=te:3 scalarw(E7)                                 |
+*-----+-----+---------+---------------------------------------------------------------*
+
+WF:res2_apply_index: res2: Thread=xpc12 state=X2:"2:xpc12": Start. do_go_back=false
+tabdata = 4, -, R0 CTRL, 
+WF:res2_apply_index: res2: Thread=xpc12 state=X2:"2:xpc12": res2: Thread=xpc12 state=X2:"2:xpc12": process_shed for edge no 928:  hwm=0.0.0  (root.read.write)
+tabdata = 4, 928, R0 DATA, 
+tabdata = 4+E, 928, W0 DATA, 
+Start of aux report restructure2
+<NONE>Simple greedy schedule for res2: Thread=xpc12 state=X2:"2:xpc12"
+res2: Thread=xpc12 state=X2:"2:xpc12"
+*-----+-----+---------+------*
+| pc  | eno | Phaser  | Work |
+*-----+-----+---------+------*
+| 4   | -   | R0 CTRL |      |
+| 4   | 928 | R0 DATA |      |
+| 4+E | 928 | W0 DATA |      |
+*-----+-----+---------+------*
+End of aux report restructure2
+<NONE>Simple greedy schedule for res2: Thread=xpc12 state=X2:"2:xpc12"
+res2: Thread=xpc12 state=X2:"2:xpc12"
+*-----+-----+---------+------*
+| pc  | eno | Phaser  | Work |
+*-----+-----+---------+------*
+| 4   | -   | R0 CTRL |      |
+| 4   | 928 | R0 DATA |      |
+| 4+E | 928 | W0 DATA |      |
+*-----+-----+---------+------*
+
+WF:res2_apply_index: res2: Thread=xpc12 state=X4:"4:xpc12": Start. do_go_back=false
+tabdata = 5, -, R0 CTRL, 
+WF:res2_apply_index: res2: Thread=xpc12 state=X4:"4:xpc12": res2: Thread=xpc12 state=X4:"4:xpc12": process_shed for edge no 929:  hwm=0.0.0  (root.read.write)
+tabdata = 5, 929, R0 DATA, 
+tabdata = 5+E, 929, W0 DATA, 
+Start of aux report restructure2
+<NONE>Simple greedy schedule for res2: Thread=xpc12 state=X4:"4:xpc12"
+res2: Thread=xpc12 state=X4:"4:xpc12"
+*-----+-----+---------+------*
+| pc  | eno | Phaser  | Work |
+*-----+-----+---------+------*
+| 5   | -   | R0 CTRL |      |
+| 5   | 929 | R0 DATA |      |
+| 5+E | 929 | W0 DATA |      |
+*-----+-----+---------+------*
+End of aux report restructure2
+<NONE>Simple greedy schedule for res2: Thread=xpc12 state=X4:"4:xpc12"
+res2: Thread=xpc12 state=X4:"4:xpc12"
+*-----+-----+---------+------*
+| pc  | eno | Phaser  | Work |
+*-----+-----+---------+------*
+| 5   | -   | R0 CTRL |      |
+| 5   | 929 | R0 DATA |      |
+| 5+E | 929 | W0 DATA |      |
+*-----+-----+---------+------*
+
+Reindexed thread xpc12 with 6 minor control states
+WF:allocator2_domain: start
+New pc encoding needed for xpc10
+New PC encoding npcs=xpc10nz needed for xpc10 using xpc10nz with arity 23 states
+Report on res2_form_cam_ops: posedge(clk):xpc10:X0:"0:xpc10":?: Work summary: none exist.
+Variable-latency operation check for thread xpc10 in state X0:"0:xpc10": result=No stalls can happen in this state
+recoded edge guard from true to true 
+Report on res2_form_cam_ops: posedge(clk):xpc10:X0:"0:xpc10":?: Work summary
+  track=CBG_track (0,900) eno=900, te:0, opx=*misc_exec*:*UNDEF, hk at=<NONE>
+  track=CBG_track (0,900) eno=900, te:0, opx=scalarw:count, hk at=HK_abs ([0],HK_rel (0,"hk-create"))
+  track=CBG_track (0,900) eno=900, te:0, opx=scalarw:evariant, hk at=HK_abs ([0],HK_rel (0,"hk-create"))
+  track=CBG_track (0,900) eno=900, te:0, opx=scalarw:edesign, hk at=HK_abs ([0],HK_rel (0,"hk-create"))
+  track=CBG_track (0,900) eno=900, te:0, opx=scalarw:finished, hk at=HK_abs ([0],HK_rel (0,"hk-create"))
+  track=CBG_track (0,900) eno=900, te:0, opx=scalarw:design_serial_number, hk at=HK_abs ([0],HK_rel (0,"hk-create"))
+  track=CBG_track (0,900) eno=900, te:0, opx=scalarw:pio_rdata, hk at=HK_abs ([0],HK_rel (0,"hk-create"))
+  track=CBG_track (0,900) eno=900, te:0, opx=scalarw:elimit, hk at=HK_abs ([0],HK_rel (0,"hk-create"))
+End report on res2_form_cam_ops: posedge(clk):xpc10:X0:"0:xpc10":?: Work summary (8 items)
+
+Variable-latency operation check for thread xpc10 in state X0:"0:xpc10": result=No stalls can happen in this state
+WF:restructure2: Form for res2_form_cam_ops: posedge(clk):xpc10:X0:"0:xpc10":?:900Pass=1: eno=900 cmd=scalarw oldx=elimit te:0
+WF:form_cam_bus_ops: form newops for state=X0:"0:xpc10"  eno=900 pass=1; mwhen0=0; nn=39 cmd=scalarw oldx=elimit ikey=elimit
+nstf: ikey=elimit eno=900 no shotgun trigger found for elimit
+WF:restructure2: Form for res2_form_cam_ops: posedge(clk):xpc10:X0:"0:xpc10":?:900Pass=1: eno=900 cmd=scalarw oldx=pio_rdata te:0
+WF:form_cam_bus_ops: form newops for state=X0:"0:xpc10"  eno=900 pass=1; mwhen0=0; nn=21 cmd=scalarw oldx=pio_rdata ikey=pio_rdata
+nstf: ikey=pio_rdata eno=900 no shotgun trigger found for pio_rdata
+WF:restructure2: Form for res2_form_cam_ops: posedge(clk):xpc10:X0:"0:xpc10":?:900Pass=1: eno=900 cmd=scalarw oldx=design_serial_number te:0
+WF:form_cam_bus_ops: form newops for state=X0:"0:xpc10"  eno=900 pass=1; mwhen0=0; nn=20 cmd=scalarw oldx=design_serial_number ikey=design_serial_number
+nstf: ikey=design_serial_number eno=900 no shotgun trigger found for design_serial_number
+WF:restructure2: Form for res2_form_cam_ops: posedge(clk):xpc10:X0:"0:xpc10":?:900Pass=1: eno=900 cmd=scalarw oldx=finished te:0
+WF:form_cam_bus_ops: form newops for state=X0:"0:xpc10"  eno=900 pass=1; mwhen0=0; nn=42 cmd=scalarw oldx=finished ikey=finished
+nstf: ikey=finished eno=900 no shotgun trigger found for finished
+WF:restructure2: Form for res2_form_cam_ops: posedge(clk):xpc10:X0:"0:xpc10":?:900Pass=1: eno=900 cmd=scalarw oldx=edesign te:0
+WF:form_cam_bus_ops: form newops for state=X0:"0:xpc10"  eno=900 pass=1; mwhen0=0; nn=41 cmd=scalarw oldx=edesign ikey=edesign
+nstf: ikey=edesign eno=900 no shotgun trigger found for edesign
+WF:restructure2: Form for res2_form_cam_ops: posedge(clk):xpc10:X0:"0:xpc10":?:900Pass=1: eno=900 cmd=scalarw oldx=evariant te:0
+WF:form_cam_bus_ops: form newops for state=X0:"0:xpc10"  eno=900 pass=1; mwhen0=0; nn=40 cmd=scalarw oldx=evariant ikey=evariant
+nstf: ikey=evariant eno=900 no shotgun trigger found for evariant
+WF:restructure2: Form for res2_form_cam_ops: posedge(clk):xpc10:X0:"0:xpc10":?:900Pass=1: eno=900 cmd=scalarw oldx=count te:0
+WF:form_cam_bus_ops: form newops for state=X0:"0:xpc10"  eno=900 pass=1; mwhen0=0; nn=37 cmd=scalarw oldx=count ikey=count
+nstf: ikey=count eno=900 no shotgun trigger found for count
+WF:restructure2: Form for res2_form_cam_ops: posedge(clk):xpc10:X0:"0:xpc10":?:900Pass=1: eno=900 cmd=*misc_exec* oldx=*UNDEF te:0
+WF:form_cam_bus_ops: form newops for state=X0:"0:xpc10"  eno=900 pass=1; mwhen0=0; nn=none cmd=*misc_exec* oldx=*UNDEF ikey=-
+WF:restructure2: Form for res2_form_cam_ops: posedge(clk):xpc10:X0:"0:xpc10":?:900Pass=2: eno=900 cmd=scalarw oldx=elimit te:0
+WF:form_cam_bus_ops: form newops for state=X0:"0:xpc10"  eno=900 pass=2; mwhen0=0; nn=39 cmd=scalarw oldx=elimit ikey=elimit
+nstf: ikey=elimit eno=900 no shotgun trigger found for elimit
+WF:restructure2: Form for res2_form_cam_ops: posedge(clk):xpc10:X0:"0:xpc10":?:900Pass=2: eno=900 cmd=scalarw oldx=pio_rdata te:0
+WF:form_cam_bus_ops: form newops for state=X0:"0:xpc10"  eno=900 pass=2; mwhen0=0; nn=21 cmd=scalarw oldx=pio_rdata ikey=pio_rdata
+nstf: ikey=pio_rdata eno=900 no shotgun trigger found for pio_rdata
+WF:restructure2: Form for res2_form_cam_ops: posedge(clk):xpc10:X0:"0:xpc10":?:900Pass=2: eno=900 cmd=scalarw oldx=design_serial_number te:0
+WF:form_cam_bus_ops: form newops for state=X0:"0:xpc10"  eno=900 pass=2; mwhen0=0; nn=20 cmd=scalarw oldx=design_serial_number ikey=design_serial_number
+nstf: ikey=design_serial_number eno=900 no shotgun trigger found for design_serial_number
+WF:restructure2: Form for res2_form_cam_ops: posedge(clk):xpc10:X0:"0:xpc10":?:900Pass=2: eno=900 cmd=scalarw oldx=finished te:0
+WF:form_cam_bus_ops: form newops for state=X0:"0:xpc10"  eno=900 pass=2; mwhen0=0; nn=42 cmd=scalarw oldx=finished ikey=finished
+nstf: ikey=finished eno=900 no shotgun trigger found for finished
+WF:restructure2: Form for res2_form_cam_ops: posedge(clk):xpc10:X0:"0:xpc10":?:900Pass=2: eno=900 cmd=scalarw oldx=edesign te:0
+WF:form_cam_bus_ops: form newops for state=X0:"0:xpc10"  eno=900 pass=2; mwhen0=0; nn=41 cmd=scalarw oldx=edesign ikey=edesign
+nstf: ikey=edesign eno=900 no shotgun trigger found for edesign
+WF:restructure2: Form for res2_form_cam_ops: posedge(clk):xpc10:X0:"0:xpc10":?:900Pass=2: eno=900 cmd=scalarw oldx=evariant te:0
+WF:form_cam_bus_ops: form newops for state=X0:"0:xpc10"  eno=900 pass=2; mwhen0=0; nn=40 cmd=scalarw oldx=evariant ikey=evariant
+nstf: ikey=evariant eno=900 no shotgun trigger found for evariant
+WF:restructure2: Form for res2_form_cam_ops: posedge(clk):xpc10:X0:"0:xpc10":?:900Pass=2: eno=900 cmd=scalarw oldx=count te:0
+WF:form_cam_bus_ops: form newops for state=X0:"0:xpc10"  eno=900 pass=2; mwhen0=0; nn=37 cmd=scalarw oldx=count ikey=count
+nstf: ikey=count eno=900 no shotgun trigger found for count
+WF:restructure2: Form for res2_form_cam_ops: posedge(clk):xpc10:X0:"0:xpc10":?:900Pass=2: eno=900 cmd=*misc_exec* oldx=*UNDEF te:0
+WF:form_cam_bus_ops: form newops for state=X0:"0:xpc10"  eno=900 pass=2; mwhen0=0; nn=none cmd=*misc_exec* oldx=*UNDEF ikey=-
+Report on res2_form_cam_ops: posedge(clk):xpc10:X1:"1:xpc10":?: Work summary: none exist.
+Variable-latency operation check for thread xpc10 in state X1:"1:xpc10": result=No stalls can happen in this state
+recoded edge guard from true to true 
+Report on res2_form_cam_ops: posedge(clk):xpc10:X1:"1:xpc10":?: Work summary
+  track=CBG_track (1,901) eno=901, te:1, opx=*misc_exec*:*UNDEF, hk at=<NONE>
+  track=CBG_track (1,901) eno=901, te:1, opx=write:@_BOOL/CC/SCALbx10_ARA0[0], hk at=HK_abs ([1],HK_rel (0,"asubsc-lhs"))
+End report on res2_form_cam_ops: posedge(clk):xpc10:X1:"1:xpc10":?: Work summary (2 items)
+
+Variable-latency operation check for thread xpc10 in state X1:"1:xpc10": result=No stalls can happen in this state
+WF:restructure2: Form for res2_form_cam_ops: posedge(clk):xpc10:X1:"1:xpc10":?:901Pass=1: eno=901 cmd=write oldx=@_BOOL/CC/SCALbx10_ARA0[0] te:1
+WF:form_cam_bus_ops: form newops for state=X1:"1:xpc10"  eno=901 pass=1; mwhen0=1; nn=138 cmd=write oldx=@_BOOL/CC/SCALbx10_ARA0[0] ikey=@_BOOL/CC/SCALbx10_ARA0
+nstf: ikey=@_BOOL/CC/SCALbx10_ARA0 eno=901 no shotgun trigger found for @_BOOL/CC/SCALbx10_ARA0[0]
+WF:restructure2: Form for res2_form_cam_ops: posedge(clk):xpc10:X1:"1:xpc10":?:901Pass=1: eno=901 cmd=*misc_exec* oldx=*UNDEF te:1
+do not forward written value (-ve rdyat of -330012) guts="@_BOOL/CC/SCALbx10_ARA0[0]"
+WF:form_cam_bus_ops: form newops for state=X1:"1:xpc10"  eno=901 pass=1; mwhen0=1; nn=none cmd=*misc_exec* oldx=*UNDEF ikey=-
+WF:restructure2: Form for res2_form_cam_ops: posedge(clk):xpc10:X1:"1:xpc10":?:901Pass=2: eno=901 cmd=write oldx=@_BOOL/CC/SCALbx10_ARA0[0] te:1
+do not forward written value (-ve rdyat of -330012) guts="@_BOOL/CC/SCALbx10_ARA0[0]"
+WF:form_cam_bus_ops: form newops for state=X1:"1:xpc10"  eno=901 pass=2; mwhen0=1; nn=138 cmd=write oldx=@_BOOL/CC/SCALbx10_ARA0[0] ikey=@_BOOL/CC/SCALbx10_ARA0
+nstf: ikey=@_BOOL/CC/SCALbx10_ARA0 eno=901 no shotgun trigger found for @_BOOL/CC/SCALbx10_ARA0[0]
+WF:restructure2: Form for res2_form_cam_ops: posedge(clk):xpc10:X1:"1:xpc10":?:901Pass=2: eno=901 cmd=*misc_exec* oldx=*UNDEF te:1
+do not forward written value (-ve rdyat of -330012) guts="@_BOOL/CC/SCALbx10_ARA0[0]"
+do not forward written value (-ve rdyat of -330012) guts="@_BOOL/CC/SCALbx10_ARA0[0]"
+WF:form_cam_bus_ops: form newops for state=X1:"1:xpc10"  eno=901 pass=2; mwhen0=1; nn=none cmd=*misc_exec* oldx=*UNDEF ikey=-
+Report on res2_form_cam_ops: posedge(clk):xpc10:X2:"2:xpc10":?: Work summary: none exist.
+Variable-latency operation check for thread xpc10 in state X2:"2:xpc10": result=No stalls can happen in this state
+recoded edge guard from true to true 
+Report on res2_form_cam_ops: posedge(clk):xpc10:X2:"2:xpc10":?: Work summary
+  track=CBG_track (3,902) eno=902, te:3, opx=*misc_exec*:*UNDEF, hk at=<NONE>
+  track=CBG_track (3,902) eno=902, te:3, opx=scalarw:primesya/T404/Main/T404/Main/V_2_GP, hk at=HK_abs ([3],HK_rel (0,"hk-create"))
+  track=CBG_track (3,902) eno=902, te:3, opx=scalarw:count, hk at=HK_abs ([3],HK_rel (0,"hk-create"))
+End report on res2_form_cam_ops: posedge(clk):xpc10:X2:"2:xpc10":?: Work summary (3 items)
+
+Variable-latency operation check for thread xpc10 in state X2:"2:xpc10": result=No stalls can happen in this state
+WF:restructure2: Form for res2_form_cam_ops: posedge(clk):xpc10:X2:"2:xpc10":?:902Pass=1: eno=902 cmd=scalarw oldx=count te:3
+WF:form_cam_bus_ops: form newops for state=X2:"2:xpc10"  eno=902 pass=1; mwhen0=3; nn=37 cmd=scalarw oldx=count ikey=count
+nstf: ikey=count eno=902 no shotgun trigger found for count
+WF:restructure2: Form for res2_form_cam_ops: posedge(clk):xpc10:X2:"2:xpc10":?:902Pass=1: eno=902 cmd=scalarw oldx=primesya/T404/Main/T404/Main/V_2_GP te:3
+WF:form_cam_bus_ops: form newops for state=X2:"2:xpc10"  eno=902 pass=1; mwhen0=3; nn=70 cmd=scalarw oldx=primesya/T404/Main/T404/Main/V_2_GP ikey=primesya/T404/Main/T404/Main/V_2_GP
+nstf: ikey=primesya/T404/Main/T404/Main/V_2_GP eno=902 no shotgun trigger found for primesya/T404/Main/T404/Main/V_2_GP
+WF:restructure2: Form for res2_form_cam_ops: posedge(clk):xpc10:X2:"2:xpc10":?:902Pass=1: eno=902 cmd=*misc_exec* oldx=*UNDEF te:3
+WF:form_cam_bus_ops: form newops for state=X2:"2:xpc10"  eno=902 pass=1; mwhen0=3; nn=none cmd=*misc_exec* oldx=*UNDEF ikey=-
+WF:restructure2: Form for res2_form_cam_ops: posedge(clk):xpc10:X2:"2:xpc10":?:902Pass=2: eno=902 cmd=scalarw oldx=count te:3
+WF:form_cam_bus_ops: form newops for state=X2:"2:xpc10"  eno=902 pass=2; mwhen0=3; nn=37 cmd=scalarw oldx=count ikey=count
+nstf: ikey=count eno=902 no shotgun trigger found for count
+WF:restructure2: Form for res2_form_cam_ops: posedge(clk):xpc10:X2:"2:xpc10":?:902Pass=2: eno=902 cmd=scalarw oldx=primesya/T404/Main/T404/Main/V_2_GP te:3
+WF:form_cam_bus_ops: form newops for state=X2:"2:xpc10"  eno=902 pass=2; mwhen0=3; nn=70 cmd=scalarw oldx=primesya/T404/Main/T404/Main/V_2_GP ikey=primesya/T404/Main/T404/Main/V_2_GP
+nstf: ikey=primesya/T404/Main/T404/Main/V_2_GP eno=902 no shotgun trigger found for primesya/T404/Main/T404/Main/V_2_GP
+WF:restructure2: Form for res2_form_cam_ops: posedge(clk):xpc10:X2:"2:xpc10":?:902Pass=2: eno=902 cmd=*misc_exec* oldx=*UNDEF te:3
+WF:form_cam_bus_ops: form newops for state=X2:"2:xpc10"  eno=902 pass=2; mwhen0=3; nn=none cmd=*misc_exec* oldx=*UNDEF ikey=-
+Report on res2_form_cam_ops: posedge(clk):xpc10:X4:"4:xpc10":?: Work summary: none exist.
+Variable-latency operation check for thread xpc10 in state X4:"4:xpc10": result=No stalls can happen in this state
+recoded edge guard from primesya/T404/Main/T404/Main/V_2_GP<1000 to primesya/T404/Main/T404/Main/V_2_GP<1000 
+Report on res2_form_cam_ops: posedge(clk):xpc10:X4:"4:xpc10":?: Work summary
+  track=CBG_track (4,904) eno=904, te:4, opx=*misc_exec*:*UNDEF, hk at=<NONE>
+End report on res2_form_cam_ops: posedge(clk):xpc10:X4:"4:xpc10":?: Work summary (1 items)
+
+Variable-latency operation check for thread xpc10 in state X4:"4:xpc10": result=No stalls can happen in this state
+WF:restructure2: Form for res2_form_cam_ops: posedge(clk):xpc10:X4:"4:xpc10":?:904Pass=1: eno=904 cmd=*misc_exec* oldx=*UNDEF te:4
+WF:form_cam_bus_ops: form newops for state=X4:"4:xpc10"  eno=904 pass=1; mwhen0=4; nn=none cmd=*misc_exec* oldx=*UNDEF ikey=-
+WF:restructure2: Form for res2_form_cam_ops: posedge(clk):xpc10:X4:"4:xpc10":?:904Pass=2: eno=904 cmd=*misc_exec* oldx=*UNDEF te:4
+WF:form_cam_bus_ops: form newops for state=X4:"4:xpc10"  eno=904 pass=2; mwhen0=4; nn=none cmd=*misc_exec* oldx=*UNDEF ikey=-
+recoded edge guard from primesya/T404/Main/T404/Main/V_2_GP>=1000 to primesya/T404/Main/T404/Main/V_2_GP>=1000 
+Report on res2_form_cam_ops: posedge(clk):xpc10:X4:"4:xpc10":?: Work summary
+  track=CBG_track (4,903) eno=903, te:4, opx=*misc_exec*:*UNDEF, hk at=<NONE>
+  track=CBG_track (4,903) eno=903, te:4, opx=scalarw:primesya/T404/Main/T404/Main/V_2_GP, hk at=HK_abs ([4],HK_rel (0,"hk-create"))
+End report on res2_form_cam_ops: posedge(clk):xpc10:X4:"4:xpc10":?: Work summary (2 items)
+
+Variable-latency operation check for thread xpc10 in state X4:"4:xpc10": result=No stalls can happen in this state
+WF:restructure2: Form for res2_form_cam_ops: posedge(clk):xpc10:X4:"4:xpc10":?:903Pass=1: eno=903 cmd=scalarw oldx=primesya/T404/Main/T404/Main/V_2_GP te:4
+WF:form_cam_bus_ops: form newops for state=X4:"4:xpc10"  eno=903 pass=1; mwhen0=4; nn=70 cmd=scalarw oldx=primesya/T404/Main/T404/Main/V_2_GP ikey=primesya/T404/Main/T404/Main/V_2_GP
+nstf: ikey=primesya/T404/Main/T404/Main/V_2_GP eno=903 no shotgun trigger found for primesya/T404/Main/T404/Main/V_2_GP
+WF:restructure2: Form for res2_form_cam_ops: posedge(clk):xpc10:X4:"4:xpc10":?:903Pass=1: eno=903 cmd=*misc_exec* oldx=*UNDEF te:4
+WF:form_cam_bus_ops: form newops for state=X4:"4:xpc10"  eno=903 pass=1; mwhen0=4; nn=none cmd=*misc_exec* oldx=*UNDEF ikey=-
+WF:restructure2: Form for res2_form_cam_ops: posedge(clk):xpc10:X4:"4:xpc10":?:903Pass=2: eno=903 cmd=scalarw oldx=primesya/T404/Main/T404/Main/V_2_GP te:4
+WF:form_cam_bus_ops: form newops for state=X4:"4:xpc10"  eno=903 pass=2; mwhen0=4; nn=70 cmd=scalarw oldx=primesya/T404/Main/T404/Main/V_2_GP ikey=primesya/T404/Main/T404/Main/V_2_GP
+nstf: ikey=primesya/T404/Main/T404/Main/V_2_GP eno=903 no shotgun trigger found for primesya/T404/Main/T404/Main/V_2_GP
+WF:restructure2: Form for res2_form_cam_ops: posedge(clk):xpc10:X4:"4:xpc10":?:903Pass=2: eno=903 cmd=*misc_exec* oldx=*UNDEF te:4
+WF:form_cam_bus_ops: form newops for state=X4:"4:xpc10"  eno=903 pass=2; mwhen0=4; nn=none cmd=*misc_exec* oldx=*UNDEF ikey=-
+Report on res2_form_cam_ops: posedge(clk):xpc10:X8:"8:xpc10":?: Work summary: none exist.
+Variable-latency operation check for thread xpc10 in state X8:"8:xpc10": result=No stalls can happen in this state
+recoded edge guard from primesya/T404/Main/T404/Main/V_2_GP<1000 to primesya/T404/Main/T404/Main/V_2_GP<1000 
+Report on res2_form_cam_ops: posedge(clk):xpc10:X8:"8:xpc10":?: Work summary
+  track=CBG_track (5,906) eno=906, te:5, opx=*misc_exec*:*UNDEF, hk at=<NONE>
+End report on res2_form_cam_ops: posedge(clk):xpc10:X8:"8:xpc10":?: Work summary (1 items)
+
+Variable-latency operation check for thread xpc10 in state X8:"8:xpc10": result=No stalls can happen in this state
+WF:restructure2: Form for res2_form_cam_ops: posedge(clk):xpc10:X8:"8:xpc10":?:906Pass=1: eno=906 cmd=*misc_exec* oldx=*UNDEF te:5
+WF:form_cam_bus_ops: form newops for state=X8:"8:xpc10"  eno=906 pass=1; mwhen0=5; nn=none cmd=*misc_exec* oldx=*UNDEF ikey=-
+WF:restructure2: Form for res2_form_cam_ops: posedge(clk):xpc10:X8:"8:xpc10":?:906Pass=2: eno=906 cmd=*misc_exec* oldx=*UNDEF te:5
+WF:form_cam_bus_ops: form newops for state=X8:"8:xpc10"  eno=906 pass=2; mwhen0=5; nn=none cmd=*misc_exec* oldx=*UNDEF ikey=-
+recoded edge guard from primesya/T404/Main/T404/Main/V_2_GP>=1000 to primesya/T404/Main/T404/Main/V_2_GP>=1000 
+Report on res2_form_cam_ops: posedge(clk):xpc10:X8:"8:xpc10":?: Work summary
+  track=CBG_track (5,905) eno=905, te:5, opx=*misc_exec*:*UNDEF, hk at=<NONE>
+End report on res2_form_cam_ops: posedge(clk):xpc10:X8:"8:xpc10":?: Work summary (1 items)
+
+Variable-latency operation check for thread xpc10 in state X8:"8:xpc10": result=No stalls can happen in this state
+WF:restructure2: Form for res2_form_cam_ops: posedge(clk):xpc10:X8:"8:xpc10":?:905Pass=1: eno=905 cmd=*misc_exec* oldx=*UNDEF te:5
+WF:form_cam_bus_ops: form newops for state=X8:"8:xpc10"  eno=905 pass=1; mwhen0=5; nn=none cmd=*misc_exec* oldx=*UNDEF ikey=-
+WF:restructure2: Form for res2_form_cam_ops: posedge(clk):xpc10:X8:"8:xpc10":?:905Pass=2: eno=905 cmd=*misc_exec* oldx=*UNDEF te:5
+WF:form_cam_bus_ops: form newops for state=X8:"8:xpc10"  eno=905 pass=2; mwhen0=5; nn=none cmd=*misc_exec* oldx=*UNDEF ikey=-
+Report on res2_form_cam_ops: posedge(clk):xpc10:X16:"16:xpc10":?: Work summary: none exist.
+Variable-latency operation check for thread xpc10 in state X16:"16:xpc10": result=No stalls can happen in this state
+recoded edge guard from true to true 
+Report on res2_form_cam_ops: posedge(clk):xpc10:X16:"16:xpc10":?: Work summary
+  track=CBG_track (6,907) eno=907, te:6, opx=*misc_exec*:*UNDEF, hk at=<NONE>
+  track=CBG_track (6,907) eno=907, te:6, opx=scalarw:primesya/T404/Main/T404/Main/V_4_GP, hk at=HK_abs ([6],HK_rel (0,"hk-create"))
+End report on res2_form_cam_ops: posedge(clk):xpc10:X16:"16:xpc10":?: Work summary (2 items)
+
+Variable-latency operation check for thread xpc10 in state X16:"16:xpc10": result=No stalls can happen in this state
+WF:restructure2: Form for res2_form_cam_ops: posedge(clk):xpc10:X16:"16:xpc10":?:907Pass=1: eno=907 cmd=scalarw oldx=primesya/T404/Main/T404/Main/V_4_GP te:6
+WF:form_cam_bus_ops: form newops for state=X16:"16:xpc10"  eno=907 pass=1; mwhen0=6; nn=72 cmd=scalarw oldx=primesya/T404/Main/T404/Main/V_4_GP ikey=primesya/T404/Main/T404/Main/V_4_GP
+nstf: ikey=primesya/T404/Main/T404/Main/V_4_GP eno=907 no shotgun trigger found for primesya/T404/Main/T404/Main/V_4_GP
+WF:restructure2: Form for res2_form_cam_ops: posedge(clk):xpc10:X16:"16:xpc10":?:907Pass=1: eno=907 cmd=*misc_exec* oldx=*UNDEF te:6
+WF:form_cam_bus_ops: form newops for state=X16:"16:xpc10"  eno=907 pass=1; mwhen0=6; nn=none cmd=*misc_exec* oldx=*UNDEF ikey=-
+WF:restructure2: Form for res2_form_cam_ops: posedge(clk):xpc10:X16:"16:xpc10":?:907Pass=2: eno=907 cmd=scalarw oldx=primesya/T404/Main/T404/Main/V_4_GP te:6
+WF:form_cam_bus_ops: form newops for state=X16:"16:xpc10"  eno=907 pass=2; mwhen0=6; nn=72 cmd=scalarw oldx=primesya/T404/Main/T404/Main/V_4_GP ikey=primesya/T404/Main/T404/Main/V_4_GP
+nstf: ikey=primesya/T404/Main/T404/Main/V_4_GP eno=907 no shotgun trigger found for primesya/T404/Main/T404/Main/V_4_GP
+WF:restructure2: Form for res2_form_cam_ops: posedge(clk):xpc10:X16:"16:xpc10":?:907Pass=2: eno=907 cmd=*misc_exec* oldx=*UNDEF te:6
+WF:form_cam_bus_ops: form newops for state=X16:"16:xpc10"  eno=907 pass=2; mwhen0=6; nn=none cmd=*misc_exec* oldx=*UNDEF ikey=-
+Report on res2_form_cam_ops: posedge(clk):xpc10:X32:"32:xpc10":?: Work summary: none exist.
+Variable-latency operation check for thread xpc10 in state X32:"32:xpc10": result=No stalls can happen in this state
+recoded edge guard from primesya/T404/Main/T404/Main/V_4_GP<1000 to primesya/T404/Main/T404/Main/V_4_GP<1000 
+Report on res2_form_cam_ops: posedge(clk):xpc10:X32:"32:xpc10":?: Work summary
+  track=CBG_track (7,909) eno=909, te:7, opx=*misc_exec*:*UNDEF, hk at=<NONE>
+End report on res2_form_cam_ops: posedge(clk):xpc10:X32:"32:xpc10":?: Work summary (1 items)
+
+Variable-latency operation check for thread xpc10 in state X32:"32:xpc10": result=No stalls can happen in this state
+WF:restructure2: Form for res2_form_cam_ops: posedge(clk):xpc10:X32:"32:xpc10":?:909Pass=1: eno=909 cmd=*misc_exec* oldx=*UNDEF te:7
+WF:form_cam_bus_ops: form newops for state=X32:"32:xpc10"  eno=909 pass=1; mwhen0=7; nn=none cmd=*misc_exec* oldx=*UNDEF ikey=-
+WF:restructure2: Form for res2_form_cam_ops: posedge(clk):xpc10:X32:"32:xpc10":?:909Pass=2: eno=909 cmd=*misc_exec* oldx=*UNDEF te:7
+WF:form_cam_bus_ops: form newops for state=X32:"32:xpc10"  eno=909 pass=2; mwhen0=7; nn=none cmd=*misc_exec* oldx=*UNDEF ikey=-
+recoded edge guard from primesya/T404/Main/T404/Main/V_4_GP>=1000 to primesya/T404/Main/T404/Main/V_4_GP>=1000 
+Report on res2_form_cam_ops: posedge(clk):xpc10:X32:"32:xpc10":?: Work summary
+  track=CBG_track (7,908) eno=908, te:7, opx=*misc_exec*:*UNDEF, hk at=<NONE>
+End report on res2_form_cam_ops: posedge(clk):xpc10:X32:"32:xpc10":?: Work summary (1 items)
+
+Variable-latency operation check for thread xpc10 in state X32:"32:xpc10": result=No stalls can happen in this state
+WF:restructure2: Form for res2_form_cam_ops: posedge(clk):xpc10:X32:"32:xpc10":?:908Pass=1: eno=908 cmd=*misc_exec* oldx=*UNDEF te:7
+WF:form_cam_bus_ops: form newops for state=X32:"32:xpc10"  eno=908 pass=1; mwhen0=7; nn=none cmd=*misc_exec* oldx=*UNDEF ikey=-
+WF:restructure2: Form for res2_form_cam_ops: posedge(clk):xpc10:X32:"32:xpc10":?:908Pass=2: eno=908 cmd=*misc_exec* oldx=*UNDEF te:7
+WF:form_cam_bus_ops: form newops for state=X32:"32:xpc10"  eno=908 pass=2; mwhen0=7; nn=none cmd=*misc_exec* oldx=*UNDEF ikey=-
+Report on res2_form_cam_ops: posedge(clk):xpc10:X64:"64:xpc10":?: Work summary: none exist.
+Variable-latency operation check for thread xpc10 in state X64:"64:xpc10": result=No stalls can happen in this state
+recoded edge guard from true to true 
+Report on res2_form_cam_ops: posedge(clk):xpc10:X64:"64:xpc10":?: Work summary
+  track=CBG_track (8,910) eno=910, te:8, opx=*misc_exec*:*UNDEF, hk at=<NONE>
+End report on res2_form_cam_ops: posedge(clk):xpc10:X64:"64:xpc10":?: Work summary (1 items)
+
+Variable-latency operation check for thread xpc10 in state X64:"64:xpc10": result=No stalls can happen in this state
+WF:restructure2: Form for res2_form_cam_ops: posedge(clk):xpc10:X64:"64:xpc10":?:910Pass=1: eno=910 cmd=*misc_exec* oldx=*UNDEF te:8
+WF:form_cam_bus_ops: form newops for state=X64:"64:xpc10"  eno=910 pass=1; mwhen0=8; nn=none cmd=*misc_exec* oldx=*UNDEF ikey=-
+WF:restructure2: Form for res2_form_cam_ops: posedge(clk):xpc10:X64:"64:xpc10":?:910Pass=2: eno=910 cmd=*misc_exec* oldx=*UNDEF te:8
+WF:form_cam_bus_ops: form newops for state=X64:"64:xpc10"  eno=910 pass=2; mwhen0=8; nn=none cmd=*misc_exec* oldx=*UNDEF ikey=-
+Report on res2_form_cam_ops: posedge(clk):xpc10:X128:"128:xpc10":?: Work summary: none exist.
+Variable-latency operation check for thread xpc10 in state X128:"128:xpc10": result=No stalls can happen in this state
+recoded edge guard from true to true 
+Report on res2_form_cam_ops: posedge(clk):xpc10:X128:"128:xpc10":?: Work summary
+  track=CBG_track (9,911) eno=911, te:9, opx=*misc_exec*:*UNDEF, hk at=<NONE>
+End report on res2_form_cam_ops: posedge(clk):xpc10:X128:"128:xpc10":?: Work summary (1 items)
+
+Variable-latency operation check for thread xpc10 in state X128:"128:xpc10": result=No stalls can happen in this state
+WF:restructure2: Form for res2_form_cam_ops: posedge(clk):xpc10:X128:"128:xpc10":?:911Pass=1: eno=911 cmd=*misc_exec* oldx=*UNDEF te:9
+WF:form_cam_bus_ops: form newops for state=X128:"128:xpc10"  eno=911 pass=1; mwhen0=9; nn=none cmd=*misc_exec* oldx=*UNDEF ikey=-
+WF:restructure2: Form for res2_form_cam_ops: posedge(clk):xpc10:X128:"128:xpc10":?:911Pass=2: eno=911 cmd=*misc_exec* oldx=*UNDEF te:9
+WF:form_cam_bus_ops: form newops for state=X128:"128:xpc10"  eno=911 pass=2; mwhen0=9; nn=none cmd=*misc_exec* oldx=*UNDEF ikey=-
+Report on res2_form_cam_ops: posedge(clk):xpc10:X256:"256:xpc10":?: Work summary: none exist.
+Variable-latency operation check for thread xpc10 in state X256:"256:xpc10": result=No stalls can happen in this state
+recoded edge guard from true to true 
+Report on res2_form_cam_ops: posedge(clk):xpc10:X256:"256:xpc10":?: Work summary
+  track=CBG_track (10,912) eno=912, te:10, opx=*misc_exec*:*UNDEF, hk at=<NONE>
+  track=CBG_track (10,912) eno=912, te:10, opx=scalarw:finished, hk at=HK_abs ([10],HK_rel (0,"hk-create"))
+End report on res2_form_cam_ops: posedge(clk):xpc10:X256:"256:xpc10":?: Work summary (2 items)
+
+Variable-latency operation check for thread xpc10 in state X256:"256:xpc10": result=No stalls can happen in this state
+WF:restructure2: Form for res2_form_cam_ops: posedge(clk):xpc10:X256:"256:xpc10":?:912Pass=1: eno=912 cmd=scalarw oldx=finished te:10
+WF:form_cam_bus_ops: form newops for state=X256:"256:xpc10"  eno=912 pass=1; mwhen0=10; nn=42 cmd=scalarw oldx=finished ikey=finished
+nstf: ikey=finished eno=912 no shotgun trigger found for finished
+WF:restructure2: Form for res2_form_cam_ops: posedge(clk):xpc10:X256:"256:xpc10":?:912Pass=1: eno=912 cmd=*misc_exec* oldx=*UNDEF te:10
+WF:form_cam_bus_ops: form newops for state=X256:"256:xpc10"  eno=912 pass=1; mwhen0=10; nn=none cmd=*misc_exec* oldx=*UNDEF ikey=-
+WF:restructure2: Form for res2_form_cam_ops: posedge(clk):xpc10:X256:"256:xpc10":?:912Pass=2: eno=912 cmd=scalarw oldx=finished te:10
+WF:form_cam_bus_ops: form newops for state=X256:"256:xpc10"  eno=912 pass=2; mwhen0=10; nn=42 cmd=scalarw oldx=finished ikey=finished
+nstf: ikey=finished eno=912 no shotgun trigger found for finished
+WF:restructure2: Form for res2_form_cam_ops: posedge(clk):xpc10:X256:"256:xpc10":?:912Pass=2: eno=912 cmd=*misc_exec* oldx=*UNDEF te:10
+WF:form_cam_bus_ops: form newops for state=X256:"256:xpc10"  eno=912 pass=2; mwhen0=10; nn=none cmd=*misc_exec* oldx=*UNDEF ikey=-
+Report on res2_form_cam_ops: posedge(clk):xpc10:X512:"512:xpc10":?: Work summary: none exist.
+Variable-latency operation check for thread xpc10 in state X512:"512:xpc10": result=No stalls can happen in this state
+recoded edge guard from true to true 
+Report on res2_form_cam_ops: posedge(clk):xpc10:X512:"512:xpc10":?: Work summary
+  track=CBG_track (11,913) eno=913, te:11, opx=*misc_exec*:*UNDEF, hk at=<NONE>
+End report on res2_form_cam_ops: posedge(clk):xpc10:X512:"512:xpc10":?: Work summary (1 items)
+
+Variable-latency operation check for thread xpc10 in state X512:"512:xpc10": result=No stalls can happen in this state
+WF:restructure2: Form for res2_form_cam_ops: posedge(clk):xpc10:X512:"512:xpc10":?:913Pass=1: eno=913 cmd=*misc_exec* oldx=*UNDEF te:11
+WF:form_cam_bus_ops: form newops for state=X512:"512:xpc10"  eno=913 pass=1; mwhen0=11; nn=none cmd=*misc_exec* oldx=*UNDEF ikey=-
+WF:restructure2: Form for res2_form_cam_ops: posedge(clk):xpc10:X512:"512:xpc10":?:913Pass=2: eno=913 cmd=*misc_exec* oldx=*UNDEF te:11
+WF:form_cam_bus_ops: form newops for state=X512:"512:xpc10"  eno=913 pass=2; mwhen0=11; nn=none cmd=*misc_exec* oldx=*UNDEF ikey=-
+Report on res2_form_cam_ops: posedge(clk):xpc10:X1024:"1024:xpc10":?: Work summary: none exist.
+Variable-latency operation check for thread xpc10 in state X1024:"1024:xpc10": result=No stalls can happen in this state
+recoded edge guard from true to true 
+Report on res2_form_cam_ops: posedge(clk):xpc10:X1024:"1024:xpc10":?: Work summary
+  track=CBG_track (12,914) eno=914, te:12, opx=*misc_exec*:*UNDEF, hk at=<NONE>
+End report on res2_form_cam_ops: posedge(clk):xpc10:X1024:"1024:xpc10":?: Work summary (1 items)
+
+Variable-latency operation check for thread xpc10 in state X1024:"1024:xpc10": result=No stalls can happen in this state
+WF:restructure2: Form for res2_form_cam_ops: posedge(clk):xpc10:X1024:"1024:xpc10":?:914Pass=1: eno=914 cmd=*misc_exec* oldx=*UNDEF te:12
+WF:form_cam_bus_ops: form newops for state=X1024:"1024:xpc10"  eno=914 pass=1; mwhen0=12; nn=none cmd=*misc_exec* oldx=*UNDEF ikey=-
+WF:restructure2: Form for res2_form_cam_ops: posedge(clk):xpc10:X1024:"1024:xpc10":?:914Pass=2: eno=914 cmd=*misc_exec* oldx=*UNDEF te:12
+WF:form_cam_bus_ops: form newops for state=X1024:"1024:xpc10"  eno=914 pass=2; mwhen0=12; nn=none cmd=*misc_exec* oldx=*UNDEF ikey=-
+Report on res2_form_cam_ops: posedge(clk):xpc10:X2048:"2048:xpc10":?: Work summary: none exist.
+Variable-latency operation check for thread xpc10 in state X2048:"2048:xpc10": result=No stalls can happen in this state
+recoded edge guard from true to true 
+Report on res2_form_cam_ops: posedge(clk):xpc10:X2048:"2048:xpc10":?: Work summary
+  track=CBG_track (13,915) eno=915, te:13, opx=*misc_exec*:*UNDEF, hk at=<NONE>
+End report on res2_form_cam_ops: posedge(clk):xpc10:X2048:"2048:xpc10":?: Work summary (1 items)
+
+Variable-latency operation check for thread xpc10 in state X2048:"2048:xpc10": result=No stalls can happen in this state
+WF:restructure2: Form for res2_form_cam_ops: posedge(clk):xpc10:X2048:"2048:xpc10":?:915Pass=1: eno=915 cmd=*misc_exec* oldx=*UNDEF te:13
+WF:form_cam_bus_ops: form newops for state=X2048:"2048:xpc10"  eno=915 pass=1; mwhen0=13; nn=none cmd=*misc_exec* oldx=*UNDEF ikey=-
+WF:restructure2: Form for res2_form_cam_ops: posedge(clk):xpc10:X2048:"2048:xpc10":?:915Pass=2: eno=915 cmd=*misc_exec* oldx=*UNDEF te:13
+WF:form_cam_bus_ops: form newops for state=X2048:"2048:xpc10"  eno=915 pass=2; mwhen0=13; nn=none cmd=*misc_exec* oldx=*UNDEF ikey=-
+Report on res2_form_cam_ops: posedge(clk):xpc10:X4096:"4096:xpc10":?: Work summary
+  track=CBG_track (14,-1) eno=-1, te:14, opx=read:@_BOOL/CC/SCALbx10_ARA0[primesya/T404/Main/T404/Main/V_4_GP], hk at=HK_abs ([14],HK_rel (0,"asubsc-rhs-addr")), HK_abs ([15],HK_rel (1,"asubsc-rhs-data"))
+End report on res2_form_cam_ops: posedge(clk):xpc10:X4096:"4096:xpc10":?: Work summary (1 items)
+
+Variable-latency operation check for thread xpc10 in state X4096:"4096:xpc10": result=No stalls can happen in this state
+WF:restructure2: Form for res2_form_cam_ops: posedge(clk):xpc10:X4096:"4096:xpc10":?:-1Pass=1: eno=-1 cmd=read oldx=@_BOOL/CC/SCALbx10_ARA0[primesya/T404/Main/T404/Main/V_4_GP] te:14
+WF:form_cam_bus_ops: form newops for state=X4096:"4096:xpc10"  eno=-1 pass=1; mwhen0=14; nn=139 cmd=read oldx=@_BOOL/CC/SCALbx10_ARA0[primesya/T404/Main/T404/Main/V_4_GP] ikey=@_BOOL/CC/SCALbx10_ARA0
+nstf: ikey=@_BOOL/CC/SCALbx10_ARA0 eno=-1 no shotgun trigger found for @_BOOL/CC/SCALbx10_ARA0[primesya/T404/Main/T404/Main/V_4_GP]
+WF:restructure2: Form for res2_form_cam_ops: posedge(clk):xpc10:X4096:"4096:xpc10":?:-1Pass=2: eno=-1 cmd=read oldx=@_BOOL/CC/SCALbx10_ARA0[primesya/T404/Main/T404/Main/V_4_GP] te:14
+startn=14: check need to make stall corrector for pipelined component   f/t=15     needed=false
+hholder F/L alloc_hr  @_BOOL/CC/SCALbx10_ARA0  RR  BOOLCCSCALbx10ARA0RRh10
+Assigned shotgun id=BOOLCCSCALbx10ARA0RRh10 exit=BOOLCCSCALbx10ARA0RRh10shot0 for @_BOOL/CC/SCALbx10_ARA0[primesya/T404/Main/T404/Main/V_4_GP]
+fully-pipelined, fixed latency read - start at 14, ready at 15  - stall_corrector_inuse=false
+WF:form_cam_bus_ops: form newops for state=X4096:"4096:xpc10"  eno=-1 pass=2; mwhen0=14; nn=139 cmd=read oldx=@_BOOL/CC/SCALbx10_ARA0[primesya/T404/Main/T404/Main/V_4_GP] ikey=@_BOOL/CC/SCALbx10_ARA0
+recoded edge guard from !(@_BOOL/CC/SCALbx10_ARA0[primesya/T404/Main/T404/Main/V_4_GP]) to {[xpc10nz==X15:"15:xpc10nz", !(|-|@_BOOL/CC/SCALbx10_ARA0_RDD0)]; [xpc10nz!=X15:"15:xpc10nz", !(|-|BOOLCCSCALbx10ARA0RRh10hold)]} 
+Report on res2_form_cam_ops: posedge(clk):xpc10:X4096:"4096:xpc10":?: Work summary
+  track=CBG_track (15,917) eno=917, te:15, opx=*misc_exec*:*UNDEF, hk at=<NONE>
+End report on res2_form_cam_ops: posedge(clk):xpc10:X4096:"4096:xpc10":?: Work summary (1 items)
+
+Variable-latency operation check for thread xpc10 in state X4096:"4096:xpc10": result=No stalls can happen in this state
+WF:restructure2: Form for res2_form_cam_ops: posedge(clk):xpc10:X4096:"4096:xpc10":?:917Pass=1: eno=917 cmd=*misc_exec* oldx=*UNDEF te:15
+startn=14: check need to make stall corrector for pipelined component   f/t=<NONE>     needed=false
+pass=1 double computation in schedule for cmd=read oldx=139 {rdytime=15, ikey=@_BOOL/CC/SCALbx10_ARA0, oldx=@_BOOL/CC/SCALbx10_ARA0[primesya/T404/Main/T404/Main/V_4_GP], result=@_BOOL/CC/SCALbx10_ARA0_RDD0}. We should reuse old read or avoid WaW code.
+Previous entry=COND(xpc10nz==X15:"15:xpc10nz", @_BOOL/CC/SCALbx10_ARA0_RDD0, BOOLCCSCALbx10ARA0RRh10hold)
+WF:form_cam_bus_ops: form newops for state=X4096:"4096:xpc10"  eno=917 pass=1; mwhen0=15; nn=none cmd=*misc_exec* oldx=*UNDEF ikey=-
+WF:restructure2: Form for res2_form_cam_ops: posedge(clk):xpc10:X4096:"4096:xpc10":?:917Pass=2: eno=917 cmd=*misc_exec* oldx=*UNDEF te:15
+startn=14: check need to make stall corrector for pipelined component   f/t=<NONE>     needed=false
+pass=2 double computation in schedule for cmd=read oldx=139 {rdytime=15, ikey=@_BOOL/CC/SCALbx10_ARA0, oldx=@_BOOL/CC/SCALbx10_ARA0[primesya/T404/Main/T404/Main/V_4_GP], result=@_BOOL/CC/SCALbx10_ARA0_RDD0}. We should reuse old read or avoid WaW code.
+Previous entry=COND(xpc10nz==X15:"15:xpc10nz", @_BOOL/CC/SCALbx10_ARA0_RDD0, BOOLCCSCALbx10ARA0RRh10hold)
+WF:form_cam_bus_ops: form newops for state=X4096:"4096:xpc10"  eno=917 pass=2; mwhen0=15; nn=none cmd=*misc_exec* oldx=*UNDEF ikey=-
+recoded edge guard from |-|@_BOOL/CC/SCALbx10_ARA0[primesya/T404/Main/T404/Main/V_4_GP] to {[xpc10nz==X15:"15:xpc10nz", |-|@_BOOL/CC/SCALbx10_ARA0_RDD0]; [xpc10nz!=X15:"15:xpc10nz", |-|BOOLCCSCALbx10ARA0RRh10hold]} 
+Report on res2_form_cam_ops: posedge(clk):xpc10:X4096:"4096:xpc10":?: Work summary
+  track=CBG_track (15,916) eno=916, te:15, opx=*misc_exec*:*UNDEF, hk at=<NONE>
+  track=CBG_track (15,916) eno=916, te:15, opx=scalarw:count, hk at=HK_abs ([15],HK_rel (0,"hk-create"))
+End report on res2_form_cam_ops: posedge(clk):xpc10:X4096:"4096:xpc10":?: Work summary (2 items)
+
+Variable-latency operation check for thread xpc10 in state X4096:"4096:xpc10": result=No stalls can happen in this state
+WF:restructure2: Form for res2_form_cam_ops: posedge(clk):xpc10:X4096:"4096:xpc10":?:916Pass=1: eno=916 cmd=scalarw oldx=count te:15
+startn=14: check need to make stall corrector for pipelined component   f/t=<NONE>     needed=false
+pass=1 double computation in schedule for cmd=read oldx=139 {rdytime=15, ikey=@_BOOL/CC/SCALbx10_ARA0, oldx=@_BOOL/CC/SCALbx10_ARA0[primesya/T404/Main/T404/Main/V_4_GP], result=@_BOOL/CC/SCALbx10_ARA0_RDD0}. We should reuse old read or avoid WaW code.
+Previous entry=COND(xpc10nz==X15:"15:xpc10nz", @_BOOL/CC/SCALbx10_ARA0_RDD0, BOOLCCSCALbx10ARA0RRh10hold)
+WF:form_cam_bus_ops: form newops for state=X4096:"4096:xpc10"  eno=916 pass=1; mwhen0=15; nn=37 cmd=scalarw oldx=count ikey=count
+nstf: ikey=count eno=916 no shotgun trigger found for count
+WF:restructure2: Form for res2_form_cam_ops: posedge(clk):xpc10:X4096:"4096:xpc10":?:916Pass=1: eno=916 cmd=*misc_exec* oldx=*UNDEF te:15
+startn=14: check need to make stall corrector for pipelined component   f/t=<NONE>     needed=false
+pass=1 double computation in schedule for cmd=read oldx=139 {rdytime=15, ikey=@_BOOL/CC/SCALbx10_ARA0, oldx=@_BOOL/CC/SCALbx10_ARA0[primesya/T404/Main/T404/Main/V_4_GP], result=@_BOOL/CC/SCALbx10_ARA0_RDD0}. We should reuse old read or avoid WaW code.
+Previous entry=COND(xpc10nz==X15:"15:xpc10nz", @_BOOL/CC/SCALbx10_ARA0_RDD0, BOOLCCSCALbx10ARA0RRh10hold)
+WF:form_cam_bus_ops: form newops for state=X4096:"4096:xpc10"  eno=916 pass=1; mwhen0=15; nn=none cmd=*misc_exec* oldx=*UNDEF ikey=-
+WF:restructure2: Form for res2_form_cam_ops: posedge(clk):xpc10:X4096:"4096:xpc10":?:916Pass=2: eno=916 cmd=scalarw oldx=count te:15
+startn=14: check need to make stall corrector for pipelined component   f/t=<NONE>     needed=false
+pass=2 double computation in schedule for cmd=read oldx=139 {rdytime=15, ikey=@_BOOL/CC/SCALbx10_ARA0, oldx=@_BOOL/CC/SCALbx10_ARA0[primesya/T404/Main/T404/Main/V_4_GP], result=@_BOOL/CC/SCALbx10_ARA0_RDD0}. We should reuse old read or avoid WaW code.
+Previous entry=COND(xpc10nz==X15:"15:xpc10nz", @_BOOL/CC/SCALbx10_ARA0_RDD0, BOOLCCSCALbx10ARA0RRh10hold)
+WF:form_cam_bus_ops: form newops for state=X4096:"4096:xpc10"  eno=916 pass=2; mwhen0=15; nn=37 cmd=scalarw oldx=count ikey=count
+nstf: ikey=count eno=916 no shotgun trigger found for count
+WF:restructure2: Form for res2_form_cam_ops: posedge(clk):xpc10:X4096:"4096:xpc10":?:916Pass=2: eno=916 cmd=*misc_exec* oldx=*UNDEF te:15
+startn=14: check need to make stall corrector for pipelined component   f/t=<NONE>     needed=false
+pass=2 double computation in schedule for cmd=read oldx=139 {rdytime=15, ikey=@_BOOL/CC/SCALbx10_ARA0, oldx=@_BOOL/CC/SCALbx10_ARA0[primesya/T404/Main/T404/Main/V_4_GP], result=@_BOOL/CC/SCALbx10_ARA0_RDD0}. We should reuse old read or avoid WaW code.
+Previous entry=COND(xpc10nz==X15:"15:xpc10nz", @_BOOL/CC/SCALbx10_ARA0_RDD0, BOOLCCSCALbx10ARA0RRh10hold)
+WF:form_cam_bus_ops: form newops for state=X4096:"4096:xpc10"  eno=916 pass=2; mwhen0=15; nn=none cmd=*misc_exec* oldx=*UNDEF ikey=-
+Report on res2_form_cam_ops: posedge(clk):xpc10:X8192:"8192:xpc10":?: Work summary: none exist.
+Variable-latency operation check for thread xpc10 in state X8192:"8192:xpc10": result=No stalls can happen in this state
+recoded edge guard from true to true 
+Report on res2_form_cam_ops: posedge(clk):xpc10:X8192:"8192:xpc10":?: Work summary
+  track=CBG_track (16,918) eno=918, te:16, opx=*misc_exec*:*UNDEF, hk at=<NONE>
+  track=CBG_track (16,918) eno=918, te:16, opx=scalarw:primesya/T404/Main/T404/Main/V_4_GP, hk at=HK_abs ([16],HK_rel (0,"hk-create"))
+End report on res2_form_cam_ops: posedge(clk):xpc10:X8192:"8192:xpc10":?: Work summary (2 items)
+
+Variable-latency operation check for thread xpc10 in state X8192:"8192:xpc10": result=No stalls can happen in this state
+WF:restructure2: Form for res2_form_cam_ops: posedge(clk):xpc10:X8192:"8192:xpc10":?:918Pass=1: eno=918 cmd=scalarw oldx=primesya/T404/Main/T404/Main/V_4_GP te:16
+WF:form_cam_bus_ops: form newops for state=X8192:"8192:xpc10"  eno=918 pass=1; mwhen0=16; nn=72 cmd=scalarw oldx=primesya/T404/Main/T404/Main/V_4_GP ikey=primesya/T404/Main/T404/Main/V_4_GP
+nstf: ikey=primesya/T404/Main/T404/Main/V_4_GP eno=918 no shotgun trigger found for primesya/T404/Main/T404/Main/V_4_GP
+WF:restructure2: Form for res2_form_cam_ops: posedge(clk):xpc10:X8192:"8192:xpc10":?:918Pass=1: eno=918 cmd=*misc_exec* oldx=*UNDEF te:16
+WF:form_cam_bus_ops: form newops for state=X8192:"8192:xpc10"  eno=918 pass=1; mwhen0=16; nn=none cmd=*misc_exec* oldx=*UNDEF ikey=-
+WF:restructure2: Form for res2_form_cam_ops: posedge(clk):xpc10:X8192:"8192:xpc10":?:918Pass=2: eno=918 cmd=scalarw oldx=primesya/T404/Main/T404/Main/V_4_GP te:16
+WF:form_cam_bus_ops: form newops for state=X8192:"8192:xpc10"  eno=918 pass=2; mwhen0=16; nn=72 cmd=scalarw oldx=primesya/T404/Main/T404/Main/V_4_GP ikey=primesya/T404/Main/T404/Main/V_4_GP
+nstf: ikey=primesya/T404/Main/T404/Main/V_4_GP eno=918 no shotgun trigger found for primesya/T404/Main/T404/Main/V_4_GP
+WF:restructure2: Form for res2_form_cam_ops: posedge(clk):xpc10:X8192:"8192:xpc10":?:918Pass=2: eno=918 cmd=*misc_exec* oldx=*UNDEF te:16
+WF:form_cam_bus_ops: form newops for state=X8192:"8192:xpc10"  eno=918 pass=2; mwhen0=16; nn=none cmd=*misc_exec* oldx=*UNDEF ikey=-
+Report on res2_form_cam_ops: posedge(clk):xpc10:X16384:"16384:xpc10":?: Work summary: none exist.
+Variable-latency operation check for thread xpc10 in state X16384:"16384:xpc10": result=No stalls can happen in this state
+recoded edge guard from primesya/T404/Main/T404/Main/V_2_GP+primesya/T404/Main/T404/Main/V_2_GP<1000 to primesya/T404/Main/T404/Main/V_2_GP+primesya/T404/Main/T404/Main/V_2_GP<1000 
+Report on res2_form_cam_ops: posedge(clk):xpc10:X16384:"16384:xpc10":?: Work summary
+  track=CBG_track (17,920) eno=920, te:17, opx=*misc_exec*:*UNDEF, hk at=<NONE>
+  track=CBG_track (17,920) eno=920, te:17, opx=scalarw:primesya/T404/Main/T404/Main/V_4_GP, hk at=HK_abs ([17],HK_rel (0,"hk-create"))
+End report on res2_form_cam_ops: posedge(clk):xpc10:X16384:"16384:xpc10":?: Work summary (2 items)
+
+Variable-latency operation check for thread xpc10 in state X16384:"16384:xpc10": result=No stalls can happen in this state
+WF:restructure2: Form for res2_form_cam_ops: posedge(clk):xpc10:X16384:"16384:xpc10":?:920Pass=1: eno=920 cmd=scalarw oldx=primesya/T404/Main/T404/Main/V_4_GP te:17
+WF:form_cam_bus_ops: form newops for state=X16384:"16384:xpc10"  eno=920 pass=1; mwhen0=17; nn=72 cmd=scalarw oldx=primesya/T404/Main/T404/Main/V_4_GP ikey=primesya/T404/Main/T404/Main/V_4_GP
+nstf: ikey=primesya/T404/Main/T404/Main/V_4_GP eno=920 no shotgun trigger found for primesya/T404/Main/T404/Main/V_4_GP
+WF:restructure2: Form for res2_form_cam_ops: posedge(clk):xpc10:X16384:"16384:xpc10":?:920Pass=1: eno=920 cmd=*misc_exec* oldx=*UNDEF te:17
+WF:form_cam_bus_ops: form newops for state=X16384:"16384:xpc10"  eno=920 pass=1; mwhen0=17; nn=none cmd=*misc_exec* oldx=*UNDEF ikey=-
+WF:restructure2: Form for res2_form_cam_ops: posedge(clk):xpc10:X16384:"16384:xpc10":?:920Pass=2: eno=920 cmd=scalarw oldx=primesya/T404/Main/T404/Main/V_4_GP te:17
+WF:form_cam_bus_ops: form newops for state=X16384:"16384:xpc10"  eno=920 pass=2; mwhen0=17; nn=72 cmd=scalarw oldx=primesya/T404/Main/T404/Main/V_4_GP ikey=primesya/T404/Main/T404/Main/V_4_GP
+nstf: ikey=primesya/T404/Main/T404/Main/V_4_GP eno=920 no shotgun trigger found for primesya/T404/Main/T404/Main/V_4_GP
+WF:restructure2: Form for res2_form_cam_ops: posedge(clk):xpc10:X16384:"16384:xpc10":?:920Pass=2: eno=920 cmd=*misc_exec* oldx=*UNDEF te:17
+WF:form_cam_bus_ops: form newops for state=X16384:"16384:xpc10"  eno=920 pass=2; mwhen0=17; nn=none cmd=*misc_exec* oldx=*UNDEF ikey=-
+recoded edge guard from primesya/T404/Main/T404/Main/V_2_GP+primesya/T404/Main/T404/Main/V_2_GP>=1000 to primesya/T404/Main/T404/Main/V_2_GP+primesya/T404/Main/T404/Main/V_2_GP>=1000 
+Report on res2_form_cam_ops: posedge(clk):xpc10:X16384:"16384:xpc10":?: Work summary
+  track=CBG_track (17,919) eno=919, te:17, opx=*misc_exec*:*UNDEF, hk at=<NONE>
+  track=CBG_track (17,919) eno=919, te:17, opx=scalarw:primesya/T404/Main/T404/Main/V_4_GP, hk at=HK_abs ([17],HK_rel (0,"hk-create"))
+End report on res2_form_cam_ops: posedge(clk):xpc10:X16384:"16384:xpc10":?: Work summary (2 items)
+
+Variable-latency operation check for thread xpc10 in state X16384:"16384:xpc10": result=No stalls can happen in this state
+WF:restructure2: Form for res2_form_cam_ops: posedge(clk):xpc10:X16384:"16384:xpc10":?:919Pass=1: eno=919 cmd=scalarw oldx=primesya/T404/Main/T404/Main/V_4_GP te:17
+WF:form_cam_bus_ops: form newops for state=X16384:"16384:xpc10"  eno=919 pass=1; mwhen0=17; nn=72 cmd=scalarw oldx=primesya/T404/Main/T404/Main/V_4_GP ikey=primesya/T404/Main/T404/Main/V_4_GP
+nstf: ikey=primesya/T404/Main/T404/Main/V_4_GP eno=919 no shotgun trigger found for primesya/T404/Main/T404/Main/V_4_GP
+WF:restructure2: Form for res2_form_cam_ops: posedge(clk):xpc10:X16384:"16384:xpc10":?:919Pass=1: eno=919 cmd=*misc_exec* oldx=*UNDEF te:17
+WF:form_cam_bus_ops: form newops for state=X16384:"16384:xpc10"  eno=919 pass=1; mwhen0=17; nn=none cmd=*misc_exec* oldx=*UNDEF ikey=-
+WF:restructure2: Form for res2_form_cam_ops: posedge(clk):xpc10:X16384:"16384:xpc10":?:919Pass=2: eno=919 cmd=scalarw oldx=primesya/T404/Main/T404/Main/V_4_GP te:17
+WF:form_cam_bus_ops: form newops for state=X16384:"16384:xpc10"  eno=919 pass=2; mwhen0=17; nn=72 cmd=scalarw oldx=primesya/T404/Main/T404/Main/V_4_GP ikey=primesya/T404/Main/T404/Main/V_4_GP
+nstf: ikey=primesya/T404/Main/T404/Main/V_4_GP eno=919 no shotgun trigger found for primesya/T404/Main/T404/Main/V_4_GP
+WF:restructure2: Form for res2_form_cam_ops: posedge(clk):xpc10:X16384:"16384:xpc10":?:919Pass=2: eno=919 cmd=*misc_exec* oldx=*UNDEF te:17
+WF:form_cam_bus_ops: form newops for state=X16384:"16384:xpc10"  eno=919 pass=2; mwhen0=17; nn=none cmd=*misc_exec* oldx=*UNDEF ikey=-
+Report on res2_form_cam_ops: posedge(clk):xpc10:X32768:"32768:xpc10":?: Work summary: none exist.
+Variable-latency operation check for thread xpc10 in state X32768:"32768:xpc10": result=No stalls can happen in this state
+recoded edge guard from primesya/T404/Main/T404/Main/V_4_GP<1000 to primesya/T404/Main/T404/Main/V_4_GP<1000 
+Report on res2_form_cam_ops: posedge(clk):xpc10:X32768:"32768:xpc10":?: Work summary
+  track=CBG_track (18,922) eno=922, te:18, opx=*misc_exec*:*UNDEF, hk at=<NONE>
+End report on res2_form_cam_ops: posedge(clk):xpc10:X32768:"32768:xpc10":?: Work summary (1 items)
+
+Variable-latency operation check for thread xpc10 in state X32768:"32768:xpc10": result=No stalls can happen in this state
+WF:restructure2: Form for res2_form_cam_ops: posedge(clk):xpc10:X32768:"32768:xpc10":?:922Pass=1: eno=922 cmd=*misc_exec* oldx=*UNDEF te:18
+WF:form_cam_bus_ops: form newops for state=X32768:"32768:xpc10"  eno=922 pass=1; mwhen0=18; nn=none cmd=*misc_exec* oldx=*UNDEF ikey=-
+WF:restructure2: Form for res2_form_cam_ops: posedge(clk):xpc10:X32768:"32768:xpc10":?:922Pass=2: eno=922 cmd=*misc_exec* oldx=*UNDEF te:18
+WF:form_cam_bus_ops: form newops for state=X32768:"32768:xpc10"  eno=922 pass=2; mwhen0=18; nn=none cmd=*misc_exec* oldx=*UNDEF ikey=-
+recoded edge guard from primesya/T404/Main/T404/Main/V_4_GP>=1000 to primesya/T404/Main/T404/Main/V_4_GP>=1000 
+Report on res2_form_cam_ops: posedge(clk):xpc10:X32768:"32768:xpc10":?: Work summary
+  track=CBG_track (18,921) eno=921, te:18, opx=*misc_exec*:*UNDEF, hk at=<NONE>
+  track=CBG_track (18,921) eno=921, te:18, opx=scalarw:primesya/T404/Main/T404/Main/V_2_GP, hk at=HK_abs ([18],HK_rel (0,"hk-create"))
+End report on res2_form_cam_ops: posedge(clk):xpc10:X32768:"32768:xpc10":?: Work summary (2 items)
+
+Variable-latency operation check for thread xpc10 in state X32768:"32768:xpc10": result=No stalls can happen in this state
+WF:restructure2: Form for res2_form_cam_ops: posedge(clk):xpc10:X32768:"32768:xpc10":?:921Pass=1: eno=921 cmd=scalarw oldx=primesya/T404/Main/T404/Main/V_2_GP te:18
+WF:form_cam_bus_ops: form newops for state=X32768:"32768:xpc10"  eno=921 pass=1; mwhen0=18; nn=70 cmd=scalarw oldx=primesya/T404/Main/T404/Main/V_2_GP ikey=primesya/T404/Main/T404/Main/V_2_GP
+nstf: ikey=primesya/T404/Main/T404/Main/V_2_GP eno=921 no shotgun trigger found for primesya/T404/Main/T404/Main/V_2_GP
+WF:restructure2: Form for res2_form_cam_ops: posedge(clk):xpc10:X32768:"32768:xpc10":?:921Pass=1: eno=921 cmd=*misc_exec* oldx=*UNDEF te:18
+WF:form_cam_bus_ops: form newops for state=X32768:"32768:xpc10"  eno=921 pass=1; mwhen0=18; nn=none cmd=*misc_exec* oldx=*UNDEF ikey=-
+WF:restructure2: Form for res2_form_cam_ops: posedge(clk):xpc10:X32768:"32768:xpc10":?:921Pass=2: eno=921 cmd=scalarw oldx=primesya/T404/Main/T404/Main/V_2_GP te:18
+WF:form_cam_bus_ops: form newops for state=X32768:"32768:xpc10"  eno=921 pass=2; mwhen0=18; nn=70 cmd=scalarw oldx=primesya/T404/Main/T404/Main/V_2_GP ikey=primesya/T404/Main/T404/Main/V_2_GP
+nstf: ikey=primesya/T404/Main/T404/Main/V_2_GP eno=921 no shotgun trigger found for primesya/T404/Main/T404/Main/V_2_GP
+WF:restructure2: Form for res2_form_cam_ops: posedge(clk):xpc10:X32768:"32768:xpc10":?:921Pass=2: eno=921 cmd=*misc_exec* oldx=*UNDEF te:18
+WF:form_cam_bus_ops: form newops for state=X32768:"32768:xpc10"  eno=921 pass=2; mwhen0=18; nn=none cmd=*misc_exec* oldx=*UNDEF ikey=-
+Report on res2_form_cam_ops: posedge(clk):xpc10:X65536:"65536:xpc10":?: Work summary: none exist.
+Variable-latency operation check for thread xpc10 in state X65536:"65536:xpc10": result=No stalls can happen in this state
+recoded edge guard from true to true 
+Report on res2_form_cam_ops: posedge(clk):xpc10:X65536:"65536:xpc10":?: Work summary
+  track=CBG_track (19,923) eno=923, te:19, opx=*misc_exec*:*UNDEF, hk at=<NONE>
+  track=CBG_track (19,923) eno=923, te:19, opx=scalarw:primesya/T404/Main/T404/Main/V_4_GP, hk at=HK_abs ([19],HK_rel (0,"hk-create"))
+  track=CBG_track (19,923) eno=923, te:19, opx=write:@_BOOL/CC/SCALbx10_ARA0[primesya/T404/Main/T404/Main/V_4_GP], hk at=HK_abs ([19],HK_rel (0,"asubsc-lhs"))
+End report on res2_form_cam_ops: posedge(clk):xpc10:X65536:"65536:xpc10":?: Work summary (3 items)
+
+Variable-latency operation check for thread xpc10 in state X65536:"65536:xpc10": result=No stalls can happen in this state
+WF:restructure2: Form for res2_form_cam_ops: posedge(clk):xpc10:X65536:"65536:xpc10":?:923Pass=1: eno=923 cmd=write oldx=@_BOOL/CC/SCALbx10_ARA0[primesya/T404/Main/T404/Main/V_4_GP] te:19
+WF:form_cam_bus_ops: form newops for state=X65536:"65536:xpc10"  eno=923 pass=1; mwhen0=19; nn=139 cmd=write oldx=@_BOOL/CC/SCALbx10_ARA0[primesya/T404/Main/T404/Main/V_4_GP] ikey=@_BOOL/CC/SCALbx10_ARA0
+nstf: ikey=@_BOOL/CC/SCALbx10_ARA0 eno=923 no shotgun trigger found for @_BOOL/CC/SCALbx10_ARA0[primesya/T404/Main/T404/Main/V_4_GP]
+WF:restructure2: Form for res2_form_cam_ops: posedge(clk):xpc10:X65536:"65536:xpc10":?:923Pass=1: eno=923 cmd=scalarw oldx=primesya/T404/Main/T404/Main/V_4_GP te:19
+do not forward written value (-ve rdyat of -330012) guts="@_BOOL/CC/SCALbx10_ARA0[primesya/T404/Main/T404/Main/V_4_GP]"
+WF:form_cam_bus_ops: form newops for state=X65536:"65536:xpc10"  eno=923 pass=1; mwhen0=19; nn=72 cmd=scalarw oldx=primesya/T404/Main/T404/Main/V_4_GP ikey=primesya/T404/Main/T404/Main/V_4_GP
+nstf: ikey=primesya/T404/Main/T404/Main/V_4_GP eno=923 no shotgun trigger found for primesya/T404/Main/T404/Main/V_4_GP
+WF:restructure2: Form for res2_form_cam_ops: posedge(clk):xpc10:X65536:"65536:xpc10":?:923Pass=1: eno=923 cmd=*misc_exec* oldx=*UNDEF te:19
+do not forward written value (-ve rdyat of -330012) guts="@_BOOL/CC/SCALbx10_ARA0[primesya/T404/Main/T404/Main/V_4_GP]"
+WF:form_cam_bus_ops: form newops for state=X65536:"65536:xpc10"  eno=923 pass=1; mwhen0=19; nn=none cmd=*misc_exec* oldx=*UNDEF ikey=-
+WF:restructure2: Form for res2_form_cam_ops: posedge(clk):xpc10:X65536:"65536:xpc10":?:923Pass=2: eno=923 cmd=write oldx=@_BOOL/CC/SCALbx10_ARA0[primesya/T404/Main/T404/Main/V_4_GP] te:19
+do not forward written value (-ve rdyat of -330012) guts="@_BOOL/CC/SCALbx10_ARA0[primesya/T404/Main/T404/Main/V_4_GP]"
+WF:form_cam_bus_ops: form newops for state=X65536:"65536:xpc10"  eno=923 pass=2; mwhen0=19; nn=139 cmd=write oldx=@_BOOL/CC/SCALbx10_ARA0[primesya/T404/Main/T404/Main/V_4_GP] ikey=@_BOOL/CC/SCALbx10_ARA0
+nstf: ikey=@_BOOL/CC/SCALbx10_ARA0 eno=923 no shotgun trigger found for @_BOOL/CC/SCALbx10_ARA0[primesya/T404/Main/T404/Main/V_4_GP]
+WF:restructure2: Form for res2_form_cam_ops: posedge(clk):xpc10:X65536:"65536:xpc10":?:923Pass=2: eno=923 cmd=scalarw oldx=primesya/T404/Main/T404/Main/V_4_GP te:19
+do not forward written value (-ve rdyat of -330012) guts="@_BOOL/CC/SCALbx10_ARA0[primesya/T404/Main/T404/Main/V_4_GP]"
+do not forward written value (-ve rdyat of -330012) guts="@_BOOL/CC/SCALbx10_ARA0[primesya/T404/Main/T404/Main/V_4_GP]"
+WF:form_cam_bus_ops: form newops for state=X65536:"65536:xpc10"  eno=923 pass=2; mwhen0=19; nn=72 cmd=scalarw oldx=primesya/T404/Main/T404/Main/V_4_GP ikey=primesya/T404/Main/T404/Main/V_4_GP
+nstf: ikey=primesya/T404/Main/T404/Main/V_4_GP eno=923 no shotgun trigger found for primesya/T404/Main/T404/Main/V_4_GP
+WF:restructure2: Form for res2_form_cam_ops: posedge(clk):xpc10:X65536:"65536:xpc10":?:923Pass=2: eno=923 cmd=*misc_exec* oldx=*UNDEF te:19
+do not forward written value (-ve rdyat of -330012) guts="@_BOOL/CC/SCALbx10_ARA0[primesya/T404/Main/T404/Main/V_4_GP]"
+do not forward written value (-ve rdyat of -330012) guts="@_BOOL/CC/SCALbx10_ARA0[primesya/T404/Main/T404/Main/V_4_GP]"
+WF:form_cam_bus_ops: form newops for state=X65536:"65536:xpc10"  eno=923 pass=2; mwhen0=19; nn=none cmd=*misc_exec* oldx=*UNDEF ikey=-
+Report on res2_form_cam_ops: posedge(clk):xpc10:X131072:"131072:xpc10":?: Work summary: none exist.
+Variable-latency operation check for thread xpc10 in state X131072:"131072:xpc10": result=No stalls can happen in this state
+recoded edge guard from true to true 
+Report on res2_form_cam_ops: posedge(clk):xpc10:X131072:"131072:xpc10":?: Work summary
+  track=CBG_track (21,924) eno=924, te:21, opx=*misc_exec*:*UNDEF, hk at=<NONE>
+  track=CBG_track (21,924) eno=924, te:21, opx=scalarw:primesya/T404/Main/T404/Main/V_2_GP, hk at=HK_abs ([21],HK_rel (0,"hk-create"))
+  track=CBG_track (21,924) eno=924, te:21, opx=write:@_BOOL/CC/SCALbx10_ARA0[primesya/T404/Main/T404/Main/V_2_GP], hk at=HK_abs ([21],HK_rel (0,"asubsc-lhs"))
+End report on res2_form_cam_ops: posedge(clk):xpc10:X131072:"131072:xpc10":?: Work summary (3 items)
+
+Variable-latency operation check for thread xpc10 in state X131072:"131072:xpc10": result=No stalls can happen in this state
+WF:restructure2: Form for res2_form_cam_ops: posedge(clk):xpc10:X131072:"131072:xpc10":?:924Pass=1: eno=924 cmd=write oldx=@_BOOL/CC/SCALbx10_ARA0[primesya/T404/Main/T404/Main/V_2_GP] te:21
+WF:form_cam_bus_ops: form newops for state=X131072:"131072:xpc10"  eno=924 pass=1; mwhen0=21; nn=140 cmd=write oldx=@_BOOL/CC/SCALbx10_ARA0[primesya/T404/Main/T404/Main/V_2_GP] ikey=@_BOOL/CC/SCALbx10_ARA0
+nstf: ikey=@_BOOL/CC/SCALbx10_ARA0 eno=924 no shotgun trigger found for @_BOOL/CC/SCALbx10_ARA0[primesya/T404/Main/T404/Main/V_2_GP]
+WF:restructure2: Form for res2_form_cam_ops: posedge(clk):xpc10:X131072:"131072:xpc10":?:924Pass=1: eno=924 cmd=scalarw oldx=primesya/T404/Main/T404/Main/V_2_GP te:21
+do not forward written value (-ve rdyat of -330012) guts="@_BOOL/CC/SCALbx10_ARA0[primesya/T404/Main/T404/Main/V_2_GP]"
+WF:form_cam_bus_ops: form newops for state=X131072:"131072:xpc10"  eno=924 pass=1; mwhen0=21; nn=70 cmd=scalarw oldx=primesya/T404/Main/T404/Main/V_2_GP ikey=primesya/T404/Main/T404/Main/V_2_GP
+nstf: ikey=primesya/T404/Main/T404/Main/V_2_GP eno=924 no shotgun trigger found for primesya/T404/Main/T404/Main/V_2_GP
+WF:restructure2: Form for res2_form_cam_ops: posedge(clk):xpc10:X131072:"131072:xpc10":?:924Pass=1: eno=924 cmd=*misc_exec* oldx=*UNDEF te:21
+do not forward written value (-ve rdyat of -330012) guts="@_BOOL/CC/SCALbx10_ARA0[primesya/T404/Main/T404/Main/V_2_GP]"
+WF:form_cam_bus_ops: form newops for state=X131072:"131072:xpc10"  eno=924 pass=1; mwhen0=21; nn=none cmd=*misc_exec* oldx=*UNDEF ikey=-
+WF:restructure2: Form for res2_form_cam_ops: posedge(clk):xpc10:X131072:"131072:xpc10":?:924Pass=2: eno=924 cmd=write oldx=@_BOOL/CC/SCALbx10_ARA0[primesya/T404/Main/T404/Main/V_2_GP] te:21
+do not forward written value (-ve rdyat of -330012) guts="@_BOOL/CC/SCALbx10_ARA0[primesya/T404/Main/T404/Main/V_2_GP]"
+WF:form_cam_bus_ops: form newops for state=X131072:"131072:xpc10"  eno=924 pass=2; mwhen0=21; nn=140 cmd=write oldx=@_BOOL/CC/SCALbx10_ARA0[primesya/T404/Main/T404/Main/V_2_GP] ikey=@_BOOL/CC/SCALbx10_ARA0
+nstf: ikey=@_BOOL/CC/SCALbx10_ARA0 eno=924 no shotgun trigger found for @_BOOL/CC/SCALbx10_ARA0[primesya/T404/Main/T404/Main/V_2_GP]
+WF:restructure2: Form for res2_form_cam_ops: posedge(clk):xpc10:X131072:"131072:xpc10":?:924Pass=2: eno=924 cmd=scalarw oldx=primesya/T404/Main/T404/Main/V_2_GP te:21
+do not forward written value (-ve rdyat of -330012) guts="@_BOOL/CC/SCALbx10_ARA0[primesya/T404/Main/T404/Main/V_2_GP]"
+do not forward written value (-ve rdyat of -330012) guts="@_BOOL/CC/SCALbx10_ARA0[primesya/T404/Main/T404/Main/V_2_GP]"
+WF:form_cam_bus_ops: form newops for state=X131072:"131072:xpc10"  eno=924 pass=2; mwhen0=21; nn=70 cmd=scalarw oldx=primesya/T404/Main/T404/Main/V_2_GP ikey=primesya/T404/Main/T404/Main/V_2_GP
+nstf: ikey=primesya/T404/Main/T404/Main/V_2_GP eno=924 no shotgun trigger found for primesya/T404/Main/T404/Main/V_2_GP
+WF:restructure2: Form for res2_form_cam_ops: posedge(clk):xpc10:X131072:"131072:xpc10":?:924Pass=2: eno=924 cmd=*misc_exec* oldx=*UNDEF te:21
+do not forward written value (-ve rdyat of -330012) guts="@_BOOL/CC/SCALbx10_ARA0[primesya/T404/Main/T404/Main/V_2_GP]"
+do not forward written value (-ve rdyat of -330012) guts="@_BOOL/CC/SCALbx10_ARA0[primesya/T404/Main/T404/Main/V_2_GP]"
+WF:form_cam_bus_ops: form newops for state=X131072:"131072:xpc10"  eno=924 pass=2; mwhen0=21; nn=none cmd=*misc_exec* oldx=*UNDEF ikey=-
+  key nos for new microstates for X131072:"131072:xpc10" eno,local_eno=924,0 : ctrstart=21 root_hwm=0 dispd_pc=22 exec=21 dend=1 dest=4/4
+mk_xition: a (21,42)X131072:"131072:xpc10": disp_1: from=X21:"21:xpc10nz" g=true --> X22:"22:xpc10nz"
+mk_xition: a (22,21)X131072:"131072:xpc10": ledge_1: from=X22:"22:xpc10nz" g=true --> X4:"4:xpc10nz"
+Restart superstate (nomove) condition =false
+  key nos for new microstates for X65536:"65536:xpc10" eno,local_eno=923,0 : ctrstart=19 root_hwm=0 dispd_pc=20 exec=19 dend=1 dest=32768/18
+mk_xition: a (19,38)X65536:"65536:xpc10": disp_1: from=X19:"19:xpc10nz" g=true --> X20:"20:xpc10nz"
+mk_xition: a (20,19)X65536:"65536:xpc10": ledge_1: from=X20:"20:xpc10nz" g=true --> X18:"18:xpc10nz"
+Restart superstate (nomove) condition =false
+  key nos for new microstates for X32768:"32768:xpc10" eno,local_eno=921,0 : ctrstart=18 root_hwm=0 dispd_pc=-1 exec=18 dend=0 dest=8/5
+mk_xition: a (18,36)X32768:"32768:xpc10": sedge: from=X18:"18:xpc10nz" g=primesya/T404/Main/T404/Main/V_4_GP>=1000 --> X5:"5:xpc10nz"
+  key nos for new microstates for X32768:"32768:xpc10" eno,local_eno=922,1 : ctrstart=18 root_hwm=0 dispd_pc=-1 exec=18 dend=0 dest=65536/19
+mk_xition: a (18,36)X32768:"32768:xpc10": sedge: from=X18:"18:xpc10nz" g=primesya/T404/Main/T404/Main/V_4_GP<1000 --> X19:"19:xpc10nz"
+Restart superstate (nomove) condition =false
+  key nos for new microstates for X16384:"16384:xpc10" eno,local_eno=919,0 : ctrstart=17 root_hwm=0 dispd_pc=-1 exec=17 dend=0 dest=16/6
+mk_xition: a (17,34)X16384:"16384:xpc10": sedge: from=X17:"17:xpc10nz" g=primesya/T404/Main/T404/Main/V_2_GP+primesya/T404/Main/T404/Main/V_2_GP>=1000 --> X6:"6:xpc10nz"
+  key nos for new microstates for X16384:"16384:xpc10" eno,local_eno=920,1 : ctrstart=17 root_hwm=0 dispd_pc=-1 exec=17 dend=0 dest=32768/18
+mk_xition: a (17,34)X16384:"16384:xpc10": sedge: from=X17:"17:xpc10nz" g=primesya/T404/Main/T404/Main/V_2_GP+primesya/T404/Main/T404/Main/V_2_GP<1000 --> X18:"18:xpc10nz"
+Restart superstate (nomove) condition =false
+  key nos for new microstates for X8192:"8192:xpc10" eno,local_eno=918,0 : ctrstart=16 root_hwm=0 dispd_pc=-1 exec=16 dend=0 dest=32/7
+mk_xition: a (16,32)X8192:"8192:xpc10": sedge: from=X16:"16:xpc10nz" g=true --> X7:"7:xpc10nz"
+Restart superstate (nomove) condition =false
+mk_xition: a (14,-1)X4096:"4096:xpc10": control: from=X14:"14:xpc10nz" g=true --> X15:"15:xpc10nz"
+  key nos for new microstates for X4096:"4096:xpc10" eno,local_eno=916,0 : ctrstart=14 root_hwm=1 dispd_pc=-1 exec=15 dend=1 dest=8192/16
+mk_xition: a (15,29)X4096:"4096:xpc10": sedge: from=X15:"15:xpc10nz" g={[xpc10nz==X15:"15:xpc10nz", |-|@_BOOL/CC/SCALbx10_ARA0_RDD0]; [xpc10nz!=X15:"15:xpc10nz", |-|BOOLCCSCALbx10ARA0RRh10hold]} --> X16:"16:xpc10nz"
+  key nos for new microstates for X4096:"4096:xpc10" eno,local_eno=917,1 : ctrstart=14 root_hwm=1 dispd_pc=-1 exec=15 dend=1 dest=8192/16
+mk_xition: a (15,29)X4096:"4096:xpc10": sedge: from=X15:"15:xpc10nz" g={[xpc10nz==X15:"15:xpc10nz", !(|-|@_BOOL/CC/SCALbx10_ARA0_RDD0)]; [xpc10nz!=X15:"15:xpc10nz", !(|-|BOOLCCSCALbx10ARA0RRh10hold)]} --> X16:"16:xpc10nz"
+Restart superstate (nomove) condition =false
+  key nos for new microstates for X2048:"2048:xpc10" eno,local_eno=915,0 : ctrstart=13 root_hwm=0 dispd_pc=-1 exec=13 dend=0 dest=1024/12
+mk_xition: a (13,26)X2048:"2048:xpc10": sedge: from=X13:"13:xpc10nz" g=true --> X12:"12:xpc10nz"
+Restart superstate (nomove) condition =false
+  key nos for new microstates for X1024:"1024:xpc10" eno,local_eno=914,0 : ctrstart=12 root_hwm=0 dispd_pc=-1 exec=12 dend=0 dest=2048/13
+mk_xition: a (12,24)X1024:"1024:xpc10": sedge: from=X12:"12:xpc10nz" g=true --> X13:"13:xpc10nz"
+Restart superstate (nomove) condition =false
+  key nos for new microstates for X512:"512:xpc10" eno,local_eno=913,0 : ctrstart=11 root_hwm=0 dispd_pc=-1 exec=11 dend=0 dest=1024/12
+mk_xition: a (11,22)X512:"512:xpc10": sedge: from=X11:"11:xpc10nz" g=true --> X12:"12:xpc10nz"
+Restart superstate (nomove) condition =false
+  key nos for new microstates for X256:"256:xpc10" eno,local_eno=912,0 : ctrstart=10 root_hwm=0 dispd_pc=-1 exec=10 dend=0 dest=512/11
+mk_xition: a (10,20)X256:"256:xpc10": sedge: from=X10:"10:xpc10nz" g=true --> X11:"11:xpc10nz"
+Restart superstate (nomove) condition =false
+  key nos for new microstates for X128:"128:xpc10" eno,local_eno=911,0 : ctrstart=9 root_hwm=0 dispd_pc=-1 exec=9 dend=0 dest=256/10
+mk_xition: a (9,18)X128:"128:xpc10": sedge: from=X9:"9:xpc10nz" g=true --> X10:"10:xpc10nz"
+Restart superstate (nomove) condition =false
+  key nos for new microstates for X64:"64:xpc10" eno,local_eno=910,0 : ctrstart=8 root_hwm=0 dispd_pc=-1 exec=8 dend=0 dest=128/9
+mk_xition: a (8,16)X64:"64:xpc10": sedge: from=X8:"8:xpc10nz" g=true --> X9:"9:xpc10nz"
+Restart superstate (nomove) condition =false
+  key nos for new microstates for X32:"32:xpc10" eno,local_eno=908,0 : ctrstart=7 root_hwm=0 dispd_pc=-1 exec=7 dend=0 dest=64/8
+mk_xition: a (7,14)X32:"32:xpc10": sedge: from=X7:"7:xpc10nz" g=primesya/T404/Main/T404/Main/V_4_GP>=1000 --> X8:"8:xpc10nz"
+  key nos for new microstates for X32:"32:xpc10" eno,local_eno=909,1 : ctrstart=7 root_hwm=0 dispd_pc=-1 exec=7 dend=0 dest=4096/14
+mk_xition: a (7,14)X32:"32:xpc10": sedge: from=X7:"7:xpc10nz" g=primesya/T404/Main/T404/Main/V_4_GP<1000 --> X14:"14:xpc10nz"
+Restart superstate (nomove) condition =false
+  key nos for new microstates for X16:"16:xpc10" eno,local_eno=907,0 : ctrstart=6 root_hwm=0 dispd_pc=-1 exec=6 dend=0 dest=32/7
+mk_xition: a (6,12)X16:"16:xpc10": sedge: from=X6:"6:xpc10nz" g=true --> X7:"7:xpc10nz"
+Restart superstate (nomove) condition =false
+  key nos for new microstates for X8:"8:xpc10" eno,local_eno=905,0 : ctrstart=5 root_hwm=0 dispd_pc=-1 exec=5 dend=0 dest=16/6
+mk_xition: a (5,10)X8:"8:xpc10": sedge: from=X5:"5:xpc10nz" g=primesya/T404/Main/T404/Main/V_2_GP>=1000 --> X6:"6:xpc10nz"
+  key nos for new microstates for X8:"8:xpc10" eno,local_eno=906,1 : ctrstart=5 root_hwm=0 dispd_pc=-1 exec=5 dend=0 dest=16384/17
+mk_xition: a (5,10)X8:"8:xpc10": sedge: from=X5:"5:xpc10nz" g=primesya/T404/Main/T404/Main/V_2_GP<1000 --> X17:"17:xpc10nz"
+Restart superstate (nomove) condition =false
+  key nos for new microstates for X4:"4:xpc10" eno,local_eno=903,0 : ctrstart=4 root_hwm=0 dispd_pc=-1 exec=4 dend=0 dest=8/5
+mk_xition: a (4,8)X4:"4:xpc10": sedge: from=X4:"4:xpc10nz" g=primesya/T404/Main/T404/Main/V_2_GP>=1000 --> X5:"5:xpc10nz"
+  key nos for new microstates for X4:"4:xpc10" eno,local_eno=904,1 : ctrstart=4 root_hwm=0 dispd_pc=-1 exec=4 dend=0 dest=131072/21
+mk_xition: a (4,8)X4:"4:xpc10": sedge: from=X4:"4:xpc10nz" g=primesya/T404/Main/T404/Main/V_2_GP<1000 --> X21:"21:xpc10nz"
+Restart superstate (nomove) condition =false
+  key nos for new microstates for X2:"2:xpc10" eno,local_eno=902,0 : ctrstart=3 root_hwm=0 dispd_pc=-1 exec=3 dend=0 dest=4/4
+mk_xition: a (3,6)X2:"2:xpc10": sedge: from=X3:"3:xpc10nz" g=true --> X4:"4:xpc10nz"
+Restart superstate (nomove) condition =false
+  key nos for new microstates for X1:"1:xpc10" eno,local_eno=901,0 : ctrstart=1 root_hwm=0 dispd_pc=2 exec=1 dend=1 dest=2/3
+mk_xition: a (1,2)X1:"1:xpc10": disp_1: from=X1:"1:xpc10nz" g=true --> X2:"2:xpc10nz"
+mk_xition: a (2,1)X1:"1:xpc10": ledge_1: from=X2:"2:xpc10nz" g=true --> X3:"3:xpc10nz"
+Restart superstate (nomove) condition =false
+  key nos for new microstates for X0:"0:xpc10" eno,local_eno=900,0 : ctrstart=0 root_hwm=0 dispd_pc=-1 exec=0 dend=0 dest=1/1
+mk_xition: a (0,0)X0:"0:xpc10": sedge: from=X0:"0:xpc10nz" g=true --> X1:"1:xpc10nz"
+Restart superstate (nomove) condition =false
+Microarc table
+Controller Arcs (revealing old/new PC relationship)
+*------------------+-----+------------------------+-------+------------------+----------*
+| New state name   | Arc | Old state name         | Guard | Dest state       | VL Guard |
+*------------------+-----+------------------------+-------+------------------+----------*
+| X0:"0:xpc10nz"   | 28  | X0:"0:xpc10"           | 1     | X1:"1:xpc10nz"   |          |
+| X1:"1:xpc10nz"   | 26  | X1:"1:xpc10"           | 1     | X2:"2:xpc10nz"   |          |
+| X2:"2:xpc10nz"   | 27  | X1:"1:xpc10"           | 1     | X3:"3:xpc10nz"   |          |
+| X3:"3:xpc10nz"   | 25  | X2:"2:xpc10"           | 1     | X4:"4:xpc10nz"   |          |
+| X4:"4:xpc10nz"   | 23  | X4:"4:xpc10"           | E8    | X5:"5:xpc10nz"   |          |
+| X4:"4:xpc10nz"   | 24  | X4:"4:xpc10"           | E9    | X21:"21:xpc10nz" |          |
+| X5:"5:xpc10nz"   | 21  | X8:"8:xpc10"           | E8    | X6:"6:xpc10nz"   |          |
+| X5:"5:xpc10nz"   | 22  | X8:"8:xpc10"           | E9    | X17:"17:xpc10nz" |          |
+| X6:"6:xpc10nz"   | 20  | X16:"16:xpc10"         | 1     | X7:"7:xpc10nz"   |          |
+| X7:"7:xpc10nz"   | 18  | X32:"32:xpc10"         | E10   | X8:"8:xpc10nz"   |          |
+| X7:"7:xpc10nz"   | 19  | X32:"32:xpc10"         | E11   | X14:"14:xpc10nz" |          |
+| X8:"8:xpc10nz"   | 17  | X64:"64:xpc10"         | 1     | X9:"9:xpc10nz"   |          |
+| X9:"9:xpc10nz"   | 16  | X128:"128:xpc10"       | 1     | X10:"10:xpc10nz" |          |
+| X10:"10:xpc10nz" | 15  | X256:"256:xpc10"       | 1     | X11:"11:xpc10nz" |          |
+| X11:"11:xpc10nz" | 14  | X512:"512:xpc10"       | 1     | X12:"12:xpc10nz" |          |
+| X12:"12:xpc10nz" | 13  | X1024:"1024:xpc10"     | 1     | X13:"13:xpc10nz" |          |
+| X13:"13:xpc10nz" | 12  | X2048:"2048:xpc10"     | 1     | X12:"12:xpc10nz" |          |
+| X14:"14:xpc10nz" | 9   | X4096:"4096:xpc10"     | 1     | X15:"15:xpc10nz" |          |
+| X15:"15:xpc10nz" | 10  | X4096:"4096:xpc10"     | E12   | X16:"16:xpc10nz" |          |
+| X15:"15:xpc10nz" | 11  | X4096:"4096:xpc10"     | E13   | X16:"16:xpc10nz" |          |
+| X16:"16:xpc10nz" | 8   | X8192:"8192:xpc10"     | 1     | X7:"7:xpc10nz"   |          |
+| X17:"17:xpc10nz" | 6   | X16384:"16384:xpc10"   | E14   | X6:"6:xpc10nz"   |          |
+| X17:"17:xpc10nz" | 7   | X16384:"16384:xpc10"   | E15   | X18:"18:xpc10nz" |          |
+| X18:"18:xpc10nz" | 4   | X32768:"32768:xpc10"   | E10   | X5:"5:xpc10nz"   |          |
+| X18:"18:xpc10nz" | 5   | X32768:"32768:xpc10"   | E11   | X19:"19:xpc10nz" |          |
+| X19:"19:xpc10nz" | 2   | X65536:"65536:xpc10"   | 1     | X20:"20:xpc10nz" |          |
+| X20:"20:xpc10nz" | 3   | X65536:"65536:xpc10"   | 1     | X18:"18:xpc10nz" |          |
+| X21:"21:xpc10nz" | 0   | X131072:"131072:xpc10" | 1     | X22:"22:xpc10nz" |          |
+| X22:"22:xpc10nz" | 1   | X131072:"131072:xpc10" | 1     | X4:"4:xpc10nz"   |          |
+*------------------+-----+------------------------+-------+------------------+----------*
+
+WF:dotprint: start
+WF:dotout ppg_gen: start
+WF:dotprint: done
+Report on New PC movements for + title
+     X22:"22:xpc10nz", true --> X4:"4:xpc10nz"
+     X21:"21:xpc10nz", true --> X22:"22:xpc10nz"
+     X20:"20:xpc10nz", true --> X18:"18:xpc10nz"
+     X19:"19:xpc10nz", true --> X20:"20:xpc10nz"
+     X18:"18:xpc10nz", primesya/T404/Main/T404/Main/V_4_GP<1000 --> X19:"19:xpc10nz"
+     X18:"18:xpc10nz", primesya/T404/Main/T404/Main/V_4_GP>=1000 --> X5:"5:xpc10nz"
+     X17:"17:xpc10nz", primesya/T404/Main/T404/Main/V_2_GP+primesya/T404/Main/T404/Main/V_2_GP<1000 --> X18:"18:xpc10nz"
+     X17:"17:xpc10nz", primesya/T404/Main/T404/Main/V_2_GP+primesya/T404/Main/T404/Main/V_2_GP>=1000 --> X6:"6:xpc10nz"
+     X16:"16:xpc10nz", true --> X7:"7:xpc10nz"
+     X15:"15:xpc10nz", {[xpc10nz==X15:"15:xpc10nz", !(|-|@_BOOL/CC/SCALbx10_ARA0_RDD0)]; [xpc10nz!=X15:"15:xpc10nz", !(|-|BOOLCCSCALbx10ARA0RRh10hold)]} --> X16:"16:xpc10nz"
+     X15:"15:xpc10nz", {[xpc10nz==X15:"15:xpc10nz", |-|@_BOOL/CC/SCALbx10_ARA0_RDD0]; [xpc10nz!=X15:"15:xpc10nz", |-|BOOLCCSCALbx10ARA0RRh10hold]} --> X16:"16:xpc10nz"
+     X14:"14:xpc10nz", true --> X15:"15:xpc10nz"
+     X13:"13:xpc10nz", true --> X12:"12:xpc10nz"
+     X12:"12:xpc10nz", true --> X13:"13:xpc10nz"
+     X11:"11:xpc10nz", true --> X12:"12:xpc10nz"
+     X10:"10:xpc10nz", true --> X11:"11:xpc10nz"
+     X9:"9:xpc10nz", true --> X10:"10:xpc10nz"
+     X8:"8:xpc10nz", true --> X9:"9:xpc10nz"
+     X7:"7:xpc10nz", primesya/T404/Main/T404/Main/V_4_GP<1000 --> X14:"14:xpc10nz"
+     X7:"7:xpc10nz", primesya/T404/Main/T404/Main/V_4_GP>=1000 --> X8:"8:xpc10nz"
+     X6:"6:xpc10nz", true --> X7:"7:xpc10nz"
+     X5:"5:xpc10nz", primesya/T404/Main/T404/Main/V_2_GP<1000 --> X17:"17:xpc10nz"
+     X5:"5:xpc10nz", primesya/T404/Main/T404/Main/V_2_GP>=1000 --> X6:"6:xpc10nz"
+     X4:"4:xpc10nz", primesya/T404/Main/T404/Main/V_2_GP<1000 --> X21:"21:xpc10nz"
+     X4:"4:xpc10nz", primesya/T404/Main/T404/Main/V_2_GP>=1000 --> X5:"5:xpc10nz"
+     X3:"3:xpc10nz", true --> X4:"4:xpc10nz"
+     X2:"2:xpc10nz", true --> X3:"3:xpc10nz"
+     X1:"1:xpc10nz", true --> X2:"2:xpc10nz"
+     X0:"0:xpc10nz", true --> X1:"1:xpc10nz"
+End report on New PC movements for + title (29 items)
+
+New pc encoding needed for xpc12
+New PC encoding npcs=xpc12nz needed for xpc12 using xpc12nz with arity 6 states
+Report on res2_form_cam_ops: posedge(clk):xpc12:X0:"0:xpc12":?: Work summary: none exist.
+Variable-latency operation check for thread xpc12 in state X0:"0:xpc12": result=No stalls can happen in this state
+recoded edge guard from true to true 
+Report on res2_form_cam_ops: posedge(clk):xpc12:X0:"0:xpc12":?: Work summary
+  track=CBG_track (0,925) eno=925, te:0, opx=*misc_exec*:*UNDEF, hk at=<NONE>
+End report on res2_form_cam_ops: posedge(clk):xpc12:X0:"0:xpc12":?: Work summary (1 items)
+
+Variable-latency operation check for thread xpc12 in state X0:"0:xpc12": result=No stalls can happen in this state
+WF:restructure2: Form for res2_form_cam_ops: posedge(clk):xpc12:X0:"0:xpc12":?:925Pass=1: eno=925 cmd=*misc_exec* oldx=*UNDEF te:0
+WF:form_cam_bus_ops: form newops for state=X0:"0:xpc12"  eno=925 pass=1; mwhen0=0; nn=none cmd=*misc_exec* oldx=*UNDEF ikey=-
+WF:restructure2: Form for res2_form_cam_ops: posedge(clk):xpc12:X0:"0:xpc12":?:925Pass=2: eno=925 cmd=*misc_exec* oldx=*UNDEF te:0
+WF:form_cam_bus_ops: form newops for state=X0:"0:xpc12"  eno=925 pass=2; mwhen0=0; nn=none cmd=*misc_exec* oldx=*UNDEF ikey=-
+Report on res2_form_cam_ops: posedge(clk):xpc12:X1:"1:xpc12":?: Work summary: none exist.
+Variable-latency operation check for thread xpc12 in state X1:"1:xpc12": result=No stalls can happen in this state
+recoded edge guard from !(pio_hwen) to !(pio_hwen) 
+Report on res2_form_cam_ops: posedge(clk):xpc12:X1:"1:xpc12":?: Work summary
+  track=CBG_track (1,927) eno=927, te:1, opx=read:@_SINT/CC/SCALbx12_ARA0[pio_addr], hk at=HK_abs ([1],HK_rel (0,"asubsc-rhs-addr")), HK_abs ([3],HK_rel (1,"asubsc-rhs-data"))
+  track=CBG_track (3,927) eno=927, te:3, opx=*misc_exec*:*UNDEF, hk at=<NONE>
+  track=CBG_track (3,927) eno=927, te:3, opx=scalarw:pio_rdata, hk at=HK_abs ([3],HK_rel (0,"hk-create"))
+End report on res2_form_cam_ops: posedge(clk):xpc12:X1:"1:xpc12":?: Work summary (3 items)
+
+Variable-latency operation check for thread xpc12 in state X1:"1:xpc12": result=No stalls can happen in this state
+WF:restructure2: Form for res2_form_cam_ops: posedge(clk):xpc12:X1:"1:xpc12":?:927Pass=1: eno=927 cmd=read oldx=@_SINT/CC/SCALbx12_ARA0[pio_addr] te:1
+WF:form_cam_bus_ops: form newops for state=X1:"1:xpc12"  eno=927 pass=1; mwhen0=1; nn=132 cmd=read oldx=@_SINT/CC/SCALbx12_ARA0[pio_addr] ikey=@_SINT/CC/SCALbx12_ARA0
+nstf: ikey=@_SINT/CC/SCALbx12_ARA0 eno=927 no shotgun trigger found for @_SINT/CC/SCALbx12_ARA0[pio_addr]
+WF:restructure2: Form for res2_form_cam_ops: posedge(clk):xpc12:X1:"1:xpc12":?:927Pass=1: eno=927 cmd=scalarw oldx=pio_rdata te:3
+startn=1: check need to make stall corrector for pipelined component   f/t=<NONE>     needed=false
+hholder F/L alloc_hr  @_SINT/CC/SCALbx12_ARA0  RR  SINTCCSCALbx12ARA0RRh10
+Assigned shotgun id=SINTCCSCALbx12ARA0RRh10 exit=SINTCCSCALbx12ARA0RRh10shot0 for @_SINT/CC/SCALbx12_ARA0[pio_addr]
+fully-pipelined, fixed latency read - start at 1, ready at 3  - stall_corrector_inuse=false
+WF:form_cam_bus_ops: form newops for state=X1:"1:xpc12"  eno=927 pass=1; mwhen0=3; nn=21 cmd=scalarw oldx=pio_rdata ikey=pio_rdata
+nstf: ikey=pio_rdata eno=927 no shotgun trigger found for pio_rdata
+WF:restructure2: Form for res2_form_cam_ops: posedge(clk):xpc12:X1:"1:xpc12":?:927Pass=1: eno=927 cmd=*misc_exec* oldx=*UNDEF te:3
+startn=1: check need to make stall corrector for pipelined component   f/t=<NONE>     needed=false
+pass=1 double computation in schedule for cmd=read oldx=132 {rdytime=3, ikey=@_SINT/CC/SCALbx12_ARA0, oldx=@_SINT/CC/SCALbx12_ARA0[pio_addr], result=@_SINT/CC/SCALbx12_ARA0_RDD0}. We should reuse old read or avoid WaW code.
+Previous entry=COND(xpc12nz==X3:"3:xpc12nz", @_SINT/CC/SCALbx12_ARA0_RDD0, SINTCCSCALbx12ARA0RRh10hold)
+WF:form_cam_bus_ops: form newops for state=X1:"1:xpc12"  eno=927 pass=1; mwhen0=3; nn=none cmd=*misc_exec* oldx=*UNDEF ikey=-
+WF:restructure2: Form for res2_form_cam_ops: posedge(clk):xpc12:X1:"1:xpc12":?:927Pass=2: eno=927 cmd=read oldx=@_SINT/CC/SCALbx12_ARA0[pio_addr] te:1
+startn=1: check need to make stall corrector for pipelined component   f/t=3     needed=false
+using existing live subexpression @_SINT/CC/SCALbx12_ARA0 read
+fully-pipelined, fixed latency read - start at 1, ready at 3  - stall_corrector_inuse=false
+WF:form_cam_bus_ops: form newops for state=X1:"1:xpc12"  eno=927 pass=2; mwhen0=1; nn=132 cmd=read oldx=@_SINT/CC/SCALbx12_ARA0[pio_addr] ikey=@_SINT/CC/SCALbx12_ARA0
+WF:restructure2: Form for res2_form_cam_ops: posedge(clk):xpc12:X1:"1:xpc12":?:927Pass=2: eno=927 cmd=scalarw oldx=pio_rdata te:3
+startn=1: check need to make stall corrector for pipelined component   f/t=<NONE>     needed=false
+pass=2 double computation in schedule for cmd=read oldx=132 {rdytime=3, ikey=@_SINT/CC/SCALbx12_ARA0, oldx=@_SINT/CC/SCALbx12_ARA0[pio_addr], result=@_SINT/CC/SCALbx12_ARA0_RDD0}. We should reuse old read or avoid WaW code.
+Previous entry=COND(xpc12nz==X3:"3:xpc12nz", @_SINT/CC/SCALbx12_ARA0_RDD0, SINTCCSCALbx12ARA0RRh10hold)
+WF:form_cam_bus_ops: form newops for state=X1:"1:xpc12"  eno=927 pass=2; mwhen0=3; nn=21 cmd=scalarw oldx=pio_rdata ikey=pio_rdata
+nstf: ikey=pio_rdata eno=927 no shotgun trigger found for pio_rdata
+WF:restructure2: Form for res2_form_cam_ops: posedge(clk):xpc12:X1:"1:xpc12":?:927Pass=2: eno=927 cmd=*misc_exec* oldx=*UNDEF te:3
+startn=1: check need to make stall corrector for pipelined component   f/t=<NONE>     needed=false
+pass=2 double computation in schedule for cmd=read oldx=132 {rdytime=3, ikey=@_SINT/CC/SCALbx12_ARA0, oldx=@_SINT/CC/SCALbx12_ARA0[pio_addr], result=@_SINT/CC/SCALbx12_ARA0_RDD0}. We should reuse old read or avoid WaW code.
+Previous entry=COND(xpc12nz==X3:"3:xpc12nz", @_SINT/CC/SCALbx12_ARA0_RDD0, SINTCCSCALbx12ARA0RRh10hold)
+WF:form_cam_bus_ops: form newops for state=X1:"1:xpc12"  eno=927 pass=2; mwhen0=3; nn=none cmd=*misc_exec* oldx=*UNDEF ikey=-
+recoded edge guard from |-|pio_hwen to |-|pio_hwen 
+Report on res2_form_cam_ops: posedge(clk):xpc12:X1:"1:xpc12":?: Work summary
+  track=CBG_track (1,926) eno=926, te:1, opx=*misc_exec*:*UNDEF, hk at=<NONE>
+  track=CBG_track (1,926) eno=926, te:1, opx=write:@_SINT/CC/SCALbx12_ARA0[pio_addr], hk at=HK_abs ([1],HK_rel (0,"asubsc-lhs"))
+End report on res2_form_cam_ops: posedge(clk):xpc12:X1:"1:xpc12":?: Work summary (2 items)
+
+Variable-latency operation check for thread xpc12 in state X1:"1:xpc12": result=No stalls can happen in this state
+WF:restructure2: Form for res2_form_cam_ops: posedge(clk):xpc12:X1:"1:xpc12":?:926Pass=1: eno=926 cmd=write oldx=@_SINT/CC/SCALbx12_ARA0[pio_addr] te:1
+WF:form_cam_bus_ops: form newops for state=X1:"1:xpc12"  eno=926 pass=1; mwhen0=1; nn=132 cmd=write oldx=@_SINT/CC/SCALbx12_ARA0[pio_addr] ikey=@_SINT/CC/SCALbx12_ARA0
+nstf: ikey=@_SINT/CC/SCALbx12_ARA0 eno=926 no shotgun trigger found for @_SINT/CC/SCALbx12_ARA0[pio_addr]
+WF:restructure2: Form for res2_form_cam_ops: posedge(clk):xpc12:X1:"1:xpc12":?:926Pass=1: eno=926 cmd=*misc_exec* oldx=*UNDEF te:1
+do not forward written value (-ve rdyat of -330012) guts="@_SINT/CC/SCALbx12_ARA0[pio_addr]"
+WF:form_cam_bus_ops: form newops for state=X1:"1:xpc12"  eno=926 pass=1; mwhen0=1; nn=none cmd=*misc_exec* oldx=*UNDEF ikey=-
+WF:restructure2: Form for res2_form_cam_ops: posedge(clk):xpc12:X1:"1:xpc12":?:926Pass=2: eno=926 cmd=write oldx=@_SINT/CC/SCALbx12_ARA0[pio_addr] te:1
+do not forward written value (-ve rdyat of -330012) guts="@_SINT/CC/SCALbx12_ARA0[pio_addr]"
+WF:form_cam_bus_ops: form newops for state=X1:"1:xpc12"  eno=926 pass=2; mwhen0=1; nn=132 cmd=write oldx=@_SINT/CC/SCALbx12_ARA0[pio_addr] ikey=@_SINT/CC/SCALbx12_ARA0
+nstf: ikey=@_SINT/CC/SCALbx12_ARA0 eno=926 no shotgun trigger found for @_SINT/CC/SCALbx12_ARA0[pio_addr]
+WF:restructure2: Form for res2_form_cam_ops: posedge(clk):xpc12:X1:"1:xpc12":?:926Pass=2: eno=926 cmd=*misc_exec* oldx=*UNDEF te:1
+do not forward written value (-ve rdyat of -330012) guts="@_SINT/CC/SCALbx12_ARA0[pio_addr]"
+do not forward written value (-ve rdyat of -330012) guts="@_SINT/CC/SCALbx12_ARA0[pio_addr]"
+WF:form_cam_bus_ops: form newops for state=X1:"1:xpc12"  eno=926 pass=2; mwhen0=1; nn=none cmd=*misc_exec* oldx=*UNDEF ikey=-
+Report on res2_form_cam_ops: posedge(clk):xpc12:X2:"2:xpc12":?: Work summary: none exist.
+Variable-latency operation check for thread xpc12 in state X2:"2:xpc12": result=No stalls can happen in this state
+recoded edge guard from true to true 
+Report on res2_form_cam_ops: posedge(clk):xpc12:X2:"2:xpc12":?: Work summary
+  track=CBG_track (4,928) eno=928, te:4, opx=*misc_exec*:*UNDEF, hk at=<NONE>
+End report on res2_form_cam_ops: posedge(clk):xpc12:X2:"2:xpc12":?: Work summary (1 items)
+
+Variable-latency operation check for thread xpc12 in state X2:"2:xpc12": result=No stalls can happen in this state
+WF:restructure2: Form for res2_form_cam_ops: posedge(clk):xpc12:X2:"2:xpc12":?:928Pass=1: eno=928 cmd=*misc_exec* oldx=*UNDEF te:4
+WF:form_cam_bus_ops: form newops for state=X2:"2:xpc12"  eno=928 pass=1; mwhen0=4; nn=none cmd=*misc_exec* oldx=*UNDEF ikey=-
+WF:restructure2: Form for res2_form_cam_ops: posedge(clk):xpc12:X2:"2:xpc12":?:928Pass=2: eno=928 cmd=*misc_exec* oldx=*UNDEF te:4
+WF:form_cam_bus_ops: form newops for state=X2:"2:xpc12"  eno=928 pass=2; mwhen0=4; nn=none cmd=*misc_exec* oldx=*UNDEF ikey=-
+Report on res2_form_cam_ops: posedge(clk):xpc12:X4:"4:xpc12":?: Work summary: none exist.
+Variable-latency operation check for thread xpc12 in state X4:"4:xpc12": result=No stalls can happen in this state
+recoded edge guard from true to true 
+Report on res2_form_cam_ops: posedge(clk):xpc12:X4:"4:xpc12":?: Work summary
+  track=CBG_track (5,929) eno=929, te:5, opx=*misc_exec*:*UNDEF, hk at=<NONE>
+End report on res2_form_cam_ops: posedge(clk):xpc12:X4:"4:xpc12":?: Work summary (1 items)
+
+Variable-latency operation check for thread xpc12 in state X4:"4:xpc12": result=No stalls can happen in this state
+WF:restructure2: Form for res2_form_cam_ops: posedge(clk):xpc12:X4:"4:xpc12":?:929Pass=1: eno=929 cmd=*misc_exec* oldx=*UNDEF te:5
+WF:form_cam_bus_ops: form newops for state=X4:"4:xpc12"  eno=929 pass=1; mwhen0=5; nn=none cmd=*misc_exec* oldx=*UNDEF ikey=-
+WF:restructure2: Form for res2_form_cam_ops: posedge(clk):xpc12:X4:"4:xpc12":?:929Pass=2: eno=929 cmd=*misc_exec* oldx=*UNDEF te:5
+WF:form_cam_bus_ops: form newops for state=X4:"4:xpc12"  eno=929 pass=2; mwhen0=5; nn=none cmd=*misc_exec* oldx=*UNDEF ikey=-
+  key nos for new microstates for X4:"4:xpc12" eno,local_eno=929,0 : ctrstart=5 root_hwm=0 dispd_pc=-1 exec=5 dend=0 dest=1/1
+mk_xition: a (5,10)X4:"4:xpc12": sedge: from=X5:"5:xpc12nz" g=true --> X1:"1:xpc12nz"
+Restart superstate (nomove) condition =false
+  key nos for new microstates for X2:"2:xpc12" eno,local_eno=928,0 : ctrstart=4 root_hwm=0 dispd_pc=-1 exec=4 dend=0 dest=4/5
+mk_xition: a (4,8)X2:"2:xpc12": sedge: from=X4:"4:xpc12nz" g=true --> X5:"5:xpc12nz"
+Restart superstate (nomove) condition =false
+  key nos for new microstates for X1:"1:xpc12" eno,local_eno=926,0 : ctrstart=1 root_hwm=0 dispd_pc=2 exec=1 dend=1 dest=2/4
+mk_xition: a (1,2)X1:"1:xpc12": disp_1: from=X1:"1:xpc12nz" g=|-|pio_hwen --> X2:"2:xpc12nz"
+mk_xition: a (2,1)X1:"1:xpc12": ledge_1: from=X2:"2:xpc12nz" g=true --> X4:"4:xpc12nz"
+  key nos for new microstates for X1:"1:xpc12" eno,local_eno=927,1 : ctrstart=1 root_hwm=0 dispd_pc=3 exec=3 dend=1 dest=2/4
+mk_xition: a (1,4)X1:"1:xpc12": disp_1: from=X1:"1:xpc12nz" g=!(pio_hwen) --> X3:"3:xpc12nz"
+mk_xition: a (3,3)X1:"1:xpc12": ledge_1: from=X3:"3:xpc12nz" g=true --> X4:"4:xpc12nz"
+Restart superstate (nomove) condition =false
+  key nos for new microstates for X0:"0:xpc12" eno,local_eno=925,0 : ctrstart=0 root_hwm=0 dispd_pc=-1 exec=0 dend=0 dest=1/1
+mk_xition: a (0,0)X0:"0:xpc12": sedge: from=X0:"0:xpc12nz" g=true --> X1:"1:xpc12nz"
+Restart superstate (nomove) condition =false
+Microarc table
+Controller Arcs (revealing old/new PC relationship)
+*----------------+-----+----------------+-------------+----------------+----------*
+| New state name | Arc | Old state name | Guard       | Dest state     | VL Guard |
+*----------------+-----+----------------+-------------+----------------+----------*
+| X0:"0:xpc12nz" | 6   | X0:"0:xpc12"   | 1           | X1:"1:xpc12nz" |          |
+| X1:"1:xpc12nz" | 2   | X1:"1:xpc12"   | pio_hwen    | X2:"2:xpc12nz" |          |
+| X2:"2:xpc12nz" | 3   | X1:"1:xpc12"   | 1           | X4:"4:xpc12nz" |          |
+| X1:"1:xpc12nz" | 4   | X1:"1:xpc12"   | !(pio_hwen) | X3:"3:xpc12nz" |          |
+| X3:"3:xpc12nz" | 5   | X1:"1:xpc12"   | 1           | X4:"4:xpc12nz" |          |
+| X4:"4:xpc12nz" | 1   | X2:"2:xpc12"   | 1           | X5:"5:xpc12nz" |          |
+| X5:"5:xpc12nz" | 0   | X4:"4:xpc12"   | 1           | X1:"1:xpc12nz" |          |
+*----------------+-----+----------------+-------------+----------------+----------*
+
+WF:dotprint: start
+WF:dotout ppg_gen: start
+WF:dotprint: done
+Report on New PC movements for + title
+     X5:"5:xpc12nz", true --> X1:"1:xpc12nz"
+     X4:"4:xpc12nz", true --> X5:"5:xpc12nz"
+     X3:"3:xpc12nz", true --> X4:"4:xpc12nz"
+     X1:"1:xpc12nz", !(pio_hwen) --> X3:"3:xpc12nz"
+     X2:"2:xpc12nz", true --> X4:"4:xpc12nz"
+     X1:"1:xpc12nz", |-|pio_hwen --> X2:"2:xpc12nz"
+     X0:"0:xpc12nz", true --> X1:"1:xpc12nz"
+End report on New PC movements for + title (7 items)
+
+Making SRAM nets and simulation gubbins for : Resource=SRAM iname=i_@_BOOL/CC/SCALbx10_ARA0 10x1 clk=posedge(clk) synchronous/pipeline=1 no_ports=1 <NONE> used by threads xpc10 port 0
+Making SRAM nets and simulation gubbins for : Resource=SRAM iname=i_@_SINT/CC/SCALbx12_ARA0 10x32 clk=posedge(clk) synchronous/pipeline=1 no_ports=1 <NONE> used by threads xpc12 port 0
+Opening log file  obj/composegenerated10.restructureReport.restructure2.txt
+Wrote report file obj/composegenerated10.restructureReport.restructure2.txt
+Concise expression alias report.
+  E1 =.= primesya/T404/Main/T404/Main/V_4_GP
+  E2 =.= 1+primesya/T404/Main/T404/Main/V_4_GP
+  E3 =.= primesya/T404/Main/T404/Main/V_2_GP+primesya/T404/Main/T404/Main/V_2_GP
+  E4 =.= 1+primesya/T404/Main/T404/Main/V_2_GP
+  E5 =.= primesya/T404/Main/T404/Main/V_2_GP+primesya/T404/Main/T404/Main/V_4_GP
+  E6 =.= primesya/T404/Main/T404/Main/V_2_GP
+  E7 =.= C(@_SINT/CC/SCALbx12_ARA0[pio_addr])
+  E8 =.= primesya/T404/Main/T404/Main/V_2_GP>=1000
+  E9 =.= primesya/T404/Main/T404/Main/V_2_GP<1000
+  E10 =.= primesya/T404/Main/T404/Main/V_4_GP>=1000
+  E11 =.= primesya/T404/Main/T404/Main/V_4_GP<1000
+  E12 =.= {[xpc10nz==X15:"15:xpc10nz", |-|@_BOOL/CC/SCALbx10_ARA0_RDD0]; [xpc10nz!=X15:"15:xpc10nz", |-|BOOLCCSCALbx10ARA0RRh10hold]}
+  E13 =.= {[xpc10nz==X15:"15:xpc10nz", !(|-|@_BOOL/CC/SCALbx10_ARA0_RDD0)]; [xpc10nz!=X15:"15:xpc10nz", !(|-|BOOLCCSCALbx10ARA0RRh10hold)]}
+  E14 =.= primesya/T404/Main/T404/Main/V_2_GP+primesya/T404/Main/T404/Main/V_2_GP>=1000
+  E15 =.= primesya/T404/Main/T404/Main/V_2_GP+primesya/T404/Main/T404/Main/V_2_GP<1000
+Start of aux report enumbers
+Concise expression alias report.
+  E1 =.= primesya/T404/Main/T404/Main/V_4_GP
+  E2 =.= 1+primesya/T404/Main/T404/Main/V_4_GP
+  E3 =.= primesya/T404/Main/T404/Main/V_2_GP+primesya/T404/Main/T404/Main/V_2_GP
+  E4 =.= 1+primesya/T404/Main/T404/Main/V_2_GP
+  E5 =.= primesya/T404/Main/T404/Main/V_2_GP+primesya/T404/Main/T404/Main/V_4_GP
+  E6 =.= primesya/T404/Main/T404/Main/V_2_GP
+  E7 =.= C(@_SINT/CC/SCALbx12_ARA0[pio_addr])
+  E8 =.= primesya/T404/Main/T404/Main/V_2_GP>=1000
+  E9 =.= primesya/T404/Main/T404/Main/V_2_GP<1000
+  E10 =.= primesya/T404/Main/T404/Main/V_4_GP>=1000
+  E11 =.= primesya/T404/Main/T404/Main/V_4_GP<1000
+  E12 =.= {[xpc10nz==X15:"15:xpc10nz", |-|@_BOOL/CC/SCALbx10_ARA0_RDD0]; [xpc10nz!=X15:"15:xpc10nz", |-|BOOLCCSCALbx10ARA0RRh10hold]}
+  E13 =.= {[xpc10nz==X15:"15:xpc10nz", !(|-|@_BOOL/CC/SCALbx10_ARA0_RDD0)]; [xpc10nz!=X15:"15:xpc10nz", !(|-|BOOLCCSCALbx10ARA0RRh10hold)]}
+  E14 =.= primesya/T404/Main/T404/Main/V_2_GP+primesya/T404/Main/T404/Main/V_2_GP>=1000
+  E15 =.= primesya/T404/Main/T404/Main/V_2_GP+primesya/T404/Main/T404/Main/V_2_GP<1000
+End of aux report enumbers
+Timestamp: (.end.).   T/S  10/02/2017 17:08:07 finished restructure2
+Writing report 'report' shorter-mode=false
+Opening log file  obj/h08_restructure2/report-full
+WF:Writing vmreport of composegenerated10: start
+WF:Writing vmreport of composegenerated10: complete
+Profile report: queries=29, 31, 18
+myastats= ru=91/al=364
+Finished path cmd
+Starting path cmd
+End of this log file. Log continues in file where tag=conerefine2: End of log

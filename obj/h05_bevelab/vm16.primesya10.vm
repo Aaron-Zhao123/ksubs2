@@ -1,0 +1,24 @@
+Post assembly report
+msg=primesya10
+sensitivity=posedge(clk)
+Listing: id=vm16
+0:      linepoint: PCT400:0: -1
+1:      // End of static elaboration for tid T400. After all generate loops are unwound we arrive here: 0
+2:T400_0:
+3:      linepoint: PCT400:0: -1
+4:      KiwiSystem/Kiwi/old_pausemode_value := U32'2;
+5:      KiwiSystem/Kiwi/tnow := U64'0;
+6:      Xgoto(DESTWASCOMMENT10, 8);
+7:      // ///Xgoto(DESTWASCOMMENT10);
+
+8:DESTWASCOMMENT10:
+----------------------- end of vm16
+Concise listing:
+Listing: id=vm16
+2:T400_0:
+4:      KiwiSystem/Kiwi/old_pausemode_value := U32'2;
+5:      KiwiSystem/Kiwi/tnow := U64'0;
+6:      Xgoto(DESTWASCOMMENT10, 8);
+8:DESTWASCOMMENT10:
+----------------------- end of vm16
+EOF

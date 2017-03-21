@@ -1,0 +1,118 @@
+Start of log: tag=elaborate+KSubs2Director10
+WF:opath_bevelab: Start processing for id=KSubs2Director10
+WF:bev_compile_exec: KSubs2Director10
+WF:bev_compile_exec_2: start
+WF:VM compile lst : Start KSubs2Director10
+WF:Assemble VM: vm22_KSubs2Director10: start
+WF:reassemble_dic: start
+WF:reassemble_dic: Reassembled 19 dic locations
+redirect optimise 0/19
+WF:Assemble VM: vm22_KSubs2Director10: finished 19 instructions. gc=
+WF:VM compile lst: Finished SP_l vm22.KSubs2Director10 compiled to VM by KSubs2Director10. 19 commands
+
+Writing post assembly report vm22.KSubs2Director10.vm
+Opening log file  obj/h05_bevelab/vm22.KSubs2Director10.vm
+WF:bev_compile_exec_2_end: start
+WF:uniquify non ref transparent: start
+WF:uniquify non ref transparent: end
+WF:bev_compile_exec_2_end: uniquify done
+h2blk: SP_dic: starting pause mode for this thread is 'SPM_bblock'
+WF:Assemble VM: KSubs2Director10: start
+WF:reassemble_dic: start
+WF:reassemble_dic: Reassembled 20 dic locations
+redirect optimise 0/20
+WF:Assemble VM: KSubs2Director10: finished 20 instructions. gc=
+WF:bev_compile_exec_2_end: reported recoded machine
+WF:bevelab H/W elaboration: KSubs2Director10:vm22: clkinfo=clk=posedge(clk), diclen=14
+Pause arg mode=SPM_bblock so using PS_soft
+Join points are :2, 14
+Pause arg mode=SPM_bblock so using PS_soft
+basic-block join point: adding new pausepoint at 2 form=PS_soft
+Pause arg mode=SPM_bblock so using PS_soft
+basic-block join point: adding new pausepoint at 14 form=PS_soft
+Pause arg mode=SPM_bblock so using PS_soft
+Thread elab finished: quads=5
+bev elaborate name='KSubs2Director10' with mpc12 as pc
+Resumes are falseX0:"0:mpc12", falseX2:"2:mpc12", falseX14:"14:mpc12", falseX16:"16:mpc12"
+There are 4 resumes for scheduling
+Thread elab 'KSubs2Director10' finished: arcs=5
+WF:bev_compile_exec: DONE bev elaborate name='KSubs2Director10' 
+======================================================
+
+
+
+Bevelab: KSubs2Director10:0 rtl execs (outside of any dpath)
+WF:opath_bevelab: Exec gen complete for id=KSubs2Director10
+WF:opath_bevelab: New VM created for id=KSubs2Director10
+WF:opath_bevelab: New VM created for id=KSubs2_Director
+WF:Bevelab:: csharp/primes_offchip Quads generated
+Thread mpc10 has 19 bevelab control states (pauses)
+Thread mpc12 has 4 bevelab control states (pauses)
+WF:fsm_repack: Start onehot=true pcroot=xpc
+csharp/primes_offchip: fsm_repack: New PC name is xpc10[31:0]:LOCAL::Unsigned{init=0}
+npcs=xpc10, reset=X0:"0:mpc10" : Too trivial a controller to repack = false
+Initial/reset state for npc=xpc10 is X0:"0:xpc10" nn=Some 204
+Report on repacking for xpc10
+  false X0:"0:mpc10" --> X0:"0:xpc10"
+  false X63:"63:mpc10" --> X1:"1:xpc10"
+  false X66:"66:mpc10" --> X2:"2:xpc10"
+  false X72:"72:mpc10" --> X4:"4:xpc10"
+  false X82:"82:mpc10" --> X8:"8:xpc10"
+  false X98:"98:mpc10" --> X16:"16:xpc10"
+  false X106:"106:mpc10" --> X32:"32:xpc10"
+  false X116:"116:mpc10" --> X64:"64:xpc10"
+  false X118:"118:mpc10" --> X128:"128:xpc10"
+  false X122:"122:mpc10" --> X256:"256:xpc10"
+  false X125:"125:mpc10" --> X512:"512:xpc10"
+  false X128:"128:mpc10" --> X1024:"1024:xpc10"
+  false X130:"130:mpc10" --> X2048:"2048:xpc10"
+  false X135:"135:mpc10" --> X4096:"4096:xpc10"
+  false X143:"143:mpc10" --> X8192:"8192:xpc10"
+  false X88:"88:mpc10" --> X16384:"16384:xpc10"
+  false X152:"152:mpc10" --> X32768:"32768:xpc10"
+  false X164:"164:mpc10" --> X65536:"65536:xpc10"
+  false X171:"171:mpc10" --> X131072:"131072:xpc10"
+End report on repacking for xpc10 (19 items)
+
+WF:fsm_repack: Start onehot=true pcroot=xpc
+csharp/primes_offchip: fsm_repack: New PC name is xpc12[31:0]:LOCAL::Unsigned{init=0}
+npcs=xpc12, reset=X0:"0:mpc12" : Too trivial a controller to repack = false
+Initial/reset state for npc=xpc12 is X0:"0:xpc12" nn=Some 243
+Report on repacking for xpc12
+  false X0:"0:mpc12" --> X0:"0:xpc12"
+  false X2:"2:mpc12" --> X1:"1:xpc12"
+  false X14:"14:mpc12" --> X2:"2:xpc12"
+  false X16:"16:mpc12" --> X4:"4:xpc12"
+End report on repacking for xpc12 (4 items)
+
+WF:Bevelab::  Repack Complete
+Report on PC regs needed 
+  xpc12
+  xpc10
+End report on PC regs needed  (2 items)
+
+Report on gdecs this machine 
+  design_serial_number
+  pio_addr
+  pio_wdata
+  pio_rdata
+  pio_hwen
+  volume
+  count
+  elimit
+  evariant
+  edesign
+  finished
+End report on gdecs this machine  (11 items)
+
+WF:Bevelab::  Core Complete
+Timestamp: (.end.).   T/S  10/02/2017 17:08:04 finished bevelab
+Writing report 'report' shorter-mode=false
+Opening log file  obj/h05_bevelab/report-full
+WF:Writing vmreport of bevelab_generated: start
+WF:Writing vmreport of bevelab_generated: complete
+Profile report: queries=5, 5, 0
+myastats= ru=57/al=251
+Finished path cmd
+Starting path cmd
+End of this log file. Log continues in file where tag=compose: End of log

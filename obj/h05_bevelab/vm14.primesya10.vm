@@ -1,0 +1,22 @@
+Post assembly report
+msg=primesya10
+sensitivity=posedge(clk)
+Listing: id=vm14
+0:      linepoint: PCT401:0: -1
+1:      // End of static elaboration for tid T401. After all generate loops are unwound we arrive here: 0
+2:T401_0:
+3:      linepoint: PCT401:0: -1
+4:      System/BitConverter/IsLittleEndian := U1'1;
+5:      Xgoto(DESTWASCOMMENT12, 7);
+6:      // ///Xgoto(DESTWASCOMMENT12);
+
+7:DESTWASCOMMENT12:
+----------------------- end of vm14
+Concise listing:
+Listing: id=vm14
+2:T401_0:
+4:      System/BitConverter/IsLittleEndian := U1'1;
+5:      Xgoto(DESTWASCOMMENT12, 7);
+7:DESTWASCOMMENT12:
+----------------------- end of vm14
+EOF

@@ -1,0 +1,1085 @@
+Start of log: tag=cgen2
+Orangepath: Executing step 10: 'cgen2' of the following recipe:
+Timestamp: (start).   T/S  10/02/2017 17:08:09
+  -~~ DO kiwife:kiwife
+  -~~ DO repack:repack
+  -~~ DO cgen1:cgen1
+  -~~ DO report:report
+  -~~ DO bevelab:bevelab
+  -~~ DO compose:compose
+  -~~ DO conerefine1:conerefine
+  -~~ DO restructure2:restructure2
+  -~~ DO conerefine2:conerefine
+  -~~ DO verilog-gen:verilog-gen
+  -~~ DO cgen2:cgen2
+  -~~ DO diosim:diosim DISABLED (will be skipped)
+Args=  /home/djg11/d320/hprls/kiwipro/kiwic/distro/lib/kiwic.exe csharp/primes_offchip.exe -res2-loadstore-port-count=0 -vnl=primes_offchip.v -vnl-rootmodname=primes_offchip csharp/KSubs2_Director.dll -vnl-resets=synchronous -kiwic-finish=disable -vnl-roundtrip=disable -kiwic-register-colours=1 -bevelab-default-pause-mode=bblock -fp-fl-sp-mul=4
+
+Validated(1) 6 args
+Report on Orangepath/recipe stage parameter settings: name=cgen2
+    cgen2=enable
+    cgen2-fn=
+    cgen2-topclass=DUT
+    cgen2-xtor=
+    -ifshare=on
+    -add-aux-reports=enable
+End report on Orangepath/recipe stage parameter settings: name=cgen2 (6 items)
+
+    arg binding: cgen2= enable
+    arg binding: cgen2-fn= 
+    arg binding: cgen2-topclass= DUT
+    arg binding: cgen2-xtor= 
+    arg binding: -ifshare= on
+    arg binding: -add-aux-reports= enable
+Starting opath_do cgen2 cmd=cgen2
+WF:cvt_to_sysc: Convert to C++/SystemC. opath operation: 10: cgen2
+Using default value of none for cpp-ifshare
+Cpp conversion of HPR machines.  Topname=csharp/primes_offchip. Starting
+Memory region descriptions (memdecs) no=0
+Machine(s) for conversion to CPP csharp/primes_offchip.csharp/primes_offchip
+VM2 analyse hierarchical summary: (g,l,e,a)
+csharp/primes_offchip.csharp/primes_offchip glea=/12/18/2/0
+- csharp/primes_offchip.@_SINT/CC/SCALbx12_ARA0 glea=/11/1/3/0
+- csharp/primes_offchip.@_BOOL/CC/SCALbx10_ARA0 glea=/11/1/3/0
+Machine(s) for conversion to CPP csharp/primes_offchip.csharp/primes_offchip
+VM2 analyse details:
+Machine attribute:preferred-name=primesya
+csharp/primes_offchip.csharp/primes_offchip: Machine  2 rules
+      Sensitivity = posedge(clk): SP_par(?. <71 items>)
+      Sensitivity = posedge(clk): SP_par(?. <16 items>)
+csharp/primes_offchip.csharp/primes_offchip:          12 terminals
+csharp/primes_offchip.csharp/primes_offchip:          2 children
+csharp/primes_offchip.csharp/primes_offchip:          18 internal variables (nodes)
+   machine gdecl   clk:INPUT::Unsigned{init=0, resetnet=true}
+   machine gdecl   design_serial_number[-2147483648..2147483647]:OUTPUT::Signed{init=0, io_output=true, username=design_serial_number}
+   machine gdecl   pio_addr[-2147483648..2147483647]:INPUT::Signed{init=0, io_input=true, username=pio_addr}
+   machine gdecl   pio_wdata[-2147483648..2147483647]:INPUT::Signed{init=0, io_input=true, username=pio_wdata}
+   machine gdecl   pio_rdata[-2147483648..2147483647]:OUTPUT::Signed{init=0, io_output=true, username=pio_rdata}
+   machine gdecl   pio_hwen:INPUT::Unsigned{init=0, io_input=true, username=pio_hwen}
+   machine gdecl   volume[31:0]:INPUT::Unsigned{init=0, io_input=true, io_output=true, username=volume, HwWidth=32}
+   machine gdecl   count[31:0]:OUTPUT::Unsigned{init=0, io_output=true, username=count, HwWidth=32}
+   machine gdecl   elimit[31:0]:OUTPUT::Signed{init=0, io_output=true, username=elimit, HwWidth=32}
+   machine gdecl   evariant[31:0]:OUTPUT::Signed{init=0, io_output=true, username=evariant, HwWidth=32}
+   machine gdecl   edesign[31:0]:OUTPUT::Signed{init=0, io_output=true, username=edesign, HwWidth=32}
+   machine gdecl   finished:OUTPUT::Unsigned{init=0, io_output=true, username=finished}
+   machine local   primesya/T404/Main/T404/Main/V_2_GP[-2147483648..2147483647]:LOCAL::Signed{init=0, shared_gp=true}
+   machine local   primesya/T404/Main/T404/Main/V_4_GP[-2147483648..2147483647]:LOCAL::Signed{init=0, shared_gp=true}
+   machine local   xpc10nz[4:0]:EG504:LOCAL::Unsigned{init=0}
+   machine local   @_BOOL/CC/SCALbx10_ARA0_AD0[3:0]:LOCAL::Unsigned{init=0}
+   machine local   @_BOOL/CC/SCALbx10_ARA0_WRD0:LOCAL::Unsigned{init=0}
+   machine local   @_BOOL/CC/SCALbx10_ARA0_WEN0:LOCAL::Unsigned{init=0, control_net_marked=true}
+   machine local   @_BOOL/CC/SCALbx10_ARA0_RDD0:LOCAL::Unsigned{init=0}
+   machine local   @_BOOL/CC/SCALbx10_ARA0_REN0:LOCAL::Unsigned{init=0, control_net_marked=true}
+   machine local   BOOLCCSCALbx10ARA0RRh10hold:LOCAL::Unsigned{init=0}
+   machine local   BOOLCCSCALbx10ARA0RRh10shot0:LOCAL::Unsigned{init=0}
+   machine local   xpc12nz[2:0]:EG505:LOCAL::Unsigned{init=0}
+   machine local   @_SINT/CC/SCALbx12_ARA0_RDD0[31:0]:LOCAL::Signed{init=0}
+   machine local   @_SINT/CC/SCALbx12_ARA0_AD0[3:0]:LOCAL::Unsigned{init=0}
+   machine local   @_SINT/CC/SCALbx12_ARA0_REN0:LOCAL::Unsigned{init=0, control_net_marked=true}
+   machine local   SINTCCSCALbx12ARA0RRh10hold[31:0]:LOCAL::Signed{init=0}
+   machine local   SINTCCSCALbx12ARA0RRh10shot0:LOCAL::Unsigned{init=0}
+   machine local   @_SINT/CC/SCALbx12_ARA0_WRD0[31:0]:LOCAL::Signed{init=0}
+   machine local   @_SINT/CC/SCALbx12_ARA0_WEN0:LOCAL::Unsigned{init=0, control_net_marked=true}
+sensitivity=posedge(clk)
+      (xpc10nz==X21:"21:xpc10nz"):() --> {():primesya/T404/Main/T404/Main/V_2_GP <= 1+primesya/T404/Main/T404/Main/V_2_GP}
+      (xpc10nz==X21:"21:xpc10nz"):() --> {():Xn(@_BOOL/CC/SCALbx10_ARA0_AD0,-1) <= primesya/T404/Main/T404/Main/V_2_GP}
+      (xpc10nz==X21:"21:xpc10nz"):() --> {():Xn(@_BOOL/CC/SCALbx10_ARA0_WRD0,-1) <= U1'1}
+      (xpc10nz==X19:"19:xpc10nz"):() --> {():primesya/T404/Main/T404/Main/V_4_GP <= primesya/T404/Main/T404/Main/V_2_GP+primesya/T404/Main/T404/Main/V_4_GP}
+      (xpc10nz==X19:"19:xpc10nz"):() --> {():Xn(@_BOOL/CC/SCALbx10_ARA0_AD0,-1) <= primesya/T404/Main/T404/Main/V_4_GP}
+      (xpc10nz==X19:"19:xpc10nz"):() --> {():Xn(@_BOOL/CC/SCALbx10_ARA0_WRD0,-1) <= U1'0}
+      (xpc10nz==X18:"18:xpc10nz"):(primesya/T404/Main/T404/Main/V_4_GP>=1000) --> {():primesya/T404/Main/T404/Main/V_2_GP <= 1+primesya/T404/Main/T404/Main/V_2_GP}
+      (xpc10nz==X17:"17:xpc10nz"):(primesya/T404/Main/T404/Main/V_2_GP+primesya/T404/Main/T404/Main/V_2_GP>=1000) --> {():primesya/T404/Main/T404/Main/V_4_GP <= primesya/T404/Main/T404/Main/V_2_GP+primesya/T404/Main/T404/Main/V_2_GP}
+      (xpc10nz==X17:"17:xpc10nz"):(primesya/T404/Main/T404/Main/V_2_GP+primesya/T404/Main/T404/Main/V_2_GP<1000) --> {():primesya/T404/Main/T404/Main/V_4_GP <= primesya/T404/Main/T404/Main/V_2_GP+primesya/T404/Main/T404/Main/V_2_GP}
+      (xpc10nz==X16:"16:xpc10nz"):() --> {():primesya/T404/Main/T404/Main/V_4_GP <= 1+primesya/T404/Main/T404/Main/V_4_GP}
+      (xpc10nz==X15:"15:xpc10nz"):({[xpc10nz==X15:"15:xpc10nz", |-|@_BOOL/CC/SCALbx10_ARA0_RDD0]; [xpc10nz!=X15:"15:xpc10nz", |-|BOOLCCSCALbx10ARA0RRh10hold]}) --> {({[xpc10nz==X15:"15:xpc10nz", |-|@_BOOL/CC/SCALbx10_ARA0_RDD0]; [xpc10nz!=X15:"15:xpc10nz", |-|BOOLCCSCALbx10ARA0RRh10hold]}):count <= Cu(1+count)}
+      (xpc10nz==X14:"14:xpc10nz"):() --> {():Xn(@_BOOL/CC/SCALbx10_ARA0_AD0,-1) <= primesya/T404/Main/T404/Main/V_4_GP}
+      (xpc10nz==X10:"10:xpc10nz"):() --> {():finished <= U1'1}
+      (xpc10nz==X6:"6:xpc10nz"):() --> {():primesya/T404/Main/T404/Main/V_4_GP <= 0}
+      (xpc10nz==X4:"4:xpc10nz"):(primesya/T404/Main/T404/Main/V_2_GP>=1000) --> {():primesya/T404/Main/T404/Main/V_2_GP <= 2}
+      (xpc10nz==X3:"3:xpc10nz"):() --> {():primesya/T404/Main/T404/Main/V_2_GP <= 0}
+      (xpc10nz==X3:"3:xpc10nz"):() --> {():count <= U32'0}
+      (xpc10nz==X1:"1:xpc10nz"):() --> {():Xn(@_BOOL/CC/SCALbx10_ARA0_AD0,-1) <= 0}
+      (xpc10nz==X1:"1:xpc10nz"):() --> {():Xn(@_BOOL/CC/SCALbx10_ARA0_WRD0,-1) <= 0<volume}
+      (xpc10nz==X0:"0:xpc10nz"):() --> {():count <= U32'0}
+      (xpc10nz==X0:"0:xpc10nz"):() --> {():evariant <= 0}
+      (xpc10nz==X0:"0:xpc10nz"):() --> {():edesign <= 4032}
+      (xpc10nz==X0:"0:xpc10nz"):() --> {():finished <= U1'0}
+      (xpc10nz==X0:"0:xpc10nz"):() --> {():design_serial_number <= S32'2232578}
+      (xpc10nz==X0:"0:xpc10nz"):() --> {():pio_rdata <= 0}
+      (xpc10nz==X0:"0:xpc10nz"):() --> {():elimit <= 1000}
+      ():(|-|BOOLCCSCALbx10ARA0RRh10shot0) --> {():BOOLCCSCALbx10ARA0RRh10hold <= @_BOOL/CC/SCALbx10_ARA0_RDD0}
+      ():() --> {():Xn(@_BOOL/CC/SCALbx10_ARA0_REN0,-1) <= COND(xpc10nz==X14:"14:xpc10nz", 1, 0)}
+      ():() --> {():Xn(@_BOOL/CC/SCALbx10_ARA0_WEN0,-1) <= COND({[xpc10nz==X21:"21:xpc10nz"]; [xpc10nz==X1:"1:xpc10nz"]; [xpc10nz==X19:"19:xpc10nz"]}, 1, 0)}
+      ():() --> {():BOOLCCSCALbx10ARA0RRh10shot0 <= xpc10nz==X14:"14:xpc10nz"}
+      (xpc10nz==X21:"21:xpc10nz"):() --> {():hpr_writeln{primesya10174:12}("Setting initial array flag to hold : addr=%u readback=%d", primesya/T404/Main/T404/Main/V_2_GP, U1'1)}
+      (xpc10nz==X18:"18:xpc10nz"):(primesya/T404/Main/T404/Main/V_4_GP<1000) --> {():hpr_writeln{primesya10162:11}("Cross off %u %u   (count1=%u)", primesya/T404/Main/T404/Main/V_2_GP, primesya/T404/Main/T404/Main/V_4_GP, 2)}
+      (xpc10nz==X17:"17:xpc10nz"):(primesya/T404/Main/T404/Main/V_2_GP+primesya/T404/Main/T404/Main/V_2_GP>=1000) --> {():hpr_writeln{primesya1095:10}($$AUTOFORMAT: This will be automatically replaced with a printf formatted string., "Skip out on square")}
+      (xpc10nz==X16:"16:xpc10nz"):() --> {():hpr_writeln{primesya10145:9}("Tally counting %u %d", primesya/T404/Main/T404/Main/V_4_GP, count)}
+      (xpc10nz==X9:"9:xpc10nz"):() --> {():hpr_KppMark{primesya10120:8}("FINISH")}
+      (xpc10nz==X7:"7:xpc10nz"):(primesya/T404/Main/T404/Main/V_4_GP>=1000) --> {():hpr_writeln{primesya10112:6}("There are %d primes below the natural number %u.", count, 1000)}
+      (xpc10nz==X7:"7:xpc10nz"):(primesya/T404/Main/T404/Main/V_4_GP>=1000) --> {():hpr_writeln{primesya10114:7}("Optimisation variant=%u (count1 is %u).", 0, 2)}
+      (xpc10nz==X6:"6:xpc10nz"):() --> {():hpr_KppMark{primesya10100:4}("wp3", "COUNTING")}
+      (xpc10nz==X6:"6:xpc10nz"):() --> {():hpr_writeln{primesya10102:5}($$AUTOFORMAT: This will be automatically replaced with a printf formatted string., "Now counting")}
+      (xpc10nz==X4:"4:xpc10nz"):(primesya/T404/Main/T404/Main/V_2_GP>=1000) --> {():hpr_KppMark{primesya1078:3}("wp2", "CROSSOFF")}
+      (xpc10nz==X0:"0:xpc10nz"):() --> {():hpr_KppMark{primesya1059:1}("START", "INITIALISE")}
+      (xpc10nz==X0:"0:xpc10nz"):() --> {():hpr_writeln{primesya1061:2}($$AUTOFORMAT: This will be automatically replaced with a printf formatted string., "Primes Up To ", 1000)}
+      (xpc10nz==X0:"0:xpc10nz"):() --> { GOTO X1:"1:xpc10nz"}
+      (xpc10nz==X1:"1:xpc10nz"):() --> { GOTO X2:"2:xpc10nz"}
+      (xpc10nz==X2:"2:xpc10nz"):() --> { GOTO X3:"3:xpc10nz"}
+      (xpc10nz==X3:"3:xpc10nz"):() --> { GOTO X4:"4:xpc10nz"}
+      (xpc10nz==X4:"4:xpc10nz"):(primesya/T404/Main/T404/Main/V_2_GP>=1000) --> { GOTO X5:"5:xpc10nz"}
+      (xpc10nz==X4:"4:xpc10nz"):(primesya/T404/Main/T404/Main/V_2_GP<1000) --> { GOTO X21:"21:xpc10nz"}
+      (xpc10nz==X5:"5:xpc10nz"):(primesya/T404/Main/T404/Main/V_2_GP>=1000) --> { GOTO X6:"6:xpc10nz"}
+      (xpc10nz==X5:"5:xpc10nz"):(primesya/T404/Main/T404/Main/V_2_GP<1000) --> { GOTO X17:"17:xpc10nz"}
+      (xpc10nz==X6:"6:xpc10nz"):() --> { GOTO X7:"7:xpc10nz"}
+      (xpc10nz==X7:"7:xpc10nz"):(primesya/T404/Main/T404/Main/V_4_GP>=1000) --> { GOTO X8:"8:xpc10nz"}
+      (xpc10nz==X7:"7:xpc10nz"):(primesya/T404/Main/T404/Main/V_4_GP<1000) --> { GOTO X14:"14:xpc10nz"}
+      (xpc10nz==X8:"8:xpc10nz"):() --> { GOTO X9:"9:xpc10nz"}
+      (xpc10nz==X9:"9:xpc10nz"):() --> { GOTO X10:"10:xpc10nz"}
+      (xpc10nz==X10:"10:xpc10nz"):() --> { GOTO X11:"11:xpc10nz"}
+      (xpc10nz==X11:"11:xpc10nz"):() --> { GOTO X12:"12:xpc10nz"}
+      (xpc10nz==X12:"12:xpc10nz"):() --> { GOTO X13:"13:xpc10nz"}
+      (xpc10nz==X13:"13:xpc10nz"):() --> { GOTO X12:"12:xpc10nz"}
+      (xpc10nz==X14:"14:xpc10nz"):() --> { GOTO X15:"15:xpc10nz"}
+      (xpc10nz==X15:"15:xpc10nz"):({[xpc10nz==X15:"15:xpc10nz", |-|@_BOOL/CC/SCALbx10_ARA0_RDD0]; [xpc10nz!=X15:"15:xpc10nz", |-|BOOLCCSCALbx10ARA0RRh10hold]}) --> {if {[xpc10nz==X15:"15:xpc10nz", |-|@_BOOL/CC/SCALbx10_ARA0_RDD0]; [xpc10nz!=X15:"15:xpc10nz", |-|BOOLCCSCALbx10ARA0RRh10hold]} then goto X16:"16:xpc10nz"}
+      (xpc10nz==X15:"15:xpc10nz"):({[xpc10nz==X15:"15:xpc10nz", !(|-|@_BOOL/CC/SCALbx10_ARA0_RDD0)]; [xpc10nz!=X15:"15:xpc10nz", !(|-|BOOLCCSCALbx10ARA0RRh10hold)]}) --> {if {[xpc10nz==X15:"15:xpc10nz", !(|-|@_BOOL/CC/SCALbx10_ARA0_RDD0)]; [xpc10nz!=X15:"15:xpc10nz", !(|-|BOOLCCSCALbx10ARA0RRh10hold)]} then goto X16:"16:xpc10nz"}
+      (xpc10nz==X16:"16:xpc10nz"):() --> { GOTO X7:"7:xpc10nz"}
+      (xpc10nz==X17:"17:xpc10nz"):(primesya/T404/Main/T404/Main/V_2_GP+primesya/T404/Main/T404/Main/V_2_GP>=1000) --> { GOTO X6:"6:xpc10nz"}
+      (xpc10nz==X17:"17:xpc10nz"):(primesya/T404/Main/T404/Main/V_2_GP+primesya/T404/Main/T404/Main/V_2_GP<1000) --> { GOTO X18:"18:xpc10nz"}
+      (xpc10nz==X18:"18:xpc10nz"):(primesya/T404/Main/T404/Main/V_4_GP>=1000) --> { GOTO X5:"5:xpc10nz"}
+      (xpc10nz==X18:"18:xpc10nz"):(primesya/T404/Main/T404/Main/V_4_GP<1000) --> { GOTO X19:"19:xpc10nz"}
+      (xpc10nz==X19:"19:xpc10nz"):() --> { GOTO X20:"20:xpc10nz"}
+      (xpc10nz==X20:"20:xpc10nz"):() --> { GOTO X18:"18:xpc10nz"}
+      (xpc10nz==X21:"21:xpc10nz"):() --> { GOTO X22:"22:xpc10nz"}
+      (xpc10nz==X22:"22:xpc10nz"):() --> { GOTO X4:"4:xpc10nz"}
+sensitivity=posedge(clk)
+      (xpc12nz==X1:"1:xpc12nz"):(|-|pio_hwen) --> {():Xn(@_SINT/CC/SCALbx12_ARA0_AD0,-1) <= pio_addr}
+      (xpc12nz==X1:"1:xpc12nz"):(|-|pio_hwen) --> {():Xn(@_SINT/CC/SCALbx12_ARA0_WRD0,-1) <= C(pio_wdata)}
+      (xpc12nz==X3:"3:xpc12nz"):(!(pio_hwen)) --> {():pio_rdata <= C(COND(xpc12nz==X3:"3:xpc12nz", @_SINT/CC/SCALbx12_ARA0_RDD0, SINTCCSCALbx12ARA0RRh10hold))}
+      (xpc12nz==X1:"1:xpc12nz"):(!(pio_hwen)) --> {():Xn(@_SINT/CC/SCALbx12_ARA0_AD0,-1) <= pio_addr}
+      ():(|-|BOOLCCSCALbx10ARA0RRh10shot0) --> {():BOOLCCSCALbx10ARA0RRh10hold <= @_BOOL/CC/SCALbx10_ARA0_RDD0}
+      ():(|-|SINTCCSCALbx12ARA0RRh10shot0) --> {():SINTCCSCALbx12ARA0RRh10hold <= @_SINT/CC/SCALbx12_ARA0_RDD0}
+      ():() --> {():Xn(@_SINT/CC/SCALbx12_ARA0_REN0,-1) <= {[!(|-|pio_hwen), xpc12nz==X1:"1:xpc12nz"]}}
+      ():() --> {():Xn(@_SINT/CC/SCALbx12_ARA0_WEN0,-1) <= COND({[|-|pio_hwen, xpc12nz==X1:"1:xpc12nz"]}, pio_hwen, 0)}
+      ():() --> {():SINTCCSCALbx12ARA0RRh10shot0 <= {[!(|-|pio_hwen), xpc12nz==X1:"1:xpc12nz"]}}
+      (xpc12nz==X0:"0:xpc12nz"):() --> { GOTO X1:"1:xpc12nz"}
+      (xpc12nz==X1:"1:xpc12nz"):(|-|pio_hwen) --> { GOTO X2:"2:xpc12nz"}
+      (xpc12nz==X2:"2:xpc12nz"):() --> { GOTO X4:"4:xpc12nz"}
+      (xpc12nz==X1:"1:xpc12nz"):(!(pio_hwen)) --> { GOTO X3:"3:xpc12nz"}
+      (xpc12nz==X3:"3:xpc12nz"):() --> { GOTO X4:"4:xpc12nz"}
+      (xpc12nz==X4:"4:xpc12nz"):() --> { GOTO X5:"5:xpc12nz"}
+      (xpc12nz==X5:"5:xpc12nz"):() --> { GOTO X1:"1:xpc12nz"}
+Memory region descriptions (memdecs) no=0
+Machine(s) for conversion to CPP @_SINT/CC/SCALbx12_ARA0.RAM.@_SINT/CC/SCALbx12_ARA0
+VM2 analyse details:
+Machine attribute:preserveinstance=externally-provided
+Machine attribute:parameters={DATA_WIDTH=32, ADDR_WIDTH=4, WORDS=10, LANE_WIDTH=32}
+Machine attribute:iname=@_SINT/CC/SCALbx12_ARA0
+Machine attribute:kind=CV_SP_SSRAM_FL1
+Machine attribute:ports=1
+@_SINT/CC/SCALbx12_ARA0.RAM.@_SINT/CC/SCALbx12_ARA0: Machine  3 rules
+      Sensitivity = posedge(clk): SP_rtl(<1 RTL arcs>)
+      Sensitivity = posedge(clk): SP_rtl(<1 RTL arcs>)
+      No sensitivity: // Resource=SRAM iname=i_@_SINT/CC/SCALbx12_ARA0 10x32 clk=posedge(clk) synchronous/pipeline=1 no_ports=1 <NONE> used by threads xpc12 //
+@_SINT/CC/SCALbx12_ARA0.RAM.@_SINT/CC/SCALbx12_ARA0:          11 terminals
+@_SINT/CC/SCALbx12_ARA0.RAM.@_SINT/CC/SCALbx12_ARA0:          0 children
+@_SINT/CC/SCALbx12_ARA0.RAM.@_SINT/CC/SCALbx12_ARA0:          1 internal variables (nodes)
+   machine gdecl   32
+   machine gdecl   4
+   machine gdecl   10
+   machine gdecl   32
+   machine gdecl   clk:INPUT::Unsigned{init=0, resetnet=true}
+   machine gdecl   reset:INPUT::Unsigned{init=0, resetnet=true}
+   machine gdecl   @_SINT/CC/SCALbx12_ARA0_RDD0[31:0]:LOCAL::Signed{init=0}
+   machine gdecl   @_SINT/CC/SCALbx12_ARA0_AD0[3:0]:LOCAL::Unsigned{init=0}
+   machine gdecl   @_SINT/CC/SCALbx12_ARA0_WEN0:LOCAL::Unsigned{init=0, control_net_marked=true}
+   machine gdecl   @_SINT/CC/SCALbx12_ARA0_REN0:LOCAL::Unsigned{init=0, control_net_marked=true}
+   machine gdecl   @_SINT/CC/SCALbx12_ARA0_WRD0[31:0]:LOCAL::Signed{init=0}
+   machine local   @_SINT/CC/SCALbx12_ARA0[31:0]:LOCAL::Signed[10]
+sensitivity=posedge(clk)
+      ():(|-|@_SINT/CC/SCALbx12_ARA0_WEN0) --> {():@_SINT/CC/SCALbx12_ARA0[@_SINT/CC/SCALbx12_ARA0_AD0] <= @_SINT/CC/SCALbx12_ARA0_WRD0}
+sensitivity=posedge(clk)
+      ():() --> {():@_SINT/CC/SCALbx12_ARA0_RDD0 <= @_SINT/CC/SCALbx12_ARA0[@_SINT/CC/SCALbx12_ARA0_AD0]}
+sensitivity=None
+Resource=SRAM iname=i_@_SINT/CC/SCALbx12_ARA0 10x32 clk=posedge(clk) synchronous/pipeline=1 no_ports=1 <NONE> used by threads xpc12Memory region descriptions (memdecs) no=0
+Machine(s) for conversion to CPP @_BOOL/CC/SCALbx10_ARA0.RAM.@_BOOL/CC/SCALbx10_ARA0
+VM2 analyse details:
+Machine attribute:preserveinstance=externally-provided
+Machine attribute:parameters={DATA_WIDTH=1, ADDR_WIDTH=4, WORDS=10, LANE_WIDTH=1}
+Machine attribute:iname=@_BOOL/CC/SCALbx10_ARA0
+Machine attribute:kind=CV_SP_SSRAM_FL1
+Machine attribute:ports=1
+@_BOOL/CC/SCALbx10_ARA0.RAM.@_BOOL/CC/SCALbx10_ARA0: Machine  3 rules
+      Sensitivity = posedge(clk): SP_rtl(<1 RTL arcs>)
+      Sensitivity = posedge(clk): SP_rtl(<1 RTL arcs>)
+      No sensitivity: // Resource=SRAM iname=i_@_BOOL/CC/SCALbx10_ARA0 10x1 clk=posedge(clk) synchronous/pipeline=1 no_ports=1 <NONE> used by threads xpc10 //
+@_BOOL/CC/SCALbx10_ARA0.RAM.@_BOOL/CC/SCALbx10_ARA0:          11 terminals
+@_BOOL/CC/SCALbx10_ARA0.RAM.@_BOOL/CC/SCALbx10_ARA0:          0 children
+@_BOOL/CC/SCALbx10_ARA0.RAM.@_BOOL/CC/SCALbx10_ARA0:          1 internal variables (nodes)
+   machine gdecl   1
+   machine gdecl   4
+   machine gdecl   10
+   machine gdecl   1
+   machine gdecl   clk:INPUT::Unsigned{init=0, resetnet=true}
+   machine gdecl   reset:INPUT::Unsigned{init=0, resetnet=true}
+   machine gdecl   @_BOOL/CC/SCALbx10_ARA0_RDD0:LOCAL::Unsigned{init=0}
+   machine gdecl   @_BOOL/CC/SCALbx10_ARA0_AD0[3:0]:LOCAL::Unsigned{init=0}
+   machine gdecl   @_BOOL/CC/SCALbx10_ARA0_WEN0:LOCAL::Unsigned{init=0, control_net_marked=true}
+   machine gdecl   @_BOOL/CC/SCALbx10_ARA0_REN0:LOCAL::Unsigned{init=0, control_net_marked=true}
+   machine gdecl   @_BOOL/CC/SCALbx10_ARA0_WRD0:LOCAL::Unsigned{init=0}
+   machine local   @_BOOL/CC/SCALbx10_ARA0:LOCAL::Unsigned[10]
+sensitivity=posedge(clk)
+      ():(|-|@_BOOL/CC/SCALbx10_ARA0_WEN0) --> {():@_BOOL/CC/SCALbx10_ARA0[@_BOOL/CC/SCALbx10_ARA0_AD0] <= @_BOOL/CC/SCALbx10_ARA0_WRD0}
+sensitivity=posedge(clk)
+      ():() --> {():@_BOOL/CC/SCALbx10_ARA0_RDD0 <= @_BOOL/CC/SCALbx10_ARA0[@_BOOL/CC/SCALbx10_ARA0_AD0]}
+sensitivity=None
+Resource=SRAM iname=i_@_BOOL/CC/SCALbx10_ARA0 10x1 clk=posedge(clk) synchronous/pipeline=1 no_ports=1 <NONE> used by threads xpc10Report on netlist cpp
+  @_BOOL/CC/SCALbx10_ARA0 oo @_BOOL/CC/SCALbx10_ARA0
+  1 oo 1
+  4 oo 4
+  10 oo 10
+  1 oo 1
+  clk oo clk
+  reset oo reset
+  @_BOOL/CC/SCALbx10_ARA0_RDD0 oo @_BOOL/CC/SCALbx10_ARA0_RDD0
+  @_BOOL/CC/SCALbx10_ARA0_AD0 oo @_BOOL/CC/SCALbx10_ARA0_AD0
+  @_BOOL/CC/SCALbx10_ARA0_WEN0 oo @_BOOL/CC/SCALbx10_ARA0_WEN0
+  @_BOOL/CC/SCALbx10_ARA0_REN0 oo @_BOOL/CC/SCALbx10_ARA0_REN0
+  @_BOOL/CC/SCALbx10_ARA0_WRD0 oo @_BOOL/CC/SCALbx10_ARA0_WRD0
+  @_SINT/CC/SCALbx12_ARA0 oo @_SINT/CC/SCALbx12_ARA0
+  32 oo 32
+  4 oo 4
+  10 oo 10
+  32 oo 32
+  clk oo clk
+  reset oo reset
+  @_SINT/CC/SCALbx12_ARA0_RDD0 oo @_SINT/CC/SCALbx12_ARA0_RDD0
+  @_SINT/CC/SCALbx12_ARA0_AD0 oo @_SINT/CC/SCALbx12_ARA0_AD0
+  @_SINT/CC/SCALbx12_ARA0_WEN0 oo @_SINT/CC/SCALbx12_ARA0_WEN0
+  @_SINT/CC/SCALbx12_ARA0_REN0 oo @_SINT/CC/SCALbx12_ARA0_REN0
+  @_SINT/CC/SCALbx12_ARA0_WRD0 oo @_SINT/CC/SCALbx12_ARA0_WRD0
+  primesya/T404/Main/T404/Main/V_2_GP oo primesya/T404/Main/T404/Main/V_2_GP
+  primesya/T404/Main/T404/Main/V_4_GP oo primesya/T404/Main/T404/Main/V_4_GP
+  xpc10nz oo xpc10nz
+  @_BOOL/CC/SCALbx10_ARA0_AD0 oo @_BOOL/CC/SCALbx10_ARA0_AD0
+  @_BOOL/CC/SCALbx10_ARA0_WRD0 oo @_BOOL/CC/SCALbx10_ARA0_WRD0
+  @_BOOL/CC/SCALbx10_ARA0_WEN0 oo @_BOOL/CC/SCALbx10_ARA0_WEN0
+  @_BOOL/CC/SCALbx10_ARA0_RDD0 oo @_BOOL/CC/SCALbx10_ARA0_RDD0
+  @_BOOL/CC/SCALbx10_ARA0_REN0 oo @_BOOL/CC/SCALbx10_ARA0_REN0
+  BOOLCCSCALbx10ARA0RRh10hold oo BOOLCCSCALbx10ARA0RRh10hold
+  BOOLCCSCALbx10ARA0RRh10shot0 oo BOOLCCSCALbx10ARA0RRh10shot0
+  xpc12nz oo xpc12nz
+  @_SINT/CC/SCALbx12_ARA0_RDD0 oo @_SINT/CC/SCALbx12_ARA0_RDD0
+  @_SINT/CC/SCALbx12_ARA0_AD0 oo @_SINT/CC/SCALbx12_ARA0_AD0
+  @_SINT/CC/SCALbx12_ARA0_REN0 oo @_SINT/CC/SCALbx12_ARA0_REN0
+  SINTCCSCALbx12ARA0RRh10hold oo SINTCCSCALbx12ARA0RRh10hold
+  SINTCCSCALbx12ARA0RRh10shot0 oo SINTCCSCALbx12ARA0RRh10shot0
+  @_SINT/CC/SCALbx12_ARA0_WRD0 oo @_SINT/CC/SCALbx12_ARA0_WRD0
+  @_SINT/CC/SCALbx12_ARA0_WEN0 oo @_SINT/CC/SCALbx12_ARA0_WEN0
+  clk oo clk
+  design_serial_number oo design_serial_number
+  pio_addr oo pio_addr
+  pio_wdata oo pio_wdata
+  pio_rdata oo pio_rdata
+  pio_hwen oo pio_hwen
+  volume oo volume
+  count oo count
+  elimit oo elimit
+  evariant oo evariant
+  edesign oo edesign
+  finished oo finished
+End report on netlist cpp (54 items)
+
+Report on cpp_render: hpr_signals : none exist.
+Report on cpp_render: netlist directory
+  @_BOOL/CC/SCALbx10_ARA0::@_BOOL/CC/SCALbx10_ARA0:LOCAL::Unsigned[10]
+  1::1
+  4::4
+  10::10
+  1::1
+  clk::clk:INPUT::Unsigned{init=0, resetnet=true}
+  reset::reset:INPUT::Unsigned{init=0, resetnet=true}
+  @_BOOL/CC/SCALbx10_ARA0.RDD0::@_BOOL/CC/SCALbx10_ARA0_RDD0:LOCAL::Unsigned{init=0}
+  @_BOOL/CC/SCALbx10_ARA0.AD0::@_BOOL/CC/SCALbx10_ARA0_AD0[3:0]:LOCAL::Unsigned{init=0}
+  @_BOOL/CC/SCALbx10_ARA0.WEN0::@_BOOL/CC/SCALbx10_ARA0_WEN0:LOCAL::Unsigned{init=0, control_net_marked=true}
+  @_BOOL/CC/SCALbx10_ARA0.REN0::@_BOOL/CC/SCALbx10_ARA0_REN0:LOCAL::Unsigned{init=0, control_net_marked=true}
+  @_BOOL/CC/SCALbx10_ARA0.WRD0::@_BOOL/CC/SCALbx10_ARA0_WRD0:LOCAL::Unsigned{init=0}
+  @_SINT/CC/SCALbx12_ARA0::@_SINT/CC/SCALbx12_ARA0[31:0]:LOCAL::Signed[10]
+  32::32
+  4::4
+  10::10
+  32::32
+  clk::clk:INPUT::Unsigned{init=0, resetnet=true}
+  reset::reset:INPUT::Unsigned{init=0, resetnet=true}
+  @_SINT/CC/SCALbx12_ARA0.RDD0::@_SINT/CC/SCALbx12_ARA0_RDD0[31:0]:LOCAL::Signed{init=0}
+  @_SINT/CC/SCALbx12_ARA0.AD0::@_SINT/CC/SCALbx12_ARA0_AD0[3:0]:LOCAL::Unsigned{init=0}
+  @_SINT/CC/SCALbx12_ARA0.WEN0::@_SINT/CC/SCALbx12_ARA0_WEN0:LOCAL::Unsigned{init=0, control_net_marked=true}
+  @_SINT/CC/SCALbx12_ARA0.REN0::@_SINT/CC/SCALbx12_ARA0_REN0:LOCAL::Unsigned{init=0, control_net_marked=true}
+  @_SINT/CC/SCALbx12_ARA0.WRD0::@_SINT/CC/SCALbx12_ARA0_WRD0[31:0]:LOCAL::Signed{init=0}
+  primesya/T404/Main/T404/Main/V_2_GP::primesya/T404/Main/T404/Main/V_2_GP[-2147483648..2147483647]:LOCAL::Signed{init=0, shared_gp=true}
+  primesya/T404/Main/T404/Main/V_4_GP::primesya/T404/Main/T404/Main/V_4_GP[-2147483648..2147483647]:LOCAL::Signed{init=0, shared_gp=true}
+  xpc10nz::xpc10nz[4:0]:EG504:LOCAL::Unsigned{init=0}
+  @_BOOL/CC/SCALbx10_ARA0_AD0::@_BOOL/CC/SCALbx10_ARA0_AD0[3:0]:LOCAL::Unsigned{init=0}
+  @_BOOL/CC/SCALbx10_ARA0_WRD0::@_BOOL/CC/SCALbx10_ARA0_WRD0:LOCAL::Unsigned{init=0}
+  @_BOOL/CC/SCALbx10_ARA0_WEN0::@_BOOL/CC/SCALbx10_ARA0_WEN0:LOCAL::Unsigned{init=0, control_net_marked=true}
+  @_BOOL/CC/SCALbx10_ARA0_RDD0::@_BOOL/CC/SCALbx10_ARA0_RDD0:LOCAL::Unsigned{init=0}
+  @_BOOL/CC/SCALbx10_ARA0_REN0::@_BOOL/CC/SCALbx10_ARA0_REN0:LOCAL::Unsigned{init=0, control_net_marked=true}
+  BOOLCCSCALbx10ARA0RRh10hold::BOOLCCSCALbx10ARA0RRh10hold:LOCAL::Unsigned{init=0}
+  BOOLCCSCALbx10ARA0RRh10shot0::BOOLCCSCALbx10ARA0RRh10shot0:LOCAL::Unsigned{init=0}
+  xpc12nz::xpc12nz[2:0]:EG505:LOCAL::Unsigned{init=0}
+  @_SINT/CC/SCALbx12_ARA0_RDD0::@_SINT/CC/SCALbx12_ARA0_RDD0[31:0]:LOCAL::Signed{init=0}
+  @_SINT/CC/SCALbx12_ARA0_AD0::@_SINT/CC/SCALbx12_ARA0_AD0[3:0]:LOCAL::Unsigned{init=0}
+  @_SINT/CC/SCALbx12_ARA0_REN0::@_SINT/CC/SCALbx12_ARA0_REN0:LOCAL::Unsigned{init=0, control_net_marked=true}
+  SINTCCSCALbx12ARA0RRh10hold::SINTCCSCALbx12ARA0RRh10hold[31:0]:LOCAL::Signed{init=0}
+  SINTCCSCALbx12ARA0RRh10shot0::SINTCCSCALbx12ARA0RRh10shot0:LOCAL::Unsigned{init=0}
+  @_SINT/CC/SCALbx12_ARA0_WRD0::@_SINT/CC/SCALbx12_ARA0_WRD0[31:0]:LOCAL::Signed{init=0}
+  @_SINT/CC/SCALbx12_ARA0_WEN0::@_SINT/CC/SCALbx12_ARA0_WEN0:LOCAL::Unsigned{init=0, control_net_marked=true}
+  clk::clk:INPUT::Unsigned{init=0, resetnet=true}
+  design_serial_number::design_serial_number[-2147483648..2147483647]:OUTPUT::Signed{init=0, io_output=true, username=design_serial_number}
+  pio_addr::pio_addr[-2147483648..2147483647]:INPUT::Signed{init=0, io_input=true, username=pio_addr}
+  pio_wdata::pio_wdata[-2147483648..2147483647]:INPUT::Signed{init=0, io_input=true, username=pio_wdata}
+  pio_rdata::pio_rdata[-2147483648..2147483647]:OUTPUT::Signed{init=0, io_output=true, username=pio_rdata}
+  pio_hwen::pio_hwen:INPUT::Unsigned{init=0, io_input=true, username=pio_hwen}
+  volume::volume[31:0]:INPUT::Unsigned{init=0, io_input=true, io_output=true, username=volume, HwWidth=32}
+  count::count[31:0]:OUTPUT::Unsigned{init=0, io_output=true, username=count, HwWidth=32}
+  elimit::elimit[31:0]:OUTPUT::Signed{init=0, io_output=true, username=elimit, HwWidth=32}
+  evariant::evariant[31:0]:OUTPUT::Signed{init=0, io_output=true, username=evariant, HwWidth=32}
+  edesign::edesign[31:0]:OUTPUT::Signed{init=0, io_output=true, username=edesign, HwWidth=32}
+  finished::finished:OUTPUT::Unsigned{init=0, io_output=true, username=finished}
+End report on cpp_render: netlist directory (54 items)
+
+Converting an HPR machine to a 3 CPP processes @_SINT/CC/SCALbx12_ARA0.RAM
+Output ifshare set to none.
+Report on Reset guards for cpp ifshare poly: none exist.
+Ordering at ifshare:@_SINT/CC/SCALbx12_ARA0[@_SINT/CC/SCALbx12_ARA0_AD0] := @_SINT/CC/SCALbx12_ARA0_WRD0;
+
+Output ifshare set to none.
+Report on Reset guards for cpp ifshare poly: none exist.
+Ordering at ifshare:@_SINT/CC/SCALbx12_ARA0_RDD0 := @_SINT/CC/SCALbx12_ARA0[@_SINT/CC/SCALbx12_ARA0_AD0];
+
+Report on Ep formal prams signals needed in other threads: none exist.
+Runwrap method exe010
+Runwrap method exe110
+Runwrap method exe210
+Report on cpp_class: persistents
+  @_SINT/CC/SCALbx12_ARA0[31:0]:LOCAL::Signed[10]
+  32
+  4
+  10
+  32
+  clk:INPUT::Unsigned{init=0, resetnet=true}
+  reset:INPUT::Unsigned{init=0, resetnet=true}
+  @_SINT/CC/SCALbx12_ARA0_RDD0[31:0]:LOCAL::Signed{init=0}
+  @_SINT/CC/SCALbx12_ARA0_AD0[3:0]:LOCAL::Unsigned{init=0}
+  @_SINT/CC/SCALbx12_ARA0_WEN0:LOCAL::Unsigned{init=0, control_net_marked=true}
+  @_SINT/CC/SCALbx12_ARA0_REN0:LOCAL::Unsigned{init=0, control_net_marked=true}
+  @_SINT/CC/SCALbx12_ARA0_WRD0[31:0]:LOCAL::Signed{init=0}
+End report on cpp_class: persistents (12 items)
+
+Finished converting an HPR machine to a CPP method called @_SINT/CC/SCALbx12_ARA0.RAM
+Converting an HPR machine to a 3 CPP processes @_BOOL/CC/SCALbx10_ARA0.RAM
+Output ifshare set to none.
+Report on Reset guards for cpp ifshare poly: none exist.
+Ordering at ifshare:@_BOOL/CC/SCALbx10_ARA0[@_BOOL/CC/SCALbx10_ARA0_AD0] := @_BOOL/CC/SCALbx10_ARA0_WRD0;
+
+Output ifshare set to none.
+Report on Reset guards for cpp ifshare poly: none exist.
+Ordering at ifshare:@_BOOL/CC/SCALbx10_ARA0_RDD0 := @_BOOL/CC/SCALbx10_ARA0[@_BOOL/CC/SCALbx10_ARA0_AD0];
+
+Report on Ep formal prams signals needed in other threads: none exist.
+Runwrap method exe012
+Runwrap method exe112
+Runwrap method exe212
+Report on cpp_class: persistents
+  @_BOOL/CC/SCALbx10_ARA0:LOCAL::Unsigned[10]
+  1
+  4
+  10
+  1
+  clk:INPUT::Unsigned{init=0, resetnet=true}
+  reset:INPUT::Unsigned{init=0, resetnet=true}
+  @_BOOL/CC/SCALbx10_ARA0_RDD0:LOCAL::Unsigned{init=0}
+  @_BOOL/CC/SCALbx10_ARA0_AD0[3:0]:LOCAL::Unsigned{init=0}
+  @_BOOL/CC/SCALbx10_ARA0_WEN0:LOCAL::Unsigned{init=0, control_net_marked=true}
+  @_BOOL/CC/SCALbx10_ARA0_REN0:LOCAL::Unsigned{init=0, control_net_marked=true}
+  @_BOOL/CC/SCALbx10_ARA0_WRD0:LOCAL::Unsigned{init=0}
+End report on cpp_class: persistents (12 items)
+
+Finished converting an HPR machine to a CPP method called @_BOOL/CC/SCALbx10_ARA0.RAM
+Converting an HPR machine to a 2 CPP processes primesya
+Output ifshare set to none.
+Report on Reset guards for cpp ifshare poly: none exist.
+Ordering at ifshare:primesya/T404/Main/T404/Main/V_2_GP := 1+primesya/T404/Main/T404/Main/V_2_GP;
+
+Output ifshare set to none.
+Report on Reset guards for cpp ifshare poly: none exist.
+Ordering at ifshare:Xn(@_BOOL/CC/SCALbx10_ARA0_AD0,-1) := primesya/T404/Main/T404/Main/V_2_GP;
+
+Output ifshare set to none.
+Report on Reset guards for cpp ifshare poly: none exist.
+Ordering at ifshare:Xn(@_BOOL/CC/SCALbx10_ARA0_WRD0,-1) := U1'1;
+
+Output ifshare set to none.
+Report on Reset guards for cpp ifshare poly: none exist.
+Ordering at ifshare:primesya/T404/Main/T404/Main/V_4_GP := primesya/T404/Main/T404/Main/V_2_GP+primesya/T404/Main/T404/Main/V_4_GP;
+
+Output ifshare set to none.
+Report on Reset guards for cpp ifshare poly: none exist.
+Ordering at ifshare:Xn(@_BOOL/CC/SCALbx10_ARA0_AD0,-1) := primesya/T404/Main/T404/Main/V_4_GP;
+
+Output ifshare set to none.
+Report on Reset guards for cpp ifshare poly: none exist.
+Ordering at ifshare:Xn(@_BOOL/CC/SCALbx10_ARA0_WRD0,-1) := U1'0;
+
+Output ifshare set to none.
+Report on Reset guards for cpp ifshare poly: none exist.
+Ordering at ifshare:primesya/T404/Main/T404/Main/V_2_GP := 1+primesya/T404/Main/T404/Main/V_2_GP;
+
+Output ifshare set to none.
+Report on Reset guards for cpp ifshare poly: none exist.
+Ordering at ifshare:primesya/T404/Main/T404/Main/V_4_GP := primesya/T404/Main/T404/Main/V_2_GP+primesya/T404/Main/T404/Main/V_2_GP;
+
+Output ifshare set to none.
+Report on Reset guards for cpp ifshare poly: none exist.
+Ordering at ifshare:primesya/T404/Main/T404/Main/V_4_GP := primesya/T404/Main/T404/Main/V_2_GP+primesya/T404/Main/T404/Main/V_2_GP;
+
+Output ifshare set to none.
+Report on Reset guards for cpp ifshare poly: none exist.
+Ordering at ifshare:primesya/T404/Main/T404/Main/V_4_GP := 1+primesya/T404/Main/T404/Main/V_4_GP;
+
+Output ifshare set to none.
+Report on Reset guards for cpp ifshare poly: none exist.
+Ordering at ifshare:Xif1 ({[xpc10nz==X15:"15:xpc10nz", |-|@_BOOL/CC/SCALbx10_ARA0_RDD0]; [xpc10nz!=X15:"15:xpc10nz", |-|BOOLCCSCALbx10ARA0RRh10hold]}) 
+  count := Cu(1+count);
+
+Output ifshare set to none.
+Report on Reset guards for cpp ifshare poly: none exist.
+Ordering at ifshare:Xn(@_BOOL/CC/SCALbx10_ARA0_AD0,-1) := primesya/T404/Main/T404/Main/V_4_GP;
+
+Output ifshare set to none.
+Report on Reset guards for cpp ifshare poly: none exist.
+Ordering at ifshare:finished := U1'1;
+
+Output ifshare set to none.
+Report on Reset guards for cpp ifshare poly: none exist.
+Ordering at ifshare:primesya/T404/Main/T404/Main/V_4_GP := 0;
+
+Output ifshare set to none.
+Report on Reset guards for cpp ifshare poly: none exist.
+Ordering at ifshare:primesya/T404/Main/T404/Main/V_2_GP := 2;
+
+Output ifshare set to none.
+Report on Reset guards for cpp ifshare poly: none exist.
+Ordering at ifshare:primesya/T404/Main/T404/Main/V_2_GP := 0;
+
+Output ifshare set to none.
+Report on Reset guards for cpp ifshare poly: none exist.
+Ordering at ifshare:count := U32'0;
+
+Output ifshare set to none.
+Report on Reset guards for cpp ifshare poly: none exist.
+Ordering at ifshare:Xn(@_BOOL/CC/SCALbx10_ARA0_AD0,-1) := 0;
+
+Output ifshare set to none.
+Report on Reset guards for cpp ifshare poly: none exist.
+Ordering at ifshare:Xn(@_BOOL/CC/SCALbx10_ARA0_WRD0,-1) := 0<volume;
+
+Output ifshare set to none.
+Report on Reset guards for cpp ifshare poly: none exist.
+Ordering at ifshare:count := U32'0;
+
+Output ifshare set to none.
+Report on Reset guards for cpp ifshare poly: none exist.
+Ordering at ifshare:evariant := 0;
+
+Output ifshare set to none.
+Report on Reset guards for cpp ifshare poly: none exist.
+Ordering at ifshare:edesign := 4032;
+
+Output ifshare set to none.
+Report on Reset guards for cpp ifshare poly: none exist.
+Ordering at ifshare:finished := U1'0;
+
+Output ifshare set to none.
+Report on Reset guards for cpp ifshare poly: none exist.
+Ordering at ifshare:design_serial_number := S32'2232578;
+
+Output ifshare set to none.
+Report on Reset guards for cpp ifshare poly: none exist.
+Ordering at ifshare:pio_rdata := 0;
+
+Output ifshare set to none.
+Report on Reset guards for cpp ifshare poly: none exist.
+Ordering at ifshare:elimit := 1000;
+
+Output ifshare set to none.
+Report on Reset guards for cpp ifshare poly: none exist.
+Ordering at ifshare:BOOLCCSCALbx10ARA0RRh10hold := @_BOOL/CC/SCALbx10_ARA0_RDD0;
+
+Output ifshare set to none.
+Report on Reset guards for cpp ifshare poly: none exist.
+Ordering at ifshare:Xn(@_BOOL/CC/SCALbx10_ARA0_REN0,-1) := COND(xpc10nz==X14:"14:xpc10nz", 1, 0);
+
+Output ifshare set to none.
+Report on Reset guards for cpp ifshare poly: none exist.
+Ordering at ifshare:Xn(@_BOOL/CC/SCALbx10_ARA0_WEN0,-1) := COND({[xpc10nz==X21:"21:xpc10nz"]; [xpc10nz==X1:"1:xpc10nz"]; [xpc10nz==X19:"19:xpc10nz"]}, 1, 0);
+
+Output ifshare set to none.
+Report on Reset guards for cpp ifshare poly: none exist.
+Ordering at ifshare:BOOLCCSCALbx10ARA0RRh10shot0 := xpc10nz==X14:"14:xpc10nz";
+
+Output ifshare set to none.
+Report on Reset guards for cpp ifshare poly: none exist.
+Ordering at ifshare:call(hpr_writeln: "Setting initial array flag to hold : addr=%u readback=%d", primesya/T404/Main/T404/Main/V_2_GP, U1'1)
+Output ifshare set to none.
+Report on Reset guards for cpp ifshare poly: none exist.
+Ordering at ifshare:call(hpr_writeln: "Cross off %u %u   (count1=%u)", primesya/T404/Main/T404/Main/V_2_GP, primesya/T404/Main/T404/Main/V_4_GP, 2)
+Output ifshare set to none.
+Report on Reset guards for cpp ifshare poly: none exist.
+Ordering at ifshare:call(hpr_writeln: $$AUTOFORMAT: This will be automatically replaced with a printf formatted string., "Skip out on square")
+Output ifshare set to none.
+Report on Reset guards for cpp ifshare poly: none exist.
+Ordering at ifshare:call(hpr_writeln: "Tally counting %u %d", primesya/T404/Main/T404/Main/V_4_GP, count)
+Output ifshare set to none.
+Report on Reset guards for cpp ifshare poly: none exist.
+Ordering at ifshare:call(hpr_KppMark: "FINISH")
+Output ifshare set to none.
+Report on Reset guards for cpp ifshare poly: none exist.
+Ordering at ifshare:call(hpr_writeln: "There are %d primes below the natural number %u.", count, 1000)
+Output ifshare set to none.
+Report on Reset guards for cpp ifshare poly: none exist.
+Ordering at ifshare:call(hpr_writeln: "Optimisation variant=%u (count1 is %u).", 0, 2)
+Output ifshare set to none.
+Report on Reset guards for cpp ifshare poly: none exist.
+Ordering at ifshare:call(hpr_KppMark: "wp3", "COUNTING")
+Output ifshare set to none.
+Report on Reset guards for cpp ifshare poly: none exist.
+Ordering at ifshare:call(hpr_writeln: $$AUTOFORMAT: This will be automatically replaced with a printf formatted string., "Now counting")
+Output ifshare set to none.
+Report on Reset guards for cpp ifshare poly: none exist.
+Ordering at ifshare:call(hpr_KppMark: "wp2", "CROSSOFF")
+Output ifshare set to none.
+Report on Reset guards for cpp ifshare poly: none exist.
+Ordering at ifshare:call(hpr_KppMark: "START", "INITIALISE")
+Output ifshare set to none.
+Report on Reset guards for cpp ifshare poly: none exist.
+Ordering at ifshare:call(hpr_writeln: $$AUTOFORMAT: This will be automatically replaced with a printf formatted string., "Primes Up To ", 1000)
+Output ifshare set to none.
+Report on Reset guards for cpp ifshare poly: none exist.
+Ordering at ifshare:xpc10nz := X1:"1:xpc10nz";
+
+Output ifshare set to none.
+Report on Reset guards for cpp ifshare poly: none exist.
+Ordering at ifshare:xpc10nz := X2:"2:xpc10nz";
+
+Output ifshare set to none.
+Report on Reset guards for cpp ifshare poly: none exist.
+Ordering at ifshare:xpc10nz := X3:"3:xpc10nz";
+
+Output ifshare set to none.
+Report on Reset guards for cpp ifshare poly: none exist.
+Ordering at ifshare:xpc10nz := X4:"4:xpc10nz";
+
+Output ifshare set to none.
+Report on Reset guards for cpp ifshare poly: none exist.
+Ordering at ifshare:xpc10nz := X5:"5:xpc10nz";
+
+Output ifshare set to none.
+Report on Reset guards for cpp ifshare poly: none exist.
+Ordering at ifshare:xpc10nz := X21:"21:xpc10nz";
+
+Output ifshare set to none.
+Report on Reset guards for cpp ifshare poly: none exist.
+Ordering at ifshare:xpc10nz := X6:"6:xpc10nz";
+
+Output ifshare set to none.
+Report on Reset guards for cpp ifshare poly: none exist.
+Ordering at ifshare:xpc10nz := X17:"17:xpc10nz";
+
+Output ifshare set to none.
+Report on Reset guards for cpp ifshare poly: none exist.
+Ordering at ifshare:xpc10nz := X7:"7:xpc10nz";
+
+Output ifshare set to none.
+Report on Reset guards for cpp ifshare poly: none exist.
+Ordering at ifshare:xpc10nz := X8:"8:xpc10nz";
+
+Output ifshare set to none.
+Report on Reset guards for cpp ifshare poly: none exist.
+Ordering at ifshare:xpc10nz := X14:"14:xpc10nz";
+
+Output ifshare set to none.
+Report on Reset guards for cpp ifshare poly: none exist.
+Ordering at ifshare:xpc10nz := X9:"9:xpc10nz";
+
+Output ifshare set to none.
+Report on Reset guards for cpp ifshare poly: none exist.
+Ordering at ifshare:xpc10nz := X10:"10:xpc10nz";
+
+Output ifshare set to none.
+Report on Reset guards for cpp ifshare poly: none exist.
+Ordering at ifshare:xpc10nz := X11:"11:xpc10nz";
+
+Output ifshare set to none.
+Report on Reset guards for cpp ifshare poly: none exist.
+Ordering at ifshare:xpc10nz := X12:"12:xpc10nz";
+
+Output ifshare set to none.
+Report on Reset guards for cpp ifshare poly: none exist.
+Ordering at ifshare:xpc10nz := X13:"13:xpc10nz";
+
+Output ifshare set to none.
+Report on Reset guards for cpp ifshare poly: none exist.
+Ordering at ifshare:xpc10nz := X12:"12:xpc10nz";
+
+Output ifshare set to none.
+Report on Reset guards for cpp ifshare poly: none exist.
+Ordering at ifshare:xpc10nz := X15:"15:xpc10nz";
+
+Output ifshare set to none.
+Report on Reset guards for cpp ifshare poly: none exist.
+Ordering at ifshare:Xif1 ({[xpc10nz==X15:"15:xpc10nz", |-|@_BOOL/CC/SCALbx10_ARA0_RDD0]; [xpc10nz!=X15:"15:xpc10nz", |-|BOOLCCSCALbx10ARA0RRh10hold]}) 
+  xpc10nz := X16:"16:xpc10nz";
+
+Output ifshare set to none.
+Report on Reset guards for cpp ifshare poly: none exist.
+Ordering at ifshare:Xif1 ({[xpc10nz==X15:"15:xpc10nz", !(|-|@_BOOL/CC/SCALbx10_ARA0_RDD0)]; [xpc10nz!=X15:"15:xpc10nz", !(|-|BOOLCCSCALbx10ARA0RRh10hold)]}) 
+  xpc10nz := X16:"16:xpc10nz";
+
+Output ifshare set to none.
+Report on Reset guards for cpp ifshare poly: none exist.
+Ordering at ifshare:xpc10nz := X7:"7:xpc10nz";
+
+Output ifshare set to none.
+Report on Reset guards for cpp ifshare poly: none exist.
+Ordering at ifshare:xpc10nz := X6:"6:xpc10nz";
+
+Output ifshare set to none.
+Report on Reset guards for cpp ifshare poly: none exist.
+Ordering at ifshare:xpc10nz := X18:"18:xpc10nz";
+
+Output ifshare set to none.
+Report on Reset guards for cpp ifshare poly: none exist.
+Ordering at ifshare:xpc10nz := X5:"5:xpc10nz";
+
+Output ifshare set to none.
+Report on Reset guards for cpp ifshare poly: none exist.
+Ordering at ifshare:xpc10nz := X19:"19:xpc10nz";
+
+Output ifshare set to none.
+Report on Reset guards for cpp ifshare poly: none exist.
+Ordering at ifshare:xpc10nz := X20:"20:xpc10nz";
+
+Output ifshare set to none.
+Report on Reset guards for cpp ifshare poly: none exist.
+Ordering at ifshare:xpc10nz := X18:"18:xpc10nz";
+
+Output ifshare set to none.
+Report on Reset guards for cpp ifshare poly: none exist.
+Ordering at ifshare:xpc10nz := X22:"22:xpc10nz";
+
+Output ifshare set to none.
+Report on Reset guards for cpp ifshare poly: none exist.
+Ordering at ifshare:xpc10nz := X4:"4:xpc10nz";
+
+Output ifshare set to none.
+Report on Reset guards for cpp ifshare poly: none exist.
+Ordering at ifshare:Xn(@_SINT/CC/SCALbx12_ARA0_AD0,-1) := pio_addr;
+
+Output ifshare set to none.
+Report on Reset guards for cpp ifshare poly: none exist.
+Ordering at ifshare:Xn(@_SINT/CC/SCALbx12_ARA0_WRD0,-1) := C(pio_wdata);
+
+Output ifshare set to none.
+Report on Reset guards for cpp ifshare poly: none exist.
+Ordering at ifshare:pio_rdata := C(COND(xpc12nz==X3:"3:xpc12nz", @_SINT/CC/SCALbx12_ARA0_RDD0, SINTCCSCALbx12ARA0RRh10hold));
+
+Output ifshare set to none.
+Report on Reset guards for cpp ifshare poly: none exist.
+Ordering at ifshare:Xn(@_SINT/CC/SCALbx12_ARA0_AD0,-1) := pio_addr;
+
+Output ifshare set to none.
+Report on Reset guards for cpp ifshare poly: none exist.
+Ordering at ifshare:BOOLCCSCALbx10ARA0RRh10hold := @_BOOL/CC/SCALbx10_ARA0_RDD0;
+
+Output ifshare set to none.
+Report on Reset guards for cpp ifshare poly: none exist.
+Ordering at ifshare:SINTCCSCALbx12ARA0RRh10hold := @_SINT/CC/SCALbx12_ARA0_RDD0;
+
+Output ifshare set to none.
+Report on Reset guards for cpp ifshare poly: none exist.
+Ordering at ifshare:Xn(@_SINT/CC/SCALbx12_ARA0_REN0,-1) := {[!(|-|pio_hwen), xpc12nz==X1:"1:xpc12nz"]};
+
+Output ifshare set to none.
+Report on Reset guards for cpp ifshare poly: none exist.
+Ordering at ifshare:Xn(@_SINT/CC/SCALbx12_ARA0_WEN0,-1) := COND({[|-|pio_hwen, xpc12nz==X1:"1:xpc12nz"]}, pio_hwen, 0);
+
+Output ifshare set to none.
+Report on Reset guards for cpp ifshare poly: none exist.
+Ordering at ifshare:SINTCCSCALbx12ARA0RRh10shot0 := {[!(|-|pio_hwen), xpc12nz==X1:"1:xpc12nz"]};
+
+Output ifshare set to none.
+Report on Reset guards for cpp ifshare poly: none exist.
+Ordering at ifshare:xpc12nz := X1:"1:xpc12nz";
+
+Output ifshare set to none.
+Report on Reset guards for cpp ifshare poly: none exist.
+Ordering at ifshare:xpc12nz := X2:"2:xpc12nz";
+
+Output ifshare set to none.
+Report on Reset guards for cpp ifshare poly: none exist.
+Ordering at ifshare:xpc12nz := X4:"4:xpc12nz";
+
+Output ifshare set to none.
+Report on Reset guards for cpp ifshare poly: none exist.
+Ordering at ifshare:xpc12nz := X3:"3:xpc12nz";
+
+Output ifshare set to none.
+Report on Reset guards for cpp ifshare poly: none exist.
+Ordering at ifshare:xpc12nz := X4:"4:xpc12nz";
+
+Output ifshare set to none.
+Report on Reset guards for cpp ifshare poly: none exist.
+Ordering at ifshare:xpc12nz := X5:"5:xpc12nz";
+
+Output ifshare set to none.
+Report on Reset guards for cpp ifshare poly: none exist.
+Ordering at ifshare:xpc12nz := X1:"1:xpc12nz";
+
+Report on Ep formal prams signals needed in other threads: none exist.
+Runwrap method exe014
+Runwrap method exe114
+Runwrap method exe214
+Runwrap method exe310
+Runwrap method exe410
+Runwrap method exe510
+Runwrap method exe610
+Runwrap method exe710
+Runwrap method exe810
+Runwrap method exe910
+Runwrap method exe1010
+Runwrap method exe1110
+Runwrap method exe1210
+Runwrap method exe1310
+Runwrap method exe1410
+Runwrap method exe1510
+Runwrap method exe1610
+Runwrap method exe1710
+Runwrap method exe1810
+Runwrap method exe1910
+Runwrap method exe2010
+Runwrap method exe2110
+Runwrap method exe2210
+Runwrap method exe2310
+Runwrap method exe2410
+Runwrap method exe2510
+Runwrap method exe2610
+Runwrap method exe2710
+Runwrap method exe2810
+Runwrap method exe2910
+Runwrap method exe3010
+Runwrap method exe3110
+Runwrap method exe3210
+Runwrap method exe3310
+Runwrap method exe3410
+Runwrap method exe3510
+Runwrap method exe3610
+Runwrap method exe3710
+Runwrap method exe3810
+Runwrap method exe3910
+Runwrap method exe4010
+Runwrap method exe4110
+Runwrap method exe4210
+Runwrap method exe4310
+Runwrap method exe4410
+Runwrap method exe4510
+Runwrap method exe4610
+Runwrap method exe4710
+Runwrap method exe4810
+Runwrap method exe4910
+Runwrap method exe5010
+Runwrap method exe5110
+Runwrap method exe5210
+Runwrap method exe5310
+Runwrap method exe5410
+Runwrap method exe5510
+Runwrap method exe5610
+Runwrap method exe5710
+Runwrap method exe5810
+Runwrap method exe5910
+Runwrap method exe6010
+Runwrap method exe6110
+Runwrap method exe6210
+Runwrap method exe6310
+Runwrap method exe6410
+Runwrap method exe6510
+Runwrap method exe6610
+Runwrap method exe6710
+Runwrap method exe6810
+Runwrap method exe6910
+Runwrap method exe7010
+Runwrap method exe7110
+Runwrap method exe7210
+Runwrap method exe7310
+Runwrap method exe7410
+Runwrap method exe7510
+Runwrap method exe7610
+Runwrap method exe7710
+Runwrap method exe7810
+Runwrap method exe7910
+Runwrap method exe8010
+Runwrap method exe8110
+Runwrap method exe8210
+Runwrap method exe8310
+Runwrap method exe8410
+Runwrap method exe8510
+Runwrap method exe8610
+Generating constructor for primesya with 93 subprocesses
+Desig gives bnet:clk clk
+Desig gives bnet:clk clk
+Desig gives bnet:clk clk
+Desig gives bnet:clk clk
+Desig gives bnet:clk clk
+Desig gives bnet:clk clk
+Desig gives bnet:clk clk
+Desig gives bnet:clk clk
+Desig gives bnet:clk clk
+Desig gives bnet:clk clk
+Desig gives bnet:clk clk
+Desig gives bnet:clk clk
+Desig gives bnet:clk clk
+Desig gives bnet:clk clk
+Desig gives bnet:clk clk
+Desig gives bnet:clk clk
+Desig gives bnet:clk clk
+Desig gives bnet:clk clk
+Desig gives bnet:clk clk
+Desig gives bnet:clk clk
+Desig gives bnet:clk clk
+Desig gives bnet:clk clk
+Desig gives bnet:clk clk
+Desig gives bnet:clk clk
+Desig gives bnet:clk clk
+Desig gives bnet:clk clk
+Desig gives bnet:clk clk
+Desig gives bnet:clk clk
+Desig gives bnet:clk clk
+Desig gives bnet:clk clk
+Desig gives bnet:clk clk
+Desig gives bnet:clk clk
+Desig gives bnet:clk clk
+Desig gives bnet:clk clk
+Desig gives bnet:clk clk
+Desig gives bnet:clk clk
+Desig gives bnet:clk clk
+Desig gives bnet:clk clk
+Desig gives bnet:clk clk
+Desig gives bnet:clk clk
+Desig gives bnet:clk clk
+Desig gives bnet:clk clk
+Desig gives bnet:clk clk
+Desig gives bnet:clk clk
+Desig gives bnet:clk clk
+Desig gives bnet:clk clk
+Desig gives bnet:clk clk
+Desig gives bnet:clk clk
+Desig gives bnet:clk clk
+Desig gives bnet:clk clk
+Desig gives bnet:clk clk
+Desig gives bnet:clk clk
+Desig gives bnet:clk clk
+Desig gives bnet:clk clk
+Desig gives bnet:clk clk
+Desig gives bnet:clk clk
+Desig gives bnet:clk clk
+Desig gives bnet:clk clk
+Desig gives bnet:clk clk
+Desig gives bnet:clk clk
+Desig gives bnet:clk clk
+Desig gives bnet:clk clk
+Desig gives bnet:clk clk
+Desig gives bnet:clk clk
+Desig gives bnet:clk clk
+Desig gives bnet:clk clk
+Desig gives bnet:clk clk
+Desig gives bnet:clk clk
+Desig gives bnet:clk clk
+Desig gives bnet:clk clk
+Desig gives bnet:clk clk
+Desig gives bnet:clk clk
+Desig gives bnet:clk clk
+Desig gives bnet:clk clk
+Desig gives bnet:clk clk
+Desig gives bnet:clk clk
+Desig gives bnet:clk clk
+Desig gives bnet:clk clk
+Desig gives bnet:clk clk
+Desig gives bnet:clk clk
+Desig gives bnet:clk clk
+Desig gives bnet:clk clk
+Desig gives bnet:clk clk
+Desig gives bnet:clk clk
+Desig gives bnet:clk clk
+Desig gives bnet:clk clk
+Desig gives bnet:clk clk
+Desig gives bnet:clk clk
+Desig gives bnet:clk clk
+Desig gives bnet:clk clk
+Desig gives bnet:clk clk
+Report on cpp_class: persistents
+  primesya/T404/Main/T404/Main/V_2_GP[-2147483648..2147483647]:LOCAL::Signed{init=0, shared_gp=true}
+  primesya/T404/Main/T404/Main/V_4_GP[-2147483648..2147483647]:LOCAL::Signed{init=0, shared_gp=true}
+  xpc10nz[4:0]:EG504:LOCAL::Unsigned{init=0}
+  @_BOOL/CC/SCALbx10_ARA0_AD0[3:0]:LOCAL::Unsigned{init=0}
+  @_BOOL/CC/SCALbx10_ARA0_WRD0:LOCAL::Unsigned{init=0}
+  @_BOOL/CC/SCALbx10_ARA0_WEN0:LOCAL::Unsigned{init=0, control_net_marked=true}
+  @_BOOL/CC/SCALbx10_ARA0_RDD0:LOCAL::Unsigned{init=0}
+  @_BOOL/CC/SCALbx10_ARA0_REN0:LOCAL::Unsigned{init=0, control_net_marked=true}
+  BOOLCCSCALbx10ARA0RRh10hold:LOCAL::Unsigned{init=0}
+  BOOLCCSCALbx10ARA0RRh10shot0:LOCAL::Unsigned{init=0}
+  xpc12nz[2:0]:EG505:LOCAL::Unsigned{init=0}
+  @_SINT/CC/SCALbx12_ARA0_RDD0[31:0]:LOCAL::Signed{init=0}
+  @_SINT/CC/SCALbx12_ARA0_AD0[3:0]:LOCAL::Unsigned{init=0}
+  @_SINT/CC/SCALbx12_ARA0_REN0:LOCAL::Unsigned{init=0, control_net_marked=true}
+  SINTCCSCALbx12ARA0RRh10hold[31:0]:LOCAL::Signed{init=0}
+  SINTCCSCALbx12ARA0RRh10shot0:LOCAL::Unsigned{init=0}
+  @_SINT/CC/SCALbx12_ARA0_WRD0[31:0]:LOCAL::Signed{init=0}
+  @_SINT/CC/SCALbx12_ARA0_WEN0:LOCAL::Unsigned{init=0, control_net_marked=true}
+  clk:INPUT::Unsigned{init=0, resetnet=true}
+  design_serial_number[-2147483648..2147483647]:OUTPUT::Signed{init=0, io_output=true, username=design_serial_number}
+  pio_addr[-2147483648..2147483647]:INPUT::Signed{init=0, io_input=true, username=pio_addr}
+  pio_wdata[-2147483648..2147483647]:INPUT::Signed{init=0, io_input=true, username=pio_wdata}
+  pio_rdata[-2147483648..2147483647]:OUTPUT::Signed{init=0, io_output=true, username=pio_rdata}
+  pio_hwen:INPUT::Unsigned{init=0, io_input=true, username=pio_hwen}
+  volume[31:0]:INPUT::Unsigned{init=0, io_input=true, io_output=true, username=volume, HwWidth=32}
+  count[31:0]:OUTPUT::Unsigned{init=0, io_output=true, username=count, HwWidth=32}
+  elimit[31:0]:OUTPUT::Signed{init=0, io_output=true, username=elimit, HwWidth=32}
+  evariant[31:0]:OUTPUT::Signed{init=0, io_output=true, username=evariant, HwWidth=32}
+  edesign[31:0]:OUTPUT::Signed{init=0, io_output=true, username=edesign, HwWidth=32}
+  finished:OUTPUT::Unsigned{init=0, io_output=true, username=finished}
+End report on cpp_class: persistents (30 items)
+
+Finished converting an HPR machine to a CPP method called primesya
+Report on cpp_class: all fields
+  primesya/T404/Main/T404/Main/V_2_GP[-2147483648..2147483647]:LOCAL::Signed{init=0, shared_gp=true}
+  primesya/T404/Main/T404/Main/V_4_GP[-2147483648..2147483647]:LOCAL::Signed{init=0, shared_gp=true}
+  xpc10nz[4:0]:EG504:LOCAL::Unsigned{init=0}
+  @_BOOL/CC/SCALbx10_ARA0_AD0[3:0]:LOCAL::Unsigned{init=0}
+  @_BOOL/CC/SCALbx10_ARA0_WRD0:LOCAL::Unsigned{init=0}
+  @_BOOL/CC/SCALbx10_ARA0_WEN0:LOCAL::Unsigned{init=0, control_net_marked=true}
+  @_BOOL/CC/SCALbx10_ARA0_RDD0:LOCAL::Unsigned{init=0}
+  @_BOOL/CC/SCALbx10_ARA0_REN0:LOCAL::Unsigned{init=0, control_net_marked=true}
+  BOOLCCSCALbx10ARA0RRh10hold:LOCAL::Unsigned{init=0}
+  BOOLCCSCALbx10ARA0RRh10shot0:LOCAL::Unsigned{init=0}
+  xpc12nz[2:0]:EG505:LOCAL::Unsigned{init=0}
+  @_SINT/CC/SCALbx12_ARA0_RDD0[31:0]:LOCAL::Signed{init=0}
+  @_SINT/CC/SCALbx12_ARA0_AD0[3:0]:LOCAL::Unsigned{init=0}
+  @_SINT/CC/SCALbx12_ARA0_REN0:LOCAL::Unsigned{init=0, control_net_marked=true}
+  SINTCCSCALbx12ARA0RRh10hold[31:0]:LOCAL::Signed{init=0}
+  SINTCCSCALbx12ARA0RRh10shot0:LOCAL::Unsigned{init=0}
+  @_SINT/CC/SCALbx12_ARA0_WRD0[31:0]:LOCAL::Signed{init=0}
+  @_SINT/CC/SCALbx12_ARA0_WEN0:LOCAL::Unsigned{init=0, control_net_marked=true}
+  clk:INPUT::Unsigned{init=0, resetnet=true}
+  design_serial_number[-2147483648..2147483647]:OUTPUT::Signed{init=0, io_output=true, username=design_serial_number}
+  pio_addr[-2147483648..2147483647]:INPUT::Signed{init=0, io_input=true, username=pio_addr}
+  pio_wdata[-2147483648..2147483647]:INPUT::Signed{init=0, io_input=true, username=pio_wdata}
+  pio_rdata[-2147483648..2147483647]:OUTPUT::Signed{init=0, io_output=true, username=pio_rdata}
+  pio_hwen:INPUT::Unsigned{init=0, io_input=true, username=pio_hwen}
+  volume[31:0]:INPUT::Unsigned{init=0, io_input=true, io_output=true, username=volume, HwWidth=32}
+  count[31:0]:OUTPUT::Unsigned{init=0, io_output=true, username=count, HwWidth=32}
+  elimit[31:0]:OUTPUT::Signed{init=0, io_output=true, username=elimit, HwWidth=32}
+  evariant[31:0]:OUTPUT::Signed{init=0, io_output=true, username=evariant, HwWidth=32}
+  edesign[31:0]:OUTPUT::Signed{init=0, io_output=true, username=edesign, HwWidth=32}
+  finished:OUTPUT::Unsigned{init=0, io_output=true, username=finished}
+  @_BOOL/CC/SCALbx10_ARA0:LOCAL::Unsigned[10]
+  1
+  4
+  10
+  1
+  clk:INPUT::Unsigned{init=0, resetnet=true}
+  reset:INPUT::Unsigned{init=0, resetnet=true}
+  @_BOOL/CC/SCALbx10_ARA0_RDD0:LOCAL::Unsigned{init=0}
+  @_BOOL/CC/SCALbx10_ARA0_AD0[3:0]:LOCAL::Unsigned{init=0}
+  @_BOOL/CC/SCALbx10_ARA0_WEN0:LOCAL::Unsigned{init=0, control_net_marked=true}
+  @_BOOL/CC/SCALbx10_ARA0_REN0:LOCAL::Unsigned{init=0, control_net_marked=true}
+  @_BOOL/CC/SCALbx10_ARA0_WRD0:LOCAL::Unsigned{init=0}
+  @_SINT/CC/SCALbx12_ARA0[31:0]:LOCAL::Signed[10]
+  32
+  4
+  10
+  32
+  clk:INPUT::Unsigned{init=0, resetnet=true}
+  reset:INPUT::Unsigned{init=0, resetnet=true}
+  @_SINT/CC/SCALbx12_ARA0_RDD0[31:0]:LOCAL::Signed{init=0}
+  @_SINT/CC/SCALbx12_ARA0_AD0[3:0]:LOCAL::Unsigned{init=0}
+  @_SINT/CC/SCALbx12_ARA0_WEN0:LOCAL::Unsigned{init=0, control_net_marked=true}
+  @_SINT/CC/SCALbx12_ARA0_REN0:LOCAL::Unsigned{init=0, control_net_marked=true}
+  @_SINT/CC/SCALbx12_ARA0_WRD0[31:0]:LOCAL::Signed{init=0}
+End report on cpp_class: all fields (54 items)
+
+Not converting num to cpp field
+Not converting num to cpp field
+Not converting num to cpp field
+Not converting num to cpp field
+Report on cpp_class: portformal fields: none exist.
+Report on cpp_class: funid fields
+  primesya/T404/Main/T404/Main/V_2_GP
+  primesya/T404/Main/T404/Main/V_4_GP
+  xpc10nz
+  BOOLCCSCALbx10ARA0RRh10hold
+  BOOLCCSCALbx10ARA0RRh10shot0
+  xpc12nz
+  SINTCCSCALbx12ARA0RRh10hold
+  SINTCCSCALbx12ARA0RRh10shot0
+  design_serial_number
+  pio_addr
+  pio_wdata
+  pio_rdata
+  pio_hwen
+  volume
+  count
+  elimit
+  evariant
+  edesign
+  finished
+  @_BOOL/CC/SCALbx10_ARA0
+  @_BOOL/CC/SCALbx10_ARA0_RDD0
+  @_BOOL/CC/SCALbx10_ARA0_AD0
+  @_BOOL/CC/SCALbx10_ARA0_WEN0
+  @_BOOL/CC/SCALbx10_ARA0_REN0
+  @_BOOL/CC/SCALbx10_ARA0_WRD0
+  @_SINT/CC/SCALbx12_ARA0
+  clk
+  reset
+  @_SINT/CC/SCALbx12_ARA0_RDD0
+  @_SINT/CC/SCALbx12_ARA0_AD0
+  @_SINT/CC/SCALbx12_ARA0_WEN0
+  @_SINT/CC/SCALbx12_ARA0_REN0
+  @_SINT/CC/SCALbx12_ARA0_WRD0
+End report on cpp_class: funid fields (33 items)
+
+Opening log file  primesya.h
+C#/cpp_render primesya write finished.
+
+
+Opening log file  primesya.sysc.cpp
+C#/cpp_render primesya write finished.
+
+
+Syscit csharp/primes_offchip finished.
+Timestamp: (.end.).   T/S  10/02/2017 17:08:09 finished cgen2
+=== Post step VM machine is same as pre-step. ===
+Profile report: queries=41, 43, 30
+myastats= ru=115/al=676
+Finished path cmd
+Starting path cmd
+Opath recipe stage diosim is disabled (and so is being skipped)
+Timestamp: (disabled step).   T/S  10/02/2017 17:08:09
+Finished path cmd
+Runpath: reached end of orange path
+Orangepath: finished 12 stage Orangepath recipe
+kiwic finished. Still to write report files. rc=0
+Opening log file: fn pre sanitise KiwiC.rpt
+Opening log file  KiwiC.rpt
+close report file. count=36 status="unset" KiwiC.rpt
+kiwic finished. Report files written. rc=0

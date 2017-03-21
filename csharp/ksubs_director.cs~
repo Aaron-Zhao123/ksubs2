@@ -1,0 +1,21 @@
+//
+// Kiwi Scientific Acceleration Example - Lower/Upper Decomposition and Equation Solving.
+// (C) 2014 DJ Greaves, University of Cambridge, Computer Laboratory.
+//
+//  Simultaneous Equations Solving using L/U decomposition. 
+//  This is the single-threaded version.  
+//  Parallel speedup is gained here through automatic unwind of the inner loops.
+//  An explictly parallel implementation is in another demo.
+
+using System;
+using System.Text;
+using KiwiSystem;
+using System.Diagnostics;
+
+
+class KSubs2_Director
+{
+  
+}
+
+

@@ -1,0 +1,276 @@
+Start of log: tag=compose
+Orangepath: Executing step 5: 'compose' of the following recipe:
+Timestamp: (start).   T/S  10/02/2017 17:08:04
+  -~~ DO kiwife:kiwife
+  -~~ DO repack:repack
+  -~~ DO cgen1:cgen1
+  -~~ DO report:report
+  -~~ DO bevelab:bevelab
+  -~~ DO compose:compose
+  -~~ DO conerefine1:conerefine
+  -~~ DO restructure2:restructure2
+  -~~ DO conerefine2:conerefine
+  -~~ DO verilog-gen:verilog-gen
+  -~~ DO cgen2:cgen2
+  -~~ DO diosim:diosim DISABLED (will be skipped)
+Args=  /home/djg11/d320/hprls/kiwipro/kiwic/distro/lib/kiwic.exe csharp/primes_offchip.exe -res2-loadstore-port-count=0 -vnl=primes_offchip.v -vnl-rootmodname=primes_offchip csharp/KSubs2_Director.dll -vnl-resets=synchronous -kiwic-finish=disable -vnl-roundtrip=disable -kiwic-register-colours=1 -bevelab-default-pause-mode=bblock -fp-fl-sp-mul=4
+
+Validated(1) 8 args
+Report on Orangepath/recipe stage parameter settings: name=compose
+    compose=enable
+    compose-redirect=disable
+    compose-bisim-reduction=disable
+    compose-detailed-trace=disable
+    compose-default-pause-mode=auto
+    scheduler=oldsched
+    compose-soft-pause-threshold=1000
+    compose-ubudget=10000
+End report on Orangepath/recipe stage parameter settings: name=compose (8 items)
+
+    arg binding: compose= enable
+    arg binding: compose-redirect= disable
+    arg binding: compose-bisim-reduction= disable
+    arg binding: compose-detailed-trace= disable
+    arg binding: compose-default-pause-mode= auto
+    arg binding: scheduler= oldsched
+    arg binding: compose-soft-pause-threshold= 1000
+    arg binding: compose-ubudget= 10000
+Starting opath_do compose cmd=compose
+d320 $Id: compose.fs,v 1.10 2013-07-08 08:32:14 djg11 Exp $ 
+Using default value of false for skip-propagate
+Starting compose 1749
+WF:Compose:: Commence
+WF:Compose:: Flattened
+Found 2 FSMs to compose
+pcs=xpc10, xpc12
+Report on Shared variables used for guard conditions
+  @_BOOL/CC/SCALbx10_ARA0
+  pio_hwen
+  primesya/T404/Main/T404/Main/V_4_GP
+  primesya/T404/Main/T404/Main/V_2_GP
+End report on Shared variables used for guard conditions (4 items)
+
+():() --> {():primesya/T404/Main/T404/Main/V_2_GP <= 1+primesya/T404/Main/T404/Main/V_2_GP}
+():() --> {():@_BOOL/CC/SCALbx10_ARA0[primesya/T404/Main/T404/Main/V_2_GP] <= U1'1}
+():() --> {():primesya/T404/Main/T404/Main/V_4_GP <= primesya/T404/Main/T404/Main/V_2_GP+primesya/T404/Main/T404/Main/V_4_GP}
+():() --> {():@_BOOL/CC/SCALbx10_ARA0[primesya/T404/Main/T404/Main/V_4_GP] <= U1'0}
+():() --> {():primesya/T404/Main/T404/Main/V_2_GP <= 1+primesya/T404/Main/T404/Main/V_2_GP}
+():() --> {():primesya/T404/Main/T404/Main/V_4_GP <= primesya/T404/Main/T404/Main/V_2_GP+primesya/T404/Main/T404/Main/V_2_GP}
+():() --> {():primesya/T404/Main/T404/Main/V_4_GP <= primesya/T404/Main/T404/Main/V_2_GP+primesya/T404/Main/T404/Main/V_2_GP}
+():() --> {():primesya/T404/Main/T404/Main/V_4_GP <= 1+primesya/T404/Main/T404/Main/V_4_GP}
+():() --> {():count <= Cu(1+count)}
+():() --> {():finished <= U1'1}
+():() --> {():primesya/T404/Main/T404/Main/V_4_GP <= 0}
+():() --> {():primesya/T404/Main/T404/Main/V_2_GP <= 2}
+():() --> {():primesya/T404/Main/T404/Main/V_2_GP <= 0}
+():() --> {():count <= U32'0}
+():() --> {():primesya/count1 <= 2}
+():() --> {():@_BOOL/CC/SCALbx10_ARA0[0] <= 0<volume}
+():() --> {():elimit <= 1000}
+():() --> {():primesya/T404/Main/T404/Main/V_0 <= U1'1}
+():() --> {():KiwiSystem/Kiwi/tnow <= U64'0}
+():() --> {():KiwiSystem/Kiwi/old_pausemode_value <= U32'2}
+():() --> {():System/BitConverter/IsLittleEndian <= U1'1}
+():() --> {():KSubs2_Director/pio_space <= {SC:d1,0}}
+():() --> {():CS/0.6/refxxarray10 <= {SC:d1,0}}
+():() --> {():pio_rdata <= 0}
+():() --> {():design_serial_number <= S32'2232578}
+():() --> {():finished <= U1'0}
+():() --> {():edesign <= 4032}
+():() --> {():evariant <= 0}
+():() --> {():primesya/count1 <= 0}
+():() --> {():count <= U32'0}
+():() --> {():primesya/PA <= {SC:d2,0}}
+():() --> {():CS/0.4/refxxarray12 <= {SC:d2,0}}
+():() --> {():primesya/limit <= 1000}
+():() --> {():@_SINT/CC/SCALbx12_ARA0[pio_addr] <= C(pio_wdata)}
+():() --> {():pio_rdata <= C(@_SINT/CC/SCALbx12_ARA0[pio_addr])}
+WF:Compose::  Bisimulate Skipped
+WF:oldscheduler: start
+WF:bevelab: solo machine pc = xpc10
+Report on solo_machine (pc=xpc10 resumept=X0:"0:xpc10"): bi_action pops
+  (xpc10==X0:"0:xpc10"):() --> { GOTO X1:"1:xpc10"}
+  (xpc10==X0:"0:xpc10"):() --> {():hpr_KppMark{primesya1059:1}("START", "INITIALISE")}
+  (xpc10==X0:"0:xpc10"):() --> {():hpr_writeln{primesya1061:2}($$AUTOFORMAT: This will be automatically replaced with a printf formatted string., "Primes Up To ", 1000)}
+  (xpc10==X0:"0:xpc10"):() --> {():elimit <= 1000}
+  (xpc10==X0:"0:xpc10"):() --> {():primesya/T404/Main/T404/Main/V_0 <= U1'1}
+  (xpc10==X0:"0:xpc10"):() --> {():KiwiSystem/Kiwi/tnow <= U64'0}
+  (xpc10==X0:"0:xpc10"):() --> {():KiwiSystem/Kiwi/old_pausemode_value <= U32'2}
+  (xpc10==X0:"0:xpc10"):() --> {():System/BitConverter/IsLittleEndian <= U1'1}
+  (xpc10==X0:"0:xpc10"):() --> {():KSubs2_Director/pio_space <= {SC:d1,0}}
+  (xpc10==X0:"0:xpc10"):() --> {():CS/0.6/refxxarray10 <= {SC:d1,0}}
+  (xpc10==X0:"0:xpc10"):() --> {():pio_rdata <= 0}
+  (xpc10==X0:"0:xpc10"):() --> {():design_serial_number <= S32'2232578}
+  (xpc10==X0:"0:xpc10"):() --> {():finished <= U1'0}
+  (xpc10==X0:"0:xpc10"):() --> {():edesign <= 4032}
+  (xpc10==X0:"0:xpc10"):() --> {():evariant <= 0}
+  (xpc10==X0:"0:xpc10"):() --> {():primesya/count1 <= 0}
+  (xpc10==X0:"0:xpc10"):() --> {():count <= U32'0}
+  (xpc10==X0:"0:xpc10"):() --> {():primesya/PA <= {SC:d2,0}}
+  (xpc10==X0:"0:xpc10"):() --> {():CS/0.4/refxxarray12 <= {SC:d2,0}}
+  (xpc10==X0:"0:xpc10"):() --> {():primesya/limit <= 1000}
+End report on solo_machine (pc=xpc10 resumept=X0:"0:xpc10"): bi_action pops (20 items)
+
+Report on solo_machine (pc=xpc10 resumept=X1:"1:xpc10"): bi_action pops
+  (xpc10==X1:"1:xpc10"):() --> { GOTO X2:"2:xpc10"}
+  (xpc10==X1:"1:xpc10"):() --> {():@_BOOL/CC/SCALbx10_ARA0[0] <= 0<volume}
+End report on solo_machine (pc=xpc10 resumept=X1:"1:xpc10"): bi_action pops (2 items)
+
+Report on solo_machine (pc=xpc10 resumept=X2:"2:xpc10"): bi_action pops
+  (xpc10==X2:"2:xpc10"):() --> { GOTO X4:"4:xpc10"}
+  (xpc10==X2:"2:xpc10"):() --> {():primesya/T404/Main/T404/Main/V_2_GP <= 0}
+  (xpc10==X2:"2:xpc10"):() --> {():count <= U32'0}
+  (xpc10==X2:"2:xpc10"):() --> {():primesya/count1 <= 2}
+End report on solo_machine (pc=xpc10 resumept=X2:"2:xpc10"): bi_action pops (4 items)
+
+Report on solo_machine (pc=xpc10 resumept=X4:"4:xpc10"): bi_action pops
+  (xpc10==X4:"4:xpc10"):(primesya/T404/Main/T404/Main/V_2_GP>=1000) --> { GOTO X8:"8:xpc10"}
+  (xpc10==X4:"4:xpc10"):(primesya/T404/Main/T404/Main/V_2_GP>=1000) --> {(primesya/T404/Main/T404/Main/V_2_GP>=1000):hpr_KppMark{primesya1078:3}("wp2", "CROSSOFF")}
+  (xpc10==X4:"4:xpc10"):(primesya/T404/Main/T404/Main/V_2_GP>=1000) --> {():primesya/T404/Main/T404/Main/V_2_GP <= 2}
+  (xpc10==X4:"4:xpc10"):(primesya/T404/Main/T404/Main/V_2_GP<1000) --> { GOTO X131072:"131072:xpc10"}
+End report on solo_machine (pc=xpc10 resumept=X4:"4:xpc10"): bi_action pops (4 items)
+
+Report on solo_machine (pc=xpc10 resumept=X8:"8:xpc10"): bi_action pops
+  (xpc10==X8:"8:xpc10"):(primesya/T404/Main/T404/Main/V_2_GP>=1000) --> { GOTO X16:"16:xpc10"}
+  (xpc10==X8:"8:xpc10"):(primesya/T404/Main/T404/Main/V_2_GP<1000) --> { GOTO X16384:"16384:xpc10"}
+End report on solo_machine (pc=xpc10 resumept=X8:"8:xpc10"): bi_action pops (2 items)
+
+Report on solo_machine (pc=xpc10 resumept=X16:"16:xpc10"): bi_action pops
+  (xpc10==X16:"16:xpc10"):() --> { GOTO X32:"32:xpc10"}
+  (xpc10==X16:"16:xpc10"):() --> {():hpr_KppMark{primesya10100:4}("wp3", "COUNTING")}
+  (xpc10==X16:"16:xpc10"):() --> {():hpr_writeln{primesya10102:5}($$AUTOFORMAT: This will be automatically replaced with a printf formatted string., "Now counting")}
+  (xpc10==X16:"16:xpc10"):() --> {():primesya/T404/Main/T404/Main/V_4_GP <= 0}
+End report on solo_machine (pc=xpc10 resumept=X16:"16:xpc10"): bi_action pops (4 items)
+
+Report on solo_machine (pc=xpc10 resumept=X32:"32:xpc10"): bi_action pops
+  (xpc10==X32:"32:xpc10"):(primesya/T404/Main/T404/Main/V_4_GP>=1000) --> { GOTO X64:"64:xpc10"}
+  (xpc10==X32:"32:xpc10"):(primesya/T404/Main/T404/Main/V_4_GP>=1000) --> {(primesya/T404/Main/T404/Main/V_4_GP>=1000):hpr_writeln{primesya10112:6}("There are %d primes below the natural number %u.", count, 1000)}
+  (xpc10==X32:"32:xpc10"):(primesya/T404/Main/T404/Main/V_4_GP>=1000) --> {(primesya/T404/Main/T404/Main/V_4_GP>=1000):hpr_writeln{primesya10114:7}("Optimisation variant=%u (count1 is %u).", 0, 2)}
+  (xpc10==X32:"32:xpc10"):(primesya/T404/Main/T404/Main/V_4_GP<1000) --> { GOTO X4096:"4096:xpc10"}
+End report on solo_machine (pc=xpc10 resumept=X32:"32:xpc10"): bi_action pops (4 items)
+
+Report on solo_machine (pc=xpc10 resumept=X64:"64:xpc10"): bi_action pops
+  (xpc10==X64:"64:xpc10"):() --> { GOTO X128:"128:xpc10"}
+End report on solo_machine (pc=xpc10 resumept=X64:"64:xpc10"): bi_action pops (1 items)
+
+Report on solo_machine (pc=xpc10 resumept=X128:"128:xpc10"): bi_action pops
+  (xpc10==X128:"128:xpc10"):() --> { GOTO X256:"256:xpc10"}
+  (xpc10==X128:"128:xpc10"):() --> {():hpr_KppMark{primesya10120:8}("FINISH")}
+End report on solo_machine (pc=xpc10 resumept=X128:"128:xpc10"): bi_action pops (2 items)
+
+Report on solo_machine (pc=xpc10 resumept=X256:"256:xpc10"): bi_action pops
+  (xpc10==X256:"256:xpc10"):() --> { GOTO X512:"512:xpc10"}
+  (xpc10==X256:"256:xpc10"):() --> {():finished <= U1'1}
+End report on solo_machine (pc=xpc10 resumept=X256:"256:xpc10"): bi_action pops (2 items)
+
+Report on solo_machine (pc=xpc10 resumept=X512:"512:xpc10"): bi_action pops
+  (xpc10==X512:"512:xpc10"):() --> { GOTO X1024:"1024:xpc10"}
+End report on solo_machine (pc=xpc10 resumept=X512:"512:xpc10"): bi_action pops (1 items)
+
+Report on solo_machine (pc=xpc10 resumept=X1024:"1024:xpc10"): bi_action pops
+  (xpc10==X1024:"1024:xpc10"):() --> { GOTO X2048:"2048:xpc10"}
+End report on solo_machine (pc=xpc10 resumept=X1024:"1024:xpc10"): bi_action pops (1 items)
+
+Report on solo_machine (pc=xpc10 resumept=X2048:"2048:xpc10"): bi_action pops
+  (xpc10==X2048:"2048:xpc10"):() --> { GOTO X1024:"1024:xpc10"}
+End report on solo_machine (pc=xpc10 resumept=X2048:"2048:xpc10"): bi_action pops (1 items)
+
+Report on solo_machine (pc=xpc10 resumept=X4096:"4096:xpc10"): bi_action pops
+  (xpc10==X4096:"4096:xpc10"):(|-|@_BOOL/CC/SCALbx10_ARA0[primesya/T404/Main/T404/Main/V_4_GP]) --> { GOTO X8192:"8192:xpc10"}
+  (xpc10==X4096:"4096:xpc10"):(|-|@_BOOL/CC/SCALbx10_ARA0[primesya/T404/Main/T404/Main/V_4_GP]) --> {():count <= Cu(1+count)}
+  (xpc10==X4096:"4096:xpc10"):(!(@_BOOL/CC/SCALbx10_ARA0[primesya/T404/Main/T404/Main/V_4_GP])) --> { GOTO X8192:"8192:xpc10"}
+End report on solo_machine (pc=xpc10 resumept=X4096:"4096:xpc10"): bi_action pops (3 items)
+
+Report on solo_machine (pc=xpc10 resumept=X8192:"8192:xpc10"): bi_action pops
+  (xpc10==X8192:"8192:xpc10"):() --> { GOTO X32:"32:xpc10"}
+  (xpc10==X8192:"8192:xpc10"):() --> {():hpr_writeln{primesya10145:9}("Tally counting %u %d", primesya/T404/Main/T404/Main/V_4_GP, count)}
+  (xpc10==X8192:"8192:xpc10"):() --> {():primesya/T404/Main/T404/Main/V_4_GP <= 1+primesya/T404/Main/T404/Main/V_4_GP}
+End report on solo_machine (pc=xpc10 resumept=X8192:"8192:xpc10"): bi_action pops (3 items)
+
+Report on solo_machine (pc=xpc10 resumept=X16384:"16384:xpc10"): bi_action pops
+  (xpc10==X16384:"16384:xpc10"):(primesya/T404/Main/T404/Main/V_2_GP+primesya/T404/Main/T404/Main/V_2_GP>=1000) --> { GOTO X16:"16:xpc10"}
+  (xpc10==X16384:"16384:xpc10"):(primesya/T404/Main/T404/Main/V_2_GP+primesya/T404/Main/T404/Main/V_2_GP>=1000) --> {(primesya/T404/Main/T404/Main/V_2_GP+primesya/T404/Main/T404/Main/V_2_GP>=1000):hpr_writeln{primesya1095:10}($$AUTOFORMAT: This will be automatically replaced with a printf formatted string., "Skip out on square")}
+  (xpc10==X16384:"16384:xpc10"):(primesya/T404/Main/T404/Main/V_2_GP+primesya/T404/Main/T404/Main/V_2_GP>=1000) --> {():primesya/T404/Main/T404/Main/V_4_GP <= primesya/T404/Main/T404/Main/V_2_GP+primesya/T404/Main/T404/Main/V_2_GP}
+  (xpc10==X16384:"16384:xpc10"):(primesya/T404/Main/T404/Main/V_2_GP+primesya/T404/Main/T404/Main/V_2_GP<1000) --> { GOTO X32768:"32768:xpc10"}
+  (xpc10==X16384:"16384:xpc10"):(primesya/T404/Main/T404/Main/V_2_GP+primesya/T404/Main/T404/Main/V_2_GP<1000) --> {():primesya/T404/Main/T404/Main/V_4_GP <= primesya/T404/Main/T404/Main/V_2_GP+primesya/T404/Main/T404/Main/V_2_GP}
+End report on solo_machine (pc=xpc10 resumept=X16384:"16384:xpc10"): bi_action pops (5 items)
+
+Report on solo_machine (pc=xpc10 resumept=X32768:"32768:xpc10"): bi_action pops
+  (xpc10==X32768:"32768:xpc10"):(primesya/T404/Main/T404/Main/V_4_GP>=1000) --> { GOTO X8:"8:xpc10"}
+  (xpc10==X32768:"32768:xpc10"):(primesya/T404/Main/T404/Main/V_4_GP>=1000) --> {():primesya/T404/Main/T404/Main/V_2_GP <= 1+primesya/T404/Main/T404/Main/V_2_GP}
+  (xpc10==X32768:"32768:xpc10"):(primesya/T404/Main/T404/Main/V_4_GP<1000) --> { GOTO X65536:"65536:xpc10"}
+  (xpc10==X32768:"32768:xpc10"):(primesya/T404/Main/T404/Main/V_4_GP<1000) --> {(primesya/T404/Main/T404/Main/V_4_GP<1000):hpr_writeln{primesya10162:11}("Cross off %u %u   (count1=%u)", primesya/T404/Main/T404/Main/V_2_GP, primesya/T404/Main/T404/Main/V_4_GP, 2)}
+End report on solo_machine (pc=xpc10 resumept=X32768:"32768:xpc10"): bi_action pops (4 items)
+
+Report on solo_machine (pc=xpc10 resumept=X65536:"65536:xpc10"): bi_action pops
+  (xpc10==X65536:"65536:xpc10"):() --> { GOTO X32768:"32768:xpc10"}
+  (xpc10==X65536:"65536:xpc10"):() --> {():primesya/T404/Main/T404/Main/V_4_GP <= primesya/T404/Main/T404/Main/V_2_GP+primesya/T404/Main/T404/Main/V_4_GP}
+  (xpc10==X65536:"65536:xpc10"):() --> {():@_BOOL/CC/SCALbx10_ARA0[primesya/T404/Main/T404/Main/V_4_GP] <= U1'0}
+End report on solo_machine (pc=xpc10 resumept=X65536:"65536:xpc10"): bi_action pops (3 items)
+
+Report on solo_machine (pc=xpc10 resumept=X131072:"131072:xpc10"): bi_action pops
+  (xpc10==X131072:"131072:xpc10"):() --> { GOTO X4:"4:xpc10"}
+  (xpc10==X131072:"131072:xpc10"):() --> {():hpr_writeln{primesya10174:12}("Setting initial array flag to hold : addr=%u readback=%d", primesya/T404/Main/T404/Main/V_2_GP, U1'1)}
+  (xpc10==X131072:"131072:xpc10"):() --> {():primesya/T404/Main/T404/Main/V_2_GP <= 1+primesya/T404/Main/T404/Main/V_2_GP}
+  (xpc10==X131072:"131072:xpc10"):() --> {():@_BOOL/CC/SCALbx10_ARA0[primesya/T404/Main/T404/Main/V_2_GP] <= U1'1}
+End report on solo_machine (pc=xpc10 resumept=X131072:"131072:xpc10"): bi_action pops (4 items)
+
+WF:bevToXrtl: start
+cvt2rtl: updates es=0 ea=0 sef=0 items
+WF:bevelab: solo machine pc = xpc12
+Report on solo_machine (pc=xpc12 resumept=X0:"0:xpc12"): bi_action pops
+  (xpc12==X0:"0:xpc12"):() --> { GOTO X1:"1:xpc12"}
+End report on solo_machine (pc=xpc12 resumept=X0:"0:xpc12"): bi_action pops (1 items)
+
+Report on solo_machine (pc=xpc12 resumept=X1:"1:xpc12"): bi_action pops
+  (xpc12==X1:"1:xpc12"):(|-|pio_hwen) --> { GOTO X2:"2:xpc12"}
+  (xpc12==X1:"1:xpc12"):(|-|pio_hwen) --> {():@_SINT/CC/SCALbx12_ARA0[pio_addr] <= C(pio_wdata)}
+  (xpc12==X1:"1:xpc12"):(!(pio_hwen)) --> { GOTO X2:"2:xpc12"}
+  (xpc12==X1:"1:xpc12"):(!(pio_hwen)) --> {():pio_rdata <= C(@_SINT/CC/SCALbx12_ARA0[pio_addr])}
+End report on solo_machine (pc=xpc12 resumept=X1:"1:xpc12"): bi_action pops (4 items)
+
+Report on solo_machine (pc=xpc12 resumept=X2:"2:xpc12"): bi_action pops
+  (xpc12==X2:"2:xpc12"):() --> { GOTO X4:"4:xpc12"}
+End report on solo_machine (pc=xpc12 resumept=X2:"2:xpc12"): bi_action pops (1 items)
+
+Report on solo_machine (pc=xpc12 resumept=X4:"4:xpc12"): bi_action pops
+  (xpc12==X4:"4:xpc12"):() --> { GOTO X1:"1:xpc12"}
+End report on solo_machine (pc=xpc12 resumept=X4:"4:xpc12"): bi_action pops (1 items)
+
+WF:bevToXrtl: start
+cvt2rtl: updates es=0 ea=0 sef=0 items
+Nets=0 and ans is SP_par(?. <4 items>)
+WF:oldscheduler: end
+Report on pc regs needed 
+  xpc10
+  xpc12
+End report on pc regs needed  (2 items)
+
+Report on gdecs this machine 
+  clk
+  design_serial_number
+  pio_addr
+  pio_wdata
+  pio_rdata
+  pio_hwen
+  volume
+  count
+  elimit
+  evariant
+  edesign
+  finished
+End report on gdecs this machine  (12 items)
+
+WF:Compose::  Core Complete
+Timestamp: (.end.).   T/S  10/02/2017 17:08:04 finished compose
+Writing report 'report' shorter-mode=false
+Opening log file  obj/h06_compose/report-full
+WF:Writing vmreport of composegenerated10: start
++++ net xpc10[31:0]:EG502:LOCAL::Unsigned{init=0} is declared more than once (dmto) in csharp/primes_offchip.
++++ net xpc12[31:0]:EG503:LOCAL::Unsigned{init=0} is declared more than once (dmto) in csharp/primes_offchip.
+WF:Writing vmreport of composegenerated10: complete
+Profile report: queries=6, 6, 1
+myastats= ru=57/al=255
+Finished path cmd
+Starting path cmd
+End of this log file. Log continues in file where tag=conerefine1: End of log

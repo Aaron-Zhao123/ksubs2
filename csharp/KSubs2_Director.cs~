@@ -1,0 +1,55 @@
+//
+// Kiwi Scientific Acceleration 
+// (C) 2014 DJ Greaves, University of Cambridge, Computer Laboratory.
+
+//
+// Example directorate shim for programmed IO 
+//
+
+
+
+using System;
+using System.Text;
+using KiwiSystem;
+using System.Diagnostics;
+
+
+class KSubs2_Director
+{
+
+// This design template can be adjusted as much as you like.
+
+  [Kiwi.OutputWordPort("design_serial_number")]
+  static int design_serial_number = 0x221102;
+
+  [Kiwi.OutputWordPort("pio_address")]
+  static int pio_address = 0;
+  [Kiwi.InputWordPort("pio_wdata")]
+  static int pio_wdata;
+  [Kiwi.OutputWordPort("pio_rdata")]
+  static int pio_rdata = 0;
+  [Kiwi.InputBitPort("pio_hwen")]
+  static bool pio_hwen;
+
+  public const int pio_size = 10;
+
+  // TODO put Kiwi register file attribute here. [Kiwi.RegisterFile("pio_space")]
+
+  public static int [] pio_space = new int [pio_size];
+
+  [Kiwi.HardwareEntryPoint()]
+  public static void host_pio_process()
+  {
+    while (true)
+      {
+	if (pio_hwen) pio_space[pio_address] = pio_wdata;
+	else pio_rdata = pio_space[pio_address];
+	Kiwi.Pause();
+      }
+  }
+
+
+}
+
+
+// eof

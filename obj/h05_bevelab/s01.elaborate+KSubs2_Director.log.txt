@@ -1,0 +1,5 @@
+Start of log: tag=elaborate+KSubs2_Director
+WF:opath_bevelab: Start processing for id=KSubs2_Director
+Bevelab: KSubs2_Director:0 rtl execs (outside of any dpath)
+WF:opath_bevelab: Exec gen complete for id=KSubs2_Director
+End of this log file. Log continues in file where tag=elaborate+initial_empty_machine: End of log

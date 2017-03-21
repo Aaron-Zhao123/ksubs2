@@ -1,0 +1,7 @@
+unique tag idsq=KiwiSystem/Kiwi/PauseControlgen_dtable record format adopted:: Dtable is non-record: CTL_net(false, 3, Unsigned,[enum ...(Some "KiwiSystem/Kiwi/PauseControl",
+ [(0L, "autoPauseEnable", "KiwiSystem/Kiwi/PauseControl");
+  (1L, "hardPauseEnable", "KiwiSystem/Kiwi/PauseControl");
+  (2L, "softPauseEnable", "KiwiSystem/Kiwi/PauseControl");
+  (3L, "maximalPauseEnable", "KiwiSystem/Kiwi/PauseControl");
+  (4L, "bblockPauseEnable", "KiwiSystem/Kiwi/PauseControl");
+  (5L, "pipelinedAccelerator", "KiwiSystem/Kiwi/PauseControl")])])

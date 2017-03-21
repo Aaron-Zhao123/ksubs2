@@ -1,0 +1,162 @@
+Start of log: tag=conerefine2
+Orangepath: Executing step 8: 'conerefine' of the following recipe:
+Timestamp: (start).   T/S  10/02/2017 17:08:07
+  -~~ DO kiwife:kiwife
+  -~~ DO repack:repack
+  -~~ DO cgen1:cgen1
+  -~~ DO report:report
+  -~~ DO bevelab:bevelab
+  -~~ DO compose:compose
+  -~~ DO conerefine1:conerefine
+  -~~ DO restructure2:restructure2
+  -~~ DO conerefine2:conerefine
+  -~~ DO verilog-gen:verilog-gen
+  -~~ DO cgen2:cgen2
+  -~~ DO diosim:diosim DISABLED (will be skipped)
+Args=  /home/djg11/d320/hprls/kiwipro/kiwic/distro/lib/kiwic.exe csharp/primes_offchip.exe -res2-loadstore-port-count=0 -vnl=primes_offchip.v -vnl-rootmodname=primes_offchip csharp/KSubs2_Director.dll -vnl-resets=synchronous -kiwic-finish=disable -vnl-roundtrip=disable -kiwic-register-colours=1 -bevelab-default-pause-mode=bblock -fp-fl-sp-mul=4
+
+Validated(1) 3 args
+Report on Orangepath/recipe stage parameter settings: name=conerefine2
+  *NIL?
+    conerefine-loglevel=20
+    conerefine=enable
+End report on Orangepath/recipe stage parameter settings: name=conerefine2 (3 items)
+
+    arg binding: <nil>
+    arg binding: conerefine-loglevel= 20
+    arg binding: conerefine= enable
+Starting opath_do conerefine2 cmd=conerefine
+WF:conerefine2: Start first pass.   T/S 10/02/2017 17:08:07
+WF:cone_refine_one_vm:  id=composegenerated10
+WF:cone_refine_one_vm:  id=RAM_@_SINT/CC/SCALbx12_ARA0
+WF:Cone refine: cone refine xrtl  id=RAM_@_SINT/CC/SCALbx12_ARA0 SP_rtl 1 xfers
+WF:Cone refine: cone refine xrtl  id=RAM_@_SINT/CC/SCALbx12_ARA0 SP_rtl 1 xfers
+WF:cone_refine_one_vm:  id=RAM_@_BOOL/CC/SCALbx10_ARA0
+WF:Cone refine: cone refine xrtl  id=RAM_@_BOOL/CC/SCALbx10_ARA0 SP_rtl 1 xfers
+WF:Cone refine: cone refine xrtl  id=RAM_@_BOOL/CC/SCALbx10_ARA0 SP_rtl 1 xfers
+WF:Cone refine: cone refine xrtl  id=composegenerated10 SP_rtl 71 xfers
+WF:Cone refine: cone refine xrtl  id=composegenerated10 SP_rtl 16 xfers
+WF:conerefine2: First pass done.   T/S 10/02/2017 17:08:07
+WF:conerefine2: concourse trip count=91
+Cone refine manual retain for no nets
+WF:Cone refine: driven done, dnet count=27
+Report on Target nets at tips of cones
+  ALL(@_SINT/CC/SCALbx12_ARA0_WEN0)
+  ALL(@_SINT/CC/SCALbx12_ARA0_REN0)
+  ALL(@_BOOL/CC/SCALbx10_ARA0_REN0)
+  ALL(@_BOOL/CC/SCALbx10_ARA0_WEN0)
+  ALL(finished)
+  ALL(edesign)
+  ALL(evariant)
+  ALL(elimit)
+  ALL(count)
+  ALL(pio_rdata)
+  ALL(design_serial_number)
+End report on Target nets at tips of cones (11 items)
+
+WF:Cone refine: cone form starting
+WF:Cone refine: iterate 1 : 11:0:91
+WF:Cone refine: iterate 2 : 29:71:20
+WF:Cone refine: iterate 1 : 29:71:20
+WF:Cone refine: iterate 2 : 32:90:1
+WF:Cone refine: iterate 1 : 32:90:1
+WF:Cone refine: iterate 2 : 32:90:1
+WF:Cone refine constant propagate: starting
+Report on Constant propagate: new constants in pass 0: none exist.
+WF:Cone refine constant propagate: now finished
+WF:Cone refine: cr1: cone form done: target_final count=32 const_pairs=0
+Report on Trimmed Nets/Variables: none exist.
+Report on Retained Nets/Variables
+  @_SINT/CC/SCALbx12_ARA0_WEN0
+  @_SINT/CC/SCALbx12_ARA0_WRD0
+  SINTCCSCALbx12ARA0RRh10shot0
+  SINTCCSCALbx12ARA0RRh10hold
+  @_SINT/CC/SCALbx12_ARA0_REN0
+  @_SINT/CC/SCALbx12_ARA0_AD0
+  @_SINT/CC/SCALbx12_ARA0_RDD0
+  xpc12nz
+  BOOLCCSCALbx10ARA0RRh10shot0
+  BOOLCCSCALbx10ARA0RRh10hold
+  @_BOOL/CC/SCALbx10_ARA0_REN0
+  @_BOOL/CC/SCALbx10_ARA0_RDD0
+  @_BOOL/CC/SCALbx10_ARA0_WEN0
+  @_BOOL/CC/SCALbx10_ARA0_WRD0
+  @_BOOL/CC/SCALbx10_ARA0_AD0
+  xpc10nz
+  @_BOOL/CC/SCALbx10_ARA0
+  @_SINT/CC/SCALbx12_ARA0
+  pio_wdata
+  pio_addr
+  pio_hwen
+  primesya/T404/Main/T404/Main/V_4_GP
+  primesya/T404/Main/T404/Main/V_2_GP
+  volume
+  finished
+  edesign
+  evariant
+  elimit
+  count
+  pio_rdata
+  design_serial_number
+  $$AUTOFORMAT: This will be automatically replaced with a printf formatted string.
+End report on Retained Nets/Variables (32 items)
+
+Report on Constant Pairs: none exist.
+WF:conerefine2: finished transclose.   T/S  10/02/2017 17:08:07
+Report on Retained Variables Recoded
+  design_serial_number
+  pio_rdata
+  count
+  elimit
+  evariant
+  edesign
+  finished
+  volume
+  primesya/T404/Main/T404/Main/V_2_GP
+  primesya/T404/Main/T404/Main/V_4_GP
+  pio_hwen
+  pio_addr
+  pio_wdata
+  @_SINT/CC/SCALbx12_ARA0
+  @_BOOL/CC/SCALbx10_ARA0
+  xpc10nz
+  @_BOOL/CC/SCALbx10_ARA0_AD0
+  @_BOOL/CC/SCALbx10_ARA0_WRD0
+  @_BOOL/CC/SCALbx10_ARA0_WEN0
+  @_BOOL/CC/SCALbx10_ARA0_RDD0
+  @_BOOL/CC/SCALbx10_ARA0_REN0
+  BOOLCCSCALbx10ARA0RRh10hold
+  BOOLCCSCALbx10ARA0RRh10shot0
+  xpc12nz
+  @_SINT/CC/SCALbx12_ARA0_RDD0
+  @_SINT/CC/SCALbx12_ARA0_AD0
+  @_SINT/CC/SCALbx12_ARA0_REN0
+  SINTCCSCALbx12ARA0RRh10hold
+  SINTCCSCALbx12ARA0RRh10shot0
+  @_SINT/CC/SCALbx12_ARA0_WRD0
+  @_SINT/CC/SCALbx12_ARA0_WEN0
+End report on Retained Variables Recoded (31 items)
+
+WF:conerefine2: Start second pass.   T/S  10/02/2017 17:08:07
+WF:cone_refine_two_vm:  id=composegenerated10
+   SP_rtl assignment count/length: old=71, new=71
+   SP_rtl assignment count/length: old=16, new=16
+WF:cone_refine_two_vm:  id=RAM_@_SINT/CC/SCALbx12_ARA0
+   SP_rtl assignment count/length: old=1, new=1
+   SP_rtl assignment count/length: old=1, new=1
+WF:cone_refine_two_vm:  id=RAM_@_BOOL/CC/SCALbx10_ARA0
+   SP_rtl assignment count/length: old=1, new=1
+   SP_rtl assignment count/length: old=1, new=1
+WF:conerefine2: Finish second pass.   T/S  10/02/2017 17:08:08
+WF:conerefine2: completed pass 2, (no pass 3 requested).   T/S  10/02/2017 17:08:08
+WF:conerefine2: completed all
+Timestamp: (.end.).   T/S  10/02/2017 17:08:08 finished conerefine2
+Writing report 'report' shorter-mode=false
+Opening log file  obj/h09_conerefine2/report-full
+WF:Writing vmreport of composegenerated10: start
+WF:Writing vmreport of composegenerated10: complete
+Profile report: queries=37, 39, 26
+myastats= ru=109/al=368
+Finished path cmd
+Starting path cmd
+End of this log file. Log continues in file where tag=verilog-gen: End of log

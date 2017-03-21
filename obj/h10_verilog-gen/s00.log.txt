@@ -1,0 +1,311 @@
+Start of log: tag=verilog-gen
+Orangepath: Executing step 9: 'verilog-gen' of the following recipe:
+Timestamp: (start).   T/S  10/02/2017 17:08:08
+  -~~ DO kiwife:kiwife
+  -~~ DO repack:repack
+  -~~ DO cgen1:cgen1
+  -~~ DO report:report
+  -~~ DO bevelab:bevelab
+  -~~ DO compose:compose
+  -~~ DO conerefine1:conerefine
+  -~~ DO restructure2:restructure2
+  -~~ DO conerefine2:conerefine
+  -~~ DO verilog-gen:verilog-gen
+  -~~ DO cgen2:cgen2
+  -~~ DO diosim:diosim DISABLED (will be skipped)
+Args=  /home/djg11/d320/hprls/kiwipro/kiwic/distro/lib/kiwic.exe csharp/primes_offchip.exe -res2-loadstore-port-count=0 -vnl=primes_offchip.v -vnl-rootmodname=primes_offchip csharp/KSubs2_Director.dll -vnl-resets=synchronous -kiwic-finish=disable -vnl-roundtrip=disable -kiwic-register-colours=1 -bevelab-default-pause-mode=bblock -fp-fl-sp-mul=4
+
+Validated(1) 22 args
+Report on Orangepath/recipe stage parameter settings: name=verilog-gen
+    vnl-rootmodname=primes_offchip
+    vnl=primes_offchip.v
+    vnl-timescale=`timescale 1ns/1ns
+    gatelib=NONE
+    verilog-gen=enable
+    vnl-keep-pli=enable
+    vnl-keep-waypoints=enable
+    vnl-lcp-delay-estimate=enable
+    vnl-layout-delay-estimate=disable
+    vnl-subexpression-sharing=enable
+    vnl-synthesis=enable
+    vnl-add-aux-reports=enable
+    vnl-ifshare=on
+    preserve-sequencer=true
+    vnl-resets=synchronous
+    vnl-loglevel=0
+    vnl-uniquify_all_functions=disable
+    vnl-kandr=disable
+    vnl-roundtrip=disable
+    pagewidth=132
+    comb-assignment-delay=-1
+    vnl-separate-files=disable
+End report on Orangepath/recipe stage parameter settings: name=verilog-gen (22 items)
+
+    arg binding: vnl-rootmodname= primes_offchip
+    arg binding: vnl= primes_offchip.v
+    arg binding: vnl-timescale= `timescale 1ns/1ns
+    arg binding: gatelib= NONE
+    arg binding: verilog-gen= enable
+    arg binding: vnl-keep-pli= enable
+    arg binding: vnl-keep-waypoints= enable
+    arg binding: vnl-lcp-delay-estimate= enable
+    arg binding: vnl-layout-delay-estimate= disable
+    arg binding: vnl-subexpression-sharing= enable
+    arg binding: vnl-synthesis= enable
+    arg binding: vnl-add-aux-reports= enable
+    arg binding: vnl-ifshare= on
+    arg binding: preserve-sequencer= true
+    arg binding: vnl-resets= synchronous
+    arg binding: vnl-loglevel= 0
+    arg binding: vnl-uniquify_all_functions= disable
+    arg binding: vnl-kandr= disable
+    arg binding: vnl-roundtrip= disable
+    arg binding: pagewidth= 132
+    arg binding: comb-assignment-delay= -1
+    arg binding: vnl-separate-files= disable
+Starting opath_do verilog-gen cmd=verilog-gen
+Any preferred name? primesya
+Filename         = primes_offchip.v
+Root module name = primes_offchip
+WF:walk_vm: HPR csharp/primes_offchip
+WF:walk_vm: HPR @_SINT/CC/SCALbx12_ARA0
+WF:walk_vm: HPR @_BOOL/CC/SCALbx10_ARA0
+0 subexpressions selected for sharing
+Timestamp: L2389 10/02/2017 17:08:08
+Timestamp: L2406 10/02/2017 17:08:08
+HPR : 0 contacts to be used as RTL parameters (thefts).
+HPR csharp/primes_offchip: instance HPR csharp/primes_offchip being converted to Verilog.
+WF:fsm_flatten: Pt0
+WF:fsm_flatten: Pt1
+WF:fsm_flatten: Pt0
+WF:fsm_flatten: Pt1
+(xpc12nz==X1:"1:xpc12nz"):(|-|pio_hwen) --> {():Xn(@_SINT/CC/SCALbx12_ARA0_AD0,-1) <= pio_addr}
+(xpc12nz==X1:"1:xpc12nz"):(|-|pio_hwen) --> {():Xn(@_SINT/CC/SCALbx12_ARA0_WRD0,-1) <= C(pio_wdata)}
+(xpc12nz==X1:"1:xpc12nz"):(!(pio_hwen)) --> {():Xn(@_SINT/CC/SCALbx12_ARA0_AD0,-1) <= pio_addr}
+():() --> {():Xn(@_SINT/CC/SCALbx12_ARA0_REN0,-1) <= {[!(|-|pio_hwen), xpc12nz==X1:"1:xpc12nz"]}}
+():() --> {():Xn(@_SINT/CC/SCALbx12_ARA0_WEN0,-1) <= COND({[|-|pio_hwen, xpc12nz==X1:"1:xpc12nz"]}, pio_hwen, 0)}
+(xpc10nz==X21:"21:xpc10nz"):() --> {():Xn(@_BOOL/CC/SCALbx10_ARA0_AD0,-1) <= primesya/T404/Main/T404/Main/V_2_GP}
+(xpc10nz==X21:"21:xpc10nz"):() --> {():Xn(@_BOOL/CC/SCALbx10_ARA0_WRD0,-1) <= U1'1}
+(xpc10nz==X19:"19:xpc10nz"):() --> {():Xn(@_BOOL/CC/SCALbx10_ARA0_AD0,-1) <= primesya/T404/Main/T404/Main/V_4_GP}
+(xpc10nz==X19:"19:xpc10nz"):() --> {():Xn(@_BOOL/CC/SCALbx10_ARA0_WRD0,-1) <= U1'0}
+(xpc10nz==X14:"14:xpc10nz"):() --> {():Xn(@_BOOL/CC/SCALbx10_ARA0_AD0,-1) <= primesya/T404/Main/T404/Main/V_4_GP}
+(xpc10nz==X1:"1:xpc10nz"):() --> {():Xn(@_BOOL/CC/SCALbx10_ARA0_AD0,-1) <= 0}
+(xpc10nz==X1:"1:xpc10nz"):() --> {():Xn(@_BOOL/CC/SCALbx10_ARA0_WRD0,-1) <= 0<volume}
+():() --> {():Xn(@_BOOL/CC/SCALbx10_ARA0_REN0,-1) <= COND(xpc10nz==X14:"14:xpc10nz", 1, 0)}
+():() --> {():Xn(@_BOOL/CC/SCALbx10_ARA0_WEN0,-1) <= COND({[xpc10nz==X21:"21:xpc10nz"]; [xpc10nz==X1:"1:xpc10nz"]; [xpc10nz==X19:"19:xpc10nz"]}, 1, 0)}
+len blocking=14, len non_blocking=72
+Report on Reset guards for ifshare poly
+  |-|reset
+End report on Reset guards for ifshare poly (1 items)
+
+Report on Reset guards for ifshare poly
+  |-|reset
+End report on Reset guards for ifshare poly (1 items)
+
+WF:fsm_flatten: Pt3
+WF:fsm_flatten: Pt-exit
+HPR : 4 contacts to be used as RTL parameters (thefts).
+Instance preserved structurally: iname=@_BOOL/CC/SCALbx10_ARA0, kind=CV_SP_SSRAM_FL1, external=true, assocf=false, ats=externally-provided
+HPR : 4 contacts to be used as RTL parameters (thefts).
+Instance preserved structurally: iname=@_SINT/CC/SCALbx12_ARA0, kind=CV_SP_SSRAM_FL1, external=true, assocf=false, ats=externally-provided
+WF:cvtToVerilog: HPR : Finished convert to Verilog: gates=2, contacts=14, nets=20, ROMs=0 at timestamp: L2296 10/02/2017 17:08:09
+Timestamp: L2408 10/02/2017 17:08:09
+Timestamp: L2464 10/02/2017 17:08:09
+Timestamp: L2465 10/02/2017 17:08:09
+Timestamp: L2474 10/02/2017 17:08:09
+WF:cvtToVerilog: Computing area of each region
+WF:cvtToVerilog: Computing wire lengths: LCP estimator.
+Opening log file  non-layout.eps
+zone dimension not set in plot:MODUAL10
+zone dimension not set in plot:MODUAL10HPR10
+zone dimension not set in plot:MODUAL10HPR10ggg10
+zone dimension not set in plot:MODUAL10HPR10ggg10body1reset10
+zone dimension not set in plot:MODUAL10HPR10ggg10KBEVXRTL180
+zone dimension not set in plot:MODUAL10HPR10ggg10KBEVXRTL178
+zone dimension not set in plot:MODUAL10HPR10ggg10KBEVXRTL176
+zone dimension not set in plot:MODUAL10HPR10ggg10KBEVXRTL174
+zone dimension not set in plot:MODUAL10HPR10ggg10KBEVXRTL172
+zone dimension not set in plot:MODUAL10HPR10ggg10KBEVXRTL170
+zone dimension not set in plot:MODUAL10HPR10ggg10KBEVXRTL168
+zone dimension not set in plot:MODUAL10HPR10ggg10KBEVXRTL166
+zone dimension not set in plot:MODUAL10HPR10ggg10KBEVXRTL164
+zone dimension not set in plot:MODUAL10HPR10ggg10KBEVXRTL162
+zone dimension not set in plot:MODUAL10HPR10ggg10KBEVXRTL160
+zone dimension not set in plot:MODUAL10HPR10ggg10KBEVXRTL158
+zone dimension not set in plot:MODUAL10HPR10ggg10KBEVXRTL156
+zone dimension not set in plot:MODUAL10HPR10ggg10KBEVXRTL154
+zone dimension not set in plot:MODUAL10HPR10ggg10KBEVXRTL152
+zone dimension not set in plot:MODUAL10HPR10ggg10KBEVXRTL150
+zone dimension not set in plot:MODUAL10HPR10ggg10KBEVXRTL148
+zone dimension not set in plot:MODUAL10HPR10ggg10KBEVXRTL146
+zone dimension not set in plot:MODUAL10HPR10ggg10KBEVXRTL144
+zone dimension not set in plot:MODUAL10HPR10ggg10KBEVXRTL142
+zone dimension not set in plot:MODUAL10HPR10ggg10KBEVXRTL140
+zone dimension not set in plot:MODUAL10HPR10ggg10KBEVXRTL138
+zone dimension not set in plot:MODUAL10HPR10ggg10KBEVXRTL136
+zone dimension not set in plot:MODUAL10HPR10ggg10KBEVXRTL134
+zone dimension not set in plot:MODUAL10HPR10ggg10KBEVXRTL132
+zone dimension not set in plot:MODUAL10HPR10ggg10KBEVXRTL130
+zone dimension not set in plot:MODUAL10HPR10ggg10KBEVXRTL128
+zone dimension not set in plot:MODUAL10HPR10ggg10KBEVXRTL126
+zone dimension not set in plot:MODUAL10HPR10ggg10KBEVXRTL124
+zone dimension not set in plot:MODUAL10HPR10ggg10KBEVXRTL122
+zone dimension not set in plot:MODUAL10HPR10ggg10KBEVXRTL120
+zone dimension not set in plot:MODUAL10HPR10ggg10KBEVXRTL118
+zone dimension not set in plot:MODUAL10HPR10ggg10KBEVXRTL116
+zone dimension not set in plot:MODUAL10HPR10ggg10KBEVXRTL114
+zone dimension not set in plot:MODUAL10HPR10ggg10KBEVXRTL112
+zone dimension not set in plot:MODUAL10HPR10ggg10KBEVXRTL110
+zone dimension not set in plot:MODUAL10HPR10ggg10KBEVXRTL108
+zone dimension not set in plot:MODUAL10HPR10ggg10KBEVXRTL106
+zone dimension not set in plot:MODUAL10HPR10ggg10KBEVXRTL104
+zone dimension not set in plot:MODUAL10HPR10ggg10KBEVXRTL102
+zone dimension not set in plot:MODUAL10HPR10ggg10KBEVXRTL100
+zone dimension not set in plot:MODUAL10HPR10ggg10KBEVXRTL98
+zone dimension not set in plot:MODUAL10HPR10ggg10KBEVXRTL96
+zone dimension not set in plot:MODUAL10HPR10ggg10KBEVXRTL94
+zone dimension not set in plot:MODUAL10HPR10ggg10KBEVXRTL92
+zone dimension not set in plot:MODUAL10HPR10ggg10KBEVXRTL90
+zone dimension not set in plot:MODUAL10HPR10ggg10KBEVXRTL88
+zone dimension not set in plot:MODUAL10HPR10ggg10KBEVXRTL86
+zone dimension not set in plot:MODUAL10HPR10ggg10KBEVXRTL84
+zone dimension not set in plot:MODUAL10HPR10ggg10KBEVXRTL82
+zone dimension not set in plot:MODUAL10HPR10ggg10KBEVXRTL80
+zone dimension not set in plot:MODUAL10HPR10ggg10KBEVXRTL78
+zone dimension not set in plot:MODUAL10HPR10ggg10KBEVXRTL76
+zone dimension not set in plot:MODUAL10HPR10ggg10KBEVXRTL74
+zone dimension not set in plot:MODUAL10HPR10ggg10KBEVXRTL72
+zone dimension not set in plot:MODUAL10HPR10ggg10KBEVXRTL70
+zone dimension not set in plot:MODUAL10HPR10ggg10KBEVXRTL68
+zone dimension not set in plot:MODUAL10HPR10ggg10KBEVXRTL66
+zone dimension not set in plot:MODUAL10HPR10ggg10KBEVXRTL64
+zone dimension not set in plot:MODUAL10HPR10ggg10KBEVXRTL62
+zone dimension not set in plot:MODUAL10HPR10ggg10KBEVXRTL60
+zone dimension not set in plot:MODUAL10HPR10ggg10KBEVXRTL58
+zone dimension not set in plot:MODUAL10HPR10ggg10KBEVXRTL56
+zone dimension not set in plot:MODUAL10HPR10ggg10KBEVXRTL54
+zone dimension not set in plot:MODUAL10HPR10ggg10KBEVXRTL52
+zone dimension not set in plot:MODUAL10HPR10ggg10KBEVXRTL50
+zone dimension not set in plot:MODUAL10HPR10ggg10KBEVXRTL48
+zone dimension not set in plot:MODUAL10HPR10ggg10KBEVXRTL46
+zone dimension not set in plot:MODUAL10HPR10ggg10KBEVXRTL44
+zone dimension not set in plot:MODUAL10HPR10ggg10KBEVXRTL42
+zone dimension not set in plot:MODUAL10HPR10ggg10KBEVXRTL40
+zone dimension not set in plot:MODUAL10HPR10ggg10KBEVXRTL38
+zone dimension not set in plot:MODUAL10HPR10ggg10KBEVXRTL36
+zone dimension not set in plot:MODUAL10HPR10ggg10KBEVXRTL34
+zone dimension not set in plot:MODUAL10HPR10ggg10KBEVXRTL32
+zone dimension not set in plot:MODUAL10HPR10ggg10KBEVXRTL30
+zone dimension not set in plot:MODUAL10HPR10ggg10KBEVXRTL28
+zone dimension not set in plot:MODUAL10HPR10ggg10KBEVXRTL26
+zone dimension not set in plot:MODUAL10HPR10ggg10KBEVXRTL24
+zone dimension not set in plot:MODUAL10HPR10ggg10KBEVXRTL22
+zone dimension not set in plot:MODUAL10HPR10ggg10KBEVXRTL20
+zone dimension not set in plot:MODUAL10HPR10ggg10KBEVXRTL18
+zone dimension not set in plot:MODUAL10HPR10ggg10KBEVXRTL16
+zone dimension not set in plot:MODUAL10HPR10ggg10KBEVXRTL14
+zone dimension not set in plot:MODUAL10HPR10ggg10KBEVXRTL12
+zone dimension not set in plot:MODUAL10HPR10ggg10KBEVXRTL10
+Total wiring length 0
+Timestamp: L2499 10/02/2017 17:08:09
+Timestamp: L2503 10/02/2017 17:08:09
+WF:compile_to_xrtl_or_rtl: write RTL to file starting filename=primes_offchip.v at Timestamp: 10/02/2017 17:08:09
+Opening log file  primes_offchip.v
+WF:rtl_output2: render22: Module name = primes_offchip: start
+Report on rtl_output2: render22: Module name = primes_offchip: Verilog Module I/Os
+  bus KppWaypoint0[639:0]:OUTPUT::Unsigned{init=0}[639:0]
+  bus KppWaypoint1[639:0]:OUTPUT::Unsigned{init=0}[639:0]
+  bus design_serial_number[-2147483648..2147483647]:OUTPUT::Signed{init=0, io_output=true, username=design_serial_number}[31:0]
+  bus pio_addr[-2147483648..2147483647]:INPUT::Signed{init=0, io_input=true, username=pio_addr}[31:0]
+  bus pio_wdata[-2147483648..2147483647]:INPUT::Signed{init=0, io_input=true, username=pio_wdata}[31:0]
+  bus pio_rdata[-2147483648..2147483647]:OUTPUT::Signed{init=0, io_output=true, username=pio_rdata}[31:0]
+  net pio_hwen:INPUT::Unsigned{init=0, io_input=true, username=pio_hwen}
+  bus volume[31:0]:INPUT::Unsigned{init=0, io_input=true, io_output=true, username=volume, HwWidth=32}[31:0]
+  bus count[31:0]:OUTPUT::Unsigned{init=0, io_output=true, username=count, HwWidth=32}[31:0]
+  bus elimit[31:0]:OUTPUT::Signed{init=0, io_output=true, username=elimit, HwWidth=32}[31:0]
+  bus evariant[31:0]:OUTPUT::Signed{init=0, io_output=true, username=evariant, HwWidth=32}[31:0]
+  bus edesign[31:0]:OUTPUT::Signed{init=0, io_output=true, username=edesign, HwWidth=32}[31:0]
+  net finished:OUTPUT::Unsigned{init=0, io_output=true, username=finished}
+  net clk:INPUT::Unsigned{init=0, resetnet=true}
+  net reset:INPUT::Unsigned{init=0, resetnet=true}
+End report on rtl_output2: render22: Module name = primes_offchip: Verilog Module I/Os (15 items)
+
+Report on rtl_output2: render22: Module name = primes_offchip: Verilog Local Nets
+  net clk:INPUT::Unsigned{init=0, resetnet=true}
+  net reset:INPUT::Unsigned{init=0, resetnet=true}
+  bus primesya/T404/Main/T404/Main/V_2_GP[-2147483648..2147483647]:LOCAL::Signed{init=0, shared_gp=true}[31:0]
+  bus primesya/T404/Main/T404/Main/V_4_GP[-2147483648..2147483647]:LOCAL::Signed{init=0, shared_gp=true}[31:0]
+  bus xpc10nz[4:0]:EG504:LOCAL::Unsigned{init=0}[4:0]
+  bus @_BOOL/CC/SCALbx10_ARA0_AD0[3:0]:LOCAL::Unsigned{init=0}[3:0]
+  net @_BOOL/CC/SCALbx10_ARA0_WRD0:LOCAL::Unsigned{init=0}
+  net @_BOOL/CC/SCALbx10_ARA0_WEN0:LOCAL::Unsigned{init=0, control_net_marked=true}
+  net @_BOOL/CC/SCALbx10_ARA0_RDD0:LOCAL::Unsigned{init=0}
+  net @_BOOL/CC/SCALbx10_ARA0_REN0:LOCAL::Unsigned{init=0, control_net_marked=true}
+  net BOOLCCSCALbx10ARA0RRh10hold:LOCAL::Unsigned{init=0}
+  net BOOLCCSCALbx10ARA0RRh10shot0:LOCAL::Unsigned{init=0}
+  bus xpc12nz[2:0]:EG505:LOCAL::Unsigned{init=0}[2:0]
+  bus @_SINT/CC/SCALbx12_ARA0_RDD0[31:0]:LOCAL::Signed{init=0}[31:0]
+  bus @_SINT/CC/SCALbx12_ARA0_AD0[3:0]:LOCAL::Unsigned{init=0}[3:0]
+  net @_SINT/CC/SCALbx12_ARA0_REN0:LOCAL::Unsigned{init=0, control_net_marked=true}
+  bus SINTCCSCALbx12ARA0RRh10hold[31:0]:LOCAL::Signed{init=0}[31:0]
+  net SINTCCSCALbx12ARA0RRh10shot0:LOCAL::Unsigned{init=0}
+  bus @_SINT/CC/SCALbx12_ARA0_WRD0[31:0]:LOCAL::Signed{init=0}[31:0]
+  net @_SINT/CC/SCALbx12_ARA0_WEN0:LOCAL::Unsigned{init=0, control_net_marked=true}
+End report on rtl_output2: render22: Module name = primes_offchip: Verilog Local Nets (20 items)
+
+   vernet_io_decls: reset:INPUT::Unsigned{init=0, resetnet=true} width final=1
+   vernet_io_decls: clk:INPUT::Unsigned{init=0, resetnet=true} width final=1
+   vernet_io_decls: finished:OUTPUT::Unsigned{init=0, io_output=true, username=finished} width final=1
+   vernet_io_decls: edesign[31:0]:OUTPUT::Signed{init=0, io_output=true, username=edesign, HwWidth=32} width final=32
+   vernet_io_decls: evariant[31:0]:OUTPUT::Signed{init=0, io_output=true, username=evariant, HwWidth=32} width final=32
+   vernet_io_decls: elimit[31:0]:OUTPUT::Signed{init=0, io_output=true, username=elimit, HwWidth=32} width final=32
+   vernet_io_decls: count[31:0]:OUTPUT::Unsigned{init=0, io_output=true, username=count, HwWidth=32} width final=32
+   vernet_io_decls: volume[31:0]:INPUT::Unsigned{init=0, io_input=true, io_output=true, username=volume, HwWidth=32} width final=32
+   vernet_io_decls: pio_hwen:INPUT::Unsigned{init=0, io_input=true, username=pio_hwen} width final=1
+   vernet_io_decls: pio_rdata[-2147483648..2147483647]:OUTPUT::Signed{init=0, io_output=true, username=pio_rdata} width final=-1
+   vernet_io_decls: pio_wdata[-2147483648..2147483647]:INPUT::Signed{init=0, io_input=true, username=pio_wdata} width final=-1
+   vernet_io_decls: pio_addr[-2147483648..2147483647]:INPUT::Signed{init=0, io_input=true, username=pio_addr} width final=-1
+   vernet_io_decls: design_serial_number[-2147483648..2147483647]:OUTPUT::Signed{init=0, io_output=true, username=design_serial_number} width final=-1
+   vernet_io_decls: KppWaypoint1[639:0]:OUTPUT::Unsigned{init=0} width final=640
+   vernet_io_decls: KppWaypoint0[639:0]:OUTPUT::Unsigned{init=0} width final=640
+   vernet_local_decls: @_SINT/CC/SCALbx12_ARA0_WEN0:LOCAL::Unsigned{init=0, control_net_marked=true} width=1 reg=true
+   vernet_local_decls: @_SINT/CC/SCALbx12_ARA0_WRD0[31:0]:LOCAL::Signed{init=0} width=32 reg=true
+   vernet_local_decls: SINTCCSCALbx12ARA0RRh10shot0:LOCAL::Unsigned{init=0} width=1 reg=true
+   vernet_local_decls: SINTCCSCALbx12ARA0RRh10hold[31:0]:LOCAL::Signed{init=0} width=32 reg=true
+   vernet_local_decls: @_SINT/CC/SCALbx12_ARA0_REN0:LOCAL::Unsigned{init=0, control_net_marked=true} width=1 reg=true
+   vernet_local_decls: @_SINT/CC/SCALbx12_ARA0_AD0[3:0]:LOCAL::Unsigned{init=0} width=4 reg=true
+   vernet_local_decls: @_SINT/CC/SCALbx12_ARA0_RDD0[31:0]:LOCAL::Signed{init=0} width=32 reg=false
+   vernet_local_decls: xpc12nz[2:0]:EG505:LOCAL::Unsigned{init=0} width=3 reg=true
+   vernet_local_decls: BOOLCCSCALbx10ARA0RRh10shot0:LOCAL::Unsigned{init=0} width=1 reg=true
+   vernet_local_decls: BOOLCCSCALbx10ARA0RRh10hold:LOCAL::Unsigned{init=0} width=1 reg=true
+   vernet_local_decls: @_BOOL/CC/SCALbx10_ARA0_REN0:LOCAL::Unsigned{init=0, control_net_marked=true} width=1 reg=true
+   vernet_local_decls: @_BOOL/CC/SCALbx10_ARA0_RDD0:LOCAL::Unsigned{init=0} width=1 reg=false
+   vernet_local_decls: @_BOOL/CC/SCALbx10_ARA0_WEN0:LOCAL::Unsigned{init=0, control_net_marked=true} width=1 reg=true
+   vernet_local_decls: @_BOOL/CC/SCALbx10_ARA0_WRD0:LOCAL::Unsigned{init=0} width=1 reg=true
+   vernet_local_decls: @_BOOL/CC/SCALbx10_ARA0_AD0[3:0]:LOCAL::Unsigned{init=0} width=4 reg=true
+   vernet_local_decls: xpc10nz[4:0]:EG504:LOCAL::Unsigned{init=0} width=5 reg=true
+   vernet_local_decls: primesya/T404/Main/T404/Main/V_4_GP[-2147483648..2147483647]:LOCAL::Signed{init=0, shared_gp=true} width=32 reg=true
+   vernet_local_decls: primesya/T404/Main/T404/Main/V_2_GP[-2147483648..2147483647]:LOCAL::Signed{init=0, shared_gp=true} width=32 reg=true
+WF:rtl_output2: render22: Module name = primes_offchip: calling verilog_render_module
+Start of aux report verilog_render
+8 vectors of width 1
+2 vectors of width 32
+2 vectors of width 4
+1 vectors of width 3
+1 vectors of width 5
+64 bits in scalar variables
+Total state bits in module = 152 bits.
+33 continuously assigned (wire/non-state) bits 
+Total number of leaf cells = 0
+End of aux report verilog_render
+WF:rtl_output2: render22: Module name = primes_offchip: called verilog_render_module
+Wrote verilog module primes_offchip to primes_offchip.v with 4 threads/gates
+WF:compile_to_xrtl_or_rtl: write RTL to file finished
+Lift (convert) back to VM from RTL disabled (presim bypassed)
+Timestamp: (.end.).   T/S  10/02/2017 17:08:09 finished verilog-gen
+=== Post step VM machine is same as pre-step. ===
+Profile report: queries=41, 43, 30
+myastats= ru=115/al=385
+Finished path cmd
+Starting path cmd
+End of this log file. Log continues in file where tag=cgen2: End of log

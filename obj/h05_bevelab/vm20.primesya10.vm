@@ -1,0 +1,268 @@
+Post assembly report
+msg=primesya10
+sensitivity=posedge(clk)
+Listing: id=vm20
+0:      // Code catenated from dic id=vm10
+1:      linepoint: PCT403:0: -1
+2:      // End of static elaboration for tid T403. After all generate loops are unwound we arrive here: 0
+3:T403_0:
+4:      linepoint: PCT403:0: -1
+5:      primesya/limit := 1000;
+6:      CS/0.4/refxxarray12 := {SC:d2,0};
+7:      primesya/PA := {SC:d2,0};
+8:      count := U32'0;
+9:      primesya/count1 := 0;
+10:      elimit := 0;
+11:      evariant := 0;
+12:      edesign := 4032;
+13:      finished := U1'0;
+14:      Xgoto(DESTWASCOMMENT16, 16);
+15:      // ///Xgoto(DESTWASCOMMENT16);
+
+16:DESTWASCOMMENT16:
+17:      // End of dic id=vm10
+18:      // Code catenated from dic id=vm12
+19:      linepoint: PCT402:0: -1
+20:      // End of static elaboration for tid T402. After all generate loops are unwound we arrive here: 0
+21:T402_0:
+22:      linepoint: PCT402:0: -1
+23:      design_serial_number := S32'2232578;
+24:      pio_rdata := 0;
+25:      CS/0.6/refxxarray10 := {SC:d1,0};
+26:      KSubs2_Director/pio_space := {SC:d1,0};
+27:      Xgoto(DESTWASCOMMENT14, 29);
+28:      // ///Xgoto(DESTWASCOMMENT14);
+
+29:DESTWASCOMMENT14:
+30:      // End of dic id=vm12
+31:      // Code catenated from dic id=vm14
+32:      linepoint: PCT401:0: -1
+33:      // End of static elaboration for tid T401. After all generate loops are unwound we arrive here: 0
+34:T401_0:
+35:      linepoint: PCT401:0: -1
+36:      System/BitConverter/IsLittleEndian := U1'1;
+37:      Xgoto(DESTWASCOMMENT12, 39);
+38:      // ///Xgoto(DESTWASCOMMENT12);
+
+39:DESTWASCOMMENT12:
+40:      // End of dic id=vm14
+41:      // Code catenated from dic id=vm16
+42:      linepoint: PCT400:0: -1
+43:      // End of static elaboration for tid T400. After all generate loops are unwound we arrive here: 0
+44:T400_0:
+45:      linepoint: PCT400:0: -1
+46:      KiwiSystem/Kiwi/old_pausemode_value := U32'2;
+47:      KiwiSystem/Kiwi/tnow := U64'0;
+48:      Xgoto(DESTWASCOMMENT10, 50);
+49:      // ///Xgoto(DESTWASCOMMENT10);
+
+50:DESTWASCOMMENT10:
+51:      // End of dic id=vm16
+52:      // Code catenated from dic id=vm18
+53:      linepoint: PCT404:0: -1
+54:      // End of static elaboration for tid T404. After all generate loops are unwound we arrive here: 0
+55:T404_0:
+56:      linepoint: PCT404:0: -1
+57:      primesya/T404/Main/T404/Main/V_0 := U1'1;
+58:      elimit := 1000;
+59:      Xeasc *APPLY:hpr_KppMark("START", "INITIALISE");
+60:      Xeasc *APPLY:hpr_writeln($$AUTOFORMAT: This will be automatically replaced with a printf formatted string., *APPLY:hpr_concat("Primes Up To ", 1000));
+61:      Xeasc *APPLY:hpr_pause(8);
+62:      @_BOOL/CC/SCALbx10_ARA0[0] := 0<volume;
+63:      Xeasc *APPLY:hpr_pause(8);
+64:      primesya/count1 := 2;
+65:      count := U32'0;
+66:      primesya/T404/Main/T404/Main/V_2_GP := 0;
+67:      Xgoto(T404_17, 68);
+68:T404_17:
+69:      linepoint: PCT404:17: -1
+70:      beq( primesya/T404/Main/T404/Main/V_2_GP>=1000,T404_12, 148)
+71:      Xgoto(T404_18, 72);
+72:T404_18:
+73:      linepoint: PCT404:18: -1
+74:      Xeasc *APPLY:hpr_KppMark("wp2", "CROSSOFF");
+75:      primesya/T404/Main/T404/Main/V_2_GP := 2;
+76:      Xgoto(T404_38, 77);
+77:T404_38:
+78:      linepoint: PCT404:38: -1
+79:      beq( primesya/T404/Main/T404/Main/V_2_GP>=1000,T404_22, 81)
+80:      Xgoto(T404_40, 91);
+81:T404_22:
+82:      linepoint: PCT404:22: -1
+83:      Xeasc *APPLY:hpr_pause(8);
+84:      primesya/T404/Main/T404/Main/V_4_GP := primesya/T404/Main/T404/Main/V_2_GP+primesya/T404/Main/T404/Main/V_2_GP;
+85:      beq( primesya/T404/Main/T404/Main/V_4_GP>=1000,T404_28, 130)
+86:      Xgoto(T404_25, 87);
+87:T404_25:
+88:      linepoint: PCT404:25: -1
+89:      Xeasc *APPLY:hpr_writeln($$AUTOFORMAT: This will be automatically replaced with a printf formatted string., "Skip out on square");
+90:      Xgoto(T404_40, 91);
+91:T404_40:
+92:      linepoint: PCT404:40: -1
+93:      Xeasc *APPLY:hpr_KppMark("wp3", "COUNTING");
+94:      Xeasc *APPLY:hpr_writeln($$AUTOFORMAT: This will be automatically replaced with a printf formatted string., "Now counting");
+95:      primesya/T404/Main/T404/Main/V_4_GP := 0;
+96:      Xgoto(T404_52, 97);
+97:T404_52:
+98:      linepoint: PCT404:52: -1
+99:      beq( primesya/T404/Main/T404/Main/V_4_GP>=1000,T404_45, 116)
+100:      Xgoto(T404_53, 101);
+101:T404_53:
+102:      linepoint: PCT404:53: -1
+103:      Xeasc *APPLY:hpr_writeln("There are %d primes below the natural number %u.", count, 1000);
+104:      Xeasc *APPLY:hpr_writeln("Optimisation variant=%u (count1 is %u).", 0, 2);
+105:      Xeasc *APPLY:hpr_pause(8);
+106:      Xeasc *APPLY:hpr_pause(8);
+107:      Xeasc *APPLY:hpr_KppMark("FINISH");
+108:      Xeasc *APPLY:hpr_pause(8);
+109:      finished := U1'1;
+110:      Xeasc *APPLY:hpr_pause(8);
+111:      Xgoto(T404_63, 112);
+112:T404_63:
+113:      linepoint: PCT404:63: -1
+114:      Xeasc *APPLY:hpr_pause(8);
+115:      Xgoto(T404_63, 112);
+116:T404_45:
+117:      linepoint: PCT404:45: -1
+118:      Xeasc *APPLY:hpr_pause(8);
+119:      beq( |-|@_BOOL/CC/SCALbx10_ARA0[primesya/T404/Main/T404/Main/V_4_GP],T404_49, 125)
+120:      Xgoto(T404_47, 121);
+121:T404_47:
+122:      linepoint: PCT404:47: -1
+123:      count := Cu(1+count);
+124:      Xgoto(T404_49, 125);
+125:T404_49:
+126:      linepoint: PCT404:49: -1
+127:      Xeasc *APPLY:hpr_writeln("Tally counting %u %d", primesya/T404/Main/T404/Main/V_4_GP, count);
+128:      primesya/T404/Main/T404/Main/V_4_GP := 1+primesya/T404/Main/T404/Main/V_4_GP;
+129:      Xgoto(T404_52, 97);
+130:T404_28:
+131:      linepoint: PCT404:28: -1
+132:      Xgoto(T404_35, 133);
+133:T404_35:
+134:      linepoint: PCT404:35: -1
+135:      beq( primesya/T404/Main/T404/Main/V_4_GP>=1000,T404_30, 141)
+136:      Xgoto(T404_36, 137);
+137:T404_36:
+138:      linepoint: PCT404:36: -1
+139:      primesya/T404/Main/T404/Main/V_2_GP := 1+primesya/T404/Main/T404/Main/V_2_GP;
+140:      Xgoto(T404_38, 77);
+141:T404_30:
+142:      linepoint: PCT404:30: -1
+143:      Xeasc *APPLY:hpr_writeln("Cross off %u %u   (count1=%u)", primesya/T404/Main/T404/Main/V_2_GP, primesya/T404/Main/T404/Main/V_4_GP, 2);
+144:      Xeasc *APPLY:hpr_pause(8);
+145:      @_BOOL/CC/SCALbx10_ARA0[primesya/T404/Main/T404/Main/V_4_GP] := U1'0;
+146:      primesya/T404/Main/T404/Main/V_4_GP := primesya/T404/Main/T404/Main/V_2_GP+primesya/T404/Main/T404/Main/V_4_GP;
+147:      Xgoto(T404_35, 133);
+148:T404_12:
+149:      linepoint: PCT404:12: -1
+150:      Xeasc *APPLY:hpr_pause(8);
+151:      @_BOOL/CC/SCALbx10_ARA0[primesya/T404/Main/T404/Main/V_2_GP] := U1'1;
+152:      Xeasc *APPLY:hpr_writeln("Setting initial array flag to hold : addr=%u readback=%d", primesya/T404/Main/T404/Main/V_2_GP, @_BOOL/CC/SCALbx10_ARA0[primesya/T404/Main/T404/Main/V_2_GP]);
+153:      primesya/T404/Main/T404/Main/V_2_GP := 1+primesya/T404/Main/T404/Main/V_2_GP;
+154:      Xgoto(T404_17, 68);
+155:      // End of DIC comment 1
+156:      // End of dic id=vm18
+----------------------- end of vm20
+Concise listing:
+Listing: id=vm20
+3:T403_0:
+5:      primesya/limit := 1000;
+6:      CS/0.4/refxxarray12 := {SC:d2,0};
+7:      primesya/PA := {SC:d2,0};
+8:      count := U32'0;
+9:      primesya/count1 := 0;
+10:      elimit := 0;
+11:      evariant := 0;
+12:      edesign := 4032;
+13:      finished := U1'0;
+14:      Xgoto(DESTWASCOMMENT16, 16);
+16:DESTWASCOMMENT16:
+21:T402_0:
+23:      design_serial_number := S32'2232578;
+24:      pio_rdata := 0;
+25:      CS/0.6/refxxarray10 := {SC:d1,0};
+26:      KSubs2_Director/pio_space := {SC:d1,0};
+27:      Xgoto(DESTWASCOMMENT14, 29);
+29:DESTWASCOMMENT14:
+34:T401_0:
+36:      System/BitConverter/IsLittleEndian := U1'1;
+37:      Xgoto(DESTWASCOMMENT12, 39);
+39:DESTWASCOMMENT12:
+44:T400_0:
+46:      KiwiSystem/Kiwi/old_pausemode_value := U32'2;
+47:      KiwiSystem/Kiwi/tnow := U64'0;
+48:      Xgoto(DESTWASCOMMENT10, 50);
+50:DESTWASCOMMENT10:
+55:T404_0:
+57:      primesya/T404/Main/T404/Main/V_0 := U1'1;
+58:      elimit := 1000;
+59:      Xeasc *APPLY:hpr_KppMark("START", "INITIALISE");
+60:      Xeasc *APPLY:hpr_writeln($$AUTOFORMAT: This will be automatically replaced with a printf formatted string., *APPLY:hpr_concat("Primes Up To ", 1000));
+61:      Xeasc *APPLY:hpr_pause(8);
+62:      @_BOOL/CC/SCALbx10_ARA0[0] := 0<volume;
+63:      Xeasc *APPLY:hpr_pause(8);
+64:      primesya/count1 := 2;
+65:      count := U32'0;
+66:      primesya/T404/Main/T404/Main/V_2_GP := 0;
+68:T404_17:
+70:      beq( primesya/T404/Main/T404/Main/V_2_GP>=1000,T404_12, 148)
+72:T404_18:
+74:      Xeasc *APPLY:hpr_KppMark("wp2", "CROSSOFF");
+75:      primesya/T404/Main/T404/Main/V_2_GP := 2;
+77:T404_38:
+79:      beq( primesya/T404/Main/T404/Main/V_2_GP>=1000,T404_22, 81)
+80:      Xgoto(T404_40, 91);
+81:T404_22:
+83:      Xeasc *APPLY:hpr_pause(8);
+84:      primesya/T404/Main/T404/Main/V_4_GP := primesya/T404/Main/T404/Main/V_2_GP+primesya/T404/Main/T404/Main/V_2_GP;
+85:      beq( primesya/T404/Main/T404/Main/V_4_GP>=1000,T404_28, 130)
+87:T404_25:
+89:      Xeasc *APPLY:hpr_writeln($$AUTOFORMAT: This will be automatically replaced with a printf formatted string., "Skip out on square");
+91:T404_40:
+93:      Xeasc *APPLY:hpr_KppMark("wp3", "COUNTING");
+94:      Xeasc *APPLY:hpr_writeln($$AUTOFORMAT: This will be automatically replaced with a printf formatted string., "Now counting");
+95:      primesya/T404/Main/T404/Main/V_4_GP := 0;
+97:T404_52:
+99:      beq( primesya/T404/Main/T404/Main/V_4_GP>=1000,T404_45, 116)
+101:T404_53:
+103:      Xeasc *APPLY:hpr_writeln("There are %d primes below the natural number %u.", count, 1000);
+104:      Xeasc *APPLY:hpr_writeln("Optimisation variant=%u (count1 is %u).", 0, 2);
+105:      Xeasc *APPLY:hpr_pause(8);
+106:      Xeasc *APPLY:hpr_pause(8);
+107:      Xeasc *APPLY:hpr_KppMark("FINISH");
+108:      Xeasc *APPLY:hpr_pause(8);
+109:      finished := U1'1;
+110:      Xeasc *APPLY:hpr_pause(8);
+112:T404_63:
+114:      Xeasc *APPLY:hpr_pause(8);
+115:      Xgoto(T404_63, 112);
+116:T404_45:
+118:      Xeasc *APPLY:hpr_pause(8);
+119:      beq( |-|@_BOOL/CC/SCALbx10_ARA0[primesya/T404/Main/T404/Main/V_4_GP],T404_49, 125)
+121:T404_47:
+123:      count := Cu(1+count);
+125:T404_49:
+127:      Xeasc *APPLY:hpr_writeln("Tally counting %u %d", primesya/T404/Main/T404/Main/V_4_GP, count);
+128:      primesya/T404/Main/T404/Main/V_4_GP := 1+primesya/T404/Main/T404/Main/V_4_GP;
+129:      Xgoto(T404_52, 97);
+130:T404_28:
+133:T404_35:
+135:      beq( primesya/T404/Main/T404/Main/V_4_GP>=1000,T404_30, 141)
+137:T404_36:
+139:      primesya/T404/Main/T404/Main/V_2_GP := 1+primesya/T404/Main/T404/Main/V_2_GP;
+140:      Xgoto(T404_38, 77);
+141:T404_30:
+143:      Xeasc *APPLY:hpr_writeln("Cross off %u %u   (count1=%u)", primesya/T404/Main/T404/Main/V_2_GP, primesya/T404/Main/T404/Main/V_4_GP, 2);
+144:      Xeasc *APPLY:hpr_pause(8);
+145:      @_BOOL/CC/SCALbx10_ARA0[primesya/T404/Main/T404/Main/V_4_GP] := U1'0;
+146:      primesya/T404/Main/T404/Main/V_4_GP := primesya/T404/Main/T404/Main/V_2_GP+primesya/T404/Main/T404/Main/V_4_GP;
+147:      Xgoto(T404_35, 133);
+148:T404_12:
+150:      Xeasc *APPLY:hpr_pause(8);
+151:      @_BOOL/CC/SCALbx10_ARA0[primesya/T404/Main/T404/Main/V_2_GP] := U1'1;
+152:      Xeasc *APPLY:hpr_writeln("Setting initial array flag to hold : addr=%u readback=%d", primesya/T404/Main/T404/Main/V_2_GP, @_BOOL/CC/SCALbx10_ARA0[primesya/T404/Main/T404/Main/V_2_GP]);
+153:      primesya/T404/Main/T404/Main/V_2_GP := 1+primesya/T404/Main/T404/Main/V_2_GP;
+154:      Xgoto(T404_17, 68);
+----------------------- end of vm20
+EOF

@@ -1,0 +1,68 @@
+Start of HPR log.
+Installing HPR component kiwife
+Installing HPR component identity
+Installing HPR component nop
+Installing HPR component propagate
+Installing HPR component report
+Installing HPR component conerefine
+Installing HPR component repack
+Installing HPR component systolic
+Installing HPR component restructure1
+Installing HPR component restructure2
+Installing HPR component bevelab
+Installing HPR component propagate
+Installing HPR component compose
+Installing HPR component verilog-gen
+Installing HPR component dpgen
+Installing HPR component diosim
+Installing HPR component cgen1
+Installing HPR component csharpgen1
+Installing HPR component cgen2
+Installing HPR component csharpgen2
+kiwicstarting.
+Installing HPR component smv-gen
+cmd line args: /home/djg11/d320/hprls/kiwipro/kiwic/distro/lib/kiwic.exe, csharp/primes_offchip.exe, -res2-loadstore-port-count, 0, -vnl, primes_offchip.v, -vnl-rootmodname, primes_offchip, csharp/KSubs2_Director.dll, -vnl-resets, synchronous, -kiwic-finish, disable, -vnl-roundtrip, disable, -kiwic-register-colours, 1, -bevelab-default-pause-mode, bblock, -fp-fl-sp-mul, 4
+ devx  (getenv "HPRLS_DEVX"="1")  developer mode=true
+ devx developer mode status: (getenv "HPRLS_DEVX"="1")  developer mode=true
+base_directory = /home/djg11/d320/hprls/kiwipro/kiwic/distro/lib/
+kiwic using opath receipe: /home/djg11/d320/hprls/kiwipro/kiwic/distro/lib/recipes/kiwic00.rcp
+Parsed from recipe: true kiwife cmd=kiwife
+Parsed from recipe: true repack cmd=repack
+Parsed from recipe: true cgen1 cmd=cgen1
+Parsed from recipe: true report cmd=report
+Parsed from recipe: true bevelab cmd=bevelab
+Parsed from recipe: true compose cmd=compose
+Parsed from recipe: true conerefine1 cmd=conerefine
+Parsed from recipe: true restructure2 cmd=restructure2
+Parsed from recipe: true conerefine2 cmd=conerefine
+Parsed from recipe: true verilog-gen cmd=verilog-gen
+Parsed from recipe: true cgen2 cmd=cgen2
+Parsed from recipe: false diosim cmd=diosim
+  -~~ DO kiwife:kiwife
+  -~~ DO repack:repack
+  -~~ DO cgen1:cgen1
+  -~~ DO report:report
+  -~~ DO bevelab:bevelab
+  -~~ DO compose:compose
+  -~~ DO conerefine1:conerefine
+  -~~ DO restructure2:restructure2
+  -~~ DO conerefine2:conerefine
+  -~~ DO verilog-gen:verilog-gen
+  -~~ DO cgen2:cgen2
+  -~~ DO diosim:diosim DISABLED (will be skipped)
+Orangepath: about to run 12 stage Orangepath recipe
+  -~~ DO kiwife:kiwife
+  -~~ DO repack:repack
+  -~~ DO cgen1:cgen1
+  -~~ DO report:report
+  -~~ DO bevelab:bevelab
+  -~~ DO compose:compose
+  -~~ DO conerefine1:conerefine
+  -~~ DO restructure2:restructure2
+  -~~ DO conerefine2:conerefine
+  -~~ DO verilog-gen:verilog-gen
+  -~~ DO cgen2:cgen2
+  -~~ DO diosim:diosim DISABLED (will be skipped)
+Orangepath: commence 12 stage Orangepath recipe.
+Starting path cmd
+End of this log file. Log continues in file where tag=kiwife: End of log

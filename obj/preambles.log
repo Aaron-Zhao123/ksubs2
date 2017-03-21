@@ -1,0 +1,915 @@
+REPORT :KiwiC compilation report
+REPORT :Kiwi Scientific Acceleration (KiwiC .net/CIL/C# to Verilog/SystemC compiler): Version alpha 0.2.18a : 5th-December-2016
+REPORT :10/02/2017 17:08:01
+REPORT :Cmd line args:  /home/djg11/d320/hprls/kiwipro/kiwic/distro/lib/kiwic.exe csharp/primes_offchip.exe -res2-loadstore-port-count=0 -vnl=primes_offchip.v -vnl-rootmodname=primes_offchip csharp/KSubs2_Director.dll -vnl-resets=synchronous -kiwic-finish=disable -vnl-roundtrip=disable -kiwic-register-colours=1 -bevelab-default-pause-mode=bblock -fp-fl-sp-mul=4
+Canned library processing : start
+Installed canned/built-in function KiwiSystem/hprls_primitives/hpr_testandset: bif=true  instancef=false eis=true arity=2 rt=CTL_net(false, 1, Unsigned,[native]) uid=hprtestandset12 hpr_name=hpr_testandset
+Installed canned/built-in function KiwiSystem/hprls_primitives/hpr_next: bif=true  instancef=false eis=true arity=1 rt=CTL_object uid=hprnext12 hpr_name=<hardcoded>
+Installed canned/built-in function KiwiSystem/hprls_primitives/hpr_prev: bif=true  instancef=false eis=true arity=1 rt=CTL_object uid=hprprev10 hpr_name=<hardcoded>
+Installed canned/built-in function KiwiSystem/hprls_primitives/hpr_rose: bif=true  instancef=false eis=true arity=1 rt=CTL_net(false, 1, Unsigned,[native]) uid=hprrose10 hpr_name=<hardcoded>
+Installed canned/built-in function KiwiSystem/hprls_primitives/hpr_fell: bif=true  instancef=false eis=true arity=1 rt=CTL_net(false, 1, Unsigned,[native]) uid=hprfell10 hpr_name=<hardcoded>
+Installed canned/built-in function KiwiSystem/hprls_primitives/hpr_unroll: bif=true  instancef=false eis=true arity=0 rt=CTL_void uid=hprunroll10 hpr_name=<hardcoded>
+Installed canned/built-in function KiwiSystem/hprls_primitives/hpr_barrier: bif=true  instancef=false eis=true arity=0 rt=CTL_void uid=hprbarrier10 hpr_name=<hardcoded>
+Installed canned/built-in function mscorlib/System/Double/CompareTo: bif=true  instancef=true eis=false arity=1 rt=CTL_net(false, 1, Unsigned,[native]) uid=CompareTo10 hpr_name=<hardcoded>
+Installed canned/built-in function mscorlib/System/Double/Equals: bif=true  instancef=true eis=false arity=1 rt=CTL_net(false, 32, Signed,[native]) uid=Equals10 hpr_name=<hardcoded>
+Installed canned/built-in function mscorlib/System/Int8/CompareTo: bif=true  instancef=true eis=false arity=1 rt=CTL_net(false, 1, Unsigned,[native]) uid=CompareTo12 hpr_name=<hardcoded>
+Installed canned/built-in function mscorlib/System/Int8/Equals: bif=true  instancef=true eis=false arity=1 rt=CTL_net(false, 32, Signed,[native]) uid=Equals12 hpr_name=<hardcoded>
+Installed canned/built-in function mscorlib/System/Int16/CompareTo: bif=true  instancef=true eis=false arity=1 rt=CTL_net(false, 1, Unsigned,[native]) uid=CompareTo14 hpr_name=<hardcoded>
+Installed canned/built-in function mscorlib/System/Int16/Equals: bif=true  instancef=true eis=false arity=1 rt=CTL_net(false, 32, Signed,[native]) uid=Equals14 hpr_name=<hardcoded>
+Installed canned/built-in function mscorlib/System/Int32/CompareTo: bif=true  instancef=true eis=false arity=1 rt=CTL_net(false, 1, Unsigned,[native]) uid=CompareTo16 hpr_name=<hardcoded>
+Installed canned/built-in function mscorlib/System/Int32/Equals: bif=true  instancef=true eis=false arity=1 rt=CTL_net(false, 32, Signed,[native]) uid=Equals16 hpr_name=<hardcoded>
+Installed canned/built-in function mscorlib/System/Int64/CompareTo: bif=true  instancef=true eis=false arity=1 rt=CTL_net(false, 1, Unsigned,[native]) uid=CompareTo18 hpr_name=<hardcoded>
+Installed canned/built-in function mscorlib/System/Int64/Equals: bif=true  instancef=true eis=false arity=1 rt=CTL_net(false, 32, Signed,[native]) uid=Equals18 hpr_name=<hardcoded>
+Installed canned/built-in function mscorlib/System/Int/CompareTo: bif=true  instancef=true eis=false arity=1 rt=CTL_net(false, 1, Unsigned,[native]) uid=CompareTo20 hpr_name=<hardcoded>
+Installed canned/built-in function mscorlib/System/Int/Equals: bif=true  instancef=true eis=false arity=1 rt=CTL_net(false, 32, Signed,[native]) uid=Equals20 hpr_name=<hardcoded>
+Installed canned/built-in function mscorlib/System/UInt8/CompareTo: bif=true  instancef=true eis=false arity=1 rt=CTL_net(false, 1, Unsigned,[native]) uid=CompareTo22 hpr_name=<hardcoded>
+Installed canned/built-in function mscorlib/System/UInt8/Equals: bif=true  instancef=true eis=false arity=1 rt=CTL_net(false, 32, Signed,[native]) uid=Equals22 hpr_name=<hardcoded>
+Installed canned/built-in function mscorlib/System/UInt16/CompareTo: bif=true  instancef=true eis=false arity=1 rt=CTL_net(false, 1, Unsigned,[native]) uid=CompareTo24 hpr_name=<hardcoded>
+Installed canned/built-in function mscorlib/System/UInt16/Equals: bif=true  instancef=true eis=false arity=1 rt=CTL_net(false, 32, Signed,[native]) uid=Equals24 hpr_name=<hardcoded>
+Installed canned/built-in function mscorlib/System/UInt32/CompareTo: bif=true  instancef=true eis=false arity=1 rt=CTL_net(false, 1, Unsigned,[native]) uid=CompareTo26 hpr_name=<hardcoded>
+Installed canned/built-in function mscorlib/System/UInt32/Equals: bif=true  instancef=true eis=false arity=1 rt=CTL_net(false, 32, Signed,[native]) uid=Equals26 hpr_name=<hardcoded>
+Installed canned/built-in function mscorlib/System/UInt64/CompareTo: bif=true  instancef=true eis=false arity=1 rt=CTL_net(false, 1, Unsigned,[native]) uid=CompareTo28 hpr_name=<hardcoded>
+Installed canned/built-in function mscorlib/System/UInt64/Equals: bif=true  instancef=true eis=false arity=1 rt=CTL_net(false, 32, Signed,[native]) uid=Equals28 hpr_name=<hardcoded>
+Installed canned/built-in function mscorlib/System/Boolean/CompareTo: bif=true  instancef=true eis=false arity=1 rt=CTL_net(false, 1, Unsigned,[native]) uid=CompareTo30 hpr_name=<hardcoded>
+Installed canned/built-in function mscorlib/System/Boolean/Equals: bif=true  instancef=true eis=false arity=1 rt=CTL_net(false, 32, Signed,[native]) uid=Equals30 hpr_name=<hardcoded>
+Installed canned/built-in function mscorlib/System/Char/CompareTo: bif=true  instancef=true eis=false arity=1 rt=CTL_net(false, 1, Unsigned,[native]) uid=CompareTo32 hpr_name=<hardcoded>
+Installed canned/built-in function mscorlib/System/Char/Equals: bif=true  instancef=true eis=false arity=1 rt=CTL_net(false, 32, Signed,[native]) uid=Equals32 hpr_name=<hardcoded>
+Installed canned/built-in function mscorlib/System/Float32/CompareTo: bif=true  instancef=true eis=false arity=1 rt=CTL_net(false, 1, Unsigned,[native]) uid=CompareTo34 hpr_name=<hardcoded>
+Installed canned/built-in function mscorlib/System/Float32/Equals: bif=true  instancef=true eis=false arity=1 rt=CTL_net(false, 32, Signed,[native]) uid=Equals34 hpr_name=<hardcoded>
+Installed canned/built-in function mscorlib/System/Float64/CompareTo: bif=true  instancef=true eis=false arity=1 rt=CTL_net(false, 1, Unsigned,[native]) uid=CompareTo36 hpr_name=<hardcoded>
+Installed canned/built-in function mscorlib/System/Float64/Equals: bif=true  instancef=true eis=false arity=1 rt=CTL_net(false, 32, Signed,[native]) uid=Equals36 hpr_name=<hardcoded>
+Installed canned/built-in function mscorlib/System/SByte/CompareTo: bif=true  instancef=true eis=false arity=1 rt=CTL_net(false, 1, Unsigned,[native]) uid=CompareTo38 hpr_name=<hardcoded>
+Installed canned/built-in function mscorlib/System/SByte/Equals: bif=true  instancef=true eis=false arity=1 rt=CTL_net(false, 32, Signed,[native]) uid=Equals38 hpr_name=<hardcoded>
+Installed canned/built-in function mscorlib/System/Byte/CompareTo: bif=true  instancef=true eis=false arity=1 rt=CTL_net(false, 1, Unsigned,[native]) uid=CompareTo40 hpr_name=<hardcoded>
+Installed canned/built-in function mscorlib/System/Byte/Equals: bif=true  instancef=true eis=false arity=1 rt=CTL_net(false, 32, Signed,[native]) uid=Equals40 hpr_name=<hardcoded>
+Installed canned/built-in function mscorlib/System/Console/ReadKey: bif=false  instancef=false eis=true arity=0 rt=char uid=ReadKey10 hpr_name=<hardcoded>
+Installed canned/built-in function mscorlib/System/Console/WriteLine: bif=true  instancef=false eis=true arity=0 rt=CTL_void uid=WriteLine20 hpr_name=hpr_writeln
+Installed canned/built-in function mscorlib/System/Console/WriteLine: bif=true  instancef=false eis=true arity=1 rt=CTL_void uid=WriteLine22 hpr_name=hpr_writeln
+Installed canned/built-in function mscorlib/System/Console/WriteLine: bif=true  instancef=false eis=true arity=2 rt=CTL_void uid=WriteLine24 hpr_name=hpr_writeln
+Installed canned/built-in function mscorlib/System/Console/WriteLine: bif=true  instancef=false eis=true arity=3 rt=CTL_void uid=WriteLine26 hpr_name=hpr_writeln
+Installed canned/built-in function mscorlib/System/Console/WriteLine: bif=true  instancef=false eis=true arity=4 rt=CTL_void uid=WriteLine28 hpr_name=hpr_writeln
+Installed canned/built-in function mscorlib/System/Console/WriteLine: bif=true  instancef=false eis=true arity=5 rt=CTL_void uid=WriteLine30 hpr_name=hpr_writeln
+Installed canned/built-in function mscorlib/System/Console/Write: bif=true  instancef=false eis=true arity=1 rt=CTL_void uid=Write12 hpr_name=hpr_write
+Installed canned/built-in function mscorlib/System/Console/Write: bif=true  instancef=false eis=true arity=2 rt=CTL_void uid=Write14 hpr_name=hpr_write
+Installed canned/built-in function mscorlib/System/Console/Write: bif=true  instancef=false eis=true arity=3 rt=CTL_void uid=Write16 hpr_name=hpr_write
+Installed canned/built-in function mscorlib/System/Console/Write: bif=true  instancef=false eis=true arity=4 rt=CTL_void uid=Write18 hpr_name=hpr_write
+Installed canned/built-in function mscorlib/System/Console/Write: bif=true  instancef=false eis=true arity=5 rt=CTL_void uid=Write20 hpr_name=hpr_write
+Installed canned/built-in function mscorlib/System/Collections/Generic/IEnumerator`1/MoveNext: bif=false  instancef=true eis=true arity=0 rt=CTL_net(false, 1, Unsigned,[native]) uid=MoveNext10 hpr_name=<hardcoded>
+Installed canned/built-in function mscorlib/System/Collections/Generic/IEnumerator`1/get_Current: bif=false  instancef=true eis=false arity=0 rt=!0 uid=getCurrent10 hpr_name=<hardcoded>
+Installed canned/built-in function mscorlib/System/Collections/IEnumerator/MoveNext: bif=false  instancef=true eis=true arity=0 rt=CTL_net(false, 1, Unsigned,[native]) uid=MoveNext12 hpr_name=<hardcoded>
+Installed canned/built-in function mscorlib/System/Threading/ThreadStart/.ctor: bif=false  instancef=true eis=false arity=2 rt=CTL_object uid=ctor152 hpr_name=<hardcoded>
+Installed canned/built-in function mscorlib/System/Threading/BeginCriticalRegion: bif=true  instancef=false eis=true arity=0 rt=CTL_void uid=BeginCriticalRegion10 hpr_name=<hardcoded>
+Installed canned/built-in function mscorlib/System/Threading/EndCriticalRegion: bif=true  instancef=false eis=true arity=0 rt=CTL_void uid=EndCriticalRegion10 hpr_name=<hardcoded>
+Installed canned/built-in function mscorlib/System/Threading/ParameterizedThreadStart/.ctor: bif=false  instancef=true eis=false arity=2 rt=CTL_object uid=ctor154 hpr_name=<hardcoded>
+Installed canned/built-in function mscorlib/System/Threading/Thread/get_CurrentThread: bif=true  instancef=false eis=false arity=0 rt=[mscorlib]System.Threading.Thread uid=getCurrentThread10 hpr_name=<hardcoded>
+Installed canned/built-in function mscorlib/System/Threading/Thread/get_ManagedThreadId: bif=true  instancef=true eis=false arity=0 rt=CTL_net(false, 32, Signed,[native]) uid=getManagedThreadId10 hpr_name=<hardcoded>
+Installed canned/built-in function mscorlib/System/Threading/Thread/.ctor: bif=false  instancef=true eis=false arity=1 rt=CTL_object uid=ctor156 hpr_name=<hardcoded>
+Installed canned/built-in function mscorlib/System/Threading/Thread/Start: bif=true  instancef=true eis=true arity=0 rt=CTL_void uid=Start10 hpr_name=<hardcoded>
+Installed canned/built-in function mscorlib/System/Threading/Thread/Start: bif=true  instancef=true eis=true arity=1 rt=CTL_void uid=Start12 hpr_name=<hardcoded>
+Installed canned/built-in function mscorlib/System/Threading/WaitHandle/WaitOne: bif=true  instancef=false eis=false arity=0 rt=CTL_net(false, 1, Unsigned,[native]) uid=WaitOne10 hpr_name=<hardcoded>
+Installed canned/built-in function mscorlib/System/Convert/ToInt8: bif=true  instancef=false eis=false arity=1 rt=CTL_net(false, 8, Signed,[native]) uid=ToInt810 hpr_name=<hardcoded>
+Installed canned/built-in function mscorlib/System/Convert/ToInt16: bif=true  instancef=false eis=false arity=1 rt=CTL_net(false, 16, Signed,[native]) uid=ToInt1612 hpr_name=<hardcoded>
+Installed canned/built-in function mscorlib/System/Convert/ToInt32: bif=true  instancef=false eis=false arity=1 rt=CTL_net(false, 32, Signed,[native]) uid=ToInt3212 hpr_name=<hardcoded>
+Installed canned/built-in function mscorlib/System/Convert/ToInt64: bif=true  instancef=false eis=false arity=1 rt=CTL_net(false, 64, Signed,[native]) uid=ToInt6412 hpr_name=<hardcoded>
+Installed canned/built-in function mscorlib/System/Convert/ToInt: bif=true  instancef=false eis=false arity=1 rt=CTL_net(false, 32, Signed,[native]) uid=ToInt10 hpr_name=<hardcoded>
+Installed canned/built-in function mscorlib/System/Convert/ToUInt8: bif=true  instancef=false eis=false arity=1 rt=CTL_net(false, 8, Signed,[native]) uid=ToUInt810 hpr_name=<hardcoded>
+Installed canned/built-in function mscorlib/System/Convert/ToUInt16: bif=true  instancef=false eis=false arity=1 rt=CTL_net(false, 16, Unsigned,[native]) uid=ToUInt1612 hpr_name=<hardcoded>
+Installed canned/built-in function mscorlib/System/Convert/ToUInt32: bif=true  instancef=false eis=false arity=1 rt=CTL_net(false, 32, Unsigned,[native]) uid=ToUInt3212 hpr_name=<hardcoded>
+Installed canned/built-in function mscorlib/System/Convert/ToUInt64: bif=true  instancef=false eis=false arity=1 rt=CTL_net(false, 64, Unsigned,[native]) uid=ToUInt6412 hpr_name=<hardcoded>
+Installed canned/built-in function mscorlib/System/Convert/ToBoolean: bif=true  instancef=false eis=false arity=1 rt=CTL_net(false, 1, Unsigned,[native]) uid=ToBoolean12 hpr_name=<hardcoded>
+Installed canned/built-in function mscorlib/System/Convert/ToChar: bif=true  instancef=false eis=false arity=1 rt=CTL_net(false, 16, Signed,[native, CHAR]) uid=ToChar12 hpr_name=<hardcoded>
+Installed canned/built-in function mscorlib/System/Convert/ToSByte: bif=true  instancef=false eis=false arity=1 rt=CTL_net(false, 8, Signed,[native]) uid=ToSByte10 hpr_name=<hardcoded>
+Installed canned/built-in function mscorlib/System/Convert/ToByte: bif=true  instancef=false eis=false arity=1 rt=CTL_net(false, 8, Signed,[native]) uid=ToByte10 hpr_name=<hardcoded>
+Installed canned/built-in function mscorlib/System/Math/Abs: bif=true  instancef=false eis=false arity=1 rt=CTL_net(false, 32, Signed,[native]) uid=Abs10 hpr_name=<hardcoded>
+Installed canned/built-in function mscorlib/System/Math/Min: bif=true  instancef=false eis=false arity=2 rt=CTL_net(false, 32, Signed,[native]) uid=Min10 hpr_name=<hardcoded>
+Installed canned/built-in function mscorlib/System/Math/Max: bif=true  instancef=false eis=false arity=2 rt=CTL_net(false, 32, Signed,[native]) uid=Max10 hpr_name=<hardcoded>
+Installed canned/built-in function mscorlib/System/MulticastDelegate/.ctor: bif=false  instancef=true eis=false arity=2 rt=CTL_void uid=ctor158 hpr_name=<hardcoded>
+Installed canned/built-in function mscorlib/System/Object/Equals: bif=true  instancef=true eis=false arity=1 rt=CTL_net(false, 1, Unsigned,[native]) uid=Equals42 hpr_name=<hardcoded>
+Installed canned/built-in function mscorlib/System/Object/ToString: bif=true  instancef=true eis=false arity=0 rt=&(CT_arr(CTL_net(false, 16, Signed,[native, CHAR]), -1)) uid=ToString10 hpr_name=<hardcoded>
+Installed canned/built-in function mscorlib/System/Object/.ctor: bif=false  instancef=true eis=false arity=0 rt=CTL_void uid=ctor160 hpr_name=<hardcoded>
+Installed canned/built-in function mscorlib/System/Runtime/CompilerServices/RuntimeHelpers/InitializeArray: bif=true  instancef=false eis=true arity=2 rt=CTL_void uid=InitializeArray10 hpr_name=<hardcoded>
+Installed canned/built-in function mscorlib/System/String/Concat: bif=true  instancef=false eis=false arity=2 rt=string uid=Concat16 hpr_name=hpr_concat
+Installed canned/built-in function mscorlib/System/String/Concat: bif=true  instancef=true eis=false arity=1 rt=string uid=Concat18 hpr_name=hpr_concat
+Installed canned/built-in function mscorlib/System/String/get_Chars: bif=false  instancef=true eis=false arity=1 rt=char uid=getChars10 hpr_name=<hardcoded>
+Installed canned/built-in function mscorlib/System/String/get_Length: bif=true  instancef=true eis=false arity=0 rt=CTL_net(false, 32, Signed,[native]) uid=getLength10 hpr_name=<hardcoded>
+Installed canned/built-in function mscorlib/System/Func`1/.ctor: bif=false  instancef=true eis=false arity=2 rt=CTL_object uid=ctor162 hpr_name=<hardcoded>
+Installed canned/built-in function mscorlib/System/Func`1/Invoke: bif=true  instancef=true eis=false arity=0 rt=!0 uid=Invoke10 hpr_name=KiwiC-FInvoke
+Installed canned/built-in function mscorlib/System/Func`2/.ctor: bif=false  instancef=true eis=false arity=2 rt=CTL_object uid=ctor164 hpr_name=<hardcoded>
+Installed canned/built-in function mscorlib/System/Func`2/Invoke: bif=true  instancef=true eis=false arity=1 rt=!1 uid=Invoke12 hpr_name=KiwiC-FInvoke
+Installed canned/built-in function mscorlib/System/Func`3/.ctor: bif=false  instancef=true eis=false arity=2 rt=CTL_object uid=ctor166 hpr_name=<hardcoded>
+Installed canned/built-in function mscorlib/System/Func`3/Invoke: bif=true  instancef=true eis=false arity=2 rt=!2 uid=Invoke14 hpr_name=KiwiC-FInvoke
+Installed canned/built-in function mscorlib/System/Func`4/.ctor: bif=false  instancef=true eis=false arity=2 rt=CTL_object uid=ctor168 hpr_name=<hardcoded>
+Installed canned/built-in function mscorlib/System/Func`4/Invoke: bif=true  instancef=true eis=false arity=3 rt=!3 uid=Invoke16 hpr_name=KiwiC-FInvoke
+Installed canned/built-in function mscorlib/System/Action`0/.ctor: bif=false  instancef=true eis=false arity=2 rt=CTL_object uid=ctor170 hpr_name=<hardcoded>
+Installed canned/built-in function mscorlib/System/Action`0/Invoke: bif=true  instancef=true eis=true arity=0 rt=CTL_void uid=Invoke18 hpr_name=KiwiC-ActionInvoke
+Installed canned/built-in function mscorlib/System/Action`1/.ctor: bif=false  instancef=true eis=false arity=2 rt=CTL_object uid=ctor172 hpr_name=<hardcoded>
+Installed canned/built-in function mscorlib/System/Action`1/Invoke: bif=true  instancef=true eis=true arity=1 rt=CTL_void uid=Invoke20 hpr_name=KiwiC-ActionInvoke
+Installed canned/built-in function mscorlib/System/Action`2/.ctor: bif=false  instancef=true eis=false arity=2 rt=CTL_object uid=ctor174 hpr_name=<hardcoded>
+Installed canned/built-in function mscorlib/System/Action`2/Invoke: bif=true  instancef=true eis=true arity=2 rt=CTL_void uid=Invoke22 hpr_name=KiwiC-ActionInvoke
+Installed canned/built-in function mscorlib/System/Action`3/.ctor: bif=false  instancef=true eis=false arity=2 rt=CTL_object uid=ctor176 hpr_name=<hardcoded>
+Installed canned/built-in function mscorlib/System/Action`3/Invoke: bif=true  instancef=true eis=true arity=3 rt=CTL_void uid=Invoke24 hpr_name=KiwiC-ActionInvoke
+Installed canned/built-in function System/Double/CompareTo: bif=true  instancef=true eis=false arity=1 rt=CTL_net(false, 1, Unsigned,[native]) uid=CompareTo42 hpr_name=<hardcoded>
+Installed canned/built-in function System/Double/Equals: bif=true  instancef=true eis=false arity=1 rt=CTL_net(false, 32, Signed,[native]) uid=Equals44 hpr_name=<hardcoded>
+Installed canned/built-in function System/Int8/CompareTo: bif=true  instancef=true eis=false arity=1 rt=CTL_net(false, 1, Unsigned,[native]) uid=CompareTo44 hpr_name=<hardcoded>
+Installed canned/built-in function System/Int8/Equals: bif=true  instancef=true eis=false arity=1 rt=CTL_net(false, 32, Signed,[native]) uid=Equals46 hpr_name=<hardcoded>
+Installed canned/built-in function System/Int16/CompareTo: bif=true  instancef=true eis=false arity=1 rt=CTL_net(false, 1, Unsigned,[native]) uid=CompareTo46 hpr_name=<hardcoded>
+Installed canned/built-in function System/Int16/Equals: bif=true  instancef=true eis=false arity=1 rt=CTL_net(false, 32, Signed,[native]) uid=Equals48 hpr_name=<hardcoded>
+Installed canned/built-in function System/Int32/CompareTo: bif=true  instancef=true eis=false arity=1 rt=CTL_net(false, 1, Unsigned,[native]) uid=CompareTo48 hpr_name=<hardcoded>
+Installed canned/built-in function System/Int32/Equals: bif=true  instancef=true eis=false arity=1 rt=CTL_net(false, 32, Signed,[native]) uid=Equals50 hpr_name=<hardcoded>
+Installed canned/built-in function System/Int64/CompareTo: bif=true  instancef=true eis=false arity=1 rt=CTL_net(false, 1, Unsigned,[native]) uid=CompareTo50 hpr_name=<hardcoded>
+Installed canned/built-in function System/Int64/Equals: bif=true  instancef=true eis=false arity=1 rt=CTL_net(false, 32, Signed,[native]) uid=Equals52 hpr_name=<hardcoded>
+Installed canned/built-in function System/Int/CompareTo: bif=true  instancef=true eis=false arity=1 rt=CTL_net(false, 1, Unsigned,[native]) uid=CompareTo52 hpr_name=<hardcoded>
+Installed canned/built-in function System/Int/Equals: bif=true  instancef=true eis=false arity=1 rt=CTL_net(false, 32, Signed,[native]) uid=Equals54 hpr_name=<hardcoded>
+Installed canned/built-in function System/UInt8/CompareTo: bif=true  instancef=true eis=false arity=1 rt=CTL_net(false, 1, Unsigned,[native]) uid=CompareTo54 hpr_name=<hardcoded>
+Installed canned/built-in function System/UInt8/Equals: bif=true  instancef=true eis=false arity=1 rt=CTL_net(false, 32, Signed,[native]) uid=Equals56 hpr_name=<hardcoded>
+Installed canned/built-in function System/UInt16/CompareTo: bif=true  instancef=true eis=false arity=1 rt=CTL_net(false, 1, Unsigned,[native]) uid=CompareTo56 hpr_name=<hardcoded>
+Installed canned/built-in function System/UInt16/Equals: bif=true  instancef=true eis=false arity=1 rt=CTL_net(false, 32, Signed,[native]) uid=Equals58 hpr_name=<hardcoded>
+Installed canned/built-in function System/UInt32/CompareTo: bif=true  instancef=true eis=false arity=1 rt=CTL_net(false, 1, Unsigned,[native]) uid=CompareTo58 hpr_name=<hardcoded>
+Installed canned/built-in function System/UInt32/Equals: bif=true  instancef=true eis=false arity=1 rt=CTL_net(false, 32, Signed,[native]) uid=Equals60 hpr_name=<hardcoded>
+Installed canned/built-in function System/UInt64/CompareTo: bif=true  instancef=true eis=false arity=1 rt=CTL_net(false, 1, Unsigned,[native]) uid=CompareTo60 hpr_name=<hardcoded>
+Installed canned/built-in function System/UInt64/Equals: bif=true  instancef=true eis=false arity=1 rt=CTL_net(false, 32, Signed,[native]) uid=Equals62 hpr_name=<hardcoded>
+Installed canned/built-in function System/Boolean/CompareTo: bif=true  instancef=true eis=false arity=1 rt=CTL_net(false, 1, Unsigned,[native]) uid=CompareTo62 hpr_name=<hardcoded>
+Installed canned/built-in function System/Boolean/Equals: bif=true  instancef=true eis=false arity=1 rt=CTL_net(false, 32, Signed,[native]) uid=Equals64 hpr_name=<hardcoded>
+Installed canned/built-in function System/Char/CompareTo: bif=true  instancef=true eis=false arity=1 rt=CTL_net(false, 1, Unsigned,[native]) uid=CompareTo64 hpr_name=<hardcoded>
+Installed canned/built-in function System/Char/Equals: bif=true  instancef=true eis=false arity=1 rt=CTL_net(false, 32, Signed,[native]) uid=Equals66 hpr_name=<hardcoded>
+Installed canned/built-in function System/Float32/CompareTo: bif=true  instancef=true eis=false arity=1 rt=CTL_net(false, 1, Unsigned,[native]) uid=CompareTo66 hpr_name=<hardcoded>
+Installed canned/built-in function System/Float32/Equals: bif=true  instancef=true eis=false arity=1 rt=CTL_net(false, 32, Signed,[native]) uid=Equals68 hpr_name=<hardcoded>
+Installed canned/built-in function System/Float64/CompareTo: bif=true  instancef=true eis=false arity=1 rt=CTL_net(false, 1, Unsigned,[native]) uid=CompareTo68 hpr_name=<hardcoded>
+Installed canned/built-in function System/Float64/Equals: bif=true  instancef=true eis=false arity=1 rt=CTL_net(false, 32, Signed,[native]) uid=Equals70 hpr_name=<hardcoded>
+Installed canned/built-in function System/SByte/CompareTo: bif=true  instancef=true eis=false arity=1 rt=CTL_net(false, 1, Unsigned,[native]) uid=CompareTo70 hpr_name=<hardcoded>
+Installed canned/built-in function System/SByte/Equals: bif=true  instancef=true eis=false arity=1 rt=CTL_net(false, 32, Signed,[native]) uid=Equals72 hpr_name=<hardcoded>
+Installed canned/built-in function System/Byte/CompareTo: bif=true  instancef=true eis=false arity=1 rt=CTL_net(false, 1, Unsigned,[native]) uid=CompareTo72 hpr_name=<hardcoded>
+Installed canned/built-in function System/Byte/Equals: bif=true  instancef=true eis=false arity=1 rt=CTL_net(false, 32, Signed,[native]) uid=Equals74 hpr_name=<hardcoded>
+Installed canned/built-in function System/Console/ReadKey: bif=false  instancef=false eis=true arity=0 rt=char uid=ReadKey12 hpr_name=<hardcoded>
+Installed canned/built-in function System/Console/WriteLine: bif=true  instancef=false eis=true arity=0 rt=CTL_void uid=WriteLine32 hpr_name=hpr_writeln
+Installed canned/built-in function System/Console/WriteLine: bif=true  instancef=false eis=true arity=1 rt=CTL_void uid=WriteLine34 hpr_name=hpr_writeln
+Installed canned/built-in function System/Console/WriteLine: bif=true  instancef=false eis=true arity=2 rt=CTL_void uid=WriteLine36 hpr_name=hpr_writeln
+Installed canned/built-in function System/Console/WriteLine: bif=true  instancef=false eis=true arity=3 rt=CTL_void uid=WriteLine38 hpr_name=hpr_writeln
+Installed canned/built-in function System/Console/WriteLine: bif=true  instancef=false eis=true arity=4 rt=CTL_void uid=WriteLine40 hpr_name=hpr_writeln
+Installed canned/built-in function System/Console/WriteLine: bif=true  instancef=false eis=true arity=5 rt=CTL_void uid=WriteLine42 hpr_name=hpr_writeln
+Installed canned/built-in function System/Console/Write: bif=true  instancef=false eis=true arity=1 rt=CTL_void uid=Write22 hpr_name=hpr_write
+Installed canned/built-in function System/Console/Write: bif=true  instancef=false eis=true arity=2 rt=CTL_void uid=Write24 hpr_name=hpr_write
+Installed canned/built-in function System/Console/Write: bif=true  instancef=false eis=true arity=3 rt=CTL_void uid=Write26 hpr_name=hpr_write
+Installed canned/built-in function System/Console/Write: bif=true  instancef=false eis=true arity=4 rt=CTL_void uid=Write28 hpr_name=hpr_write
+Installed canned/built-in function System/Console/Write: bif=true  instancef=false eis=true arity=5 rt=CTL_void uid=Write30 hpr_name=hpr_write
+Installed canned/built-in function System/Collections/Generic/IEnumerator`1/MoveNext: bif=false  instancef=true eis=true arity=0 rt=CTL_net(false, 1, Unsigned,[native]) uid=MoveNext14 hpr_name=<hardcoded>
+Installed canned/built-in function System/Collections/Generic/IEnumerator`1/get_Current: bif=false  instancef=true eis=false arity=0 rt=!0 uid=getCurrent12 hpr_name=<hardcoded>
+Installed canned/built-in function System/Collections/IEnumerator/MoveNext: bif=false  instancef=true eis=true arity=0 rt=CTL_net(false, 1, Unsigned,[native]) uid=MoveNext16 hpr_name=<hardcoded>
+Installed canned/built-in function System/Threading/ThreadStart/.ctor: bif=false  instancef=true eis=false arity=2 rt=CTL_object uid=ctor178 hpr_name=<hardcoded>
+Installed canned/built-in function System/Threading/BeginCriticalRegion: bif=true  instancef=false eis=true arity=0 rt=CTL_void uid=BeginCriticalRegion12 hpr_name=<hardcoded>
+Installed canned/built-in function System/Threading/EndCriticalRegion: bif=true  instancef=false eis=true arity=0 rt=CTL_void uid=EndCriticalRegion12 hpr_name=<hardcoded>
+Installed canned/built-in function System/Threading/ParameterizedThreadStart/.ctor: bif=false  instancef=true eis=false arity=2 rt=CTL_object uid=ctor180 hpr_name=<hardcoded>
+Installed canned/built-in function System/Threading/Thread/get_CurrentThread: bif=true  instancef=false eis=false arity=0 rt=System.Threading.Thread uid=getCurrentThread12 hpr_name=<hardcoded>
+Installed canned/built-in function System/Threading/Thread/get_ManagedThreadId: bif=true  instancef=true eis=false arity=0 rt=CTL_net(false, 32, Signed,[native]) uid=getManagedThreadId12 hpr_name=<hardcoded>
+Installed canned/built-in function System/Threading/Thread/.ctor: bif=false  instancef=true eis=false arity=1 rt=CTL_object uid=ctor182 hpr_name=<hardcoded>
+Installed canned/built-in function System/Threading/Thread/Start: bif=true  instancef=true eis=true arity=0 rt=CTL_void uid=Start14 hpr_name=<hardcoded>
+Installed canned/built-in function System/Threading/Thread/Start: bif=true  instancef=true eis=true arity=1 rt=CTL_void uid=Start16 hpr_name=<hardcoded>
+Installed canned/built-in function System/Threading/WaitHandle/WaitOne: bif=true  instancef=false eis=false arity=0 rt=CTL_net(false, 1, Unsigned,[native]) uid=WaitOne12 hpr_name=<hardcoded>
+Installed canned/built-in function System/Convert/ToInt8: bif=true  instancef=false eis=false arity=1 rt=CTL_net(false, 8, Signed,[native]) uid=ToInt812 hpr_name=<hardcoded>
+Installed canned/built-in function System/Convert/ToInt16: bif=true  instancef=false eis=false arity=1 rt=CTL_net(false, 16, Signed,[native]) uid=ToInt1614 hpr_name=<hardcoded>
+Installed canned/built-in function System/Convert/ToInt32: bif=true  instancef=false eis=false arity=1 rt=CTL_net(false, 32, Signed,[native]) uid=ToInt3214 hpr_name=<hardcoded>
+Installed canned/built-in function System/Convert/ToInt64: bif=true  instancef=false eis=false arity=1 rt=CTL_net(false, 64, Signed,[native]) uid=ToInt6414 hpr_name=<hardcoded>
+Installed canned/built-in function System/Convert/ToInt: bif=true  instancef=false eis=false arity=1 rt=CTL_net(false, 32, Signed,[native]) uid=ToInt12 hpr_name=<hardcoded>
+Installed canned/built-in function System/Convert/ToUInt8: bif=true  instancef=false eis=false arity=1 rt=CTL_net(false, 8, Signed,[native]) uid=ToUInt812 hpr_name=<hardcoded>
+Installed canned/built-in function System/Convert/ToUInt16: bif=true  instancef=false eis=false arity=1 rt=CTL_net(false, 16, Unsigned,[native]) uid=ToUInt1614 hpr_name=<hardcoded>
+Installed canned/built-in function System/Convert/ToUInt32: bif=true  instancef=false eis=false arity=1 rt=CTL_net(false, 32, Unsigned,[native]) uid=ToUInt3214 hpr_name=<hardcoded>
+Installed canned/built-in function System/Convert/ToUInt64: bif=true  instancef=false eis=false arity=1 rt=CTL_net(false, 64, Unsigned,[native]) uid=ToUInt6414 hpr_name=<hardcoded>
+Installed canned/built-in function System/Convert/ToBoolean: bif=true  instancef=false eis=false arity=1 rt=CTL_net(false, 1, Unsigned,[native]) uid=ToBoolean14 hpr_name=<hardcoded>
+Installed canned/built-in function System/Convert/ToChar: bif=true  instancef=false eis=false arity=1 rt=CTL_net(false, 16, Signed,[native, CHAR]) uid=ToChar14 hpr_name=<hardcoded>
+Installed canned/built-in function System/Convert/ToSByte: bif=true  instancef=false eis=false arity=1 rt=CTL_net(false, 8, Signed,[native]) uid=ToSByte12 hpr_name=<hardcoded>
+Installed canned/built-in function System/Convert/ToByte: bif=true  instancef=false eis=false arity=1 rt=CTL_net(false, 8, Signed,[native]) uid=ToByte12 hpr_name=<hardcoded>
+Installed canned/built-in function System/Math/Abs: bif=true  instancef=false eis=false arity=1 rt=CTL_net(false, 32, Signed,[native]) uid=Abs12 hpr_name=<hardcoded>
+Installed canned/built-in function System/Math/Min: bif=true  instancef=false eis=false arity=2 rt=CTL_net(false, 32, Signed,[native]) uid=Min12 hpr_name=<hardcoded>
+Installed canned/built-in function System/Math/Max: bif=true  instancef=false eis=false arity=2 rt=CTL_net(false, 32, Signed,[native]) uid=Max12 hpr_name=<hardcoded>
+Installed canned/built-in function System/MulticastDelegate/.ctor: bif=false  instancef=true eis=false arity=2 rt=CTL_void uid=ctor184 hpr_name=<hardcoded>
+Installed canned/built-in function System/Object/Equals: bif=true  instancef=true eis=false arity=1 rt=CTL_net(false, 1, Unsigned,[native]) uid=Equals76 hpr_name=<hardcoded>
+Installed canned/built-in function System/Object/ToString: bif=true  instancef=true eis=false arity=0 rt=&(CT_arr(CTL_net(false, 16, Signed,[native, CHAR]), -1)) uid=ToString12 hpr_name=<hardcoded>
+Installed canned/built-in function System/Object/.ctor: bif=false  instancef=true eis=false arity=0 rt=CTL_void uid=ctor186 hpr_name=<hardcoded>
+Installed canned/built-in function System/Runtime/CompilerServices/RuntimeHelpers/InitializeArray: bif=true  instancef=false eis=true arity=2 rt=CTL_void uid=InitializeArray12 hpr_name=<hardcoded>
+Installed canned/built-in function System/String/Concat: bif=true  instancef=false eis=false arity=2 rt=string uid=Concat20 hpr_name=hpr_concat
+Installed canned/built-in function System/String/Concat: bif=true  instancef=true eis=false arity=1 rt=string uid=Concat22 hpr_name=hpr_concat
+Installed canned/built-in function System/String/get_Chars: bif=false  instancef=true eis=false arity=1 rt=char uid=getChars12 hpr_name=<hardcoded>
+Installed canned/built-in function System/String/get_Length: bif=true  instancef=true eis=false arity=0 rt=CTL_net(false, 32, Signed,[native]) uid=getLength12 hpr_name=<hardcoded>
+Installed canned/built-in function System/Func`1/.ctor: bif=false  instancef=true eis=false arity=2 rt=CTL_object uid=ctor188 hpr_name=<hardcoded>
+Installed canned/built-in function System/Func`1/Invoke: bif=true  instancef=true eis=false arity=0 rt=!0 uid=Invoke26 hpr_name=KiwiC-FInvoke
+Installed canned/built-in function System/Func`2/.ctor: bif=false  instancef=true eis=false arity=2 rt=CTL_object uid=ctor190 hpr_name=<hardcoded>
+Installed canned/built-in function System/Func`2/Invoke: bif=true  instancef=true eis=false arity=1 rt=!1 uid=Invoke28 hpr_name=KiwiC-FInvoke
+Installed canned/built-in function System/Func`3/.ctor: bif=false  instancef=true eis=false arity=2 rt=CTL_object uid=ctor192 hpr_name=<hardcoded>
+Installed canned/built-in function System/Func`3/Invoke: bif=true  instancef=true eis=false arity=2 rt=!2 uid=Invoke30 hpr_name=KiwiC-FInvoke
+Installed canned/built-in function System/Func`4/.ctor: bif=false  instancef=true eis=false arity=2 rt=CTL_object uid=ctor194 hpr_name=<hardcoded>
+Installed canned/built-in function System/Func`4/Invoke: bif=true  instancef=true eis=false arity=3 rt=!3 uid=Invoke32 hpr_name=KiwiC-FInvoke
+Installed canned/built-in function System/Action`0/.ctor: bif=false  instancef=true eis=false arity=2 rt=CTL_object uid=ctor196 hpr_name=<hardcoded>
+Installed canned/built-in function System/Action`0/Invoke: bif=true  instancef=true eis=true arity=0 rt=CTL_void uid=Invoke34 hpr_name=KiwiC-ActionInvoke
+Installed canned/built-in function System/Action`1/.ctor: bif=false  instancef=true eis=false arity=2 rt=CTL_object uid=ctor198 hpr_name=<hardcoded>
+Installed canned/built-in function System/Action`1/Invoke: bif=true  instancef=true eis=true arity=1 rt=CTL_void uid=Invoke36 hpr_name=KiwiC-ActionInvoke
+Installed canned/built-in function System/Action`2/.ctor: bif=false  instancef=true eis=false arity=2 rt=CTL_object uid=ctor200 hpr_name=<hardcoded>
+Installed canned/built-in function System/Action`2/Invoke: bif=true  instancef=true eis=true arity=2 rt=CTL_void uid=Invoke38 hpr_name=KiwiC-ActionInvoke
+Installed canned/built-in function System/Action`3/.ctor: bif=false  instancef=true eis=false arity=2 rt=CTL_object uid=ctor202 hpr_name=<hardcoded>
+Installed canned/built-in function System/Action`3/Invoke: bif=true  instancef=true eis=true arity=3 rt=CTL_void uid=Invoke40 hpr_name=KiwiC-ActionInvoke
+Start adding canned class to library System/Collections/IEnumerator/Collections/System
+Finished adding canned class to library System/Collections/IEnumerator/Collections/System
+Start adding canned class to library System/Collections/Generic/Collections/System
+Start adding canned class to library System/Collections/Generic/IEnumerator`1/System/Collections/Generic/Collections/System
+Finished adding canned class to library System/Collections/Generic/IEnumerator`1/System/Collections/Generic/Collections/System
+Finished adding canned class to library System/Collections/Generic/Collections/System
+Installed canned/built-in function KIWIARRAY2D`1/Address: bif=false  instancef=true eis=false arity=2 rt=*(CTL_object) uid=Address10 hpr_name=<hardcoded>
+Installed canned/built-in function KIWIARRAY3D`1/Address: bif=false  instancef=true eis=false arity=2 rt=*(CTL_object) uid=Address12 hpr_name=<hardcoded>
+Installed canned/built-in function KIWIARRAY4D`1/Address: bif=false  instancef=true eis=false arity=2 rt=*(CTL_object) uid=Address14 hpr_name=<hardcoded>
+Canned libraries now installed in KiwiC directory of available resources
+WF:install_in_cil_directory: top add item codefix= .class  public beforefieldinit ansi sealed abstract [KiwiSystem]KiwiBasicStatusMonitor
+
+WF:install_in_cil_directory: class KiwiSystem/KiwiBasicStatusMonitor
+WF:install_in_cil_directory: top add item codefix=KiwiSystem/KiwiBasicStatusMonitor .method static public default false [System]Void RunTimeAbend([System]String errorMessage, (valuetype [System]Int32) code)  %uid=RunTimeAbend10
+WF:install_in_cil_directory:  Method KiwiSystem/KiwiBasicStatusMonitor/RunTimeAbend, method uid=RunTimeAbend10 added to directory
+WF:install_in_cil_directory: top add item codefix= .class  public beforefieldinit ansi [KiwiSystem]Kiwi
+
+WF:install_in_cil_directory: class KiwiSystem/Kiwi
+WF:install_in_cil_directory: top add item codefix=KiwiSystem/Kiwi .class  nested public beforefieldinit ansi [[KiwiSystem]Kiwi]ObjectHandler`1<T>
+
+WF:install_in_cil_directory: class KiwiSystem/Kiwi/ObjectHandler`1
+WF:install_in_cil_directory: top add item codefix=KiwiSystem/Kiwi/ObjectHandler`1 .method public default true (valuetype [System]Int32) size()  %uid=size10
+WF:install_in_cil_directory:  Method KiwiSystem/Kiwi/ObjectHandler`1/size, method uid=size10 added to directory
+WF:install_in_cil_directory: top add item codefix=KiwiSystem/Kiwi/ObjectHandler`1 .method public default true !T handleArith([System]Object baser, (valuetype [System]Int32) offset)  %uid=handleArith10
+WF:install_in_cil_directory:  Method KiwiSystem/Kiwi/ObjectHandler`1/handleArith, method uid=handleArith10 added to directory
+WF:install_in_cil_directory: top add item codefix=KiwiSystem/Kiwi/ObjectHandler`1 .method public default true [System]Void .ctor()  %uid=ctor120
+WF:install_in_cil_directory:  Method KiwiSystem/Kiwi/ObjectHandler`1/.ctor, method uid=ctor120 added to directory
+WF:install_in_cil_directory: top add item codefix=KiwiSystem/Kiwi .class  nested public beforefieldinit ansi [[KiwiSystem]Kiwi]HeapManager
+
+WF:install_in_cil_directory: class KiwiSystem/Kiwi/HeapManager
+WF:install_in_cil_directory: top add item codefix=KiwiSystem/Kiwi/HeapManager .method public default true [System]Void .ctor()  %uid=ctor118
+WF:install_in_cil_directory:  Method KiwiSystem/Kiwi/HeapManager/.ctor, method uid=ctor118 added to directory
+WF:install_in_cil_directory: top add item codefix=KiwiSystem/Kiwi .class  nested public beforefieldinit ansi [[KiwiSystem]Kiwi]Channel`1<T>
+
+WF:install_in_cil_directory: class KiwiSystem/Kiwi/Channel`1
+WF:install_in_cil_directory: top add item codefix=KiwiSystem/Kiwi/Channel`1 .field private !T datum ATTS=(.custom .ctor [System]Void [[KiwiSystem]Kiwi]ElaborateAttribute::.ctor() blob()("") // size 0 bytes
+
+)
+WF:install_in_cil_directory: top add item codefix=KiwiSystem/Kiwi/Channel`1 .field private [System]Boolean modreq [[System][Runtime]CompilerServices]IsVolatile emptyflag ATTS=(.custom .ctor [System]Void [[KiwiSystem]Kiwi]ElaborateAttribute::.ctor() blob()("") // size 0 bytes
+
+)
+WF:install_in_cil_directory: top add item codefix=KiwiSystem/Kiwi/Channel`1 .method public default true [System]Void Write(!T v)  %uid=Write10
+WF:install_in_cil_directory:  Method KiwiSystem/Kiwi/Channel`1/Write, method uid=Write10 added to directory
+WF:install_in_cil_directory: top add item codefix=KiwiSystem/Kiwi/Channel`1 .method public default true !T Read()  %uid=Read10
+WF:install_in_cil_directory:  Method KiwiSystem/Kiwi/Channel`1/Read, method uid=Read10 added to directory
+WF:install_in_cil_directory: top add item codefix=KiwiSystem/Kiwi/Channel`1 .method public default true [System]Void .ctor()  %uid=ctor116
+WF:install_in_cil_directory:  Method KiwiSystem/Kiwi/Channel`1/.ctor, method uid=ctor116 added to directory
+WF:install_in_cil_directory: top add item codefix=KiwiSystem/Kiwi .class  nested public beforefieldinit ansi [[KiwiSystem]Kiwi]ClockDom extends [System]Attribute
+
+WF:install_in_cil_directory: class KiwiSystem/Kiwi/ClockDom
+WF:install_in_cil_directory: top add item codefix=KiwiSystem/Kiwi/ClockDom .field public [System]String name
+WF:install_in_cil_directory: top add item codefix=KiwiSystem/Kiwi/ClockDom .custom .ctor [System]Void [System]AttributeUsageAttribute::.ctor((valuetype [System]AttributeTargets) "")
+WF:install_in_cil_directory: top add item codefix=KiwiSystem/Kiwi/ClockDom .method public default true [System]Void .ctor([System]String clock, [System]String reset)  %uid=ctor114
+WF:install_in_cil_directory:  Method KiwiSystem/Kiwi/ClockDom/.ctor, method uid=ctor114 added to directory
+WF:install_in_cil_directory: top add item codefix=KiwiSystem/Kiwi .class  nested public beforefieldinit ansi [[KiwiSystem]Kiwi]ElaborateAttribute extends [System]Attribute
+
+WF:install_in_cil_directory: class KiwiSystem/Kiwi/ElaborateAttribute
+WF:install_in_cil_directory: top add item codefix=KiwiSystem/Kiwi/ElaborateAttribute .custom .ctor [System]Void [System]AttributeUsageAttribute::.ctor((valuetype [System]AttributeTargets) "")
+WF:install_in_cil_directory: top add item codefix=KiwiSystem/Kiwi/ElaborateAttribute .method public default true [System]Void .ctor()  %uid=ctor112
+WF:install_in_cil_directory:  Method KiwiSystem/Kiwi/ElaborateAttribute/.ctor, method uid=ctor112 added to directory
+WF:install_in_cil_directory: top add item codefix=KiwiSystem/Kiwi .class  nested public beforefieldinit ansi [[KiwiSystem]Kiwi]SubsumeAttribute extends [System]Attribute
+
+WF:install_in_cil_directory: class KiwiSystem/Kiwi/SubsumeAttribute
+WF:install_in_cil_directory: top add item codefix=KiwiSystem/Kiwi/SubsumeAttribute .custom .ctor [System]Void [System]AttributeUsageAttribute::.ctor((valuetype [System]AttributeTargets) "")
+WF:install_in_cil_directory: top add item codefix=KiwiSystem/Kiwi/SubsumeAttribute .method public default true [System]Void .ctor()  %uid=ctor110
+WF:install_in_cil_directory:  Method KiwiSystem/Kiwi/SubsumeAttribute/.ctor, method uid=ctor110 added to directory
+WF:install_in_cil_directory: top add item codefix=KiwiSystem/Kiwi .class  nested public beforefieldinit ansi [[KiwiSystem]Kiwi]Volatile extends [System]Attribute
+
+WF:install_in_cil_directory: class KiwiSystem/Kiwi/Volatile
+WF:install_in_cil_directory: top add item codefix=KiwiSystem/Kiwi/Volatile .custom .ctor [System]Void [System]AttributeUsageAttribute::.ctor((valuetype [System]AttributeTargets) "")
+WF:install_in_cil_directory: top add item codefix=KiwiSystem/Kiwi/Volatile .method public default true [System]Void .ctor()  %uid=ctor108
+WF:install_in_cil_directory:  Method KiwiSystem/Kiwi/Volatile/.ctor, method uid=ctor108 added to directory
+WF:install_in_cil_directory: top add item codefix=KiwiSystem/Kiwi .class  nested public beforefieldinit ansi [[KiwiSystem]Kiwi]SoftwareAttribute extends [System]Attribute
+
+WF:install_in_cil_directory: class KiwiSystem/Kiwi/SoftwareAttribute
+WF:install_in_cil_directory: top add item codefix=KiwiSystem/Kiwi/SoftwareAttribute .custom .ctor [System]Void [System]AttributeUsageAttribute::.ctor((valuetype [System]AttributeTargets) "")
+WF:install_in_cil_directory: top add item codefix=KiwiSystem/Kiwi/SoftwareAttribute .method public default true [System]Void .ctor()  %uid=ctor106
+WF:install_in_cil_directory:  Method KiwiSystem/Kiwi/SoftwareAttribute/.ctor, method uid=ctor106 added to directory
+WF:install_in_cil_directory: top add item codefix=KiwiSystem/Kiwi .class  nested public beforefieldinit ansi [[KiwiSystem]Kiwi]HardwareAttribute extends [System]Attribute
+
+WF:install_in_cil_directory: class KiwiSystem/Kiwi/HardwareAttribute
+WF:install_in_cil_directory: top add item codefix=KiwiSystem/Kiwi/HardwareAttribute .custom .ctor [System]Void [System]AttributeUsageAttribute::.ctor((valuetype [System]AttributeTargets) "")
+WF:install_in_cil_directory: top add item codefix=KiwiSystem/Kiwi/HardwareAttribute .method public default true [System]Void .ctor()  %uid=ctor104
+WF:install_in_cil_directory:  Method KiwiSystem/Kiwi/HardwareAttribute/.ctor, method uid=ctor104 added to directory
+WF:install_in_cil_directory: top add item codefix=KiwiSystem/Kiwi .class  nested public beforefieldinit ansi [[KiwiSystem]Kiwi]HardwareModuleAttribute extends [System]Attribute
+
+WF:install_in_cil_directory: class KiwiSystem/Kiwi/HardwareModuleAttribute
+WF:install_in_cil_directory: top add item codefix=KiwiSystem/Kiwi/HardwareModuleAttribute .field public [System]String name
+WF:install_in_cil_directory: top add item codefix=KiwiSystem/Kiwi/HardwareModuleAttribute .custom .ctor [System]Void [System]AttributeUsageAttribute::.ctor((valuetype [System]AttributeTargets) "")
+WF:install_in_cil_directory: top add item codefix=KiwiSystem/Kiwi/HardwareModuleAttribute .method public default true [System]Void .ctor([System]String n)  %uid=ctor102
+WF:install_in_cil_directory:  Method KiwiSystem/Kiwi/HardwareModuleAttribute/.ctor, method uid=ctor102 added to directory
+WF:install_in_cil_directory: top add item codefix=KiwiSystem/Kiwi .class  nested public beforefieldinit ansi [[KiwiSystem]Kiwi]CTLInternal extends [System]Attribute
+
+WF:install_in_cil_directory: class KiwiSystem/Kiwi/CTLInternal
+WF:install_in_cil_directory: top add item codefix=KiwiSystem/Kiwi/CTLInternal .custom .ctor [System]Void [System]AttributeUsageAttribute::.ctor((valuetype [System]AttributeTargets) "")
+WF:install_in_cil_directory: top add item codefix=KiwiSystem/Kiwi/CTLInternal .method public default true [System]Void .ctor([System]String n)  %uid=ctor100
+WF:install_in_cil_directory:  Method KiwiSystem/Kiwi/CTLInternal/.ctor, method uid=ctor100 added to directory
+WF:install_in_cil_directory: top add item codefix=KiwiSystem/Kiwi .class  nested public beforefieldinit ansi [[KiwiSystem]Kiwi]HwWidth extends [System]Attribute
+
+WF:install_in_cil_directory: class KiwiSystem/Kiwi/HwWidth
+WF:install_in_cil_directory: top add item codefix=KiwiSystem/Kiwi/HwWidth .custom .ctor [System]Void [System]AttributeUsageAttribute::.ctor((valuetype [System]AttributeTargets) "")
+WF:install_in_cil_directory: top add item codefix=KiwiSystem/Kiwi/HwWidth .method public default true [System]Void .ctor((valuetype [System]Int32) w)  %uid=ctor98
+WF:install_in_cil_directory:  Method KiwiSystem/Kiwi/HwWidth/.ctor, method uid=ctor98 added to directory
+WF:install_in_cil_directory: top add item codefix=KiwiSystem/Kiwi .class  nested public beforefieldinit ansi [[KiwiSystem]Kiwi]AssertCTL extends [System]Attribute
+
+WF:install_in_cil_directory: class KiwiSystem/Kiwi/AssertCTL
+WF:install_in_cil_directory: top add item codefix=KiwiSystem/Kiwi/AssertCTL .custom .ctor [System]Void [System]AttributeUsageAttribute::.ctor((valuetype [System]AttributeTargets) "")
+WF:install_in_cil_directory: top add item codefix=KiwiSystem/Kiwi/AssertCTL .method public default true [System]Void .ctor([System]String Quantifier, [System]String ViolationMsg)  %uid=ctor96
+WF:install_in_cil_directory:  Method KiwiSystem/Kiwi/AssertCTL/.ctor, method uid=ctor96 added to directory
+WF:install_in_cil_directory: top add item codefix=KiwiSystem/Kiwi .class  nested public beforefieldinit ansi [[KiwiSystem]Kiwi]KppMarker extends [System]Attribute
+
+WF:install_in_cil_directory: class KiwiSystem/Kiwi/KppMarker
+WF:install_in_cil_directory: top add item codefix=KiwiSystem/Kiwi/KppMarker .field public [System]String name
+WF:install_in_cil_directory: top add item codefix=KiwiSystem/Kiwi/KppMarker .custom .ctor [System]Void [System]AttributeUsageAttribute::.ctor((valuetype [System]AttributeTargets) "")
+WF:install_in_cil_directory: top add item codefix=KiwiSystem/Kiwi/KppMarker .method public default true [System]Void .ctor([System]String wp_label)  %uid=ctor92
+WF:install_in_cil_directory:  Method KiwiSystem/Kiwi/KppMarker/.ctor, method uid=ctor92 added to directory
+WF:install_in_cil_directory: top add item codefix=KiwiSystem/Kiwi/KppMarker .method public default true [System]Void .ctor([System]String wp_label, [System]String phase_name)  %uid=ctor94
+WF:install_in_cil_directory:  Method KiwiSystem/Kiwi/KppMarker/.ctor, method uid=ctor94 added to directory
+Method KiwiSystem/Kiwi/KppMarker/.ctor (arity=2) (uid=ctor94) defined more than once - perhaps overloaded.
+WF:install_in_cil_directory: top add item codefix=KiwiSystem/Kiwi .class  nested public beforefieldinit ansi [[KiwiSystem]Kiwi]HardwareEntryPoint extends [System]Attribute
+
+WF:install_in_cil_directory: class KiwiSystem/Kiwi/HardwareEntryPoint
+WF:install_in_cil_directory: top add item codefix=KiwiSystem/Kiwi/HardwareEntryPoint .field public [System]String name
+WF:install_in_cil_directory: top add item codefix=KiwiSystem/Kiwi/HardwareEntryPoint .custom .ctor [System]Void [System]AttributeUsageAttribute::.ctor((valuetype [System]AttributeTargets) "")
+WF:install_in_cil_directory: top add item codefix=KiwiSystem/Kiwi/HardwareEntryPoint .method public default true [System]Void .ctor()  %uid=ctor86
+WF:install_in_cil_directory:  Method KiwiSystem/Kiwi/HardwareEntryPoint/.ctor, method uid=ctor86 added to directory
+WF:install_in_cil_directory: top add item codefix=KiwiSystem/Kiwi/HardwareEntryPoint .method public default true [System]Void .ctor((valuetype [[KiwiSystem]Kiwi]PauseControl) initialPauseMode)  %uid=ctor88
+WF:install_in_cil_directory:  Method KiwiSystem/Kiwi/HardwareEntryPoint/.ctor, method uid=ctor88 added to directory
+Method KiwiSystem/Kiwi/HardwareEntryPoint/.ctor (arity=1) (uid=ctor88) defined more than once - perhaps overloaded.
+WF:install_in_cil_directory: top add item codefix=KiwiSystem/Kiwi/HardwareEntryPoint .method public default true [System]Void .ctor([System]String subtrate_style)  %uid=ctor90
+WF:install_in_cil_directory:  Method KiwiSystem/Kiwi/HardwareEntryPoint/.ctor, method uid=ctor90 added to directory
+Method KiwiSystem/Kiwi/HardwareEntryPoint/.ctor (arity=1) (uid=ctor90) defined more than once - perhaps overloaded.
+WF:install_in_cil_directory: top add item codefix=KiwiSystem/Kiwi .class  nested public beforefieldinit ansi [[KiwiSystem]Kiwi]Server extends [System]Attribute
+
+WF:install_in_cil_directory: class KiwiSystem/Kiwi/Server
+WF:install_in_cil_directory: top add item codefix=KiwiSystem/Kiwi/Server .custom .ctor [System]Void [System]AttributeUsageAttribute::.ctor((valuetype [System]AttributeTargets) "")
+WF:install_in_cil_directory: top add item codefix=KiwiSystem/Kiwi/Server .method public default true [System]Void .ctor([System]String portname, [System]String protocol)  %uid=ctor80
+WF:install_in_cil_directory:  Method KiwiSystem/Kiwi/Server/.ctor, method uid=ctor80 added to directory
+WF:install_in_cil_directory: top add item codefix=KiwiSystem/Kiwi/Server .method public default true [System]Void .ctor([System]String portname)  %uid=ctor82
+WF:install_in_cil_directory:  Method KiwiSystem/Kiwi/Server/.ctor, method uid=ctor82 added to directory
+Method KiwiSystem/Kiwi/Server/.ctor (arity=1) (uid=ctor82) defined more than once - perhaps overloaded.
+WF:install_in_cil_directory: top add item codefix=KiwiSystem/Kiwi/Server .method public default true [System]Void .ctor()  %uid=ctor84
+WF:install_in_cil_directory:  Method KiwiSystem/Kiwi/Server/.ctor, method uid=ctor84 added to directory
+Method KiwiSystem/Kiwi/Server/.ctor (arity=0) (uid=ctor84) defined more than once - perhaps overloaded.
+WF:install_in_cil_directory: top add item codefix=KiwiSystem/Kiwi .class  nested public beforefieldinit ansi [[KiwiSystem]Kiwi]Stub extends [System]Attribute
+
+WF:install_in_cil_directory: class KiwiSystem/Kiwi/Stub
+WF:install_in_cil_directory: top add item codefix=KiwiSystem/Kiwi/Stub .custom .ctor [System]Void [System]AttributeUsageAttribute::.ctor((valuetype [System]AttributeTargets) "")
+WF:install_in_cil_directory: top add item codefix=KiwiSystem/Kiwi/Stub .method public default true [System]Void .ctor([System]String portname, [System]String protocol)  %uid=ctor74
+WF:install_in_cil_directory:  Method KiwiSystem/Kiwi/Stub/.ctor, method uid=ctor74 added to directory
+WF:install_in_cil_directory: top add item codefix=KiwiSystem/Kiwi/Stub .method public default true [System]Void .ctor([System]String portname)  %uid=ctor76
+WF:install_in_cil_directory:  Method KiwiSystem/Kiwi/Stub/.ctor, method uid=ctor76 added to directory
+Method KiwiSystem/Kiwi/Stub/.ctor (arity=1) (uid=ctor76) defined more than once - perhaps overloaded.
+WF:install_in_cil_directory: top add item codefix=KiwiSystem/Kiwi/Stub .method public default true [System]Void .ctor()  %uid=ctor78
+WF:install_in_cil_directory:  Method KiwiSystem/Kiwi/Stub/.ctor, method uid=ctor78 added to directory
+Method KiwiSystem/Kiwi/Stub/.ctor (arity=0) (uid=ctor78) defined more than once - perhaps overloaded.
+WF:install_in_cil_directory: top add item codefix=KiwiSystem/Kiwi .class  nested public beforefieldinit ansi [[KiwiSystem]Kiwi]Remote extends [System]Attribute
+
+WF:install_in_cil_directory: class KiwiSystem/Kiwi/Remote
+WF:install_in_cil_directory: top add item codefix=KiwiSystem/Kiwi/Remote .custom .ctor [System]Void [System]AttributeUsageAttribute::.ctor((valuetype [System]AttributeTargets) "")
+WF:install_in_cil_directory: top add item codefix=KiwiSystem/Kiwi/Remote .method public default true [System]Void .ctor([System]String portname, [System]String protocol)  %uid=ctor68
+WF:install_in_cil_directory:  Method KiwiSystem/Kiwi/Remote/.ctor, method uid=ctor68 added to directory
+WF:install_in_cil_directory: top add item codefix=KiwiSystem/Kiwi/Remote .method public default true [System]Void .ctor([System]String portname)  %uid=ctor70
+WF:install_in_cil_directory:  Method KiwiSystem/Kiwi/Remote/.ctor, method uid=ctor70 added to directory
+Method KiwiSystem/Kiwi/Remote/.ctor (arity=1) (uid=ctor70) defined more than once - perhaps overloaded.
+WF:install_in_cil_directory: top add item codefix=KiwiSystem/Kiwi/Remote .method public default true [System]Void .ctor()  %uid=ctor72
+WF:install_in_cil_directory:  Method KiwiSystem/Kiwi/Remote/.ctor, method uid=ctor72 added to directory
+Method KiwiSystem/Kiwi/Remote/.ctor (arity=0) (uid=ctor72) defined more than once - perhaps overloaded.
+WF:install_in_cil_directory: top add item codefix=KiwiSystem/Kiwi .class  nested public beforefieldinit ansi [[KiwiSystem]Kiwi]FastBitConvert extends [System]Attribute
+
+WF:install_in_cil_directory: class KiwiSystem/Kiwi/FastBitConvert
+WF:install_in_cil_directory: top add item codefix=KiwiSystem/Kiwi/FastBitConvert .custom .ctor [System]Void [System]AttributeUsageAttribute::.ctor((valuetype [System]AttributeTargets) "")
+WF:install_in_cil_directory: top add item codefix=KiwiSystem/Kiwi/FastBitConvert .method public default true [System]Void .ctor()  %uid=ctor66
+WF:install_in_cil_directory:  Method KiwiSystem/Kiwi/FastBitConvert/.ctor, method uid=ctor66 added to directory
+WF:install_in_cil_directory: top add item codefix=KiwiSystem/Kiwi .class  nested public beforefieldinit ansi [[KiwiSystem]Kiwi]OutboardArray extends [System]Attribute
+
+WF:install_in_cil_directory: class KiwiSystem/Kiwi/OutboardArray
+WF:install_in_cil_directory: top add item codefix=KiwiSystem/Kiwi/OutboardArray .custom .ctor [System]Void [System]AttributeUsageAttribute::.ctor((valuetype [System]AttributeTargets) "")
+WF:install_in_cil_directory: top add item codefix=KiwiSystem/Kiwi/OutboardArray .method public default true [System]Void .ctor([System]String bankname)  %uid=ctor60
+WF:install_in_cil_directory:  Method KiwiSystem/Kiwi/OutboardArray/.ctor, method uid=ctor60 added to directory
+WF:install_in_cil_directory: top add item codefix=KiwiSystem/Kiwi/OutboardArray .method public default true [System]Void .ctor([System]String bankname, (valuetype [System]Int32) Base)  %uid=ctor62
+WF:install_in_cil_directory:  Method KiwiSystem/Kiwi/OutboardArray/.ctor, method uid=ctor62 added to directory
+Method KiwiSystem/Kiwi/OutboardArray/.ctor (arity=2) (uid=ctor62) defined more than once - perhaps overloaded.
+WF:install_in_cil_directory: top add item codefix=KiwiSystem/Kiwi/OutboardArray .method public default true [System]Void .ctor()  %uid=ctor64
+WF:install_in_cil_directory:  Method KiwiSystem/Kiwi/OutboardArray/.ctor, method uid=ctor64 added to directory
+Method KiwiSystem/Kiwi/OutboardArray/.ctor (arity=0) (uid=ctor64) defined more than once - perhaps overloaded.
+WF:install_in_cil_directory: top add item codefix=KiwiSystem/Kiwi .class  nested public beforefieldinit ansi [[KiwiSystem]Kiwi]SynchSRAM extends [System]Attribute
+
+WF:install_in_cil_directory: class KiwiSystem/Kiwi/SynchSRAM
+WF:install_in_cil_directory: top add item codefix=KiwiSystem/Kiwi/SynchSRAM .method public default true [System]Void .ctor()  %uid=ctor56
+WF:install_in_cil_directory:  Method KiwiSystem/Kiwi/SynchSRAM/.ctor, method uid=ctor56 added to directory
+WF:install_in_cil_directory: top add item codefix=KiwiSystem/Kiwi/SynchSRAM .method public default true [System]Void .ctor((valuetype [System]Int32) latency)  %uid=ctor58
+WF:install_in_cil_directory:  Method KiwiSystem/Kiwi/SynchSRAM/.ctor, method uid=ctor58 added to directory
+Method KiwiSystem/Kiwi/SynchSRAM/.ctor (arity=1) (uid=ctor58) defined more than once - perhaps overloaded.
+WF:install_in_cil_directory: top add item codefix=KiwiSystem/Kiwi .class  nested public beforefieldinit ansi [[KiwiSystem]Kiwi]ThreadsPerPort extends [System]Attribute
+
+WF:install_in_cil_directory: class KiwiSystem/Kiwi/ThreadsPerPort
+WF:install_in_cil_directory: top add item codefix=KiwiSystem/Kiwi/ThreadsPerPort .method public default true [System]Void .ctor((valuetype [System]Int32) n)  %uid=ctor54
+WF:install_in_cil_directory:  Method KiwiSystem/Kiwi/ThreadsPerPort/.ctor, method uid=ctor54 added to directory
+WF:install_in_cil_directory: top add item codefix=KiwiSystem/Kiwi .class  nested public beforefieldinit ansi [[KiwiSystem]Kiwi]PortsPerThread extends [System]Attribute
+
+WF:install_in_cil_directory: class KiwiSystem/Kiwi/PortsPerThread
+WF:install_in_cil_directory: top add item codefix=KiwiSystem/Kiwi/PortsPerThread .method public default true [System]Void .ctor((valuetype [System]Int32) n)  %uid=ctor52
+WF:install_in_cil_directory:  Method KiwiSystem/Kiwi/PortsPerThread/.ctor, method uid=ctor52 added to directory
+WF:install_in_cil_directory: top add item codefix=KiwiSystem/Kiwi .class  nested public beforefieldinit ansi [[KiwiSystem]Kiwi]MultiPortRegfile extends [System]Attribute
+
+WF:install_in_cil_directory: class KiwiSystem/Kiwi/MultiPortRegfile
+WF:install_in_cil_directory: top add item codefix=KiwiSystem/Kiwi/MultiPortRegfile .method public default true [System]Void .ctor()  %uid=ctor50
+WF:install_in_cil_directory:  Method KiwiSystem/Kiwi/MultiPortRegfile/.ctor, method uid=ctor50 added to directory
+WF:install_in_cil_directory: top add item codefix=KiwiSystem/Kiwi .class  nested public beforefieldinit ansi [[KiwiSystem]Kiwi]WidenAttribute extends [System]Attribute
+
+WF:install_in_cil_directory: class KiwiSystem/Kiwi/WidenAttribute
+WF:install_in_cil_directory: top add item codefix=KiwiSystem/Kiwi/WidenAttribute .custom .ctor [System]Void [System]AttributeUsageAttribute::.ctor((valuetype [System]AttributeTargets) "")
+WF:install_in_cil_directory: top add item codefix=KiwiSystem/Kiwi/WidenAttribute .method public default true [System]Void .ctor((valuetype [System]Int32) n)  %uid=ctor48
+WF:install_in_cil_directory:  Method KiwiSystem/Kiwi/WidenAttribute/.ctor, method uid=ctor48 added to directory
+WF:install_in_cil_directory: top add item codefix=KiwiSystem/Kiwi .class  nested public beforefieldinit ansi [[KiwiSystem]Kiwi]MirrorAttribute extends [System]Attribute
+
+WF:install_in_cil_directory: class KiwiSystem/Kiwi/MirrorAttribute
+WF:install_in_cil_directory: top add item codefix=KiwiSystem/Kiwi/MirrorAttribute .custom .ctor [System]Void [System]AttributeUsageAttribute::.ctor((valuetype [System]AttributeTargets) "")
+WF:install_in_cil_directory: top add item codefix=KiwiSystem/Kiwi/MirrorAttribute .method public default true [System]Void .ctor((valuetype [System]Int32) stride)  %uid=ctor46
+WF:install_in_cil_directory:  Method KiwiSystem/Kiwi/MirrorAttribute/.ctor, method uid=ctor46 added to directory
+WF:install_in_cil_directory: top add item codefix=KiwiSystem/Kiwi .class  nested public beforefieldinit ansi [[KiwiSystem]Kiwi]StripeAttribute extends [System]Attribute
+
+WF:install_in_cil_directory: class KiwiSystem/Kiwi/StripeAttribute
+WF:install_in_cil_directory: top add item codefix=KiwiSystem/Kiwi/StripeAttribute .custom .ctor [System]Void [System]AttributeUsageAttribute::.ctor((valuetype [System]AttributeTargets) "")
+WF:install_in_cil_directory: top add item codefix=KiwiSystem/Kiwi/StripeAttribute .method public default true [System]Void .ctor((valuetype [System]Int32) stride)  %uid=ctor44
+WF:install_in_cil_directory:  Method KiwiSystem/Kiwi/StripeAttribute/.ctor, method uid=ctor44 added to directory
+WF:install_in_cil_directory: top add item codefix=KiwiSystem/Kiwi .class  nested public beforefieldinit ansi [[KiwiSystem]Kiwi]InputWordPortAttribute extends [System]Attribute
+
+WF:install_in_cil_directory: class KiwiSystem/Kiwi/InputWordPortAttribute
+WF:install_in_cil_directory: top add item codefix=KiwiSystem/Kiwi/InputWordPortAttribute .field public [System]String name
+WF:install_in_cil_directory: top add item codefix=KiwiSystem/Kiwi/InputWordPortAttribute .field public (valuetype [System]Int32) loIndex
+WF:install_in_cil_directory: top add item codefix=KiwiSystem/Kiwi/InputWordPortAttribute .field public (valuetype [System]Int32) hiIndex
+WF:install_in_cil_directory: top add item codefix=KiwiSystem/Kiwi/InputWordPortAttribute .custom .ctor [System]Void [System]AttributeUsageAttribute::.ctor((valuetype [System]AttributeTargets) "")
+WF:install_in_cil_directory: top add item codefix=KiwiSystem/Kiwi/InputWordPortAttribute .method public default true [System]Void .ctor((valuetype [System]Int32) hi, (valuetype [System]Int32) lo)  %uid=ctor38
+WF:install_in_cil_directory:  Method KiwiSystem/Kiwi/InputWordPortAttribute/.ctor, method uid=ctor38 added to directory
+WF:install_in_cil_directory: top add item codefix=KiwiSystem/Kiwi/InputWordPortAttribute .method public default true [System]Void .ctor([System]String n)  %uid=ctor40
+WF:install_in_cil_directory:  Method KiwiSystem/Kiwi/InputWordPortAttribute/.ctor, method uid=ctor40 added to directory
+Method KiwiSystem/Kiwi/InputWordPortAttribute/.ctor (arity=1) (uid=ctor40) defined more than once - perhaps overloaded.
+WF:install_in_cil_directory: top add item codefix=KiwiSystem/Kiwi/InputWordPortAttribute .method public default true [System]Void .ctor((valuetype [System]Int32) hi, (valuetype [System]Int32) lo, [System]String n)  %uid=ctor42
+WF:install_in_cil_directory:  Method KiwiSystem/Kiwi/InputWordPortAttribute/.ctor, method uid=ctor42 added to directory
+Method KiwiSystem/Kiwi/InputWordPortAttribute/.ctor (arity=3) (uid=ctor42) defined more than once - perhaps overloaded.
+WF:install_in_cil_directory: top add item codefix=KiwiSystem/Kiwi .class  nested public beforefieldinit ansi [[KiwiSystem]Kiwi]OutputWordPortAttribute extends [System]Attribute
+
+WF:install_in_cil_directory: class KiwiSystem/Kiwi/OutputWordPortAttribute
+WF:install_in_cil_directory: top add item codefix=KiwiSystem/Kiwi/OutputWordPortAttribute .field public [System]String name
+WF:install_in_cil_directory: top add item codefix=KiwiSystem/Kiwi/OutputWordPortAttribute .field public (valuetype [System]Int32) loIndex
+WF:install_in_cil_directory: top add item codefix=KiwiSystem/Kiwi/OutputWordPortAttribute .field public (valuetype [System]Int32) hiIndex
+WF:install_in_cil_directory: top add item codefix=KiwiSystem/Kiwi/OutputWordPortAttribute .custom .ctor [System]Void [System]AttributeUsageAttribute::.ctor((valuetype [System]AttributeTargets) "")
+WF:install_in_cil_directory: top add item codefix=KiwiSystem/Kiwi/OutputWordPortAttribute .method public default true [System]Void .ctor((valuetype [System]Int32) hi, (valuetype [System]Int32) lo, [System]String n)  %uid=ctor32
+WF:install_in_cil_directory:  Method KiwiSystem/Kiwi/OutputWordPortAttribute/.ctor, method uid=ctor32 added to directory
+WF:install_in_cil_directory: top add item codefix=KiwiSystem/Kiwi/OutputWordPortAttribute .method public default true [System]Void .ctor((valuetype [System]Int32) hi, (valuetype [System]Int32) lo)  %uid=ctor34
+WF:install_in_cil_directory:  Method KiwiSystem/Kiwi/OutputWordPortAttribute/.ctor, method uid=ctor34 added to directory
+Method KiwiSystem/Kiwi/OutputWordPortAttribute/.ctor (arity=2) (uid=ctor34) defined more than once - perhaps overloaded.
+WF:install_in_cil_directory: top add item codefix=KiwiSystem/Kiwi/OutputWordPortAttribute .method public default true [System]Void .ctor([System]String n)  %uid=ctor36
+WF:install_in_cil_directory:  Method KiwiSystem/Kiwi/OutputWordPortAttribute/.ctor, method uid=ctor36 added to directory
+Method KiwiSystem/Kiwi/OutputWordPortAttribute/.ctor (arity=1) (uid=ctor36) defined more than once - perhaps overloaded.
+WF:install_in_cil_directory: top add item codefix=KiwiSystem/Kiwi .class  nested public beforefieldinit ansi [[KiwiSystem]Kiwi]OutputBytePortAttribute extends [System]Attribute
+
+WF:install_in_cil_directory: class KiwiSystem/Kiwi/OutputBytePortAttribute
+WF:install_in_cil_directory: top add item codefix=KiwiSystem/Kiwi/OutputBytePortAttribute .field public [System]String name
+WF:install_in_cil_directory: top add item codefix=KiwiSystem/Kiwi/OutputBytePortAttribute .custom .ctor [System]Void [System]AttributeUsageAttribute::.ctor((valuetype [System]AttributeTargets) "")
+WF:install_in_cil_directory: top add item codefix=KiwiSystem/Kiwi/OutputBytePortAttribute .method public default true [System]Void .ctor([System]String n)  %uid=ctor30
+WF:install_in_cil_directory:  Method KiwiSystem/Kiwi/OutputBytePortAttribute/.ctor, method uid=ctor30 added to directory
+WF:install_in_cil_directory: top add item codefix=KiwiSystem/Kiwi .class  nested public beforefieldinit ansi [[KiwiSystem]Kiwi]InputBytePortAttribute extends [System]Attribute
+
+WF:install_in_cil_directory: class KiwiSystem/Kiwi/InputBytePortAttribute
+WF:install_in_cil_directory: top add item codefix=KiwiSystem/Kiwi/InputBytePortAttribute .field public [System]String name
+WF:install_in_cil_directory: top add item codefix=KiwiSystem/Kiwi/InputBytePortAttribute .custom .ctor [System]Void [System]AttributeUsageAttribute::.ctor((valuetype [System]AttributeTargets) "")
+WF:install_in_cil_directory: top add item codefix=KiwiSystem/Kiwi/InputBytePortAttribute .method public default true [System]Void .ctor([System]String n)  %uid=ctor28
+WF:install_in_cil_directory:  Method KiwiSystem/Kiwi/InputBytePortAttribute/.ctor, method uid=ctor28 added to directory
+WF:install_in_cil_directory: top add item codefix=KiwiSystem/Kiwi .class  nested public beforefieldinit ansi [[KiwiSystem]Kiwi]InputNameAttribute extends [System]Attribute
+
+WF:install_in_cil_directory: class KiwiSystem/Kiwi/InputNameAttribute
+WF:install_in_cil_directory: top add item codefix=KiwiSystem/Kiwi/InputNameAttribute .field public [System]String name
+WF:install_in_cil_directory: top add item codefix=KiwiSystem/Kiwi/InputNameAttribute .custom .ctor [System]Void [System]AttributeUsageAttribute::.ctor((valuetype [System]AttributeTargets) "")
+WF:install_in_cil_directory: top add item codefix=KiwiSystem/Kiwi/InputNameAttribute .method public default true [System]Void .ctor([System]String n)  %uid=ctor26
+WF:install_in_cil_directory:  Method KiwiSystem/Kiwi/InputNameAttribute/.ctor, method uid=ctor26 added to directory
+WF:install_in_cil_directory: top add item codefix=KiwiSystem/Kiwi .class  nested public beforefieldinit ansi [[KiwiSystem]Kiwi]OutputNameAttribute extends [System]Attribute
+
+WF:install_in_cil_directory: class KiwiSystem/Kiwi/OutputNameAttribute
+WF:install_in_cil_directory: top add item codefix=KiwiSystem/Kiwi/OutputNameAttribute .field public [System]String name
+WF:install_in_cil_directory: top add item codefix=KiwiSystem/Kiwi/OutputNameAttribute .custom .ctor [System]Void [System]AttributeUsageAttribute::.ctor((valuetype [System]AttributeTargets) "")
+WF:install_in_cil_directory: top add item codefix=KiwiSystem/Kiwi/OutputNameAttribute .method public default true [System]Void .ctor([System]String n)  %uid=ctor24
+WF:install_in_cil_directory:  Method KiwiSystem/Kiwi/OutputNameAttribute/.ctor, method uid=ctor24 added to directory
+WF:install_in_cil_directory: top add item codefix=KiwiSystem/Kiwi .class  nested public beforefieldinit ansi [[KiwiSystem]Kiwi]OutputBitPortAttribute extends [System]Attribute
+
+WF:install_in_cil_directory: class KiwiSystem/Kiwi/OutputBitPortAttribute
+WF:install_in_cil_directory: top add item codefix=KiwiSystem/Kiwi/OutputBitPortAttribute .field public [System]String name
+WF:install_in_cil_directory: top add item codefix=KiwiSystem/Kiwi/OutputBitPortAttribute .custom .ctor [System]Void [System]AttributeUsageAttribute::.ctor((valuetype [System]AttributeTargets) "")
+WF:install_in_cil_directory: top add item codefix=KiwiSystem/Kiwi/OutputBitPortAttribute .method public default true [System]Void .ctor([System]String n)  %uid=ctor20
+WF:install_in_cil_directory:  Method KiwiSystem/Kiwi/OutputBitPortAttribute/.ctor, method uid=ctor20 added to directory
+WF:install_in_cil_directory: top add item codefix=KiwiSystem/Kiwi/OutputBitPortAttribute .method public default true [System]Void .ctor()  %uid=ctor22
+WF:install_in_cil_directory:  Method KiwiSystem/Kiwi/OutputBitPortAttribute/.ctor, method uid=ctor22 added to directory
+Method KiwiSystem/Kiwi/OutputBitPortAttribute/.ctor (arity=0) (uid=ctor22) defined more than once - perhaps overloaded.
+WF:install_in_cil_directory: top add item codefix=KiwiSystem/Kiwi .class  nested public beforefieldinit ansi [[KiwiSystem]Kiwi]InputBitPortAttribute extends [System]Attribute
+
+WF:install_in_cil_directory: class KiwiSystem/Kiwi/InputBitPortAttribute
+WF:install_in_cil_directory: top add item codefix=KiwiSystem/Kiwi/InputBitPortAttribute .field public [System]String name
+WF:install_in_cil_directory: top add item codefix=KiwiSystem/Kiwi/InputBitPortAttribute .custom .ctor [System]Void [System]AttributeUsageAttribute::.ctor((valuetype [System]AttributeTargets) "")
+WF:install_in_cil_directory: top add item codefix=KiwiSystem/Kiwi/InputBitPortAttribute .method public default true [System]Void .ctor([System]String n)  %uid=ctor16
+WF:install_in_cil_directory:  Method KiwiSystem/Kiwi/InputBitPortAttribute/.ctor, method uid=ctor16 added to directory
+WF:install_in_cil_directory: top add item codefix=KiwiSystem/Kiwi/InputBitPortAttribute .method public default true [System]Void .ctor()  %uid=ctor18
+WF:install_in_cil_directory:  Method KiwiSystem/Kiwi/InputBitPortAttribute/.ctor, method uid=ctor18 added to directory
+Method KiwiSystem/Kiwi/InputBitPortAttribute/.ctor (arity=0) (uid=ctor18) defined more than once - perhaps overloaded.
+WF:install_in_cil_directory: top add item codefix=KiwiSystem/Kiwi .class  nested public beforefieldinit ansi [[KiwiSystem]Kiwi]RomArrayAttribute extends [System]Attribute
+
+WF:install_in_cil_directory: class KiwiSystem/Kiwi/RomArrayAttribute
+WF:install_in_cil_directory: top add item codefix=KiwiSystem/Kiwi/RomArrayAttribute .field public [System]String name
+WF:install_in_cil_directory: top add item codefix=KiwiSystem/Kiwi/RomArrayAttribute .custom .ctor [System]Void [System]AttributeUsageAttribute::.ctor((valuetype [System]AttributeTargets) "")
+WF:install_in_cil_directory: top add item codefix=KiwiSystem/Kiwi/RomArrayAttribute .method public default true [System]Void .ctor([System]String n)  %uid=ctor14
+WF:install_in_cil_directory:  Method KiwiSystem/Kiwi/RomArrayAttribute/.ctor, method uid=ctor14 added to directory
+WF:install_in_cil_directory: top add item codefix=KiwiSystem/Kiwi .class  nested public ansi valuetype enum sealed [[KiwiSystem]Kiwi]PauseControl extends [System]Enum
+
+WF:install_in_cil_directory: class KiwiSystem/Kiwi/PauseControl
+WF:install_in_cil_directory: top add item codefix=KiwiSystem/Kiwi/PauseControl .field rtspecialname specialname public (valuetype [System]Int32) value__
+WF:install_in_cil_directory: top add item codefix=KiwiSystem/Kiwi/PauseControl .field literal static public (valuetype [[KiwiSystem]Kiwi]PauseControl) autoPauseEnable = 0x0
+WF:install_in_cil_directory: top add item codefix=KiwiSystem/Kiwi/PauseControl .field literal static public (valuetype [[KiwiSystem]Kiwi]PauseControl) hardPauseEnable = 0x1
+WF:install_in_cil_directory: top add item codefix=KiwiSystem/Kiwi/PauseControl .field literal static public (valuetype [[KiwiSystem]Kiwi]PauseControl) softPauseEnable = 0x2
+WF:install_in_cil_directory: top add item codefix=KiwiSystem/Kiwi/PauseControl .field literal static public (valuetype [[KiwiSystem]Kiwi]PauseControl) maximalPauseEnable = 0x3
+WF:install_in_cil_directory: top add item codefix=KiwiSystem/Kiwi/PauseControl .field literal static public (valuetype [[KiwiSystem]Kiwi]PauseControl) bblockPauseEnable = 0x4
+WF:install_in_cil_directory: top add item codefix=KiwiSystem/Kiwi/PauseControl .field literal static public (valuetype [[KiwiSystem]Kiwi]PauseControl) pipelinedAccelerator = 0x5
+WF:install_in_cil_directory: top add item codefix=KiwiSystem/Kiwi .class  nested public beforefieldinit ansi [[KiwiSystem]Kiwi]HprPrimitiveFunction extends [System]Attribute
+
+WF:install_in_cil_directory: class KiwiSystem/Kiwi/HprPrimitiveFunction
+WF:install_in_cil_directory: top add item codefix=KiwiSystem/Kiwi/HprPrimitiveFunction .method public default true [System]Void .ctor()  %uid=ctor12
+WF:install_in_cil_directory:  Method KiwiSystem/Kiwi/HprPrimitiveFunction/.ctor, method uid=ctor12 added to directory
+WF:install_in_cil_directory: top add item codefix=KiwiSystem/Kiwi .field static private (valuetype [[KiwiSystem]Kiwi]PauseControl) old_pausemode_value
+WF:install_in_cil_directory: top add item codefix=KiwiSystem/Kiwi .field static public (valuetype [System]UInt64) tnow
+WF:install_in_cil_directory: top add item codefix=KiwiSystem/Kiwi .method static public default false [System]Void WriteLine([System]String arg)  %uid=WriteLine10
+WF:install_in_cil_directory:  Method KiwiSystem/Kiwi/WriteLine, method uid=WriteLine10 added to directory
+WF:install_in_cil_directory: top add item codefix=KiwiSystem/Kiwi .method static public default false [System]Void WriteLine([System]String arg, [System]Object a0)  %uid=WriteLine12
+WF:install_in_cil_directory:  Method KiwiSystem/Kiwi/WriteLine, method uid=WriteLine12 added to directory
+Method KiwiSystem/Kiwi/WriteLine (arity=2) (uid=WriteLine12) defined more than once - perhaps overloaded.
+WF:install_in_cil_directory: top add item codefix=KiwiSystem/Kiwi .method static public default false [System]Void WriteLine([System]String arg, [System]Object a0, [System]Object a1)  %uid=WriteLine14
+WF:install_in_cil_directory:  Method KiwiSystem/Kiwi/WriteLine, method uid=WriteLine14 added to directory
+Method KiwiSystem/Kiwi/WriteLine (arity=3) (uid=WriteLine14) defined more than once - perhaps overloaded.
+WF:install_in_cil_directory: top add item codefix=KiwiSystem/Kiwi .method static public default false [System]Void WriteLine([System]String arg, [System]Object a0, [System]Object a1, [System]Object a2)  %uid=WriteLine16
+WF:install_in_cil_directory:  Method KiwiSystem/Kiwi/WriteLine, method uid=WriteLine16 added to directory
+Method KiwiSystem/Kiwi/WriteLine (arity=4) (uid=WriteLine16) defined more than once - perhaps overloaded.
+WF:install_in_cil_directory: top add item codefix=KiwiSystem/Kiwi .method static public default false [System]Void WriteLine([System]String arg, [System]Object a0, [System]Object a1, [System]Object a2, [System]Object a3)  %uid=WriteLine18
+WF:install_in_cil_directory:  Method KiwiSystem/Kiwi/WriteLine, method uid=WriteLine18 added to directory
+Method KiwiSystem/Kiwi/WriteLine (arity=5) (uid=WriteLine18) defined more than once - perhaps overloaded.
+WF:install_in_cil_directory: top add item codefix=KiwiSystem/Kiwi .method static public default false (valuetype [System]Int32) KPragma((valuetype [System]Boolean) fatalFlag, [System]String cmd_or_message)  %uid=KPragma10
+WF:install_in_cil_directory:  Method KiwiSystem/Kiwi/KPragma, method uid=KPragma10 added to directory
+WF:install_in_cil_directory: top add item codefix=KiwiSystem/Kiwi .method static public default false (valuetype [System]Int32) KPragma((valuetype [System]Boolean) fatalFlag, [System]String cmd_or_message, (valuetype [System]Int32) arg0)  %uid=KPragma12
+WF:install_in_cil_directory:  Method KiwiSystem/Kiwi/KPragma, method uid=KPragma12 added to directory
+Method KiwiSystem/Kiwi/KPragma (arity=3) (uid=KPragma12) defined more than once - perhaps overloaded.
+WF:install_in_cil_directory: top add item codefix=KiwiSystem/Kiwi .method static public default false (valuetype [System]Int32) KPragma((valuetype [System]Boolean) fatalFlag, [System]String cmd_or_message, (valuetype [System]Int32) arg0, (valuetype [System]Int32) arg1)  %uid=KPragma14
+WF:install_in_cil_directory:  Method KiwiSystem/Kiwi/KPragma, method uid=KPragma14 added to directory
+Method KiwiSystem/Kiwi/KPragma (arity=4) (uid=KPragma14) defined more than once - perhaps overloaded.
+WF:install_in_cil_directory: top add item codefix=KiwiSystem/Kiwi .method static public default false (valuetype [[KiwiSystem]Kiwi]PauseControl) PauseControlSet((valuetype [[KiwiSystem]Kiwi]PauseControl) newmode)  %uid=PauseControlSet10
+WF:install_in_cil_directory:  Method KiwiSystem/Kiwi/PauseControlSet, method uid=PauseControlSet10 added to directory
+WF:install_in_cil_directory: top add item codefix=KiwiSystem/Kiwi .method static public default false [System]Void Pause((valuetype [System]Int32) pauseFlags)  %uid=Pause10
+WF:install_in_cil_directory:  Method KiwiSystem/Kiwi/Pause, method uid=Pause10 added to directory
+WF:install_in_cil_directory: top add item codefix=KiwiSystem/Kiwi .method static public default false [System]Void Pause()  %uid=Pause12
+WF:install_in_cil_directory:  Method KiwiSystem/Kiwi/Pause, method uid=Pause12 added to directory
+Method KiwiSystem/Kiwi/Pause (arity=0) (uid=Pause12) defined more than once - perhaps overloaded.
+WF:install_in_cil_directory: top add item codefix=KiwiSystem/Kiwi .method static public default false [System]Void Unroll((valuetype [System]Int32) a)  %uid=Unroll10
+WF:install_in_cil_directory:  Method KiwiSystem/Kiwi/Unroll, method uid=Unroll10 added to directory
+WF:install_in_cil_directory: top add item codefix=KiwiSystem/Kiwi .method static public default false [System]Void Unroll([System]String command_string, (valuetype [System]Int32) a)  %uid=Unroll12
+WF:install_in_cil_directory:  Method KiwiSystem/Kiwi/Unroll, method uid=Unroll12 added to directory
+Method KiwiSystem/Kiwi/Unroll (arity=2) (uid=Unroll12) defined more than once - perhaps overloaded.
+WF:install_in_cil_directory: top add item codefix=KiwiSystem/Kiwi .method static public default false [System]Void Unroll((valuetype [System]Int32) a, (valuetype [System]Int32) b)  %uid=Unroll14
+WF:install_in_cil_directory:  Method KiwiSystem/Kiwi/Unroll, method uid=Unroll14 added to directory
+Method KiwiSystem/Kiwi/Unroll (arity=2) (uid=Unroll14) defined more than once - perhaps overloaded.
+WF:install_in_cil_directory: top add item codefix=KiwiSystem/Kiwi .method static public default false [System]Void Unroll([System]String comment_string, (valuetype [System]Int32) a, (valuetype [System]Int32) b)  %uid=Unroll16
+WF:install_in_cil_directory:  Method KiwiSystem/Kiwi/Unroll, method uid=Unroll16 added to directory
+Method KiwiSystem/Kiwi/Unroll (arity=3) (uid=Unroll16) defined more than once - perhaps overloaded.
+WF:install_in_cil_directory: top add item codefix=KiwiSystem/Kiwi .method static public default false [System]Void Unroll((valuetype [System]Int32) a, (valuetype [System]Int32) b, (valuetype [System]Int32) c)  %uid=Unroll18
+WF:install_in_cil_directory:  Method KiwiSystem/Kiwi/Unroll, method uid=Unroll18 added to directory
+Method KiwiSystem/Kiwi/Unroll (arity=3) (uid=Unroll18) defined more than once - perhaps overloaded.
+WF:install_in_cil_directory: top add item codefix=KiwiSystem/Kiwi .method static public default false [System]Void NoUnroll()  %uid=NoUnroll10
+WF:install_in_cil_directory:  Method KiwiSystem/Kiwi/NoUnroll, method uid=NoUnroll10 added to directory
+WF:install_in_cil_directory: top add item codefix=KiwiSystem/Kiwi .method static public default false (valuetype [System]Int32) EndOfElaborate()  %uid=EndOfElaborate10
+WF:install_in_cil_directory:  Method KiwiSystem/Kiwi/EndOfElaborate, method uid=EndOfElaborate10 added to directory
+WF:install_in_cil_directory: top add item codefix=KiwiSystem/Kiwi .method static public default false [System]Void NeverReached([System]String msg)  %uid=NeverReached10
+WF:install_in_cil_directory:  Method KiwiSystem/Kiwi/NeverReached, method uid=NeverReached10 added to directory
+WF:install_in_cil_directory: top add item codefix=KiwiSystem/Kiwi .method static private default false (valuetype [System]Double) to_double((valuetype [System]UInt64) farg)  %uid=todouble10
+WF:install_in_cil_directory:  Method KiwiSystem/Kiwi/to_double, method uid=todouble10 added to directory
+WF:install_in_cil_directory: top add item codefix=KiwiSystem/Kiwi .method static private default false (valuetype [System]UInt64) from_double((valuetype [System]Double) darg)  %uid=fromdouble10
+WF:install_in_cil_directory:  Method KiwiSystem/Kiwi/from_double, method uid=fromdouble10 added to directory
+WF:install_in_cil_directory: top add item codefix=KiwiSystem/Kiwi .method static public default false [System]Void KppMark([System]String waypoint_name)  %uid=KppMark10
+WF:install_in_cil_directory:  Method KiwiSystem/Kiwi/KppMark, method uid=KppMark10 added to directory
+WF:install_in_cil_directory: top add item codefix=KiwiSystem/Kiwi .method static public default false [System]Void KppMark([System]String waypoint_name, [System]String phase_name)  %uid=KppMark12
+WF:install_in_cil_directory:  Method KiwiSystem/Kiwi/KppMark, method uid=KppMark12 added to directory
+Method KiwiSystem/Kiwi/KppMark (arity=2) (uid=KppMark12) defined more than once - perhaps overloaded.
+WF:install_in_cil_directory: top add item codefix=KiwiSystem/Kiwi .method static private default false [System]Object hpr_next([System]Object item)  %uid=hprnext10
+WF:install_in_cil_directory:  Method KiwiSystem/Kiwi/hpr_next, method uid=hprnext10 added to directory
+WF:install_in_cil_directory: top add item codefix=KiwiSystem/Kiwi .method static public default false [System]Object next([System]Object item)  %uid=next10
+WF:install_in_cil_directory:  Method KiwiSystem/Kiwi/next, method uid=next10 added to directory
+WF:install_in_cil_directory: top add item codefix=KiwiSystem/Kiwi .method static public default false (valuetype [System]Boolean) next((valuetype [System]Boolean) item)  %uid=next12
+WF:install_in_cil_directory:  Method KiwiSystem/Kiwi/next, method uid=next12 added to directory
+Method KiwiSystem/Kiwi/next (arity=1) (uid=next12) defined more than once - perhaps overloaded.
+WF:install_in_cil_directory: top add item codefix=KiwiSystem/Kiwi .method static public default false (valuetype [System]Int32) next((valuetype [System]Int32) item)  %uid=next14
+WF:install_in_cil_directory:  Method KiwiSystem/Kiwi/next, method uid=next14 added to directory
+Method KiwiSystem/Kiwi/next (arity=1) (uid=next14) defined more than once - perhaps overloaded.
+WF:install_in_cil_directory: top add item codefix=KiwiSystem/Kiwi .method public default true (valuetype [System]Boolean) until((valuetype [System]Boolean) from, (valuetype [System]Boolean) to)  %uid=until10
+WF:install_in_cil_directory:  Method KiwiSystem/Kiwi/until, method uid=until10 added to directory
+WF:install_in_cil_directory: top add item codefix=KiwiSystem/Kiwi .method public default true (valuetype [System]Boolean) wuntil((valuetype [System]Boolean) from, (valuetype [System]Boolean) to)  %uid=wuntil10
+WF:install_in_cil_directory:  Method KiwiSystem/Kiwi/wuntil, method uid=wuntil10 added to directory
+WF:install_in_cil_directory: top add item codefix=KiwiSystem/Kiwi .method static public default false [System]Void Dispose([System]Object obj)  %uid=Dispose10
+WF:install_in_cil_directory:  Method KiwiSystem/Kiwi/Dispose, method uid=Dispose10 added to directory
+WF:install_in_cil_directory: top add item codefix=KiwiSystem/Kiwi .method static public default false (valuetype [System]Boolean) inHardware()  %uid=inHardware10
+WF:install_in_cil_directory:  Method KiwiSystem/Kiwi/inHardware, method uid=inHardware10 added to directory
+WF:install_in_cil_directory: top add item codefix=KiwiSystem/Kiwi .method public default true [System]Void .ctor()  %uid=ctor10
+WF:install_in_cil_directory:  Method KiwiSystem/Kiwi/.ctor, method uid=ctor10 added to directory
+WF:install_in_cil_directory: top add item codefix=KiwiSystem/Kiwi .method static private default false [System]Void .cctor()  %uid=cctor10
+WF:install_in_cil_directory:  Method KiwiSystem/Kiwi/.cctor, method uid=cctor10 added to directory
+WF:install_in_cil_directory: top add item codefix= .class  ansi <Module>
+
+WF:install_in_cil_directory: class <Module>
+WF:install_in_cil_directory: top add item codefix= // PARSE TREE of /home/djg11/d320/hprls/kiwipro/kiwic/distro/lib/../support/Kiwi.dll
+
+WF:install_in_cil_directory: top add item codefix= .class  public beforefieldinit ansi [[System]Threading]Monitor
+
+WF:install_in_cil_directory: class System/Threading/Monitor
+WF:install_in_cil_directory: top add item codefix=System/Threading/Monitor .method static public default false [System]Void Enter([System]Object it)  %uid=Enter10
+WF:install_in_cil_directory:  Method System/Threading/Monitor/Enter, method uid=Enter10 added to directory
+WF:install_in_cil_directory: top add item codefix=System/Threading/Monitor .method static public default false [System]Void Enter([System]Object it, (valuetype [System]Boolean)& lockTaken)  %uid=Enter12
+WF:install_in_cil_directory:  Method System/Threading/Monitor/Enter, method uid=Enter12 added to directory
+Method System/Threading/Monitor/Enter (arity=2) (uid=Enter12) defined more than once - perhaps overloaded.
+WF:install_in_cil_directory: top add item codefix=System/Threading/Monitor .method static public default false (valuetype [System]Boolean) Wait([System]Object it)  %uid=Wait10
+WF:install_in_cil_directory:  Method System/Threading/Monitor/Wait, method uid=Wait10 added to directory
+WF:install_in_cil_directory: top add item codefix=System/Threading/Monitor .method static public default false [System]Void Exit([System]Object it)  %uid=Exit12
+WF:install_in_cil_directory:  Method System/Threading/Monitor/Exit, method uid=Exit12 added to directory
+WF:install_in_cil_directory: top add item codefix=System/Threading/Monitor .method static public default false [System]Void PulseAll([System]Object it)  %uid=PulseAll10
+WF:install_in_cil_directory:  Method System/Threading/Monitor/PulseAll, method uid=PulseAll10 added to directory
+WF:install_in_cil_directory: top add item codefix=System/Threading/Monitor .method static public default false [System]Void Pulse([System]Object it)  %uid=Pulse10
+WF:install_in_cil_directory:  Method System/Threading/Monitor/Pulse, method uid=Pulse10 added to directory
+WF:install_in_cil_directory: top add item codefix=System/Threading/Monitor .method public default true [System]Void .ctor()  %uid=ctor146
+WF:install_in_cil_directory:  Method System/Threading/Monitor/.ctor, method uid=ctor146 added to directory
+WF:install_in_cil_directory: top add item codefix= .class  public beforefieldinit ansi [[System]Threading]Thread
+
+WF:install_in_cil_directory: class System/Threading/Thread
+WF:install_in_cil_directory: top add item codefix=System/Threading/Thread .method static public default false [System]Void MemoryBarrier()  %uid=MemoryBarrier10
+WF:install_in_cil_directory:  Method System/Threading/Thread/MemoryBarrier, method uid=MemoryBarrier10 added to directory
+WF:install_in_cil_directory: top add item codefix=System/Threading/Thread .method public default true [System]Void .ctor()  %uid=ctor144
+WF:install_in_cil_directory:  Method System/Threading/Thread/.ctor, method uid=ctor144 added to directory
+WF:install_in_cil_directory: top add item codefix= .class  public beforefieldinit ansi [System]Environment
+
+WF:install_in_cil_directory: class System/Environment
+WF:install_in_cil_directory: top add item codefix=System/Environment .method static public default false [System]Void Exit((valuetype [System]Int32) exit_code)  %uid=Exit10
+WF:install_in_cil_directory:  Method System/Environment/Exit, method uid=Exit10 added to directory
+WF:install_in_cil_directory: top add item codefix=System/Environment .method public default true [System]Void .ctor()  %uid=ctor142
+WF:install_in_cil_directory:  Method System/Environment/.ctor, method uid=ctor142 added to directory
+WF:install_in_cil_directory: top add item codefix= .class  public beforefieldinit ansi [System]String
+
+WF:install_in_cil_directory: class System/String
+WF:install_in_cil_directory: top add item codefix=System/String .method static private default false (valuetype [System]Boolean) op_Inequality([System]Object a, [System]Object b)  %uid=opInequality10
+WF:install_in_cil_directory:  Method System/String/op_Inequality, method uid=opInequality10 added to directory
+WF:install_in_cil_directory: top add item codefix=System/String .method static private default false (valuetype [System]Boolean) op_Equality([System]Object a, [System]Object b)  %uid=opEquality10
+WF:install_in_cil_directory:  Method System/String/op_Equality, method uid=opEquality10 added to directory
+WF:install_in_cil_directory: top add item codefix=System/String .method static private default false [System]String Concat([System]Object a, [System]Object b)  %uid=Concat10
+WF:install_in_cil_directory:  Method System/String/Concat, method uid=Concat10 added to directory
+WF:install_in_cil_directory: top add item codefix=System/String .method static private default false [System]String Concat([System]Object a, [System]Object b, [System]Object c)  %uid=Concat12
+WF:install_in_cil_directory:  Method System/String/Concat, method uid=Concat12 added to directory
+Method System/String/Concat (arity=3) (uid=Concat12) defined more than once - perhaps overloaded.
+WF:install_in_cil_directory: top add item codefix=System/String .method static private default false [System]String Concat([System]Object a, [System]Object b, [System]Object c, [System]Object d)  %uid=Concat14
+WF:install_in_cil_directory:  Method System/String/Concat, method uid=Concat14 added to directory
+Method System/String/Concat (arity=4) (uid=Concat14) defined more than once - perhaps overloaded.
+WF:install_in_cil_directory: top add item codefix=System/String .method public default true (valuetype [System]Char)[0] ToCharArray()  %uid=ToCharArray10
+WF:install_in_cil_directory:  Method System/String/ToCharArray, method uid=ToCharArray10 added to directory
+WF:install_in_cil_directory: top add item codefix=System/String .method public default true [System]Void .ctor()  %uid=ctor140
+WF:install_in_cil_directory:  Method System/String/.ctor, method uid=ctor140 added to directory
+WF:install_in_cil_directory: top add item codefix= .class  public beforefieldinit ansi [System]IDisposable
+
+WF:install_in_cil_directory: class System/IDisposable
+WF:install_in_cil_directory: top add item codefix=System/IDisposable .method public default true [System]Void Dispose()  %uid=Dispose14
+WF:install_in_cil_directory:  Method System/IDisposable/Dispose, method uid=Dispose14 added to directory
+WF:install_in_cil_directory: top add item codefix=System/IDisposable .method public default true [System]Void .ctor()  %uid=ctor138
+WF:install_in_cil_directory:  Method System/IDisposable/.ctor, method uid=ctor138 added to directory
+WF:install_in_cil_directory: top add item codefix= .class  public beforefieldinit ansi KIWIARRAY4D`1<CT>
+
+WF:install_in_cil_directory: class KIWIARRAY4D`1
+WF:install_in_cil_directory: top add item codefix=KIWIARRAY4D`1 .field private !CT[0] arraybase
+WF:install_in_cil_directory: top add item codefix=KIWIARRAY4D`1 .field private (valuetype [System]Int32) d2dim0
+WF:install_in_cil_directory: top add item codefix=KIWIARRAY4D`1 .field private (valuetype [System]Int32) d2dim1
+WF:install_in_cil_directory: top add item codefix=KIWIARRAY4D`1 .field private (valuetype [System]Int32) d2dim2
+WF:install_in_cil_directory: top add item codefix=KIWIARRAY4D`1 .field private (valuetype [System]Int32) d2dim3
+WF:install_in_cil_directory: top add item codefix=KIWIARRAY4D`1 .custom .ctor [System]Void [[System]Reflection]DefaultMemberAttribute::.ctor([System]String "")
+WF:install_in_cil_directory: top add item codefix=KIWIARRAY4D`1 .method public default true (valuetype [System]Int32) GetLength((valuetype [System]Int32) n)  %uid=GetLength16
+WF:install_in_cil_directory:  Method KIWIARRAY4D`1/GetLength, method uid=GetLength16 added to directory
+WF:install_in_cil_directory: top add item codefix=KIWIARRAY4D`1 .method public default true (valuetype [System]Int32) get_Rank()  %uid=getRank14
+WF:install_in_cil_directory:  Method KIWIARRAY4D`1/get_Rank, method uid=getRank14 added to directory
+WF:install_in_cil_directory: top add item codefix=KIWIARRAY4D`1 .method public default true (valuetype [System]Int64) KiwiAddress((valuetype [System]UInt32) i3, (valuetype [System]UInt32) i2, (valuetype [System]UInt32) i1, (valuetype [System]UInt32) i0)  %uid=KiwiAddress12
+WF:install_in_cil_directory:  Method KIWIARRAY4D`1/KiwiAddress, method uid=KiwiAddress12 added to directory
+WF:install_in_cil_directory: top add item codefix=KIWIARRAY4D`1 .method public default true !CT get_Item((valuetype [System]UInt32) i3, (valuetype [System]UInt32) i2, (valuetype [System]UInt32) i1, (valuetype [System]UInt32) i0)  %uid=getItem16
+WF:install_in_cil_directory:  Method KIWIARRAY4D`1/get_Item, method uid=getItem16 added to directory
+WF:install_in_cil_directory: top add item codefix=KIWIARRAY4D`1 .method public default true [System]Void set_Item((valuetype [System]UInt32) i3, (valuetype [System]UInt32) i2, (valuetype [System]UInt32) i1, (valuetype [System]UInt32) i0, !CT value)  %uid=setItem16
+WF:install_in_cil_directory:  Method KIWIARRAY4D`1/set_Item, method uid=setItem16 added to directory
+WF:install_in_cil_directory: top add item codefix=KIWIARRAY4D`1 .method public default true [System]Void .ctor((valuetype [System]Int32) a3, (valuetype [System]Int32) a2, (valuetype [System]Int32) a1, (valuetype [System]Int32) a0)  %uid=ctor136
+WF:install_in_cil_directory:  Method KIWIARRAY4D`1/.ctor, method uid=ctor136 added to directory
+WF:install_in_cil_directory: top add item codefix= .class  public beforefieldinit ansi KIWIARRAY3D`1<CT>
+
+WF:install_in_cil_directory: class KIWIARRAY3D`1
+WF:install_in_cil_directory: top add item codefix=KIWIARRAY3D`1 .field private !CT[0] arraybase
+WF:install_in_cil_directory: top add item codefix=KIWIARRAY3D`1 .field private (valuetype [System]Int32) d2dim0
+WF:install_in_cil_directory: top add item codefix=KIWIARRAY3D`1 .field private (valuetype [System]Int32) d2dim1
+WF:install_in_cil_directory: top add item codefix=KIWIARRAY3D`1 .field private (valuetype [System]Int32) d2dim2
+WF:install_in_cil_directory: top add item codefix=KIWIARRAY3D`1 .custom .ctor [System]Void [[System]Reflection]DefaultMemberAttribute::.ctor([System]String "")
+WF:install_in_cil_directory: top add item codefix=KIWIARRAY3D`1 .method public default true (valuetype [System]Int32) GetLength((valuetype [System]Int32) n)  %uid=GetLength14
+WF:install_in_cil_directory:  Method KIWIARRAY3D`1/GetLength, method uid=GetLength14 added to directory
+WF:install_in_cil_directory: top add item codefix=KIWIARRAY3D`1 .method public default true (valuetype [System]Int32) get_Rank()  %uid=getRank12
+WF:install_in_cil_directory:  Method KIWIARRAY3D`1/get_Rank, method uid=getRank12 added to directory
+WF:install_in_cil_directory: top add item codefix=KIWIARRAY3D`1 .method public default true (valuetype [System]Int64) KiwiAddress((valuetype [System]UInt32) i2, (valuetype [System]UInt32) i1, (valuetype [System]UInt32) i0)  %uid=KiwiAddress10
+WF:install_in_cil_directory:  Method KIWIARRAY3D`1/KiwiAddress, method uid=KiwiAddress10 added to directory
+WF:install_in_cil_directory: top add item codefix=KIWIARRAY3D`1 .method public default true !CT get_Item((valuetype [System]UInt32) i2, (valuetype [System]UInt32) i1, (valuetype [System]UInt32) i0)  %uid=getItem14
+WF:install_in_cil_directory:  Method KIWIARRAY3D`1/get_Item, method uid=getItem14 added to directory
+WF:install_in_cil_directory: top add item codefix=KIWIARRAY3D`1 .method public default true [System]Void set_Item((valuetype [System]UInt32) i2, (valuetype [System]UInt32) i1, (valuetype [System]UInt32) i0, !CT value)  %uid=setItem14
+WF:install_in_cil_directory:  Method KIWIARRAY3D`1/set_Item, method uid=setItem14 added to directory
+WF:install_in_cil_directory: top add item codefix=KIWIARRAY3D`1 .method public default true [System]Void .ctor((valuetype [System]Int32) a2, (valuetype [System]Int32) a1, (valuetype [System]Int32) a0)  %uid=ctor134
+WF:install_in_cil_directory:  Method KIWIARRAY3D`1/.ctor, method uid=ctor134 added to directory
+WF:install_in_cil_directory: top add item codefix= .class  public beforefieldinit ansi KIWIARRAY2D_J`1<CT>
+
+WF:install_in_cil_directory: class KIWIARRAY2D_J`1
+WF:install_in_cil_directory: top add item codefix=KIWIARRAY2D_J`1 .field private (valuetype [System]Int32) d2dim0
+WF:install_in_cil_directory: top add item codefix=KIWIARRAY2D_J`1 .field private (valuetype [System]Int32) d2dim1
+WF:install_in_cil_directory: top add item codefix=KIWIARRAY2D_J`1 .field private !CT[0][0] bases
+WF:install_in_cil_directory: top add item codefix=KIWIARRAY2D_J`1 .custom .ctor [System]Void [[System]Reflection]DefaultMemberAttribute::.ctor([System]String "")
+WF:install_in_cil_directory: top add item codefix=KIWIARRAY2D_J`1 .method public default true (valuetype [System]Int32) GetLength((valuetype [System]Int32) n)  %uid=GetLength12
+WF:install_in_cil_directory:  Method KIWIARRAY2D_J`1/GetLength, method uid=GetLength12 added to directory
+WF:install_in_cil_directory: top add item codefix=KIWIARRAY2D_J`1 .method public default true !CT get_Item((valuetype [System]UInt32) i1, (valuetype [System]UInt32) i0)  %uid=getItem12
+WF:install_in_cil_directory:  Method KIWIARRAY2D_J`1/get_Item, method uid=getItem12 added to directory
+WF:install_in_cil_directory: top add item codefix=KIWIARRAY2D_J`1 .method public default true [System]Void set_Item((valuetype [System]UInt32) i1, (valuetype [System]UInt32) i0, !CT value)  %uid=setItem12
+WF:install_in_cil_directory:  Method KIWIARRAY2D_J`1/set_Item, method uid=setItem12 added to directory
+WF:install_in_cil_directory: top add item codefix=KIWIARRAY2D_J`1 .method public default true [System]Void .ctor((valuetype [System]Int32) a1, (valuetype [System]Int32) a0)  %uid=ctor132
+WF:install_in_cil_directory:  Method KIWIARRAY2D_J`1/.ctor, method uid=ctor132 added to directory
+WF:install_in_cil_directory: top add item codefix= .class  public beforefieldinit ansi [System]Array
+
+WF:install_in_cil_directory: class System/Array
+WF:install_in_cil_directory: top add item codefix=System/Array .method static private default false [System]Void KiwiDotPause((valuetype [System]Int32) hardf)  %uid=KiwiDotPause10
+WF:install_in_cil_directory:  Method System/Array/KiwiDotPause, method uid=KiwiDotPause10 added to directory
+WF:install_in_cil_directory: top add item codefix=System/Array .method static private generic false (valuetype [System]Int32) IndexOf<!!ACT>(!ACT[0] haystack, !ACT needle)  %uid=IndexOf12
+WF:install_in_cil_directory:  Method System/Array/IndexOf, method uid=IndexOf12 added to directory
+WF:install_in_cil_directory: top add item codefix=System/Array .method public default true [System]Void .ctor()  %uid=ctor130
+WF:install_in_cil_directory:  Method System/Array/.ctor, method uid=ctor130 added to directory
+WF:install_in_cil_directory: top add item codefix= .class  public beforefieldinit ansi KIWIARRAY2D`1<CT>
+
+WF:install_in_cil_directory: class KIWIARRAY2D`1
+WF:install_in_cil_directory: top add item codefix=KIWIARRAY2D`1 .field private !CT[0] arraybase
+WF:install_in_cil_directory: top add item codefix=KIWIARRAY2D`1 .field private (valuetype [System]Int32) d2dim0
+WF:install_in_cil_directory: top add item codefix=KIWIARRAY2D`1 .field private (valuetype [System]Int32) d2dim1
+WF:install_in_cil_directory: top add item codefix=KIWIARRAY2D`1 .custom .ctor [System]Void [[System]Reflection]DefaultMemberAttribute::.ctor([System]String "")
+WF:install_in_cil_directory: top add item codefix=KIWIARRAY2D`1 .method public default true (valuetype [System]Int32) GetLength((valuetype [System]Int32) n)  %uid=GetLength10
+WF:install_in_cil_directory:  Method KIWIARRAY2D`1/GetLength, method uid=GetLength10 added to directory
+WF:install_in_cil_directory: top add item codefix=KIWIARRAY2D`1 .method public default true (valuetype [System]Int32) get_Rank()  %uid=getRank10
+WF:install_in_cil_directory:  Method KIWIARRAY2D`1/get_Rank, method uid=getRank10 added to directory
+WF:install_in_cil_directory: top add item codefix=KIWIARRAY2D`1 .method public default true (valuetype [System]Int64) KiwiSpecialAddress((valuetype [System]UInt32) i1, (valuetype [System]UInt32) i0)  %uid=KiwiSpecialAddress10
+WF:install_in_cil_directory:  Method KIWIARRAY2D`1/KiwiSpecialAddress, method uid=KiwiSpecialAddress10 added to directory
+WF:install_in_cil_directory: top add item codefix=KIWIARRAY2D`1 .method public default true !CT get_Item((valuetype [System]UInt32) i1, (valuetype [System]UInt32) i0)  %uid=getItem10
+WF:install_in_cil_directory:  Method KIWIARRAY2D`1/get_Item, method uid=getItem10 added to directory
+WF:install_in_cil_directory: top add item codefix=KIWIARRAY2D`1 .method public default true [System]Void set_Item((valuetype [System]UInt32) i1, (valuetype [System]UInt32) i0, !CT value)  %uid=setItem10
+WF:install_in_cil_directory:  Method KIWIARRAY2D`1/set_Item, method uid=setItem10 added to directory
+WF:install_in_cil_directory: top add item codefix=KIWIARRAY2D`1 .method public default true [System]Void .ctor((valuetype [System]Int32) a1, (valuetype [System]Int32) a0)  %uid=ctor128
+WF:install_in_cil_directory:  Method KIWIARRAY2D`1/.ctor, method uid=ctor128 added to directory
+WF:install_in_cil_directory: top add item codefix= .class  public beforefieldinit ansi [System]Array`1<T>
+
+WF:install_in_cil_directory: class System/Array`1
+WF:install_in_cil_directory: top add item codefix=System/Array`1 .method private default true [System]Void Dispose()  %uid=Dispose12
+WF:install_in_cil_directory:  Method System/Array`1/Dispose, method uid=Dispose12 added to directory
+WF:install_in_cil_directory: top add item codefix=System/Array`1 .method static private default false (valuetype [System]Int32) IndexOf(!T[0] haystack, !T needle)  %uid=IndexOf10
+WF:install_in_cil_directory:  Method System/Array`1/IndexOf, method uid=IndexOf10 added to directory
+WF:install_in_cil_directory: top add item codefix=System/Array`1 .method static public default false [System]Void Copy(!T[0] src, !T[0] dest, (valuetype [System]Int32) length)  %uid=Copy10
+WF:install_in_cil_directory:  Method System/Array`1/Copy, method uid=Copy10 added to directory
+WF:install_in_cil_directory: top add item codefix=System/Array`1 .method public default true [System]Void .ctor()  %uid=ctor126
+WF:install_in_cil_directory:  Method System/Array`1/.ctor, method uid=ctor126 added to directory
+WF:install_in_cil_directory: top add item codefix= .class  public beforefieldinit ansi [System]BitConverter
+
+WF:install_in_cil_directory: class System/BitConverter
+WF:install_in_cil_directory: top add item codefix=System/BitConverter .field initonly static public (valuetype [System]Boolean) IsLittleEndian
+WF:install_in_cil_directory: top add item codefix=System/BitConverter .method static public default false (valuetype [System]Int64) ToInt64((valuetype [System]Byte)[0] res, (valuetype [System]Int32) off)  %uid=ToInt6410
+WF:install_in_cil_directory:  Method System/BitConverter/ToInt64, method uid=ToInt6410 added to directory
+WF:install_in_cil_directory: top add item codefix=System/BitConverter .method static public default false (valuetype [System]Byte)[0] GetBytes((valuetype [System]Int64) x)  %uid=GetBytes10
+WF:install_in_cil_directory:  Method System/BitConverter/GetBytes, method uid=GetBytes10 added to directory
+WF:install_in_cil_directory: top add item codefix=System/BitConverter .method static public default false (valuetype [System]Int32) ToInt32((valuetype [System]Byte)[0] res, (valuetype [System]Int32) off)  %uid=ToInt3210
+WF:install_in_cil_directory:  Method System/BitConverter/ToInt32, method uid=ToInt3210 added to directory
+WF:install_in_cil_directory: top add item codefix=System/BitConverter .method static public default false (valuetype [System]Byte)[0] GetBytes((valuetype [System]Int32) x)  %uid=GetBytes12
+WF:install_in_cil_directory:  Method System/BitConverter/GetBytes, method uid=GetBytes12 added to directory
+Method System/BitConverter/GetBytes (arity=1) (uid=GetBytes12) defined more than once - perhaps overloaded.
+WF:install_in_cil_directory: top add item codefix=System/BitConverter .method static public default false (valuetype [System]Int16) ToInt16((valuetype [System]Byte)[0] res, (valuetype [System]Int32) off)  %uid=ToInt1610
+WF:install_in_cil_directory:  Method System/BitConverter/ToInt16, method uid=ToInt1610 added to directory
+WF:install_in_cil_directory: top add item codefix=System/BitConverter .method static public default false (valuetype [System]Byte)[0] GetBytes((valuetype [System]Int16) x)  %uid=GetBytes14
+WF:install_in_cil_directory:  Method System/BitConverter/GetBytes, method uid=GetBytes14 added to directory
+Method System/BitConverter/GetBytes (arity=1) (uid=GetBytes14) defined more than once - perhaps overloaded.
+WF:install_in_cil_directory: top add item codefix=System/BitConverter .method static public default false (valuetype [System]UInt64) ToUInt64((valuetype [System]Byte)[0] res, (valuetype [System]Int32) off)  %uid=ToUInt6410
+WF:install_in_cil_directory:  Method System/BitConverter/ToUInt64, method uid=ToUInt6410 added to directory
+WF:install_in_cil_directory: top add item codefix=System/BitConverter .method static public default false (valuetype [System]Byte)[0] GetBytes((valuetype [System]UInt64) x)  %uid=GetBytes16
+WF:install_in_cil_directory:  Method System/BitConverter/GetBytes, method uid=GetBytes16 added to directory
+Method System/BitConverter/GetBytes (arity=1) (uid=GetBytes16) defined more than once - perhaps overloaded.
+WF:install_in_cil_directory: top add item codefix=System/BitConverter .method static public default false (valuetype [System]UInt32) ToUInt32((valuetype [System]Byte)[0] res, (valuetype [System]Int32) off)  %uid=ToUInt3210
+WF:install_in_cil_directory:  Method System/BitConverter/ToUInt32, method uid=ToUInt3210 added to directory
+WF:install_in_cil_directory: top add item codefix=System/BitConverter .method static public default false (valuetype [System]Byte)[0] GetBytes((valuetype [System]UInt32) x)  %uid=GetBytes18
+WF:install_in_cil_directory:  Method System/BitConverter/GetBytes, method uid=GetBytes18 added to directory
+Method System/BitConverter/GetBytes (arity=1) (uid=GetBytes18) defined more than once - perhaps overloaded.
+WF:install_in_cil_directory: top add item codefix=System/BitConverter .method static public default false (valuetype [System]UInt16) ToUInt16((valuetype [System]Byte)[0] res, (valuetype [System]Int32) off)  %uid=ToUInt1610
+WF:install_in_cil_directory:  Method System/BitConverter/ToUInt16, method uid=ToUInt1610 added to directory
+WF:install_in_cil_directory: top add item codefix=System/BitConverter .method static public default false (valuetype [System]Byte)[0] GetBytes((valuetype [System]UInt16) x)  %uid=GetBytes20
+WF:install_in_cil_directory:  Method System/BitConverter/GetBytes, method uid=GetBytes20 added to directory
+Method System/BitConverter/GetBytes (arity=1) (uid=GetBytes20) defined more than once - perhaps overloaded.
+WF:install_in_cil_directory: top add item codefix=System/BitConverter .method static public default false (valuetype [System]Char) ToChar((valuetype [System]Byte)[0] res, (valuetype [System]Int32) off)  %uid=ToChar10
+WF:install_in_cil_directory:  Method System/BitConverter/ToChar, method uid=ToChar10 added to directory
+WF:install_in_cil_directory: top add item codefix=System/BitConverter .method static public default false (valuetype [System]Byte)[0] GetBytes((valuetype [System]Char) x)  %uid=GetBytes22
+WF:install_in_cil_directory:  Method System/BitConverter/GetBytes, method uid=GetBytes22 added to directory
+Method System/BitConverter/GetBytes (arity=1) (uid=GetBytes22) defined more than once - perhaps overloaded.
+WF:install_in_cil_directory: top add item codefix=System/BitConverter .method static public default false (valuetype [System]Boolean) ToBoolean((valuetype [System]Byte)[0] res, (valuetype [System]Int32) off)  %uid=ToBoolean10
+WF:install_in_cil_directory:  Method System/BitConverter/ToBoolean, method uid=ToBoolean10 added to directory
+WF:install_in_cil_directory: top add item codefix=System/BitConverter .method static public default false (valuetype [System]Byte)[0] GetBytes((valuetype [System]Boolean) x)  %uid=GetBytes24
+WF:install_in_cil_directory:  Method System/BitConverter/GetBytes, method uid=GetBytes24 added to directory
+Method System/BitConverter/GetBytes (arity=1) (uid=GetBytes24) defined more than once - perhaps overloaded.
+WF:install_in_cil_directory: top add item codefix=System/BitConverter .method static public default false (valuetype [System]Byte)[0] GetBytes((valuetype [System]Single) x)  %uid=GetBytes26
+WF:install_in_cil_directory:  Method System/BitConverter/GetBytes, method uid=GetBytes26 added to directory
+Method System/BitConverter/GetBytes (arity=1) (uid=GetBytes26) defined more than once - perhaps overloaded.
+WF:install_in_cil_directory: top add item codefix=System/BitConverter .method static public default false (valuetype [System]Byte)[0] GetBytes((valuetype [System]Double) x)  %uid=GetBytes28
+WF:install_in_cil_directory:  Method System/BitConverter/GetBytes, method uid=GetBytes28 added to directory
+Method System/BitConverter/GetBytes (arity=1) (uid=GetBytes28) defined more than once - perhaps overloaded.
+WF:install_in_cil_directory: top add item codefix=System/BitConverter .method static public default false (valuetype [System]Single) ToSingle((valuetype [System]Byte)[0] srcbytes, (valuetype [System]Int32) off)  %uid=ToSingle10
+WF:install_in_cil_directory:  Method System/BitConverter/ToSingle, method uid=ToSingle10 added to directory
+WF:install_in_cil_directory: top add item codefix=System/BitConverter .method static public default false (valuetype [System]Double) ToDouble((valuetype [System]Byte)[0] srcbytes, (valuetype [System]Int32) off)  %uid=ToDouble10
+WF:install_in_cil_directory:  Method System/BitConverter/ToDouble, method uid=ToDouble10 added to directory
+WF:install_in_cil_directory: top add item codefix=System/BitConverter .method public default true [System]Void .ctor()  %uid=ctor124
+WF:install_in_cil_directory:  Method System/BitConverter/.ctor, method uid=ctor124 added to directory
+WF:install_in_cil_directory: top add item codefix=System/BitConverter .method static private default false [System]Void .cctor()  %uid=cctor12
+WF:install_in_cil_directory:  Method System/BitConverter/.cctor, method uid=cctor12 added to directory
+WF:install_in_cil_directory: top add item codefix= .class  beforefieldinit ansi [KiwiSystem]hprls_primitives
+
+WF:install_in_cil_directory: class KiwiSystem/hprls_primitives
+WF:install_in_cil_directory: top add item codefix=KiwiSystem/hprls_primitives .method static public default false [System]Void hpr_pause()  %uid=hprpause10
+WF:install_in_cil_directory:  Method KiwiSystem/hprls_primitives/hpr_pause, method uid=hprpause10 added to directory
+WF:install_in_cil_directory: top add item codefix=KiwiSystem/hprls_primitives .method static public default false [System]Void hpr_pause((valuetype [System]Int32) pause_mode)  %uid=hprpause12
+WF:install_in_cil_directory:  Method KiwiSystem/hprls_primitives/hpr_pause, method uid=hprpause12 added to directory
+Method KiwiSystem/hprls_primitives/hpr_pause (arity=1) (uid=hprpause12) defined more than once - perhaps overloaded.
+WF:install_in_cil_directory: top add item codefix=KiwiSystem/hprls_primitives .method static public default false [System]Void hpr_sysexit((valuetype [System]Int32) return_code)  %uid=hprsysexit10
+WF:install_in_cil_directory:  Method KiwiSystem/hprls_primitives/hpr_sysexit, method uid=hprsysexit10 added to directory
+WF:install_in_cil_directory: top add item codefix=KiwiSystem/hprls_primitives .method static public default false [System]Void begin_critical_region()  %uid=begincriticalregion10
+WF:install_in_cil_directory:  Method KiwiSystem/hprls_primitives/begin_critical_region, method uid=begincriticalregion10 added to directory
+WF:install_in_cil_directory: top add item codefix=KiwiSystem/hprls_primitives .method static public default false [System]Void end_critical_region()  %uid=endcriticalregion10
+WF:install_in_cil_directory:  Method KiwiSystem/hprls_primitives/end_critical_region, method uid=endcriticalregion10 added to directory
+WF:install_in_cil_directory: top add item codefix=KiwiSystem/hprls_primitives .method static public default false [System]Void hpr_pause_control((valuetype [System]Int32) new_default_mode)  %uid=hprpausecontrol10
+WF:install_in_cil_directory:  Method KiwiSystem/hprls_primitives/hpr_pause_control, method uid=hprpausecontrol10 added to directory
+WF:install_in_cil_directory: top add item codefix=KiwiSystem/hprls_primitives .method static public default false (valuetype [System]Boolean) hpr_testandset([System]Object it, (valuetype [System]Boolean) nv)  %uid=hprtestandset10
+WF:install_in_cil_directory:  Method KiwiSystem/hprls_primitives/hpr_testandset, method uid=hprtestandset10 added to directory
+WF:install_in_cil_directory: top add item codefix=KiwiSystem/hprls_primitives .method public default true [System]Void .ctor()  %uid=ctor122
+WF:install_in_cil_directory:  Method KiwiSystem/hprls_primitives/.ctor, method uid=ctor122 added to directory
+WF:install_in_cil_directory: top add item codefix= // PARSE TREE of /home/djg11/d320/hprls/kiwipro/kiwic/distro/lib/../support/Kiwic.dll
+
+WF:install_in_cil_directory: top add item codefix= .class  beforefieldinit ansi KSubs2_Director
+
+WF:install_in_cil_directory: class KSubs2_Director
+WF:install_in_cil_directory: top add item codefix=KSubs2_Director .field static private (valuetype [System]Int32) design_serial_number ATTS=(.custom .ctor [System]Void [[KiwiSystem]Kiwi]OutputWordPortAttribute::.ctor([System]String "") [[design_serial_number ]]
+)
+WF:install_in_cil_directory: top add item codefix=KSubs2_Director .field static private (valuetype [System]Int32) pio_addr ATTS=(.custom .ctor [System]Void [[KiwiSystem]Kiwi]InputWordPortAttribute::.ctor([System]String "") [[pio_addr ]]
+)
+WF:install_in_cil_directory: top add item codefix=KSubs2_Director .field static private (valuetype [System]Int32) pio_wdata ATTS=(.custom .ctor [System]Void [[KiwiSystem]Kiwi]InputWordPortAttribute::.ctor([System]String "") [[pio_wdata ]]
+)
+WF:install_in_cil_directory: top add item codefix=KSubs2_Director .field static private (valuetype [System]Int32) pio_rdata ATTS=(.custom .ctor [System]Void [[KiwiSystem]Kiwi]OutputWordPortAttribute::.ctor([System]String "") [[pio_rdata ]]
+)
+WF:install_in_cil_directory: top add item codefix=KSubs2_Director .field static private (valuetype [System]Boolean) pio_hwen ATTS=(.custom .ctor [System]Void [[KiwiSystem]Kiwi]InputBitPortAttribute::.ctor([System]String "") [[pio_hwen ]]
+)
+WF:install_in_cil_directory: top add item codefix=KSubs2_Director .field literal static public (valuetype [System]Int32) pio_size = 0xa
+WF:install_in_cil_directory: top add item codefix=KSubs2_Director .field static public (valuetype [System]Int32)[0] pio_space
+WF:install_in_cil_directory: top add item codefix=KSubs2_Director .method static public default false [System]Void host_pio_process()  %uid=hostpioprocess10
+Found attribute marked-up target for h/w compilation .method static public default false [System]Void host_pio_process()  %uid=hostpioprocess10
+WF:install_in_cil_directory:  Method KSubs2_Director/host_pio_process, method uid=hostpioprocess10 added to directory
+WF:install_in_cil_directory: top add item codefix=KSubs2_Director .method public default true [System]Void .ctor()  %uid=ctor148
+WF:install_in_cil_directory:  Method KSubs2_Director/.ctor, method uid=ctor148 added to directory
+WF:install_in_cil_directory: top add item codefix=KSubs2_Director .method static private default false [System]Void .cctor()  %uid=cctor14
+WF:install_in_cil_directory:  Method KSubs2_Director/.cctor, method uid=cctor14 added to directory
+Class 'KSubs2_Director' has root/ep method(s) flagged for h/w compilation: MM_root KSubs2_Director/host_pio_process
+WF:install_in_cil_directory: top add item codefix= // PARSE TREE of csharp/KSubs2_Director.dll
+
+WF:install_in_cil_directory: top add item codefix= .class  beforefieldinit ansi primesya
+
+WF:install_in_cil_directory: class primesya
+WF:install_in_cil_directory: top add item codefix=primesya .field static private (valuetype [System]Int32) limit
+WF:install_in_cil_directory: top add item codefix=primesya .field static private (valuetype [System]Boolean)[0] PA
+WF:install_in_cil_directory: top add item codefix=primesya .field static private (valuetype [System]UInt32) vol ATTS=(.custom .ctor [System]Void [[KiwiSystem]Kiwi]InputWordPortAttribute::.ctor((valuetype [System]Int32) "", (valuetype [System]Int32) "") [[0x1f 0x0 ]]
+.custom .ctor [System]Void [[KiwiSystem]Kiwi]OutputNameAttribute::.ctor([System]String "") [[volume ]]
+)
+WF:install_in_cil_directory: top add item codefix=primesya .field static private (valuetype [System]UInt32) count ATTS=(.custom .ctor [System]Void [[KiwiSystem]Kiwi]OutputWordPortAttribute::.ctor((valuetype [System]Int32) "", (valuetype [System]Int32) "") [[0x1f 0x0 ]]
+.custom .ctor [System]Void [[KiwiSystem]Kiwi]OutputNameAttribute::.ctor([System]String "") [[count ]]
+)
+WF:install_in_cil_directory: top add item codefix=primesya .field static private (valuetype [System]Int32) count1
+WF:install_in_cil_directory: top add item codefix=primesya .field static private (valuetype [System]Int32) elimit ATTS=(.custom .ctor [System]Void [[KiwiSystem]Kiwi]OutputWordPortAttribute::.ctor((valuetype [System]Int32) "", (valuetype [System]Int32) "") [[0x1f 0x0 ]]
+.custom .ctor [System]Void [[KiwiSystem]Kiwi]OutputNameAttribute::.ctor([System]String "") [[elimit ]]
+)
+WF:install_in_cil_directory: top add item codefix=primesya .field literal static private (valuetype [System]Int32) evariant_master = 0x0
+WF:install_in_cil_directory: top add item codefix=primesya .field static private (valuetype [System]Int32) evariant_output ATTS=(.custom .ctor [System]Void [[KiwiSystem]Kiwi]OutputWordPortAttribute::.ctor((valuetype [System]Int32) "", (valuetype [System]Int32) "") [[0x1f 0x0 ]]
+.custom .ctor [System]Void [[KiwiSystem]Kiwi]OutputNameAttribute::.ctor([System]String "") [[evariant ]]
+)
+WF:install_in_cil_directory: top add item codefix=primesya .field static private (valuetype [System]Int32) edesign ATTS=(.custom .ctor [System]Void [[KiwiSystem]Kiwi]OutputWordPortAttribute::.ctor((valuetype [System]Int32) "", (valuetype [System]Int32) "") [[0x1f 0x0 ]]
+.custom .ctor [System]Void [[KiwiSystem]Kiwi]OutputNameAttribute::.ctor([System]String "") [[edesign ]]
+)
+WF:install_in_cil_directory: top add item codefix=primesya .field static private (valuetype [System]Boolean) finished ATTS=(.custom .ctor [System]Void [[KiwiSystem]Kiwi]OutputBitPortAttribute::.ctor([System]String "") [[finished ]]
+)
+WF:install_in_cil_directory: top add item codefix=primesya .method static public default false [System]Void Main()  %uid=Main10
+Found attribute marked-up target for h/w compilation .method static public default false [System]Void Main()  %uid=Main10
+WF:install_in_cil_directory:  Method primesya/Main, method uid=Main10 added to directory
+WF:install_in_cil_directory: top add item codefix=primesya .method public default true [System]Void .ctor()  %uid=ctor150
+WF:install_in_cil_directory:  Method primesya/.ctor, method uid=ctor150 added to directory
+WF:install_in_cil_directory: top add item codefix=primesya .method static private default false [System]Void .cctor()  %uid=cctor16
+WF:install_in_cil_directory:  Method primesya/.cctor, method uid=cctor16 added to directory
+Class 'primesya' has root/ep method(s) flagged for h/w compilation: MM_root primesya/Main
+WF:install_in_cil_directory: top add item codefix= // PARSE TREE of csharp/primes_offchip.exe
+
+Final directory of CIL items
+Opening log file  obj/inscope.txt

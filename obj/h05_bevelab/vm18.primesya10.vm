@@ -1,0 +1,182 @@
+Post assembly report
+msg=primesya10
+sensitivity=posedge(clk)
+Listing: id=vm18
+0:      linepoint: PCT404:0: -1
+1:      // End of static elaboration for tid T404. After all generate loops are unwound we arrive here: 0
+2:T404_0:
+3:      linepoint: PCT404:0: -1
+4:      primesya/T404/Main/T404/Main/V_0 := U1'1;
+5:      elimit := 1000;
+6:      Xeasc *APPLY:hpr_KppMark("START", "INITIALISE");
+7:      Xeasc *APPLY:hpr_writeln($$AUTOFORMAT: This will be automatically replaced with a printf formatted string., *APPLY:hpr_concat("Primes Up To ", 1000));
+8:      Xeasc *APPLY:hpr_pause(8);
+9:      @_BOOL/CC/SCALbx10_ARA0[0] := 0<volume;
+10:      Xeasc *APPLY:hpr_pause(8);
+11:      primesya/count1 := 2;
+12:      count := U32'0;
+13:      primesya/T404/Main/T404/Main/V_2_GP := 0;
+14:      Xgoto(T404_17, 15);
+15:T404_17:
+16:      linepoint: PCT404:17: -1
+17:      beq( primesya/T404/Main/T404/Main/V_2_GP>=1000,T404_12, 95)
+18:      Xgoto(T404_18, 19);
+19:T404_18:
+20:      linepoint: PCT404:18: -1
+21:      Xeasc *APPLY:hpr_KppMark("wp2", "CROSSOFF");
+22:      primesya/T404/Main/T404/Main/V_2_GP := 2;
+23:      Xgoto(T404_38, 24);
+24:T404_38:
+25:      linepoint: PCT404:38: -1
+26:      beq( primesya/T404/Main/T404/Main/V_2_GP>=1000,T404_22, 28)
+27:      Xgoto(T404_40, 38);
+28:T404_22:
+29:      linepoint: PCT404:22: -1
+30:      Xeasc *APPLY:hpr_pause(8);
+31:      primesya/T404/Main/T404/Main/V_4_GP := primesya/T404/Main/T404/Main/V_2_GP+primesya/T404/Main/T404/Main/V_2_GP;
+32:      beq( primesya/T404/Main/T404/Main/V_4_GP>=1000,T404_28, 77)
+33:      Xgoto(T404_25, 34);
+34:T404_25:
+35:      linepoint: PCT404:25: -1
+36:      Xeasc *APPLY:hpr_writeln($$AUTOFORMAT: This will be automatically replaced with a printf formatted string., "Skip out on square");
+37:      Xgoto(T404_40, 38);
+38:T404_40:
+39:      linepoint: PCT404:40: -1
+40:      Xeasc *APPLY:hpr_KppMark("wp3", "COUNTING");
+41:      Xeasc *APPLY:hpr_writeln($$AUTOFORMAT: This will be automatically replaced with a printf formatted string., "Now counting");
+42:      primesya/T404/Main/T404/Main/V_4_GP := 0;
+43:      Xgoto(T404_52, 44);
+44:T404_52:
+45:      linepoint: PCT404:52: -1
+46:      beq( primesya/T404/Main/T404/Main/V_4_GP>=1000,T404_45, 63)
+47:      Xgoto(T404_53, 48);
+48:T404_53:
+49:      linepoint: PCT404:53: -1
+50:      Xeasc *APPLY:hpr_writeln("There are %d primes below the natural number %u.", count, 1000);
+51:      Xeasc *APPLY:hpr_writeln("Optimisation variant=%u (count1 is %u).", 0, 2);
+52:      Xeasc *APPLY:hpr_pause(8);
+53:      Xeasc *APPLY:hpr_pause(8);
+54:      Xeasc *APPLY:hpr_KppMark("FINISH");
+55:      Xeasc *APPLY:hpr_pause(8);
+56:      finished := U1'1;
+57:      Xeasc *APPLY:hpr_pause(8);
+58:      Xgoto(T404_63, 59);
+59:T404_63:
+60:      linepoint: PCT404:63: -1
+61:      Xeasc *APPLY:hpr_pause(8);
+62:      Xgoto(T404_63, 59);
+63:T404_45:
+64:      linepoint: PCT404:45: -1
+65:      Xeasc *APPLY:hpr_pause(8);
+66:      beq( |-|@_BOOL/CC/SCALbx10_ARA0[primesya/T404/Main/T404/Main/V_4_GP],T404_49, 72)
+67:      Xgoto(T404_47, 68);
+68:T404_47:
+69:      linepoint: PCT404:47: -1
+70:      count := Cu(1+count);
+71:      Xgoto(T404_49, 72);
+72:T404_49:
+73:      linepoint: PCT404:49: -1
+74:      Xeasc *APPLY:hpr_writeln("Tally counting %u %d", primesya/T404/Main/T404/Main/V_4_GP, count);
+75:      primesya/T404/Main/T404/Main/V_4_GP := 1+primesya/T404/Main/T404/Main/V_4_GP;
+76:      Xgoto(T404_52, 44);
+77:T404_28:
+78:      linepoint: PCT404:28: -1
+79:      Xgoto(T404_35, 80);
+80:T404_35:
+81:      linepoint: PCT404:35: -1
+82:      beq( primesya/T404/Main/T404/Main/V_4_GP>=1000,T404_30, 88)
+83:      Xgoto(T404_36, 84);
+84:T404_36:
+85:      linepoint: PCT404:36: -1
+86:      primesya/T404/Main/T404/Main/V_2_GP := 1+primesya/T404/Main/T404/Main/V_2_GP;
+87:      Xgoto(T404_38, 24);
+88:T404_30:
+89:      linepoint: PCT404:30: -1
+90:      Xeasc *APPLY:hpr_writeln("Cross off %u %u   (count1=%u)", primesya/T404/Main/T404/Main/V_2_GP, primesya/T404/Main/T404/Main/V_4_GP, 2);
+91:      Xeasc *APPLY:hpr_pause(8);
+92:      @_BOOL/CC/SCALbx10_ARA0[primesya/T404/Main/T404/Main/V_4_GP] := U1'0;
+93:      primesya/T404/Main/T404/Main/V_4_GP := primesya/T404/Main/T404/Main/V_2_GP+primesya/T404/Main/T404/Main/V_4_GP;
+94:      Xgoto(T404_35, 80);
+95:T404_12:
+96:      linepoint: PCT404:12: -1
+97:      Xeasc *APPLY:hpr_pause(8);
+98:      @_BOOL/CC/SCALbx10_ARA0[primesya/T404/Main/T404/Main/V_2_GP] := U1'1;
+99:      Xeasc *APPLY:hpr_writeln("Setting initial array flag to hold : addr=%u readback=%d", primesya/T404/Main/T404/Main/V_2_GP, @_BOOL/CC/SCALbx10_ARA0[primesya/T404/Main/T404/Main/V_2_GP]);
+100:      primesya/T404/Main/T404/Main/V_2_GP := 1+primesya/T404/Main/T404/Main/V_2_GP;
+101:      Xgoto(T404_17, 15);
+102:      // End of DIC comment 1
+----------------------- end of vm18
+Concise listing:
+Listing: id=vm18
+2:T404_0:
+4:      primesya/T404/Main/T404/Main/V_0 := U1'1;
+5:      elimit := 1000;
+6:      Xeasc *APPLY:hpr_KppMark("START", "INITIALISE");
+7:      Xeasc *APPLY:hpr_writeln($$AUTOFORMAT: This will be automatically replaced with a printf formatted string., *APPLY:hpr_concat("Primes Up To ", 1000));
+8:      Xeasc *APPLY:hpr_pause(8);
+9:      @_BOOL/CC/SCALbx10_ARA0[0] := 0<volume;
+10:      Xeasc *APPLY:hpr_pause(8);
+11:      primesya/count1 := 2;
+12:      count := U32'0;
+13:      primesya/T404/Main/T404/Main/V_2_GP := 0;
+15:T404_17:
+17:      beq( primesya/T404/Main/T404/Main/V_2_GP>=1000,T404_12, 95)
+19:T404_18:
+21:      Xeasc *APPLY:hpr_KppMark("wp2", "CROSSOFF");
+22:      primesya/T404/Main/T404/Main/V_2_GP := 2;
+24:T404_38:
+26:      beq( primesya/T404/Main/T404/Main/V_2_GP>=1000,T404_22, 28)
+27:      Xgoto(T404_40, 38);
+28:T404_22:
+30:      Xeasc *APPLY:hpr_pause(8);
+31:      primesya/T404/Main/T404/Main/V_4_GP := primesya/T404/Main/T404/Main/V_2_GP+primesya/T404/Main/T404/Main/V_2_GP;
+32:      beq( primesya/T404/Main/T404/Main/V_4_GP>=1000,T404_28, 77)
+34:T404_25:
+36:      Xeasc *APPLY:hpr_writeln($$AUTOFORMAT: This will be automatically replaced with a printf formatted string., "Skip out on square");
+38:T404_40:
+40:      Xeasc *APPLY:hpr_KppMark("wp3", "COUNTING");
+41:      Xeasc *APPLY:hpr_writeln($$AUTOFORMAT: This will be automatically replaced with a printf formatted string., "Now counting");
+42:      primesya/T404/Main/T404/Main/V_4_GP := 0;
+44:T404_52:
+46:      beq( primesya/T404/Main/T404/Main/V_4_GP>=1000,T404_45, 63)
+48:T404_53:
+50:      Xeasc *APPLY:hpr_writeln("There are %d primes below the natural number %u.", count, 1000);
+51:      Xeasc *APPLY:hpr_writeln("Optimisation variant=%u (count1 is %u).", 0, 2);
+52:      Xeasc *APPLY:hpr_pause(8);
+53:      Xeasc *APPLY:hpr_pause(8);
+54:      Xeasc *APPLY:hpr_KppMark("FINISH");
+55:      Xeasc *APPLY:hpr_pause(8);
+56:      finished := U1'1;
+57:      Xeasc *APPLY:hpr_pause(8);
+59:T404_63:
+61:      Xeasc *APPLY:hpr_pause(8);
+62:      Xgoto(T404_63, 59);
+63:T404_45:
+65:      Xeasc *APPLY:hpr_pause(8);
+66:      beq( |-|@_BOOL/CC/SCALbx10_ARA0[primesya/T404/Main/T404/Main/V_4_GP],T404_49, 72)
+68:T404_47:
+70:      count := Cu(1+count);
+72:T404_49:
+74:      Xeasc *APPLY:hpr_writeln("Tally counting %u %d", primesya/T404/Main/T404/Main/V_4_GP, count);
+75:      primesya/T404/Main/T404/Main/V_4_GP := 1+primesya/T404/Main/T404/Main/V_4_GP;
+76:      Xgoto(T404_52, 44);
+77:T404_28:
+80:T404_35:
+82:      beq( primesya/T404/Main/T404/Main/V_4_GP>=1000,T404_30, 88)
+84:T404_36:
+86:      primesya/T404/Main/T404/Main/V_2_GP := 1+primesya/T404/Main/T404/Main/V_2_GP;
+87:      Xgoto(T404_38, 24);
+88:T404_30:
+90:      Xeasc *APPLY:hpr_writeln("Cross off %u %u   (count1=%u)", primesya/T404/Main/T404/Main/V_2_GP, primesya/T404/Main/T404/Main/V_4_GP, 2);
+91:      Xeasc *APPLY:hpr_pause(8);
+92:      @_BOOL/CC/SCALbx10_ARA0[primesya/T404/Main/T404/Main/V_4_GP] := U1'0;
+93:      primesya/T404/Main/T404/Main/V_4_GP := primesya/T404/Main/T404/Main/V_2_GP+primesya/T404/Main/T404/Main/V_4_GP;
+94:      Xgoto(T404_35, 80);
+95:T404_12:
+97:      Xeasc *APPLY:hpr_pause(8);
+98:      @_BOOL/CC/SCALbx10_ARA0[primesya/T404/Main/T404/Main/V_2_GP] := U1'1;
+99:      Xeasc *APPLY:hpr_writeln("Setting initial array flag to hold : addr=%u readback=%d", primesya/T404/Main/T404/Main/V_2_GP, @_BOOL/CC/SCALbx10_ARA0[primesya/T404/Main/T404/Main/V_2_GP]);
+100:      primesya/T404/Main/T404/Main/V_2_GP := 1+primesya/T404/Main/T404/Main/V_2_GP;
+101:      Xgoto(T404_17, 15);
+----------------------- end of vm18
+EOF

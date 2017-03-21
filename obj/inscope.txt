@@ -1,0 +1,579 @@
+Final directory of CIL items
+Items in the CIL directory (before normalise)
+  Dir item primesya  .class  beforefieldinit ansi primesya
+
+  Dir item primesya/.cctor  .method static private default false [System]Void .cctor()  %uid=cctor16
+  Dir item primesya/.ctor  .method public default true [System]Void .ctor()  %uid=ctor150
+  Dir item primesya/Main  .method static public default false [System]Void Main()  %uid=Main10
+  Dir item primesya/finished  .field static private (valuetype [System]Boolean) finished ATTS=(.custom .ctor [System]Void [[KiwiSystem]Kiwi]OutputBitPortAttribu...
+  Dir item primesya/edesign  .field static private (valuetype [System]Int32) edesign ATTS=(.custom .ctor [System]Void [[KiwiSystem]Kiwi]OutputWordPortAttribute...
+  Dir item primesya/evariant_output  .field static private (valuetype [System]Int32) evariant_output ATTS=(.custom .ctor [System]Void [[KiwiSystem]Kiwi]OutputWordPortA...
+  Dir item primesya/evariant_master  .field literal static private (valuetype [System]Int32) evariant_master = 0x0
+  Dir item primesya/elimit  .field static private (valuetype [System]Int32) elimit ATTS=(.custom .ctor [System]Void [[KiwiSystem]Kiwi]OutputWordPortAttribute:...
+  Dir item primesya/count1  .field static private (valuetype [System]Int32) count1
+  Dir item primesya/count  .field static private (valuetype [System]UInt32) count ATTS=(.custom .ctor [System]Void [[KiwiSystem]Kiwi]OutputWordPortAttribute:...
+  Dir item primesya/vol  .field static private (valuetype [System]UInt32) vol ATTS=(.custom .ctor [System]Void [[KiwiSystem]Kiwi]InputWordPortAttribute::.c...
+  Dir item primesya/PA  .field static private (valuetype [System]Boolean)[0] PA
+  Dir item primesya/limit  .field static private (valuetype [System]Int32) limit
+  Dir item KSubs2_Director  .class  beforefieldinit ansi KSubs2_Director
+
+  Dir item KSubs2_Director/.cctor  .method static private default false [System]Void .cctor()  %uid=cctor14
+  Dir item KSubs2_Director/.ctor  .method public default true [System]Void .ctor()  %uid=ctor148
+  Dir item KSubs2_Director/host_pio_process  .method static public default false [System]Void host_pio_process()  %uid=hostpioprocess10
+  Dir item KSubs2_Director/pio_space  .field static public (valuetype [System]Int32)[0] pio_space
+  Dir item KSubs2_Director/pio_size  .field literal static public (valuetype [System]Int32) pio_size = 0xa
+  Dir item KSubs2_Director/pio_hwen  .field static private (valuetype [System]Boolean) pio_hwen ATTS=(.custom .ctor [System]Void [[KiwiSystem]Kiwi]InputBitPortAttribut...
+  Dir item KSubs2_Director/pio_rdata  .field static private (valuetype [System]Int32) pio_rdata ATTS=(.custom .ctor [System]Void [[KiwiSystem]Kiwi]OutputWordPortAttribu...
+  Dir item KSubs2_Director/pio_wdata  .field static private (valuetype [System]Int32) pio_wdata ATTS=(.custom .ctor [System]Void [[KiwiSystem]Kiwi]InputWordPortAttribut...
+  Dir item KSubs2_Director/pio_addr  .field static private (valuetype [System]Int32) pio_addr ATTS=(.custom .ctor [System]Void [[KiwiSystem]Kiwi]InputWordPortAttribute...
+  Dir item KSubs2_Director/design_serial_number  .field static private (valuetype [System]Int32) design_serial_number ATTS=(.custom .ctor [System]Void [[KiwiSystem]Kiwi]OutputWord...
+  Dir item KiwiSystem/hprls_primitives  .class  beforefieldinit ansi [KiwiSystem]hprls_primitives
+
+  Dir item KiwiSystem/hprls_primitives/.ctor  .method public default true [System]Void .ctor()  %uid=ctor122
+  Dir item KiwiSystem/hprls_primitives/hpr_testandset  .method static public default false (valuetype [System]Boolean) hpr_testandset([System]Object it, (valuetype [System]Boolean) nv) ...
+  Dir item KiwiSystem/hprls_primitives/hpr_pause_control  .method static public default false [System]Void hpr_pause_control((valuetype [System]Int32) new_default_mode)  %uid=hprpausecontr...
+  Dir item KiwiSystem/hprls_primitives/end_critical_region  .method static public default false [System]Void end_critical_region()  %uid=endcriticalregion10
+  Dir item KiwiSystem/hprls_primitives/begin_critical_region  .method static public default false [System]Void begin_critical_region()  %uid=begincriticalregion10
+  Dir item KiwiSystem/hprls_primitives/hpr_sysexit  .method static public default false [System]Void hpr_sysexit((valuetype [System]Int32) return_code)  %uid=hprsysexit10
+  Dir item KiwiSystem/hprls_primitives/hpr_pause  .method static public default false [System]Void hpr_pause((valuetype [System]Int32) pause_mode)  %uid=hprpause12
+  Dir item KiwiSystem/hprls_primitives/hpr_pause  .method static public default false [System]Void hpr_pause()  %uid=hprpause10
+  Dir item System/BitConverter  .class  public beforefieldinit ansi [System]BitConverter
+
+  Dir item System/BitConverter/.cctor  .method static private default false [System]Void .cctor()  %uid=cctor12
+  Dir item System/BitConverter/.ctor  .method public default true [System]Void .ctor()  %uid=ctor124
+  Dir item System/BitConverter/ToDouble  .method static public default false (valuetype [System]Double) ToDouble((valuetype [System]Byte)[0] srcbytes, (valuetype [System]I...
+  Dir item System/BitConverter/ToSingle  .method static public default false (valuetype [System]Single) ToSingle((valuetype [System]Byte)[0] srcbytes, (valuetype [System]I...
+  Dir item System/BitConverter/GetBytes  .method static public default false (valuetype [System]Byte)[0] GetBytes((valuetype [System]Double) x)  %uid=GetBytes28
+  Dir item System/BitConverter/GetBytes  .method static public default false (valuetype [System]Byte)[0] GetBytes((valuetype [System]Single) x)  %uid=GetBytes26
+  Dir item System/BitConverter/GetBytes  .method static public default false (valuetype [System]Byte)[0] GetBytes((valuetype [System]Boolean) x)  %uid=GetBytes24
+  Dir item System/BitConverter/ToBoolean  .method static public default false (valuetype [System]Boolean) ToBoolean((valuetype [System]Byte)[0] res, (valuetype [System]Int3...
+  Dir item System/BitConverter/GetBytes  .method static public default false (valuetype [System]Byte)[0] GetBytes((valuetype [System]Char) x)  %uid=GetBytes22
+  Dir item System/BitConverter/ToChar  .method static public default false (valuetype [System]Char) ToChar((valuetype [System]Byte)[0] res, (valuetype [System]Int32) off...
+  Dir item System/BitConverter/GetBytes  .method static public default false (valuetype [System]Byte)[0] GetBytes((valuetype [System]UInt16) x)  %uid=GetBytes20
+  Dir item System/BitConverter/ToUInt16  .method static public default false (valuetype [System]UInt16) ToUInt16((valuetype [System]Byte)[0] res, (valuetype [System]Int32)...
+  Dir item System/BitConverter/GetBytes  .method static public default false (valuetype [System]Byte)[0] GetBytes((valuetype [System]UInt32) x)  %uid=GetBytes18
+  Dir item System/BitConverter/ToUInt32  .method static public default false (valuetype [System]UInt32) ToUInt32((valuetype [System]Byte)[0] res, (valuetype [System]Int32)...
+  Dir item System/BitConverter/GetBytes  .method static public default false (valuetype [System]Byte)[0] GetBytes((valuetype [System]UInt64) x)  %uid=GetBytes16
+  Dir item System/BitConverter/ToUInt64  .method static public default false (valuetype [System]UInt64) ToUInt64((valuetype [System]Byte)[0] res, (valuetype [System]Int32)...
+  Dir item System/BitConverter/GetBytes  .method static public default false (valuetype [System]Byte)[0] GetBytes((valuetype [System]Int16) x)  %uid=GetBytes14
+  Dir item System/BitConverter/ToInt16  .method static public default false (valuetype [System]Int16) ToInt16((valuetype [System]Byte)[0] res, (valuetype [System]Int32) o...
+  Dir item System/BitConverter/GetBytes  .method static public default false (valuetype [System]Byte)[0] GetBytes((valuetype [System]Int32) x)  %uid=GetBytes12
+  Dir item System/BitConverter/ToInt32  .method static public default false (valuetype [System]Int32) ToInt32((valuetype [System]Byte)[0] res, (valuetype [System]Int32) o...
+  Dir item System/BitConverter/GetBytes  .method static public default false (valuetype [System]Byte)[0] GetBytes((valuetype [System]Int64) x)  %uid=GetBytes10
+  Dir item System/BitConverter/ToInt64  .method static public default false (valuetype [System]Int64) ToInt64((valuetype [System]Byte)[0] res, (valuetype [System]Int32) o...
+  Dir item System/BitConverter/IsLittleEndian  .field initonly static public (valuetype [System]Boolean) IsLittleEndian
+  Dir item System/Array`1  .class  public beforefieldinit ansi [System]Array`1<T>
+
+  Dir item System/Array`1/.ctor  .method public default true [System]Void .ctor()  %uid=ctor126
+  Dir item System/Array`1/Copy  .method static public default false [System]Void Copy(!T[0] src, !T[0] dest, (valuetype [System]Int32) length)  %uid=Copy10
+  Dir item System/Array`1/IndexOf  .method static private default false (valuetype [System]Int32) IndexOf(!T[0] haystack, !T needle)  %uid=IndexOf10
+  Dir item System/Array`1/Dispose  .method private default true [System]Void Dispose()  %uid=Dispose12
+  Dir item KIWIARRAY2D`1  .class  public beforefieldinit ansi KIWIARRAY2D`1<CT>
+
+  Dir item KIWIARRAY2D`1/.ctor  .method public default true [System]Void .ctor((valuetype [System]Int32) a1, (valuetype [System]Int32) a0)  %uid=ctor128
+  Dir item KIWIARRAY2D`1/set_Item  .method public default true [System]Void set_Item((valuetype [System]UInt32) i1, (valuetype [System]UInt32) i0, !CT value)  %uid=s...
+  Dir item KIWIARRAY2D`1/get_Item  .method public default true !CT get_Item((valuetype [System]UInt32) i1, (valuetype [System]UInt32) i0)  %uid=getItem10
+  Dir item KIWIARRAY2D`1/KiwiSpecialAddress  .method public default true (valuetype [System]Int64) KiwiSpecialAddress((valuetype [System]UInt32) i1, (valuetype [System]UInt32)...
+  Dir item KIWIARRAY2D`1/get_Rank  .method public default true (valuetype [System]Int32) get_Rank()  %uid=getRank10
+  Dir item KIWIARRAY2D`1/GetLength  .method public default true (valuetype [System]Int32) GetLength((valuetype [System]Int32) n)  %uid=GetLength10
+  Dir item KIWIARRAY2D`1/d2dim1  .field private (valuetype [System]Int32) d2dim1
+  Dir item KIWIARRAY2D`1/d2dim0  .field private (valuetype [System]Int32) d2dim0
+  Dir item KIWIARRAY2D`1/arraybase  .field private !CT[0] arraybase
+  Dir item System/Array  .class  public beforefieldinit ansi [System]Array
+
+  Dir item System/Array/.ctor  .method public default true [System]Void .ctor()  %uid=ctor130
+  Dir item System/Array/IndexOf  .method static private generic false (valuetype [System]Int32) IndexOf<!!ACT>(!ACT[0] haystack, !ACT needle)  %uid=IndexOf12
+  Dir item System/Array/KiwiDotPause  .method static private default false [System]Void KiwiDotPause((valuetype [System]Int32) hardf)  %uid=KiwiDotPause10
+  Dir item KIWIARRAY2D_J`1  .class  public beforefieldinit ansi KIWIARRAY2D_J`1<CT>
+
+  Dir item KIWIARRAY2D_J`1/.ctor  .method public default true [System]Void .ctor((valuetype [System]Int32) a1, (valuetype [System]Int32) a0)  %uid=ctor132
+  Dir item KIWIARRAY2D_J`1/set_Item  .method public default true [System]Void set_Item((valuetype [System]UInt32) i1, (valuetype [System]UInt32) i0, !CT value)  %uid=s...
+  Dir item KIWIARRAY2D_J`1/get_Item  .method public default true !CT get_Item((valuetype [System]UInt32) i1, (valuetype [System]UInt32) i0)  %uid=getItem12
+  Dir item KIWIARRAY2D_J`1/GetLength  .method public default true (valuetype [System]Int32) GetLength((valuetype [System]Int32) n)  %uid=GetLength12
+  Dir item KIWIARRAY2D_J`1/bases  .field private !CT[0][0] bases
+  Dir item KIWIARRAY2D_J`1/d2dim1  .field private (valuetype [System]Int32) d2dim1
+  Dir item KIWIARRAY2D_J`1/d2dim0  .field private (valuetype [System]Int32) d2dim0
+  Dir item KIWIARRAY3D`1  .class  public beforefieldinit ansi KIWIARRAY3D`1<CT>
+
+  Dir item KIWIARRAY3D`1/.ctor  .method public default true [System]Void .ctor((valuetype [System]Int32) a2, (valuetype [System]Int32) a1, (valuetype [System]Int3...
+  Dir item KIWIARRAY3D`1/set_Item  .method public default true [System]Void set_Item((valuetype [System]UInt32) i2, (valuetype [System]UInt32) i1, (valuetype [System...
+  Dir item KIWIARRAY3D`1/get_Item  .method public default true !CT get_Item((valuetype [System]UInt32) i2, (valuetype [System]UInt32) i1, (valuetype [System]UInt32) ...
+  Dir item KIWIARRAY3D`1/KiwiAddress  .method public default true (valuetype [System]Int64) KiwiAddress((valuetype [System]UInt32) i2, (valuetype [System]UInt32) i1, (v...
+  Dir item KIWIARRAY3D`1/get_Rank  .method public default true (valuetype [System]Int32) get_Rank()  %uid=getRank12
+  Dir item KIWIARRAY3D`1/GetLength  .method public default true (valuetype [System]Int32) GetLength((valuetype [System]Int32) n)  %uid=GetLength14
+  Dir item KIWIARRAY3D`1/d2dim2  .field private (valuetype [System]Int32) d2dim2
+  Dir item KIWIARRAY3D`1/d2dim1  .field private (valuetype [System]Int32) d2dim1
+  Dir item KIWIARRAY3D`1/d2dim0  .field private (valuetype [System]Int32) d2dim0
+  Dir item KIWIARRAY3D`1/arraybase  .field private !CT[0] arraybase
+  Dir item KIWIARRAY4D`1  .class  public beforefieldinit ansi KIWIARRAY4D`1<CT>
+
+  Dir item KIWIARRAY4D`1/.ctor  .method public default true [System]Void .ctor((valuetype [System]Int32) a3, (valuetype [System]Int32) a2, (valuetype [System]Int3...
+  Dir item KIWIARRAY4D`1/set_Item  .method public default true [System]Void set_Item((valuetype [System]UInt32) i3, (valuetype [System]UInt32) i2, (valuetype [System...
+  Dir item KIWIARRAY4D`1/get_Item  .method public default true !CT get_Item((valuetype [System]UInt32) i3, (valuetype [System]UInt32) i2, (valuetype [System]UInt32) ...
+  Dir item KIWIARRAY4D`1/KiwiAddress  .method public default true (valuetype [System]Int64) KiwiAddress((valuetype [System]UInt32) i3, (valuetype [System]UInt32) i2, (v...
+  Dir item KIWIARRAY4D`1/get_Rank  .method public default true (valuetype [System]Int32) get_Rank()  %uid=getRank14
+  Dir item KIWIARRAY4D`1/GetLength  .method public default true (valuetype [System]Int32) GetLength((valuetype [System]Int32) n)  %uid=GetLength16
+  Dir item KIWIARRAY4D`1/d2dim3  .field private (valuetype [System]Int32) d2dim3
+  Dir item KIWIARRAY4D`1/d2dim2  .field private (valuetype [System]Int32) d2dim2
+  Dir item KIWIARRAY4D`1/d2dim1  .field private (valuetype [System]Int32) d2dim1
+  Dir item KIWIARRAY4D`1/d2dim0  .field private (valuetype [System]Int32) d2dim0
+  Dir item KIWIARRAY4D`1/arraybase  .field private !CT[0] arraybase
+  Dir item System/IDisposable  .class  public beforefieldinit ansi [System]IDisposable
+
+  Dir item System/IDisposable/.ctor  .method public default true [System]Void .ctor()  %uid=ctor138
+  Dir item System/IDisposable/Dispose  .method public default true [System]Void Dispose()  %uid=Dispose14
+  Dir item System/String  .class  public beforefieldinit ansi [System]String
+
+  Dir item System/String/.ctor  .method public default true [System]Void .ctor()  %uid=ctor140
+  Dir item System/String/ToCharArray  .method public default true (valuetype [System]Char)[0] ToCharArray()  %uid=ToCharArray10
+  Dir item System/String/Concat  .method static private default false [System]String Concat([System]Object a, [System]Object b, [System]Object c, [System]Object d)...
+  Dir item System/String/Concat  .method static private default false [System]String Concat([System]Object a, [System]Object b, [System]Object c)  %uid=Concat12
+  Dir item System/String/Concat  .method static private default false [System]String Concat([System]Object a, [System]Object b)  %uid=Concat10
+  Dir item System/String/op_Equality  .method static private default false (valuetype [System]Boolean) op_Equality([System]Object a, [System]Object b)  %uid=opEquality1...
+  Dir item System/String/op_Inequality  .method static private default false (valuetype [System]Boolean) op_Inequality([System]Object a, [System]Object b)  %uid=opInequal...
+  Dir item System/Environment  .class  public beforefieldinit ansi [System]Environment
+
+  Dir item System/Environment/.ctor  .method public default true [System]Void .ctor()  %uid=ctor142
+  Dir item System/Environment/Exit  .method static public default false [System]Void Exit((valuetype [System]Int32) exit_code)  %uid=Exit10
+  Dir item System/Threading/Thread  .class  public beforefieldinit ansi [[System]Threading]Thread
+
+  Dir item System/Threading/Thread/.ctor  .method public default true [System]Void .ctor()  %uid=ctor144
+  Dir item System/Threading/Thread/MemoryBarrier  .method static public default false [System]Void MemoryBarrier()  %uid=MemoryBarrier10
+  Dir item System/Threading/Monitor  .class  public beforefieldinit ansi [[System]Threading]Monitor
+
+  Dir item System/Threading/Monitor/.ctor  .method public default true [System]Void .ctor()  %uid=ctor146
+  Dir item System/Threading/Monitor/Pulse  .method static public default false [System]Void Pulse([System]Object it)  %uid=Pulse10
+  Dir item System/Threading/Monitor/PulseAll  .method static public default false [System]Void PulseAll([System]Object it)  %uid=PulseAll10
+  Dir item System/Threading/Monitor/Exit  .method static public default false [System]Void Exit([System]Object it)  %uid=Exit12
+  Dir item System/Threading/Monitor/Wait  .method static public default false (valuetype [System]Boolean) Wait([System]Object it)  %uid=Wait10
+  Dir item System/Threading/Monitor/Enter  .method static public default false [System]Void Enter([System]Object it, (valuetype [System]Boolean)& lockTaken)  %uid=Enter12
+  Dir item System/Threading/Monitor/Enter  .method static public default false [System]Void Enter([System]Object it)  %uid=Enter10
+  Dir item <Module>  .class  ansi <Module>
+
+  Dir item KiwiSystem/Kiwi  .class  public beforefieldinit ansi [KiwiSystem]Kiwi
+
+  Dir item KiwiSystem/Kiwi/.cctor  .method static private default false [System]Void .cctor()  %uid=cctor10
+  Dir item KiwiSystem/Kiwi/.ctor  .method public default true [System]Void .ctor()  %uid=ctor10
+  Dir item KiwiSystem/Kiwi/inHardware  .method static public default false (valuetype [System]Boolean) inHardware()  %uid=inHardware10
+  Dir item KiwiSystem/Kiwi/Dispose  .method static public default false [System]Void Dispose([System]Object obj)  %uid=Dispose10
+  Dir item KiwiSystem/Kiwi/wuntil  .method public default true (valuetype [System]Boolean) wuntil((valuetype [System]Boolean) from, (valuetype [System]Boolean) to)  ...
+  Dir item KiwiSystem/Kiwi/until  .method public default true (valuetype [System]Boolean) until((valuetype [System]Boolean) from, (valuetype [System]Boolean) to)  %...
+  Dir item KiwiSystem/Kiwi/next  .method static public default false (valuetype [System]Int32) next((valuetype [System]Int32) item)  %uid=next14
+  Dir item KiwiSystem/Kiwi/next  .method static public default false (valuetype [System]Boolean) next((valuetype [System]Boolean) item)  %uid=next12
+  Dir item KiwiSystem/Kiwi/next  .method static public default false [System]Object next([System]Object item)  %uid=next10
+  Dir item KiwiSystem/Kiwi/hpr_next  .method static private default false [System]Object hpr_next([System]Object item)  %uid=hprnext10
+  Dir item KiwiSystem/Kiwi/KppMark  .method static public default false [System]Void KppMark([System]String waypoint_name, [System]String phase_name)  %uid=KppMark12
+  Dir item KiwiSystem/Kiwi/KppMark  .method static public default false [System]Void KppMark([System]String waypoint_name)  %uid=KppMark10
+  Dir item KiwiSystem/Kiwi/from_double  .method static private default false (valuetype [System]UInt64) from_double((valuetype [System]Double) darg)  %uid=fromdouble10
+  Dir item KiwiSystem/Kiwi/to_double  .method static private default false (valuetype [System]Double) to_double((valuetype [System]UInt64) farg)  %uid=todouble10
+  Dir item KiwiSystem/Kiwi/NeverReached  .method static public default false [System]Void NeverReached([System]String msg)  %uid=NeverReached10
+  Dir item KiwiSystem/Kiwi/EndOfElaborate  .method static public default false (valuetype [System]Int32) EndOfElaborate()  %uid=EndOfElaborate10
+  Dir item KiwiSystem/Kiwi/NoUnroll  .method static public default false [System]Void NoUnroll()  %uid=NoUnroll10
+  Dir item KiwiSystem/Kiwi/Unroll  .method static public default false [System]Void Unroll((valuetype [System]Int32) a, (valuetype [System]Int32) b, (valuetype [Syst...
+  Dir item KiwiSystem/Kiwi/Unroll  .method static public default false [System]Void Unroll([System]String comment_string, (valuetype [System]Int32) a, (valuetype [Sy...
+  Dir item KiwiSystem/Kiwi/Unroll  .method static public default false [System]Void Unroll((valuetype [System]Int32) a, (valuetype [System]Int32) b)  %uid=Unroll14
+  Dir item KiwiSystem/Kiwi/Unroll  .method static public default false [System]Void Unroll([System]String command_string, (valuetype [System]Int32) a)  %uid=Unroll12
+  Dir item KiwiSystem/Kiwi/Unroll  .method static public default false [System]Void Unroll((valuetype [System]Int32) a)  %uid=Unroll10
+  Dir item KiwiSystem/Kiwi/Pause  .method static public default false [System]Void Pause()  %uid=Pause12
+  Dir item KiwiSystem/Kiwi/Pause  .method static public default false [System]Void Pause((valuetype [System]Int32) pauseFlags)  %uid=Pause10
+  Dir item KiwiSystem/Kiwi/PauseControlSet  .method static public default false (valuetype [[KiwiSystem]Kiwi]PauseControl) PauseControlSet((valuetype [[KiwiSystem]Kiwi]PauseC...
+  Dir item KiwiSystem/Kiwi/KPragma  .method static public default false (valuetype [System]Int32) KPragma((valuetype [System]Boolean) fatalFlag, [System]String cmd_or...
+  Dir item KiwiSystem/Kiwi/KPragma  .method static public default false (valuetype [System]Int32) KPragma((valuetype [System]Boolean) fatalFlag, [System]String cmd_or...
+  Dir item KiwiSystem/Kiwi/KPragma  .method static public default false (valuetype [System]Int32) KPragma((valuetype [System]Boolean) fatalFlag, [System]String cmd_or...
+  Dir item KiwiSystem/Kiwi/WriteLine  .method static public default false [System]Void WriteLine([System]String arg, [System]Object a0, [System]Object a1, [System]Objec...
+  Dir item KiwiSystem/Kiwi/WriteLine  .method static public default false [System]Void WriteLine([System]String arg, [System]Object a0, [System]Object a1, [System]Objec...
+  Dir item KiwiSystem/Kiwi/WriteLine  .method static public default false [System]Void WriteLine([System]String arg, [System]Object a0, [System]Object a1)  %uid=WriteLi...
+  Dir item KiwiSystem/Kiwi/WriteLine  .method static public default false [System]Void WriteLine([System]String arg, [System]Object a0)  %uid=WriteLine12
+  Dir item KiwiSystem/Kiwi/WriteLine  .method static public default false [System]Void WriteLine([System]String arg)  %uid=WriteLine10
+  Dir item KiwiSystem/Kiwi/tnow  .field static public (valuetype [System]UInt64) tnow
+  Dir item KiwiSystem/Kiwi/old_pausemode_value  .field static private (valuetype [[KiwiSystem]Kiwi]PauseControl) old_pausemode_value
+  Dir item KiwiSystem/Kiwi/HprPrimitiveFunction  .class  nested public beforefieldinit ansi [[KiwiSystem]Kiwi]HprPrimitiveFunction extends [System]Attribute
+
+  Dir item KiwiSystem/Kiwi/HprPrimitiveFunction/.ctor  .method public default true [System]Void .ctor()  %uid=ctor12
+  Dir item KiwiSystem/Kiwi/PauseControl  .class  nested public ansi valuetype enum sealed [[KiwiSystem]Kiwi]PauseControl extends [System]Enum
+
+  Dir item KiwiSystem/Kiwi/PauseControl/pipelinedAccelerator  .field literal static public (valuetype [[KiwiSystem]Kiwi]PauseControl) pipelinedAccelerator = 0x5
+  Dir item KiwiSystem/Kiwi/PauseControl/bblockPauseEnable  .field literal static public (valuetype [[KiwiSystem]Kiwi]PauseControl) bblockPauseEnable = 0x4
+  Dir item KiwiSystem/Kiwi/PauseControl/maximalPauseEnable  .field literal static public (valuetype [[KiwiSystem]Kiwi]PauseControl) maximalPauseEnable = 0x3
+  Dir item KiwiSystem/Kiwi/PauseControl/softPauseEnable  .field literal static public (valuetype [[KiwiSystem]Kiwi]PauseControl) softPauseEnable = 0x2
+  Dir item KiwiSystem/Kiwi/PauseControl/hardPauseEnable  .field literal static public (valuetype [[KiwiSystem]Kiwi]PauseControl) hardPauseEnable = 0x1
+  Dir item KiwiSystem/Kiwi/PauseControl/autoPauseEnable  .field literal static public (valuetype [[KiwiSystem]Kiwi]PauseControl) autoPauseEnable = 0x0
+  Dir item KiwiSystem/Kiwi/PauseControl/value__  .field rtspecialname specialname public (valuetype [System]Int32) value__
+  Dir item KiwiSystem/Kiwi/RomArrayAttribute  .class  nested public beforefieldinit ansi [[KiwiSystem]Kiwi]RomArrayAttribute extends [System]Attribute
+
+  Dir item KiwiSystem/Kiwi/RomArrayAttribute/.ctor  .method public default true [System]Void .ctor([System]String n)  %uid=ctor14
+  Dir item KiwiSystem/Kiwi/RomArrayAttribute/name  .field public [System]String name
+  Dir item KiwiSystem/Kiwi/InputBitPortAttribute  .class  nested public beforefieldinit ansi [[KiwiSystem]Kiwi]InputBitPortAttribute extends [System]Attribute
+
+  Dir item KiwiSystem/Kiwi/InputBitPortAttribute/.ctor  .method public default true [System]Void .ctor()  %uid=ctor18
+  Dir item KiwiSystem/Kiwi/InputBitPortAttribute/.ctor  .method public default true [System]Void .ctor([System]String n)  %uid=ctor16
+  Dir item KiwiSystem/Kiwi/InputBitPortAttribute/name  .field public [System]String name
+  Dir item KiwiSystem/Kiwi/OutputBitPortAttribute  .class  nested public beforefieldinit ansi [[KiwiSystem]Kiwi]OutputBitPortAttribute extends [System]Attribute
+
+  Dir item KiwiSystem/Kiwi/OutputBitPortAttribute/.ctor  .method public default true [System]Void .ctor()  %uid=ctor22
+  Dir item KiwiSystem/Kiwi/OutputBitPortAttribute/.ctor  .method public default true [System]Void .ctor([System]String n)  %uid=ctor20
+  Dir item KiwiSystem/Kiwi/OutputBitPortAttribute/name  .field public [System]String name
+  Dir item KiwiSystem/Kiwi/OutputNameAttribute  .class  nested public beforefieldinit ansi [[KiwiSystem]Kiwi]OutputNameAttribute extends [System]Attribute
+
+  Dir item KiwiSystem/Kiwi/OutputNameAttribute/.ctor  .method public default true [System]Void .ctor([System]String n)  %uid=ctor24
+  Dir item KiwiSystem/Kiwi/OutputNameAttribute/name  .field public [System]String name
+  Dir item KiwiSystem/Kiwi/InputNameAttribute  .class  nested public beforefieldinit ansi [[KiwiSystem]Kiwi]InputNameAttribute extends [System]Attribute
+
+  Dir item KiwiSystem/Kiwi/InputNameAttribute/.ctor  .method public default true [System]Void .ctor([System]String n)  %uid=ctor26
+  Dir item KiwiSystem/Kiwi/InputNameAttribute/name  .field public [System]String name
+  Dir item KiwiSystem/Kiwi/InputBytePortAttribute  .class  nested public beforefieldinit ansi [[KiwiSystem]Kiwi]InputBytePortAttribute extends [System]Attribute
+
+  Dir item KiwiSystem/Kiwi/InputBytePortAttribute/.ctor  .method public default true [System]Void .ctor([System]String n)  %uid=ctor28
+  Dir item KiwiSystem/Kiwi/InputBytePortAttribute/name  .field public [System]String name
+  Dir item KiwiSystem/Kiwi/OutputBytePortAttribute  .class  nested public beforefieldinit ansi [[KiwiSystem]Kiwi]OutputBytePortAttribute extends [System]Attribute
+
+  Dir item KiwiSystem/Kiwi/OutputBytePortAttribute/.ctor  .method public default true [System]Void .ctor([System]String n)  %uid=ctor30
+  Dir item KiwiSystem/Kiwi/OutputBytePortAttribute/name  .field public [System]String name
+  Dir item KiwiSystem/Kiwi/OutputWordPortAttribute  .class  nested public beforefieldinit ansi [[KiwiSystem]Kiwi]OutputWordPortAttribute extends [System]Attribute
+
+  Dir item KiwiSystem/Kiwi/OutputWordPortAttribute/.ctor  .method public default true [System]Void .ctor([System]String n)  %uid=ctor36
+  Dir item KiwiSystem/Kiwi/OutputWordPortAttribute/.ctor  .method public default true [System]Void .ctor((valuetype [System]Int32) hi, (valuetype [System]Int32) lo)  %uid=ctor34
+  Dir item KiwiSystem/Kiwi/OutputWordPortAttribute/.ctor  .method public default true [System]Void .ctor((valuetype [System]Int32) hi, (valuetype [System]Int32) lo, [System]String n)  %uid...
+  Dir item KiwiSystem/Kiwi/OutputWordPortAttribute/hiIndex  .field public (valuetype [System]Int32) hiIndex
+  Dir item KiwiSystem/Kiwi/OutputWordPortAttribute/loIndex  .field public (valuetype [System]Int32) loIndex
+  Dir item KiwiSystem/Kiwi/OutputWordPortAttribute/name  .field public [System]String name
+  Dir item KiwiSystem/Kiwi/InputWordPortAttribute  .class  nested public beforefieldinit ansi [[KiwiSystem]Kiwi]InputWordPortAttribute extends [System]Attribute
+
+  Dir item KiwiSystem/Kiwi/InputWordPortAttribute/.ctor  .method public default true [System]Void .ctor((valuetype [System]Int32) hi, (valuetype [System]Int32) lo, [System]String n)  %uid...
+  Dir item KiwiSystem/Kiwi/InputWordPortAttribute/.ctor  .method public default true [System]Void .ctor([System]String n)  %uid=ctor40
+  Dir item KiwiSystem/Kiwi/InputWordPortAttribute/.ctor  .method public default true [System]Void .ctor((valuetype [System]Int32) hi, (valuetype [System]Int32) lo)  %uid=ctor38
+  Dir item KiwiSystem/Kiwi/InputWordPortAttribute/hiIndex  .field public (valuetype [System]Int32) hiIndex
+  Dir item KiwiSystem/Kiwi/InputWordPortAttribute/loIndex  .field public (valuetype [System]Int32) loIndex
+  Dir item KiwiSystem/Kiwi/InputWordPortAttribute/name  .field public [System]String name
+  Dir item KiwiSystem/Kiwi/StripeAttribute  .class  nested public beforefieldinit ansi [[KiwiSystem]Kiwi]StripeAttribute extends [System]Attribute
+
+  Dir item KiwiSystem/Kiwi/StripeAttribute/.ctor  .method public default true [System]Void .ctor((valuetype [System]Int32) stride)  %uid=ctor44
+  Dir item KiwiSystem/Kiwi/MirrorAttribute  .class  nested public beforefieldinit ansi [[KiwiSystem]Kiwi]MirrorAttribute extends [System]Attribute
+
+  Dir item KiwiSystem/Kiwi/MirrorAttribute/.ctor  .method public default true [System]Void .ctor((valuetype [System]Int32) stride)  %uid=ctor46
+  Dir item KiwiSystem/Kiwi/WidenAttribute  .class  nested public beforefieldinit ansi [[KiwiSystem]Kiwi]WidenAttribute extends [System]Attribute
+
+  Dir item KiwiSystem/Kiwi/WidenAttribute/.ctor  .method public default true [System]Void .ctor((valuetype [System]Int32) n)  %uid=ctor48
+  Dir item KiwiSystem/Kiwi/MultiPortRegfile  .class  nested public beforefieldinit ansi [[KiwiSystem]Kiwi]MultiPortRegfile extends [System]Attribute
+
+  Dir item KiwiSystem/Kiwi/MultiPortRegfile/.ctor  .method public default true [System]Void .ctor()  %uid=ctor50
+  Dir item KiwiSystem/Kiwi/PortsPerThread  .class  nested public beforefieldinit ansi [[KiwiSystem]Kiwi]PortsPerThread extends [System]Attribute
+
+  Dir item KiwiSystem/Kiwi/PortsPerThread/.ctor  .method public default true [System]Void .ctor((valuetype [System]Int32) n)  %uid=ctor52
+  Dir item KiwiSystem/Kiwi/ThreadsPerPort  .class  nested public beforefieldinit ansi [[KiwiSystem]Kiwi]ThreadsPerPort extends [System]Attribute
+
+  Dir item KiwiSystem/Kiwi/ThreadsPerPort/.ctor  .method public default true [System]Void .ctor((valuetype [System]Int32) n)  %uid=ctor54
+  Dir item KiwiSystem/Kiwi/SynchSRAM  .class  nested public beforefieldinit ansi [[KiwiSystem]Kiwi]SynchSRAM extends [System]Attribute
+
+  Dir item KiwiSystem/Kiwi/SynchSRAM/.ctor  .method public default true [System]Void .ctor((valuetype [System]Int32) latency)  %uid=ctor58
+  Dir item KiwiSystem/Kiwi/SynchSRAM/.ctor  .method public default true [System]Void .ctor()  %uid=ctor56
+  Dir item KiwiSystem/Kiwi/OutboardArray  .class  nested public beforefieldinit ansi [[KiwiSystem]Kiwi]OutboardArray extends [System]Attribute
+
+  Dir item KiwiSystem/Kiwi/OutboardArray/.ctor  .method public default true [System]Void .ctor()  %uid=ctor64
+  Dir item KiwiSystem/Kiwi/OutboardArray/.ctor  .method public default true [System]Void .ctor([System]String bankname, (valuetype [System]Int32) Base)  %uid=ctor62
+  Dir item KiwiSystem/Kiwi/OutboardArray/.ctor  .method public default true [System]Void .ctor([System]String bankname)  %uid=ctor60
+  Dir item KiwiSystem/Kiwi/FastBitConvert  .class  nested public beforefieldinit ansi [[KiwiSystem]Kiwi]FastBitConvert extends [System]Attribute
+
+  Dir item KiwiSystem/Kiwi/FastBitConvert/.ctor  .method public default true [System]Void .ctor()  %uid=ctor66
+  Dir item KiwiSystem/Kiwi/Remote  .class  nested public beforefieldinit ansi [[KiwiSystem]Kiwi]Remote extends [System]Attribute
+
+  Dir item KiwiSystem/Kiwi/Remote/.ctor  .method public default true [System]Void .ctor()  %uid=ctor72
+  Dir item KiwiSystem/Kiwi/Remote/.ctor  .method public default true [System]Void .ctor([System]String portname)  %uid=ctor70
+  Dir item KiwiSystem/Kiwi/Remote/.ctor  .method public default true [System]Void .ctor([System]String portname, [System]String protocol)  %uid=ctor68
+  Dir item KiwiSystem/Kiwi/Stub  .class  nested public beforefieldinit ansi [[KiwiSystem]Kiwi]Stub extends [System]Attribute
+
+  Dir item KiwiSystem/Kiwi/Stub/.ctor  .method public default true [System]Void .ctor()  %uid=ctor78
+  Dir item KiwiSystem/Kiwi/Stub/.ctor  .method public default true [System]Void .ctor([System]String portname)  %uid=ctor76
+  Dir item KiwiSystem/Kiwi/Stub/.ctor  .method public default true [System]Void .ctor([System]String portname, [System]String protocol)  %uid=ctor74
+  Dir item KiwiSystem/Kiwi/Server  .class  nested public beforefieldinit ansi [[KiwiSystem]Kiwi]Server extends [System]Attribute
+
+  Dir item KiwiSystem/Kiwi/Server/.ctor  .method public default true [System]Void .ctor()  %uid=ctor84
+  Dir item KiwiSystem/Kiwi/Server/.ctor  .method public default true [System]Void .ctor([System]String portname)  %uid=ctor82
+  Dir item KiwiSystem/Kiwi/Server/.ctor  .method public default true [System]Void .ctor([System]String portname, [System]String protocol)  %uid=ctor80
+  Dir item KiwiSystem/Kiwi/HardwareEntryPoint  .class  nested public beforefieldinit ansi [[KiwiSystem]Kiwi]HardwareEntryPoint extends [System]Attribute
+
+  Dir item KiwiSystem/Kiwi/HardwareEntryPoint/.ctor  .method public default true [System]Void .ctor([System]String subtrate_style)  %uid=ctor90
+  Dir item KiwiSystem/Kiwi/HardwareEntryPoint/.ctor  .method public default true [System]Void .ctor((valuetype [[KiwiSystem]Kiwi]PauseControl) initialPauseMode)  %uid=ctor88
+  Dir item KiwiSystem/Kiwi/HardwareEntryPoint/.ctor  .method public default true [System]Void .ctor()  %uid=ctor86
+  Dir item KiwiSystem/Kiwi/HardwareEntryPoint/name  .field public [System]String name
+  Dir item KiwiSystem/Kiwi/KppMarker  .class  nested public beforefieldinit ansi [[KiwiSystem]Kiwi]KppMarker extends [System]Attribute
+
+  Dir item KiwiSystem/Kiwi/KppMarker/.ctor  .method public default true [System]Void .ctor([System]String wp_label, [System]String phase_name)  %uid=ctor94
+  Dir item KiwiSystem/Kiwi/KppMarker/.ctor  .method public default true [System]Void .ctor([System]String wp_label)  %uid=ctor92
+  Dir item KiwiSystem/Kiwi/KppMarker/name  .field public [System]String name
+  Dir item KiwiSystem/Kiwi/AssertCTL  .class  nested public beforefieldinit ansi [[KiwiSystem]Kiwi]AssertCTL extends [System]Attribute
+
+  Dir item KiwiSystem/Kiwi/AssertCTL/.ctor  .method public default true [System]Void .ctor([System]String Quantifier, [System]String ViolationMsg)  %uid=ctor96
+  Dir item KiwiSystem/Kiwi/HwWidth  .class  nested public beforefieldinit ansi [[KiwiSystem]Kiwi]HwWidth extends [System]Attribute
+
+  Dir item KiwiSystem/Kiwi/HwWidth/.ctor  .method public default true [System]Void .ctor((valuetype [System]Int32) w)  %uid=ctor98
+  Dir item KiwiSystem/Kiwi/CTLInternal  .class  nested public beforefieldinit ansi [[KiwiSystem]Kiwi]CTLInternal extends [System]Attribute
+
+  Dir item KiwiSystem/Kiwi/CTLInternal/.ctor  .method public default true [System]Void .ctor([System]String n)  %uid=ctor100
+  Dir item KiwiSystem/Kiwi/HardwareModuleAttribute  .class  nested public beforefieldinit ansi [[KiwiSystem]Kiwi]HardwareModuleAttribute extends [System]Attribute
+
+  Dir item KiwiSystem/Kiwi/HardwareModuleAttribute/.ctor  .method public default true [System]Void .ctor([System]String n)  %uid=ctor102
+  Dir item KiwiSystem/Kiwi/HardwareModuleAttribute/name  .field public [System]String name
+  Dir item KiwiSystem/Kiwi/HardwareAttribute  .class  nested public beforefieldinit ansi [[KiwiSystem]Kiwi]HardwareAttribute extends [System]Attribute
+
+  Dir item KiwiSystem/Kiwi/HardwareAttribute/.ctor  .method public default true [System]Void .ctor()  %uid=ctor104
+  Dir item KiwiSystem/Kiwi/SoftwareAttribute  .class  nested public beforefieldinit ansi [[KiwiSystem]Kiwi]SoftwareAttribute extends [System]Attribute
+
+  Dir item KiwiSystem/Kiwi/SoftwareAttribute/.ctor  .method public default true [System]Void .ctor()  %uid=ctor106
+  Dir item KiwiSystem/Kiwi/Volatile  .class  nested public beforefieldinit ansi [[KiwiSystem]Kiwi]Volatile extends [System]Attribute
+
+  Dir item KiwiSystem/Kiwi/Volatile/.ctor  .method public default true [System]Void .ctor()  %uid=ctor108
+  Dir item KiwiSystem/Kiwi/SubsumeAttribute  .class  nested public beforefieldinit ansi [[KiwiSystem]Kiwi]SubsumeAttribute extends [System]Attribute
+
+  Dir item KiwiSystem/Kiwi/SubsumeAttribute/.ctor  .method public default true [System]Void .ctor()  %uid=ctor110
+  Dir item KiwiSystem/Kiwi/ElaborateAttribute  .class  nested public beforefieldinit ansi [[KiwiSystem]Kiwi]ElaborateAttribute extends [System]Attribute
+
+  Dir item KiwiSystem/Kiwi/ElaborateAttribute/.ctor  .method public default true [System]Void .ctor()  %uid=ctor112
+  Dir item KiwiSystem/Kiwi/ClockDom  .class  nested public beforefieldinit ansi [[KiwiSystem]Kiwi]ClockDom extends [System]Attribute
+
+  Dir item KiwiSystem/Kiwi/ClockDom/.ctor  .method public default true [System]Void .ctor([System]String clock, [System]String reset)  %uid=ctor114
+  Dir item KiwiSystem/Kiwi/ClockDom/name  .field public [System]String name
+  Dir item KiwiSystem/Kiwi/Channel`1  .class  nested public beforefieldinit ansi [[KiwiSystem]Kiwi]Channel`1<T>
+
+  Dir item KiwiSystem/Kiwi/Channel`1/.ctor  .method public default true [System]Void .ctor()  %uid=ctor116
+  Dir item KiwiSystem/Kiwi/Channel`1/Read  .method public default true !T Read()  %uid=Read10
+  Dir item KiwiSystem/Kiwi/Channel`1/Write  .method public default true [System]Void Write(!T v)  %uid=Write10
+  Dir item KiwiSystem/Kiwi/Channel`1/emptyflag  .field private [System]Boolean modreq [[System][Runtime]CompilerServices]IsVolatile emptyflag ATTS=(.custom .ctor [System]Void [[K...
+  Dir item KiwiSystem/Kiwi/Channel`1/datum  .field private !T datum ATTS=(.custom .ctor [System]Void [[KiwiSystem]Kiwi]ElaborateAttribute::.ctor() blob()("") // size 0 bytes
+...
+  Dir item KiwiSystem/Kiwi/HeapManager  .class  nested public beforefieldinit ansi [[KiwiSystem]Kiwi]HeapManager
+
+  Dir item KiwiSystem/Kiwi/HeapManager/.ctor  .method public default true [System]Void .ctor()  %uid=ctor118
+  Dir item KiwiSystem/Kiwi/ObjectHandler`1  .class  nested public beforefieldinit ansi [[KiwiSystem]Kiwi]ObjectHandler`1<T>
+
+  Dir item KiwiSystem/Kiwi/ObjectHandler`1/.ctor  .method public default true [System]Void .ctor()  %uid=ctor120
+  Dir item KiwiSystem/Kiwi/ObjectHandler`1/handleArith  .method public default true !T handleArith([System]Object baser, (valuetype [System]Int32) offset)  %uid=handleArith10
+  Dir item KiwiSystem/Kiwi/ObjectHandler`1/size  .method public default true (valuetype [System]Int32) size()  %uid=size10
+  Dir item KiwiSystem/KiwiBasicStatusMonitor  .class  public beforefieldinit ansi sealed abstract [KiwiSystem]KiwiBasicStatusMonitor
+
+  Dir item KiwiSystem/KiwiBasicStatusMonitor/RunTimeAbend  .method static public default false [System]Void RunTimeAbend([System]String errorMessage, (valuetype [System]Int32) code)  %uid=R...
+  Dir item KIWIARRAY4D`1/Address  .method instance default true *(CTL_object) Address(CTL_net(false, 32, Signed,[native]) i1, CTL_net(false, 32, Signed,[native]) i2...
+  Dir item KIWIARRAY3D`1/Address  .method instance default true *(CTL_object) Address(CTL_net(false, 32, Signed,[native]) i1, CTL_net(false, 32, Signed,[native]) i2...
+  Dir item KIWIARRAY2D`1/Address  .method instance default true *(CTL_object) Address(CTL_net(false, 32, Signed,[native]) i1, CTL_net(false, 32, Signed,[native]) i2...
+  Dir item Kiwi  .class   Kiwi
+
+  Dir item Kiwi/hpr_testandset  .method hpr:hpr_testandset static default false CTL_net(false, 1, Unsigned,[native]) hpr_testandset(CTL_object mutex, CTL_net(fals...
+  Dir item Kiwi/hpr_next  .method hprls static default false CTL_object hpr_next(CTL_object arg) cil managed %uid=hprnext12
+  Dir item Kiwi/hpr_prev  .method hprls static default false CTL_object hpr_prev(CTL_object arg) cil managed %uid=hprprev10
+  Dir item Kiwi/hpr_rose  .method hprls static default false CTL_net(false, 1, Unsigned,[native]) hpr_rose(CTL_net(false, 1, Unsigned,[native]) arg) cil man...
+  Dir item Kiwi/hpr_fell  .method hprls static default false CTL_net(false, 1, Unsigned,[native]) hpr_fell(CTL_net(false, 1, Unsigned,[native]) arg) cil man...
+  Dir item Kiwi/hpr_unroll  .method static hprls default false CTL_void hpr_unroll()  %uid=hprunroll10
+  Dir item Kiwi/hpr_barrier  .method static hprls default false CTL_void hpr_barrier()  %uid=hprbarrier10
+  Dir item System  .class   System
+
+  Dir item System/Double  .class  valuetype Double extends System.Object
+
+  Dir item System/Double/CompareTo  .method hprls instance default true CTL_net(false, 1, Unsigned,[native]) CompareTo(CTL_net(false, 64, FloatingPoint,[native]) cf_a...
+  Dir item System/Double/Equals  .method hprls instance default true CTL_net(false, 32, Signed,[native]) Equals(CTL_net(false, 64, FloatingPoint,[native]) cf_arg) ...
+  Dir item System/Array  .class  valuetype Array extends System.Object
+
+  Dir item System/Int8  .class  valuetype Int8 extends System.Object
+
+  Dir item System/Int8/CompareTo  .method hprls instance default true CTL_net(false, 1, Unsigned,[native]) CompareTo(CTL_net(false, 8, Signed,[native]) cf_arg)  %ui...
+  Dir item System/Int8/Equals  .method hprls instance default true CTL_net(false, 32, Signed,[native]) Equals(CTL_net(false, 8, Signed,[native]) cf_arg)  %uid=Eq...
+  Dir item System/Int16  .class  valuetype Int16 extends System.Object
+
+  Dir item System/Int16/CompareTo  .method hprls instance default true CTL_net(false, 1, Unsigned,[native]) CompareTo(CTL_net(false, 16, Signed,[native]) cf_arg)  %u...
+  Dir item System/Int16/Equals  .method hprls instance default true CTL_net(false, 32, Signed,[native]) Equals(CTL_net(false, 16, Signed,[native]) cf_arg)  %uid=E...
+  Dir item System/Int32  .class  valuetype Int32 extends System.Object
+
+  Dir item System/Int32/CompareTo  .method hprls instance default true CTL_net(false, 1, Unsigned,[native]) CompareTo(CTL_net(false, 32, Signed,[native]) cf_arg)  %u...
+  Dir item System/Int32/Equals  .method hprls instance default true CTL_net(false, 32, Signed,[native]) Equals(CTL_net(false, 32, Signed,[native]) cf_arg)  %uid=E...
+  Dir item System/Int64  .class  valuetype Int64 extends System.Object
+
+  Dir item System/Int64/CompareTo  .method hprls instance default true CTL_net(false, 1, Unsigned,[native]) CompareTo(CTL_net(false, 64, Signed,[native]) cf_arg)  %u...
+  Dir item System/Int64/Equals  .method hprls instance default true CTL_net(false, 32, Signed,[native]) Equals(CTL_net(false, 64, Signed,[native]) cf_arg)  %uid=E...
+  Dir item System/Int  .class  valuetype Int extends System.Object
+
+  Dir item System/Int/CompareTo  .method hprls instance default true CTL_net(false, 1, Unsigned,[native]) CompareTo(CTL_net(false, 32, Signed,[native]) cf_arg)  %u...
+  Dir item System/Int/Equals  .method hprls instance default true CTL_net(false, 32, Signed,[native]) Equals(CTL_net(false, 32, Signed,[native]) cf_arg)  %uid=E...
+  Dir item System/UInt8  .class  valuetype UInt8 extends System.Object
+
+  Dir item System/UInt8/CompareTo  .method hprls instance default true CTL_net(false, 1, Unsigned,[native]) CompareTo(CTL_net(false, 8, Unsigned,[native]) cf_arg)  %...
+  Dir item System/UInt8/Equals  .method hprls instance default true CTL_net(false, 32, Signed,[native]) Equals(CTL_net(false, 8, Unsigned,[native]) cf_arg)  %uid=...
+  Dir item System/UInt16  .class  valuetype UInt16 extends System.Object
+
+  Dir item System/UInt16/CompareTo  .method hprls instance default true CTL_net(false, 1, Unsigned,[native]) CompareTo(CTL_net(false, 16, Unsigned,[native]) cf_arg)  ...
+  Dir item System/UInt16/Equals  .method hprls instance default true CTL_net(false, 32, Signed,[native]) Equals(CTL_net(false, 16, Unsigned,[native]) cf_arg)  %uid...
+  Dir item System/UInt32  .class  valuetype UInt32 extends System.Object
+
+  Dir item System/UInt32/CompareTo  .method hprls instance default true CTL_net(false, 1, Unsigned,[native]) CompareTo(CTL_net(false, 32, Unsigned,[native]) cf_arg)  ...
+  Dir item System/UInt32/Equals  .method hprls instance default true CTL_net(false, 32, Signed,[native]) Equals(CTL_net(false, 32, Unsigned,[native]) cf_arg)  %uid...
+  Dir item System/UInt64  .class  valuetype UInt64 extends System.Object
+
+  Dir item System/UInt64/CompareTo  .method hprls instance default true CTL_net(false, 1, Unsigned,[native]) CompareTo(CTL_net(false, 64, Unsigned,[native]) cf_arg)  ...
+  Dir item System/UInt64/Equals  .method hprls instance default true CTL_net(false, 32, Signed,[native]) Equals(CTL_net(false, 64, Unsigned,[native]) cf_arg)  %uid...
+  Dir item System/Boolean  .class  valuetype Boolean extends System.Object
+
+  Dir item System/Boolean/CompareTo  .method hprls instance default true CTL_net(false, 1, Unsigned,[native]) CompareTo(CTL_net(false, 1, Unsigned,[native]) cf_arg)  %...
+  Dir item System/Boolean/Equals  .method hprls instance default true CTL_net(false, 32, Signed,[native]) Equals(CTL_net(false, 1, Unsigned,[native]) cf_arg)  %uid=...
+  Dir item System/Char  .class  valuetype Char extends System.Object
+
+  Dir item System/Char/CompareTo  .method hprls instance default true CTL_net(false, 1, Unsigned,[native]) CompareTo(CTL_net(false, 16, Signed,[native, CHAR]) cf_ar...
+  Dir item System/Char/Equals  .method hprls instance default true CTL_net(false, 32, Signed,[native]) Equals(CTL_net(false, 16, Signed,[native, CHAR]) cf_arg)  ...
+  Dir item System/Float32  .class  valuetype Float32 extends System.Object
+
+  Dir item System/Float32/CompareTo  .method hprls instance default true CTL_net(false, 1, Unsigned,[native]) CompareTo(CTL_net(false, 32, FloatingPoint,[native]) cf_a...
+  Dir item System/Float32/Equals  .method hprls instance default true CTL_net(false, 32, Signed,[native]) Equals(CTL_net(false, 32, FloatingPoint,[native]) cf_arg) ...
+  Dir item System/Float64  .class  valuetype Float64 extends System.Object
+
+  Dir item System/Float64/CompareTo  .method hprls instance default true CTL_net(false, 1, Unsigned,[native]) CompareTo(CTL_net(false, 64, FloatingPoint,[native]) cf_a...
+  Dir item System/Float64/Equals  .method hprls instance default true CTL_net(false, 32, Signed,[native]) Equals(CTL_net(false, 64, FloatingPoint,[native]) cf_arg) ...
+  Dir item System/SByte  .class  valuetype SByte extends System.Object
+
+  Dir item System/SByte/CompareTo  .method hprls instance default true CTL_net(false, 1, Unsigned,[native]) CompareTo(CTL_net(false, 8, Signed,[native]) cf_arg)  %ui...
+  Dir item System/SByte/Equals  .method hprls instance default true CTL_net(false, 32, Signed,[native]) Equals(CTL_net(false, 8, Signed,[native]) cf_arg)  %uid=Eq...
+  Dir item System/Byte  .class  valuetype Byte extends System.Object
+
+  Dir item System/Byte/CompareTo  .method hprls instance default true CTL_net(false, 1, Unsigned,[native]) CompareTo(CTL_net(false, 8, Unsigned,[native]) cf_arg)  %...
+  Dir item System/Byte/Equals  .method hprls instance default true CTL_net(false, 32, Signed,[native]) Equals(CTL_net(false, 8, Unsigned,[native]) cf_arg)  %uid=...
+  Dir item System/Void  .class  valuetype Void extends System.Object
+
+  Dir item System/Type  .class   Type extends System.Object
+
+  Dir item System/RuntimeFieldHandle  .class   RuntimeFieldHandle extends System.Object
+
+  Dir item System/Console  .class   Console extends System.Object
+
+  Dir item System/Console/ReadKey  .method static default false char ReadKey()  %uid=ReadKey12
+  Dir item System/Console/WriteLine  .method static hpr:hpr_writeln default false CTL_void WriteLine()  %uid=WriteLine32
+  Dir item System/Console/WriteLine  .method static hpr:hpr_writeln default false CTL_void WriteLine(string sarg)  %uid=WriteLine34
+  Dir item System/Console/WriteLine  .method static hpr:hpr_writeln default false CTL_void WriteLine(string sarg, CTL_object arg)  %uid=WriteLine36
+  Dir item System/Console/WriteLine  .method static hpr:hpr_writeln default false CTL_void WriteLine(string sarg, CTL_object arg1, CTL_object arg2)  %uid=WriteLine38
+  Dir item System/Console/WriteLine  .method static hpr:hpr_writeln default false CTL_void WriteLine(string sarg, CTL_object arg1, CTL_object arg2, CTL_object arg3)  %...
+  Dir item System/Console/WriteLine  .method static hpr:hpr_writeln default false CTL_void WriteLine(string sarg, CTL_object arg1, CTL_object arg2, CTL_object arg3, CT...
+  Dir item System/Console/Write  .method static hpr:hpr_write default false CTL_void Write(string sarg)  %uid=Write22
+  Dir item System/Console/Write  .method static hpr:hpr_write default false CTL_void Write(string sarg, CTL_object arg1)  %uid=Write24
+  Dir item System/Console/Write  .method static hpr:hpr_write default false CTL_void Write(string sarg, CTL_object arg1, CTL_object arg2)  %uid=Write26
+  Dir item System/Console/Write  .method static hpr:hpr_write default false CTL_void Write(string sarg, CTL_object arg1, CTL_object arg2, CTL_object arg3)  %uid=Wr...
+  Dir item System/Console/Write  .method static hpr:hpr_write default false CTL_void Write(string sarg, CTL_object arg1, CTL_object arg2, CTL_object arg3, CTL_obje...
+  Dir item System/Collections  .class   Collections extends System.Object
+
+  Dir item System/Collections/Generic/Collections/System  .class   System.Collections.Generic
+
+  Dir item System/Collections/Generic/Collections/System/IEnumerator`1/Generic/Collections/System  .class   System.Collections.Generic.IEnumerator`1<!0>
+
+  Dir item System/Collections/Generic/Collections/System/IEnumerator`1/Generic/Collections/System/MoveNext  .method instance default true CTL_net(false, 1, Unsigned,[native]) MoveNext()  %uid=MoveNext14
+  Dir item System/Collections/Generic/Collections/System/IEnumerator`1/Generic/Collections/System/get_Current  .method instance default true !0 get_Current()  %uid=getCurrent12
+  Dir item System/Collections/IEnumerator/Collections/System  .class   System.Collections.IEnumerator
+
+  Dir item System/Collections/IEnumerator/Collections/System/MoveNext  .method instance default true CTL_net(false, 1, Unsigned,[native]) MoveNext()  %uid=MoveNext16
+  Dir item System/Threading  .class   Threading extends System.Object
+
+  Dir item System/Threading/Thread  .class   Thread
+
+  Dir item System/Threading/Thread/get_ManagedThreadId  .method instance hprls default true CTL_net(false, 32, Signed,[native]) get_ManagedThreadId()  %uid=getManagedThreadId12
+  Dir item System/Threading/Thread/.ctor  .method instance default true CTL_object .ctor(CTL_object what)  %uid=ctor182
+  Dir item System/Threading/Thread/Start  .method hprls instance default true CTL_void Start()  %uid=Start14
+  Dir item System/Threading/Thread/Start  .method hprls instance default true CTL_void Start(CTL_object argval)  %uid=Start16
+  Dir item System/Threading/Thread/get_CurrentThread  .method static hprls default false System.Threading.Thread get_CurrentThread()  %uid=getCurrentThread12
+  Dir item System/Threading/ThreadStart  .class   ThreadStart
+
+  Dir item System/Threading/ThreadStart/.ctor  .method instance default true CTL_object .ctor(CTL_object object, CTL_method_handle method)  %uid=ctor178
+  Dir item System/Threading/ParameterizedThreadStart  .class   ParameterizedThreadStart
+
+  Dir item System/Threading/ParameterizedThreadStart/.ctor  .method instance default true CTL_object .ctor(CTL_object object, CTL_net(false, 32, Signed,[native]) method)  %uid=ctor180
+  Dir item System/Threading/BeginCriticalRegion  .method hprls static default false CTL_void BeginCriticalRegion()  %uid=BeginCriticalRegion12
+  Dir item System/Threading/EndCriticalRegion  .method hprls static default false CTL_void EndCriticalRegion()  %uid=EndCriticalRegion12
+  Dir item System/Threading/WaitHandle  .class  hprls WaitHandle
+
+  Dir item System/Threading/WaitHandle/WaitOne  .method static hprls default false CTL_net(false, 1, Unsigned,[native]) WaitOne()  %uid=WaitOne12
+  Dir item System/Threading/AutoResetEvent  .class  hprls flagToStr??Cilflag_autocons 1 AutoResetEvent
+
+  Dir item System/Threading/AutoResetEvent/.ctor  .method hprls flagToStr??Cilflag_autocons 1 default true CTL_object .ctor(CTL_object ARG1) hprls flagToStr??Cilflag_autocons 1 %ui...
+  Dir item System/Convert  .class   Convert extends System.Object
+
+  Dir item System/Convert/ToInt8  .method static hprls default false CTL_net(false, 8, Signed,[native]) ToInt8(CTL_object arg)  %uid=ToInt812
+  Dir item System/Convert/ToInt16  .method static hprls default false CTL_net(false, 16, Signed,[native]) ToInt16(CTL_object arg)  %uid=ToInt1614
+  Dir item System/Convert/ToInt32  .method static hprls default false CTL_net(false, 32, Signed,[native]) ToInt32(CTL_object arg)  %uid=ToInt3214
+  Dir item System/Convert/ToInt64  .method static hprls default false CTL_net(false, 64, Signed,[native]) ToInt64(CTL_object arg)  %uid=ToInt6414
+  Dir item System/Convert/ToInt  .method static hprls default false CTL_net(false, 32, Signed,[native]) ToInt(CTL_object arg)  %uid=ToInt12
+  Dir item System/Convert/ToUInt8  .method static hprls default false CTL_net(false, 8, Signed,[native]) ToUInt8(CTL_object arg)  %uid=ToUInt812
+  Dir item System/Convert/ToUInt16  .method static hprls default false CTL_net(false, 16, Unsigned,[native]) ToUInt16(CTL_object arg)  %uid=ToUInt1614
+  Dir item System/Convert/ToUInt32  .method static hprls default false CTL_net(false, 32, Unsigned,[native]) ToUInt32(CTL_object arg)  %uid=ToUInt3214
+  Dir item System/Convert/ToUInt64  .method static hprls default false CTL_net(false, 64, Unsigned,[native]) ToUInt64(CTL_object arg)  %uid=ToUInt6414
+  Dir item System/Convert/ToBoolean  .method static hprls default false CTL_net(false, 1, Unsigned,[native]) ToBoolean(CTL_object arg)  %uid=ToBoolean14
+  Dir item System/Convert/ToChar  .method static hprls default false CTL_net(false, 16, Signed,[native, CHAR]) ToChar(CTL_object arg)  %uid=ToChar14
+  Dir item System/Convert/ToSByte  .method static hprls default false CTL_net(false, 8, Signed,[native]) ToSByte(CTL_object arg)  %uid=ToSByte12
+  Dir item System/Convert/ToByte  .method static hprls default false CTL_net(false, 8, Signed,[native]) ToByte(CTL_object arg)  %uid=ToByte12
+  Dir item System/InvalidOperationException  .class   InvalidOperationException extends System.Object
+
+  Dir item System/Attribute  .class   Attribute extends System.Object
+
+  Dir item System/IntPtr  .class   IntPtr extends System.Object
+
+  Dir item System/ApplicationException  .class   ApplicationException extends System.Object
+
+  Dir item System/Enum  .class   Enum extends System.Object
+
+  Dir item System/Math  .class   Math extends System.Object
+
+  Dir item System/Math/Abs  .method hprls public static hidebysig default false CTL_net(false, 32, Signed,[native]) Abs(CTL_net(false, 32, Signed,[native]) a3...
+  Dir item System/Math/Min  .method hprls public static hidebysig default false CTL_net(false, 32, Signed,[native]) Min(CTL_net(false, 32, Signed,[native]) a2...
+  Dir item System/Math/Max  .method hprls public static hidebysig default false CTL_net(false, 32, Signed,[native]) Max(CTL_net(false, 32, Signed,[native]) ma...
+  Dir item System/MulticastDelegate  .class   MulticastDelegate extends System.Object
+
+  Dir item System/MulticastDelegate/.ctor  .method instance private hidebysig specialname rtspecialname default true CTL_void .ctor(CTL_object obj, CTL_net(false, 32, Signed...
+  Dir item System/AsyncCallback  .class   AsyncCallback extends System.Object
+
+  Dir item System/IAsyncResult  .class   IAsyncResult extends System.Object
+
+  Dir item System/Object  .class   Object
+
+  Dir item System/Object/Equals  .method hprls instance default true CTL_net(false, 1, Unsigned,[native]) Equals(CTL_object cfarg)  %uid=Equals76
+  Dir item System/Object/ToString  .method hprls instance default true &(CT_arr(CTL_net(false, 16, Signed,[native, CHAR]), -1)) ToString()  %uid=ToString12
+  Dir item System/Object/.ctor  .method instance default true CTL_void .ctor()  %uid=ctor186
+  Dir item System/Runtime  .class   Runtime extends System.Object
+
+  Dir item System/Runtime/CompilerServices  .class  hprls flagToStr??Cilflag_autocons 1 CompilerServices
+
+  Dir item System/Runtime/CompilerServices/.ctor  .method hprls flagToStr??Cilflag_autocons 1 default true CTL_object .ctor(CTL_object ARG1) hprls flagToStr??Cilflag_autocons 1 %ui...
+  Dir item System/Runtime/CompilerServices/RuntimeHelpers  .class  hprls flagToStr??Cilflag_autocons 1 RuntimeHelpers
+
+  Dir item System/Runtime/CompilerServices/RuntimeHelpers/.ctor  .method hprls flagToStr??Cilflag_autocons 1 default true CTL_object .ctor(CTL_object ARG1) hprls flagToStr??Cilflag_autocons 1 %ui...
+  Dir item System/Runtime/CompilerServices/RuntimeHelpers/InitializeArray  .method hprls static default false CTL_void InitializeArray(System.Array array, CTL_object handle)  %uid=InitializeArray12
+  Dir item System/String  .class   String extends System.Object
+
+  Dir item System/String/Concat  .method hpr:hpr_concat static default false string Concat(string str1, string b)  %uid=Concat20
+  Dir item System/String/Concat  .method hpr:hpr_concat instance default true string Concat(string b)  %uid=Concat22
+  Dir item System/String/get_Chars  .method instance default true char get_Chars(CTL_net(false, 32, Signed,[native]) idx)  %uid=getChars12
+  Dir item System/String/get_Length  .method hprls instance default true CTL_net(false, 32, Signed,[native]) get_Length()  %uid=getLength12
+  Dir item System/ValueType  .class   ValueType extends System.Object
+
+  Dir item System/Func`1  .class   Func`1<TX0> extends System.Object
+
+  Dir item System/Func`1/.ctor  .method instance default true CTL_object .ctor(CTL_object p_closure, System/IntPtr p_ep)  %uid=ctor188
+  Dir item System/Func`1/Invoke  .method hpr:KiwiC-FInvoke instance default true !0 Invoke()  %uid=Invoke26
+  Dir item System/Func`2  .class   Func`2<TX0, TX1> extends System.Object
+
+  Dir item System/Func`2/.ctor  .method instance default true CTL_object .ctor(CTL_object p_closure, System/IntPtr p_ep)  %uid=ctor190
+  Dir item System/Func`2/Invoke  .method hpr:KiwiC-FInvoke instance default true !1 Invoke(!0 arg0)  %uid=Invoke28
+  Dir item System/Func`3  .class   Func`3<TX0, TX1, TX2> extends System.Object
+
+  Dir item System/Func`3/.ctor  .method instance default true CTL_object .ctor(CTL_object p_closure, System/IntPtr p_ep)  %uid=ctor192
+  Dir item System/Func`3/Invoke  .method hpr:KiwiC-FInvoke instance default true !2 Invoke(!0 arg0, !1 arg1)  %uid=Invoke30
+  Dir item System/Func`4  .class   Func`4<TX0, TX1, TX2, TX3> extends System.Object
+
+  Dir item System/Func`4/.ctor  .method instance default true CTL_object .ctor(CTL_object p_closure, System/IntPtr p_ep)  %uid=ctor194
+  Dir item System/Func`4/Invoke  .method hpr:KiwiC-FInvoke instance default true !3 Invoke(!0 arg0, !1 arg1, !2 arg2)  %uid=Invoke32
+  Dir item System/Action`0  .class   Action`0 extends System.Object
+
+  Dir item System/Action`0/.ctor  .method instance default true CTL_object .ctor(CTL_object p_closure, System/IntPtr p_ep)  %uid=ctor196
+  Dir item System/Action`0/Invoke  .method hpr:KiwiC-ActionInvoke instance default true CTL_void Invoke()  %uid=Invoke34
+  Dir item System/Action`1  .class   Action`1<TX0> extends System.Object
+
+  Dir item System/Action`1/.ctor  .method instance default true CTL_object .ctor(CTL_object p_closure, System/IntPtr p_ep)  %uid=ctor198
+  Dir item System/Action`1/Invoke  .method hpr:KiwiC-ActionInvoke instance default true CTL_void Invoke(!0 arg0)  %uid=Invoke36
+  Dir item System/Action`2  .class   Action`2<TX0, TX1> extends System.Object
+
+  Dir item System/Action`2/.ctor  .method instance default true CTL_object .ctor(CTL_object p_closure, System/IntPtr p_ep)  %uid=ctor200
+  Dir item System/Action`2/Invoke  .method hpr:KiwiC-ActionInvoke instance default true CTL_void Invoke(!0 arg0, !1 arg1)  %uid=Invoke38
+  Dir item System/Action`3  .class   Action`3<TX0, TX1, TX2> extends System.Object
+
+  Dir item System/Action`3/.ctor  .method instance default true CTL_object .ctor(CTL_object p_closure, System/IntPtr p_ep)  %uid=ctor202
+  Dir item System/Action`3/Invoke  .method hpr:KiwiC-ActionInvoke instance default true CTL_void Invoke(!0 arg0, !1 arg1, !2 arg2)  %uid=Invoke40
